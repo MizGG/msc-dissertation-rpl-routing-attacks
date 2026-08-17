@@ -1,0 +1,42 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+
+> Task :run
+INFO  [main] [Cooja.java:1145] - Loading /Users/mizzy/Dissertation_Cooja_Work/rpl-dis-flood/BH_ATTACK_N16_SEED567890.csc random seed: null
+> make -j8 udp-server.cooja TARGET=cooja
+fatal: failed to expand user dir in: '~/.gitignore'
+  LD        build/cooja/udp-server.cooja
+> make -j8 udp-client.cooja TARGET=cooja
+fatal: failed to expand user dir in: '~/.gitignore'
+  LD        build/cooja/udp-client.cooja
+> make -j8 blackhole-router.cooja TARGET=cooja
+fatal: failed to expand user dir in: '~/.gitignore'
+  LD        build/cooja/blackhole-router.cooja
+INFO  [main] [LogScriptEngine.java:231] - Script timeout in 540000 ms
+INFO  [sim] [LogScriptEngine.java:320] -  5% completed,  5.5 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 10% completed,  6.1 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 15% completed,  6.5 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 20% completed,  6.2 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 25% completed,  5.7 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 30% completed,  5.4 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 35% completed,  4.9 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 40% completed,  4.5 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 45% completed,  4.0 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 50% completed,  3.5 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 55% completed,  3.0 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 60% completed,  2.5 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 65% completed,  2.1 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 70% completed,  1.7 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 75% completed,  1.4 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 80% completed,  1.1 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 85% completed,  0.8 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 90% completed,  0.5 sec remaining
+INFO  [sim] [LogScriptEngine.java:320] - 95% completed,  0.2 sec remaining
+INFO  [sim] [LogScriptEngine.java:294] - Timeout event @ 540000000
+INFO  [sim] [Simulation.java:450] - Runtime: 4913 ms. Simulated time: 540000 ms. Speedup: 109.91247710156728
+INFO  [main] [Cooja.java:1171] - TEST OK
+
+
+BUILD SUCCESSFUL in 8s
+3 actionable tasks: 1 executed, 2 up-to-date

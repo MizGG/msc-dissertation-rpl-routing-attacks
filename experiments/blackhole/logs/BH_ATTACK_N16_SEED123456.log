@@ -1,0 +1,1125 @@
+00:00.073	ID:8	[INFO: Main      ] Starting Contiki-NG-release/v5.1-199-g2d20e000c-dirty
+00:00.073	ID:8	[INFO: Main      ] - Routing: RPL Lite
+00:00.073	ID:8	[INFO: Main      ] - Net: sicslowpan
+00:00.073	ID:8	[INFO: Main      ] - MAC: CSMA
+00:00.073	ID:8	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.073	ID:8	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.073	ID:8	[INFO: Main      ] Node ID: 8
+00:00.073	ID:8	[INFO: Main      ] Link-layer address: 0008.0008.0008.0008
+00:00.073	ID:8	[INFO: Main      ] Tentative link-local IPv6 address: fe80::208:8:8:8
+00:00.190	ID:11	[INFO: Main      ] Starting Contiki-NG-release/v5.1-199-g2d20e000c-dirty
+00:00.190	ID:11	[INFO: Main      ] - Routing: RPL Lite
+00:00.190	ID:11	[INFO: Main      ] - Net: sicslowpan
+00:00.190	ID:11	[INFO: Main      ] - MAC: CSMA
+00:00.190	ID:11	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.190	ID:11	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.190	ID:11	[INFO: Main      ] Node ID: 11
+00:00.190	ID:11	[INFO: Main      ] Link-layer address: 000b.000b.000b.000b
+00:00.190	ID:11	[INFO: Main      ] Tentative link-local IPv6 address: fe80::20b:b:b:b
+00:00.236	ID:2	[INFO: Main      ] Starting Contiki-NG-release/v5.1-199-g2d20e000c-dirty
+00:00.236	ID:2	[INFO: Main      ] - Routing: RPL Lite
+00:00.236	ID:2	[INFO: Main      ] - Net: sicslowpan
+00:00.236	ID:2	[INFO: Main      ] - MAC: CSMA
+00:00.236	ID:2	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.236	ID:2	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.236	ID:2	[INFO: Main      ] Node ID: 2
+00:00.236	ID:2	[INFO: Main      ] Link-layer address: 0002.0002.0002.0002
+00:00.236	ID:2	[INFO: Main      ] Tentative link-local IPv6 address: fe80::202:2:2:2
+00:00.250	ID:6	[INFO: Main      ] Starting Contiki-NG-release/v5.1-199-g2d20e000c-dirty
+00:00.250	ID:6	[INFO: Main      ] - Routing: RPL Lite
+00:00.250	ID:6	[INFO: Main      ] - Net: sicslowpan
+00:00.250	ID:6	[INFO: Main      ] - MAC: CSMA
+00:00.250	ID:6	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.250	ID:6	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.250	ID:6	[INFO: Main      ] Node ID: 6
+00:00.250	ID:6	[INFO: Main      ] Link-layer address: 0006.0006.0006.0006
+00:00.250	ID:6	[INFO: Main      ] Tentative link-local IPv6 address: fe80::206:6:6:6
+00:00.348	ID:4	[INFO: Main      ] Starting Contiki-NG-release/v5.1-199-g2d20e000c-dirty
+00:00.348	ID:4	[INFO: Main      ] - Routing: RPL Lite
+00:00.348	ID:4	[INFO: Main      ] - Net: sicslowpan
+00:00.348	ID:4	[INFO: Main      ] - MAC: CSMA
+00:00.348	ID:4	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.348	ID:4	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.348	ID:4	[INFO: Main      ] Node ID: 4
+00:00.348	ID:4	[INFO: Main      ] Link-layer address: 0004.0004.0004.0004
+00:00.348	ID:4	[INFO: Main      ] Tentative link-local IPv6 address: fe80::204:4:4:4
+00:00.382	ID:1	[INFO: Main      ] Starting Contiki-NG-release/v5.1-199-g2d20e000c-dirty
+00:00.382	ID:1	[INFO: Main      ] - Routing: RPL Lite
+00:00.382	ID:1	[INFO: Main      ] - Net: sicslowpan
+00:00.382	ID:1	[INFO: Main      ] - MAC: CSMA
+00:00.382	ID:1	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.382	ID:1	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.382	ID:1	[INFO: Main      ] Node ID: 1
+00:00.382	ID:1	[INFO: Main      ] Link-layer address: 0001.0001.0001.0001
+00:00.382	ID:1	[INFO: Main      ] Tentative link-local IPv6 address: fe80::201:1:1:1
+00:00.402	ID:7	[INFO: Main      ] Starting Contiki-NG-release/v5.1-199-g2d20e000c-dirty
+00:00.402	ID:7	[INFO: Main      ] - Routing: RPL Lite
+00:00.402	ID:7	[INFO: Main      ] - Net: sicslowpan
+00:00.402	ID:7	[INFO: Main      ] - MAC: CSMA
+00:00.402	ID:7	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.402	ID:7	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.402	ID:7	[INFO: Main      ] Node ID: 7
+00:00.402	ID:7	[INFO: Main      ] Link-layer address: 0007.0007.0007.0007
+00:00.402	ID:7	[INFO: Main      ] Tentative link-local IPv6 address: fe80::207:7:7:7
+00:00.450	ID:14	[INFO: Main      ] Starting Contiki-NG-release/v5.1-199-g2d20e000c-dirty
+00:00.450	ID:14	[INFO: Main      ] - Routing: RPL Lite
+00:00.450	ID:14	[INFO: Main      ] - Net: sicslowpan
+00:00.450	ID:14	[INFO: Main      ] - MAC: CSMA
+00:00.450	ID:14	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.450	ID:14	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.450	ID:14	[INFO: Main      ] Node ID: 14
+00:00.450	ID:14	[INFO: Main      ] Link-layer address: 000e.000e.000e.000e
+00:00.450	ID:14	[INFO: Main      ] Tentative link-local IPv6 address: fe80::20e:e:e:e
+00:00.462	ID:15	[INFO: Main      ] Starting Contiki-NG-release/v5.1-199-g2d20e000c-dirty
+00:00.462	ID:15	[INFO: Main      ] - Routing: RPL Lite
+00:00.462	ID:15	[INFO: Main      ] - Net: sicslowpan
+00:00.462	ID:15	[INFO: Main      ] - MAC: CSMA
+00:00.462	ID:15	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.462	ID:15	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.462	ID:15	[INFO: Main      ] Node ID: 15
+00:00.462	ID:15	[INFO: Main      ] Link-layer address: 000f.000f.000f.000f
+00:00.462	ID:15	[INFO: Main      ] Tentative link-local IPv6 address: fe80::20f:f:f:f
+00:00.473	ID:16	[INFO: Main      ] Starting Contiki-NG-release/v5.1-199-g2d20e000c-dirty
+00:00.473	ID:16	[INFO: Main      ] - Routing: RPL Lite
+00:00.473	ID:16	[INFO: Main      ] - Net: sicslowpan
+00:00.473	ID:16	[INFO: Main      ] - MAC: CSMA
+00:00.473	ID:16	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.473	ID:16	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.473	ID:16	[INFO: Main      ] Node ID: 16
+00:00.473	ID:16	[INFO: Main      ] Link-layer address: 0010.0010.0010.0010
+00:00.473	ID:16	[INFO: Main      ] Tentative link-local IPv6 address: fe80::210:10:10:10
+00:00.473	ID:16	[INFO: BLACKHOLE ] BLACKHOLE ROUTER: started, attack disabled
+00:00.556	ID:10	[INFO: Main      ] Starting Contiki-NG-release/v5.1-199-g2d20e000c-dirty
+00:00.556	ID:10	[INFO: Main      ] - Routing: RPL Lite
+00:00.556	ID:10	[INFO: Main      ] - Net: sicslowpan
+00:00.556	ID:10	[INFO: Main      ] - MAC: CSMA
+00:00.556	ID:10	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.556	ID:10	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.556	ID:10	[INFO: Main      ] Node ID: 10
+00:00.556	ID:10	[INFO: Main      ] Link-layer address: 000a.000a.000a.000a
+00:00.556	ID:10	[INFO: Main      ] Tentative link-local IPv6 address: fe80::20a:a:a:a
+00:00.594	ID:12	[INFO: Main      ] Starting Contiki-NG-release/v5.1-199-g2d20e000c-dirty
+00:00.594	ID:12	[INFO: Main      ] - Routing: RPL Lite
+00:00.594	ID:12	[INFO: Main      ] - Net: sicslowpan
+00:00.594	ID:12	[INFO: Main      ] - MAC: CSMA
+00:00.594	ID:12	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.594	ID:12	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.594	ID:12	[INFO: Main      ] Node ID: 12
+00:00.594	ID:12	[INFO: Main      ] Link-layer address: 000c.000c.000c.000c
+00:00.594	ID:12	[INFO: Main      ] Tentative link-local IPv6 address: fe80::20c:c:c:c
+00:00.708	ID:9	[INFO: Main      ] Starting Contiki-NG-release/v5.1-199-g2d20e000c-dirty
+00:00.708	ID:9	[INFO: Main      ] - Routing: RPL Lite
+00:00.708	ID:9	[INFO: Main      ] - Net: sicslowpan
+00:00.708	ID:9	[INFO: Main      ] - MAC: CSMA
+00:00.708	ID:9	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.708	ID:9	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.708	ID:9	[INFO: Main      ] Node ID: 9
+00:00.708	ID:9	[INFO: Main      ] Link-layer address: 0009.0009.0009.0009
+00:00.708	ID:9	[INFO: Main      ] Tentative link-local IPv6 address: fe80::209:9:9:9
+00:00.715	ID:5	[INFO: Main      ] Starting Contiki-NG-release/v5.1-199-g2d20e000c-dirty
+00:00.715	ID:5	[INFO: Main      ] - Routing: RPL Lite
+00:00.715	ID:5	[INFO: Main      ] - Net: sicslowpan
+00:00.715	ID:5	[INFO: Main      ] - MAC: CSMA
+00:00.715	ID:5	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.715	ID:5	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.715	ID:5	[INFO: Main      ] Node ID: 5
+00:00.715	ID:5	[INFO: Main      ] Link-layer address: 0005.0005.0005.0005
+00:00.715	ID:5	[INFO: Main      ] Tentative link-local IPv6 address: fe80::205:5:5:5
+00:00.884	ID:13	[INFO: Main      ] Starting Contiki-NG-release/v5.1-199-g2d20e000c-dirty
+00:00.884	ID:13	[INFO: Main      ] - Routing: RPL Lite
+00:00.884	ID:13	[INFO: Main      ] - Net: sicslowpan
+00:00.884	ID:13	[INFO: Main      ] - MAC: CSMA
+00:00.884	ID:13	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.884	ID:13	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.884	ID:13	[INFO: Main      ] Node ID: 13
+00:00.884	ID:13	[INFO: Main      ] Link-layer address: 000d.000d.000d.000d
+00:00.884	ID:13	[INFO: Main      ] Tentative link-local IPv6 address: fe80::20d:d:d:d
+00:00.899	ID:3	[INFO: Main      ] Starting Contiki-NG-release/v5.1-199-g2d20e000c-dirty
+00:00.899	ID:3	[INFO: Main      ] - Routing: RPL Lite
+00:00.899	ID:3	[INFO: Main      ] - Net: sicslowpan
+00:00.899	ID:3	[INFO: Main      ] - MAC: CSMA
+00:00.899	ID:3	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.899	ID:3	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.899	ID:3	[INFO: Main      ] Node ID: 3
+00:00.899	ID:3	[INFO: Main      ] Link-layer address: 0003.0003.0003.0003
+00:00.899	ID:3	[INFO: Main      ] Tentative link-local IPv6 address: fe80::203:3:3:3
+00:03.581	ID:3	[INFO: App       ] Not reachable yet
+00:03.813	ID:2	[INFO: App       ] Not reachable yet
+00:04.142	ID:7	[INFO: App       ] Not reachable yet
+00:04.235	ID:8	[INFO: App       ] Not reachable yet
+00:04.453	ID:13	[INFO: App       ] Not reachable yet
+00:04.774	ID:11	[INFO: App       ] Not reachable yet
+00:05.794	ID:5	[INFO: App       ] Not reachable yet
+00:07.322	ID:12	[INFO: App       ] Not reachable yet
+00:07.461	ID:4	[INFO: App       ] Not reachable yet
+00:08.272	ID:10	[INFO: App       ] Not reachable yet
+00:08.851	ID:14	[INFO: App       ] Not reachable yet
+00:09.093	ID:6	[INFO: App       ] Not reachable yet
+00:09.848	ID:15	[INFO: App       ] Not reachable yet
+00:10.241	ID:9	[INFO: App       ] Not reachable yet
+00:13.292	ID:3	[INFO: App       ] Not reachable yet
+00:13.300	ID:7	[INFO: App       ] Not reachable yet
+00:14.258	ID:2	[INFO: App       ] Not reachable yet
+00:14.264	ID:13	[INFO: App       ] Not reachable yet
+00:14.374	ID:8	[INFO: App       ] Not reachable yet
+00:14.579	ID:11	[INFO: App       ] Not reachable yet
+00:15.933	ID:5	[INFO: App       ] Not reachable yet
+00:17.631	ID:12	[INFO: App       ] Not reachable yet
+00:17.807	ID:4	[INFO: App       ] Not reachable yet
+00:19.105	ID:10	[INFO: App       ] Not reachable yet
+00:19.111	ID:6	[INFO: App       ] Not reachable yet
+00:19.463	ID:9	[INFO: App       ] Not reachable yet
+00:19.841	ID:14	[INFO: App       ] Not reachable yet
+00:19.861	ID:15	[INFO: App       ] Not reachable yet
+00:22.558	ID:7	[INFO: App       ] Not reachable yet
+00:22.925	ID:3	[INFO: App       ] Not reachable yet
+00:23.736	ID:13	[INFO: App       ] Not reachable yet
+00:24.200	ID:11	[INFO: App       ] Not reachable yet
+00:24.934	ID:2	[INFO: App       ] Not reachable yet
+00:25.167	ID:8	[INFO: App       ] Not reachable yet
+00:25.697	ID:5	[INFO: App       ] Not reachable yet
+00:27.121	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:27.121	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:27.178	ID:4	[INFO: App       ] Not reachable yet
+00:27.314	ID:12	[INFO: App       ] Not reachable yet
+00:28.661	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:28.661	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:28.915	ID:15	[INFO: App       ] Not reachable yet
+00:28.918	ID:6	[INFO: App       ] Not reachable yet
+00:29.254	ID:9	[INFO: App       ] Not reachable yet
+00:29.306	ID:14	[INFO: App       ] Not reachable yet
+00:29.482	ID:10	[INFO: App       ] Not reachable yet
+00:30.266	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:30.266	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:31.464	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:31.464	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:32.593	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:32.593	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:32.703	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:32.703	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:32.896	ID:3	[INFO: App       ] Not reachable yet
+00:33.390	ID:13	[INFO: App       ] Not reachable yet
+00:33.516	ID:7	[INFO: App       ] Not reachable yet
+00:33.646	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:33.646	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:34.641	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:34.641	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:34.806	ID:11	[INFO: App       ] Not reachable yet
+00:35.038	ID:5	[INFO: App       ] Not reachable yet
+00:35.495	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:35.495	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:35.671	ID:2	[INFO: App       ] Not reachable yet
+00:35.700	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:35.700	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:35.976	ID:8	[INFO: App       ] Not reachable yet
+00:37.134	ID:4	[INFO: App       ] Not reachable yet
+00:37.232	ID:12	[INFO: App       ] Not reachable yet
+00:38.244	ID:6	[INFO: App       ] Not reachable yet
+00:38.442	ID:14	[INFO: App       ] Not reachable yet
+00:38.448	ID:15	[INFO: App       ] Not reachable yet
+00:38.664	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:38.664	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:39.142	ID:9	[INFO: App       ] Not reachable yet
+00:39.259	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:39.259	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:39.862	ID:10	[INFO: App       ] Not reachable yet
+00:40.260	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:40.260	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:42.213	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:42.213	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:42.411	ID:13	[INFO: App       ] Not reachable yet
+00:42.472	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:42.472	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:42.689	ID:7	[INFO: App       ] Not reachable yet
+00:43.546	ID:3	[INFO: App       ] Not reachable yet
+00:43.878	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:43.878	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:43.987	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:43.987	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:45.081	ID:5	[INFO: App       ] Not reachable yet
+00:45.192	ID:11	[INFO: App       ] Not reachable yet
+00:45.652	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:45.652	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:45.976	ID:8	[INFO: App       ] Not reachable yet
+00:46.159	ID:4	[INFO: App       ] Not reachable yet
+00:46.354	ID:2	[INFO: App       ] Not reachable yet
+00:47.696	ID:14	[INFO: App       ] Not reachable yet
+00:47.745	ID:12	[INFO: App       ] Not reachable yet
+00:48.608	ID:9	[INFO: App       ] Not reachable yet
+00:48.793	ID:6	[INFO: App       ] Not reachable yet
+00:48.938	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:48.938	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:49.091	ID:15	[INFO: App       ] Not reachable yet
+00:49.142	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:49.142	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:49.652	ID:10	[INFO: App       ] Not reachable yet
+00:50.351	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:50.351	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:50.821	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:50.821	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:52.123	ID:13	[INFO: App       ] Not reachable yet
+00:52.927	ID:3	[INFO: App       ] Not reachable yet
+00:53.290	ID:7	[INFO: App       ] Not reachable yet
+00:55.287	ID:5	[INFO: App       ] Not reachable yet
+00:55.302	ID:4	[INFO: App       ] Not reachable yet
+00:55.498	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:55.498	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:55.659	ID:11	[INFO: App       ] Not reachable yet
+00:55.845	ID:2	[INFO: App       ] Not reachable yet
+00:55.891	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:55.891	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:55.895	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:55.895	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:56.225	ID:8	[INFO: App       ] Not reachable yet
+00:57.927	ID:14	[INFO: App       ] Not reachable yet
+00:58.050	ID:9	[INFO: App       ] Not reachable yet
+00:58.118	ID:12	[INFO: App       ] Not reachable yet
+00:58.134	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+00:58.134	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+00:59.120	ID:15	[INFO: App       ] Not reachable yet
+00:59.309	ID:6	[INFO: App       ] Not reachable yet
+01:00.193	ID:10	[INFO: App       ] Not reachable yet
+01:01.517	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:01.517	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:01.855	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:01.855	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:03.047	ID:7	[INFO: App       ] Not reachable yet
+01:03.067	ID:13	[INFO: App       ] Not reachable yet
+01:03.152	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:03.152	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:03.755	ID:3	[INFO: App       ] Not reachable yet
+01:04.076	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:04.076	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:04.373	ID:5	[INFO: App       ] Not reachable yet
+01:04.955	ID:2	[INFO: App       ] Not reachable yet
+01:05.966	ID:8	[INFO: App       ] Not reachable yet
+01:06.013	ID:4	[INFO: App       ] Not reachable yet
+01:06.048	ID:11	[INFO: App       ] Not reachable yet
+01:07.075	ID:9	[INFO: App       ] Not reachable yet
+01:07.165	ID:12	[INFO: App       ] Not reachable yet
+01:08.432	ID:15	[INFO: App       ] Not reachable yet
+01:08.603	ID:14	[INFO: App       ] Not reachable yet
+01:08.680	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:08.680	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:08.822	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:08.822	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:09.198	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:09.198	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:09.202	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:09.202	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:09.700	ID:6	[INFO: App       ] Not reachable yet
+01:11.175	ID:10	[INFO: App       ] Not reachable yet
+01:12.340	ID:13	[INFO: App       ] Not reachable yet
+01:12.973	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:12.973	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:13.369	ID:3	[INFO: App       ] Not reachable yet
+01:13.428	ID:7	[INFO: App       ] Not reachable yet
+01:13.718	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:13.718	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:14.364	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:14.364	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:14.497	ID:5	[INFO: App       ] Not reachable yet
+01:15.385	ID:11	[INFO: App       ] Not reachable yet
+01:15.438	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:15.438	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:15.874	ID:2	[INFO: App       ] Not reachable yet
+01:16.142	ID:4	[INFO: App       ] Not reachable yet
+01:16.260	ID:8	[INFO: App       ] Not reachable yet
+01:16.295	ID:12	[INFO: App       ] Not reachable yet
+01:17.138	ID:9	[INFO: App       ] Not reachable yet
+01:17.608	ID:14	[INFO: App       ] Not reachable yet
+01:17.821	ID:15	[INFO: App       ] Not reachable yet
+01:18.158	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:18.158	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:18.375	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:18.375	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:20.661	ID:6	[INFO: App       ] Not reachable yet
+01:20.812	ID:10	[INFO: App       ] Not reachable yet
+01:23.005	ID:7	[INFO: App       ] Not reachable yet
+01:23.166	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:23.166	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:23.339	ID:13	[INFO: App       ] Not reachable yet
+01:23.605	ID:5	[INFO: App       ] Not reachable yet
+01:23.854	ID:3	[INFO: App       ] Not reachable yet
+01:24.592	ID:11	[INFO: App       ] Not reachable yet
+01:24.970	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:24.970	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:25.141	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:25.141	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:25.384	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:25.384	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:26.179	ID:12	[INFO: App       ] Not reachable yet
+01:26.295	ID:4	[INFO: App       ] Not reachable yet
+01:26.507	ID:8	[INFO: App       ] Not reachable yet
+01:26.699	ID:2	[INFO: App       ] Not reachable yet
+01:26.860	ID:9	[INFO: App       ] Not reachable yet
+01:27.581	ID:14	[INFO: App       ] Not reachable yet
+01:28.647	ID:15	[INFO: App       ] Not reachable yet
+01:29.871	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:29.871	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:30.324	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:30.324	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:30.474	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:30.474	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:30.474	ID:16	[WARN: BLACKHOLE ] BLACKHOLE ATTACK: enabled
+01:30.723	ID:6	[INFO: App       ] Not reachable yet
+01:30.766	ID:10	[INFO: App       ] Not reachable yet
+01:30.984	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:30.984	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:32.917	ID:7	[INFO: App       ] Not reachable yet
+01:33.824	ID:5	[INFO: App       ] Not reachable yet
+01:33.908	ID:13	[INFO: App       ] Not reachable yet
+01:34.118	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:34.118	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:34.205	ID:3	[INFO: App       ] Not reachable yet
+01:35.172	ID:11	[INFO: App       ] Not reachable yet
+01:35.669	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:35.669	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:36.278	ID:12	[INFO: App       ] Not reachable yet
+01:36.464	ID:4	[INFO: App       ] Not reachable yet
+01:36.657	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:36.657	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:36.957	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:36.957	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:37.067	ID:9	[INFO: App       ] Not reachable yet
+01:37.126	ID:14	[INFO: App       ] Not reachable yet
+01:37.157	ID:8	[INFO: App       ] Not reachable yet
+01:37.264	ID:2	[INFO: App       ] Not reachable yet
+01:38.637	ID:15	[INFO: App       ] Not reachable yet
+01:39.716	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:39.716	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:40.103	ID:6	[INFO: App       ] Not reachable yet
+01:40.147	ID:10	[INFO: App       ] Not reachable yet
+01:40.683	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:40.683	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:41.238	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:41.238	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:42.824	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:42.824	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:43.216	ID:3	[INFO: App       ] Not reachable yet
+01:43.368	ID:13	[INFO: App       ] Not reachable yet
+01:43.512	ID:7	[INFO: App       ] Not reachable yet
+01:43.572	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:43.572	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:43.843	ID:5	[INFO: App       ] Not reachable yet
+01:45.639	ID:11	[INFO: App       ] Not reachable yet
+01:45.978	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:45.978	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:46.313	ID:4	[INFO: App       ] Not reachable yet
+01:46.687	ID:12	[INFO: App       ] Not reachable yet
+01:47.142	ID:14	[INFO: App       ] Not reachable yet
+01:47.804	ID:8	[INFO: App       ] Not reachable yet
+01:47.913	ID:9	[INFO: App       ] Not reachable yet
+01:48.224	ID:15	[INFO: App       ] Not reachable yet
+01:48.238	ID:2	[INFO: App       ] Not reachable yet
+01:48.422	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:48.422	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:49.213	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:49.213	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:49.694	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:49.694	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:49.993	ID:6	[INFO: App       ] Not reachable yet
+01:51.100	ID:10	[INFO: App       ] Not reachable yet
+01:52.415	ID:13	[INFO: App       ] Not reachable yet
+01:52.783	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:52.783	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:53.932	ID:3	[INFO: App       ] Not reachable yet
+01:53.966	ID:7	[INFO: App       ] Not reachable yet
+01:54.432	ID:5	[INFO: App       ] Not reachable yet
+01:55.404	ID:11	[INFO: App       ] Not reachable yet
+01:56.117	ID:4	[INFO: App       ] Not reachable yet
+01:56.308	ID:14	[INFO: App       ] Not reachable yet
+01:56.490	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+01:56.490	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+01:56.508	ID:12	[INFO: App       ] Not reachable yet
+01:57.095	ID:8	[INFO: App       ] Not reachable yet
+01:57.147	ID:9	[INFO: App       ] Not reachable yet
+01:57.562	ID:2	[INFO: App       ] Not reachable yet
+01:57.666	ID:15	[INFO: App       ] Not reachable yet
+02:00.847	ID:6	[INFO: App       ] Not reachable yet
+02:00.991	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:00.991	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:01.577	ID:10	[INFO: App       ] Not reachable yet
+02:01.751	ID:13	[INFO: App       ] Not reachable yet
+02:03.572	ID:3	[INFO: App       ] Not reachable yet
+02:03.787	ID:7	[INFO: App       ] Not reachable yet
+02:04.986	ID:5	[INFO: App       ] Not reachable yet
+02:05.292	ID:11	[INFO: App       ] Not reachable yet
+02:06.023	ID:14	[INFO: App       ] Not reachable yet
+02:06.412	ID:4	[INFO: App       ] Not reachable yet
+02:06.415	ID:9	[INFO: App       ] Not reachable yet
+02:06.933	ID:12	[INFO: App       ] Not reachable yet
+02:07.733	ID:8	[INFO: App       ] Not reachable yet
+02:07.757	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:07.757	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:07.772	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:07.772	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:08.417	ID:15	[INFO: App       ] Not reachable yet
+02:08.523	ID:2	[INFO: App       ] Not reachable yet
+02:08.815	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:08.815	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:09.215	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:09.215	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:10.315	ID:6	[INFO: App       ] Not reachable yet
+02:11.644	ID:10	[INFO: App       ] Not reachable yet
+02:12.494	ID:13	[INFO: App       ] Not reachable yet
+02:13.351	ID:3	[INFO: App       ] Not reachable yet
+02:13.369	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:13.369	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:13.826	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:13.826	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:14.148	ID:7	[INFO: App       ] Not reachable yet
+02:15.106	ID:5	[INFO: App       ] Not reachable yet
+02:15.633	ID:4	[INFO: App       ] Not reachable yet
+02:15.958	ID:11	[INFO: App       ] Not reachable yet
+02:15.964	ID:14	[INFO: App       ] Not reachable yet
+02:15.981	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:15.981	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:16.379	ID:12	[INFO: App       ] Not reachable yet
+02:16.408	ID:9	[INFO: App       ] Not reachable yet
+02:17.187	ID:8	[INFO: App       ] Not reachable yet
+02:17.986	ID:2	[INFO: App       ] Not reachable yet
+02:18.211	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:18.211	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:18.844	ID:15	[INFO: App       ] Not reachable yet
+02:20.012	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:20.012	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:20.987	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:20.987	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:21.149	ID:10	[INFO: App       ] Not reachable yet
+02:21.159	ID:6	[INFO: App       ] Not reachable yet
+02:22.278	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:22.278	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:22.712	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:22.712	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:23.316	ID:13	[INFO: App       ] Not reachable yet
+02:23.868	ID:3	[INFO: App       ] Not reachable yet
+02:24.162	ID:7	[INFO: App       ] Not reachable yet
+02:24.987	ID:4	[INFO: App       ] Not reachable yet
+02:25.337	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:25.337	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:25.409	ID:5	[INFO: App       ] Not reachable yet
+02:25.933	ID:11	[INFO: App       ] Not reachable yet
+02:26.066	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:26.066	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:26.160	ID:14	[INFO: App       ] Not reachable yet
+02:26.657	ID:8	[INFO: App       ] Not reachable yet
+02:26.749	ID:12	[INFO: App       ] Not reachable yet
+02:27.110	ID:9	[INFO: App       ] Not reachable yet
+02:27.698	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:27.698	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:28.113	ID:2	[INFO: App       ] Not reachable yet
+02:29.415	ID:15	[INFO: App       ] Not reachable yet
+02:31.621	ID:6	[INFO: App       ] Not reachable yet
+02:32.058	ID:10	[INFO: App       ] Not reachable yet
+02:32.395	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:32.395	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:33.321	ID:13	[INFO: App       ] Not reachable yet
+02:34.385	ID:4	[INFO: App       ] Not reachable yet
+02:34.595	ID:7	[INFO: App       ] Not reachable yet
+02:34.789	ID:3	[INFO: App       ] Not reachable yet
+02:35.375	ID:11	[INFO: App       ] Not reachable yet
+02:35.643	ID:5	[INFO: App       ] Not reachable yet
+02:35.680	ID:8	[INFO: App       ] Not reachable yet
+02:36.142	ID:12	[INFO: App       ] Not reachable yet
+02:36.689	ID:14	[INFO: App       ] Not reachable yet
+02:37.097	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:37.097	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:37.537	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:37.537	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:37.573	ID:9	[INFO: App       ] Not reachable yet
+02:37.826	ID:2	[INFO: App       ] Not reachable yet
+02:38.427	ID:15	[INFO: App       ] Not reachable yet
+02:40.512	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:40.512	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:40.790	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:40.790	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:41.324	ID:6	[INFO: App       ] Not reachable yet
+02:42.094	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:42.094	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:42.684	ID:10	[INFO: App       ] Not reachable yet
+02:42.980	ID:13	[INFO: App       ] Not reachable yet
+02:43.436	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:43.436	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:43.858	ID:7	[INFO: App       ] Not reachable yet
+02:43.863	ID:3	[INFO: App       ] Not reachable yet
+02:44.860	ID:4	[INFO: App       ] Not reachable yet
+02:44.862	ID:8	[INFO: App       ] Not reachable yet
+02:45.146	ID:11	[INFO: App       ] Not reachable yet
+02:46.300	ID:12	[INFO: App       ] Not reachable yet
+02:46.539	ID:14	[INFO: App       ] Not reachable yet
+02:46.639	ID:5	[INFO: App       ] Not reachable yet
+02:46.649	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:46.649	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:46.704	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:46.704	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:47.095	ID:9	[INFO: App       ] Not reachable yet
+02:47.723	ID:15	[INFO: App       ] Not reachable yet
+02:47.854	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:47.854	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:48.659	ID:2	[INFO: App       ] Not reachable yet
+02:49.571	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:49.571	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:50.918	ID:6	[INFO: App       ] Not reachable yet
+02:51.358	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:51.358	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:52.335	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:52.335	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:52.878	ID:10	[INFO: App       ] Not reachable yet
+02:52.994	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:52.994	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:53.390	ID:3	[INFO: App       ] Not reachable yet
+02:53.959	ID:13	[INFO: App       ] Not reachable yet
+02:54.291	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:54.291	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:54.463	ID:4	[INFO: App       ] Not reachable yet
+02:54.584	ID:8	[INFO: App       ] Not reachable yet
+02:54.630	ID:7	[INFO: App       ] Not reachable yet
+02:55.059	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:55.059	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:55.122	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:55.122	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:55.307	ID:11	[INFO: App       ] Not reachable yet
+02:55.875	ID:12	[INFO: App       ] Not reachable yet
+02:56.171	ID:9	[INFO: App       ] Not reachable yet
+02:56.854	ID:5	[INFO: App       ] Not reachable yet
+02:57.306	ID:14	[INFO: App       ] Not reachable yet
+02:57.975	ID:15	[INFO: App       ] Not reachable yet
+02:58.914	ID:2	[INFO: App       ] Not reachable yet
+02:59.205	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:59.205	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+02:59.911	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+02:59.911	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:00.572	ID:6	[INFO: App       ] Not reachable yet
+03:01.314	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:01.314	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:02.546	ID:3	[INFO: App       ] Not reachable yet
+03:03.559	ID:10	[INFO: App       ] Not reachable yet
+03:03.876	ID:4	[INFO: App       ] Not reachable yet
+03:04.735	ID:7	[INFO: App       ] Not reachable yet
+03:04.800	ID:13	[INFO: App       ] Not reachable yet
+03:04.987	ID:12	[INFO: App       ] Not reachable yet
+03:05.183	ID:8	[INFO: App       ] Not reachable yet
+03:05.573	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:05.573	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:05.913	ID:11	[INFO: App       ] Not reachable yet
+03:06.362	ID:9	[INFO: App       ] Not reachable yet
+03:06.819	ID:14	[INFO: App       ] Not reachable yet
+03:07.663	ID:15	[INFO: App       ] Not reachable yet
+03:07.845	ID:5	[INFO: App       ] Not reachable yet
+03:09.817	ID:2	[INFO: App       ] Not reachable yet
+03:10.146	ID:6	[INFO: App       ] Not reachable yet
+03:12.827	ID:10	[INFO: App       ] Not reachable yet
+03:12.906	ID:3	[INFO: App       ] Not reachable yet
+03:14.450	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:14.450	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:14.481	ID:7	[INFO: App       ] Not reachable yet
+03:14.510	ID:12	[INFO: App       ] Not reachable yet
+03:14.731	ID:13	[INFO: App       ] Not reachable yet
+03:14.804	ID:8	[INFO: App       ] Not reachable yet
+03:14.856	ID:4	[INFO: App       ] Not reachable yet
+03:15.808	ID:9	[INFO: App       ] Not reachable yet
+03:15.843	ID:14	[INFO: App       ] Not reachable yet
+03:16.319	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:16.319	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:16.451	ID:11	[INFO: App       ] Not reachable yet
+03:16.662	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:16.662	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:16.916	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:16.916	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:17.841	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:17.841	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:17.892	ID:5	[INFO: App       ] Not reachable yet
+03:18.140	ID:15	[INFO: App       ] Not reachable yet
+03:19.729	ID:6	[INFO: App       ] Not reachable yet
+03:20.715	ID:2	[INFO: App       ] Not reachable yet
+03:20.879	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:20.879	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:22.405	ID:10	[INFO: App       ] Not reachable yet
+03:22.582	ID:3	[INFO: App       ] Not reachable yet
+03:22.776	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:22.776	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:22.997	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:22.997	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:23.658	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:23.658	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:24.105	ID:12	[INFO: App       ] Not reachable yet
+03:24.561	ID:13	[INFO: App       ] Not reachable yet
+03:24.723	ID:7	[INFO: App       ] Not reachable yet
+03:25.314	ID:8	[INFO: App       ] Not reachable yet
+03:25.778	ID:4	[INFO: App       ] Not reachable yet
+03:25.982	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:25.982	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:26.033	ID:14	[INFO: App       ] Not reachable yet
+03:26.192	ID:9	[INFO: App       ] Not reachable yet
+03:26.638	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:26.638	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:27.146	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:27.146	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:27.268	ID:15	[INFO: App       ] Not reachable yet
+03:27.403	ID:11	[INFO: App       ] Not reachable yet
+03:27.890	ID:5	[INFO: App       ] Not reachable yet
+03:29.730	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:29.730	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:29.742	ID:6	[INFO: App       ] Not reachable yet
+03:30.195	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:30.195	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:31.631	ID:2	[INFO: App       ] Not reachable yet
+03:32.129	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:32.129	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:32.327	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:32.327	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:32.329	ID:3	[INFO: App       ] Not reachable yet
+03:32.637	ID:10	[INFO: App       ] Not reachable yet
+03:33.757	ID:13	[INFO: App       ] Not reachable yet
+03:34.277	ID:12	[INFO: App       ] Not reachable yet
+03:34.599	ID:8	[INFO: App       ] Not reachable yet
+03:35.203	ID:9	[INFO: App       ] Not reachable yet
+03:35.361	ID:14	[INFO: App       ] Not reachable yet
+03:35.439	ID:7	[INFO: App       ] Not reachable yet
+03:35.767	ID:4	[INFO: App       ] Not reachable yet
+03:36.028	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:36.028	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:36.263	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:36.263	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:36.708	ID:15	[INFO: App       ] Not reachable yet
+03:37.235	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:37.235	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:37.865	ID:11	[INFO: App       ] Not reachable yet
+03:38.640	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:38.640	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:38.696	ID:5	[INFO: App       ] Not reachable yet
+03:38.718	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:38.718	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:39.283	ID:6	[INFO: App       ] Not reachable yet
+03:40.715	ID:2	[INFO: App       ] Not reachable yet
+03:41.269	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:41.269	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:41.699	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:41.699	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:41.975	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:41.975	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:42.914	ID:10	[INFO: App       ] Not reachable yet
+03:43.217	ID:3	[INFO: App       ] Not reachable yet
+03:43.781	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:43.781	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:44.446	ID:7	[INFO: App       ] Not reachable yet
+03:44.713	ID:13	[INFO: App       ] Not reachable yet
+03:44.795	ID:14	[INFO: App       ] Not reachable yet
+03:44.865	ID:12	[INFO: App       ] Not reachable yet
+03:45.342	ID:8	[INFO: App       ] Not reachable yet
+03:45.569	ID:9	[INFO: App       ] Not reachable yet
+03:46.573	ID:4	[INFO: App       ] Not reachable yet
+03:46.967	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:46.967	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:47.279	ID:15	[INFO: App       ] Not reachable yet
+03:47.281	ID:11	[INFO: App       ] Not reachable yet
+03:47.890	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:47.890	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:48.473	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:48.473	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:48.599	ID:6	[INFO: App       ] Not reachable yet
+03:48.660	ID:5	[INFO: App       ] Not reachable yet
+03:49.032	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:49.032	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:49.946	ID:2	[INFO: App       ] Not reachable yet
+03:50.441	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:50.441	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:52.491	ID:10	[INFO: App       ] Not reachable yet
+03:52.944	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:52.944	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:53.427	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:53.427	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:53.536	ID:3	[INFO: App       ] Not reachable yet
+03:54.585	ID:8	[INFO: App       ] Not reachable yet
+03:55.148	ID:14	[INFO: App       ] Not reachable yet
+03:55.219	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:55.219	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:55.288	ID:12	[INFO: App       ] Not reachable yet
+03:55.297	ID:7	[INFO: App       ] Not reachable yet
+03:55.305	ID:9	[INFO: App       ] Not reachable yet
+03:55.553	ID:13	[INFO: App       ] Not reachable yet
+03:56.193	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:56.193	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:56.365	ID:11	[INFO: App       ] Not reachable yet
+03:56.468	ID:4	[INFO: App       ] Not reachable yet
+03:57.151	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:57.151	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:57.428	ID:15	[INFO: App       ] Not reachable yet
+03:57.921	ID:6	[INFO: App       ] Not reachable yet
+03:58.162	ID:5	[INFO: App       ] Not reachable yet
+03:59.000	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+03:59.000	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+03:59.069	ID:2	[INFO: App       ] Not reachable yet
+04:00.741	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:00.741	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:02.169	ID:10	[INFO: App       ] Not reachable yet
+04:03.577	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:03.577	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:04.183	ID:3	[INFO: App       ] Not reachable yet
+04:04.273	ID:8	[INFO: App       ] Not reachable yet
+04:04.803	ID:13	[INFO: App       ] Not reachable yet
+04:05.512	ID:14	[INFO: App       ] Not reachable yet
+04:05.543	ID:12	[INFO: App       ] Not reachable yet
+04:05.832	ID:7	[INFO: App       ] Not reachable yet
+04:06.124	ID:9	[INFO: App       ] Not reachable yet
+04:06.216	ID:4	[INFO: App       ] Not reachable yet
+04:06.320	ID:11	[INFO: App       ] Not reachable yet
+04:06.330	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:06.330	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:06.577	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:06.577	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:06.675	ID:15	[INFO: App       ] Not reachable yet
+04:07.838	ID:5	[INFO: App       ] Not reachable yet
+04:08.113	ID:6	[INFO: App       ] Not reachable yet
+04:09.039	ID:2	[INFO: App       ] Not reachable yet
+04:12.242	ID:10	[INFO: App       ] Not reachable yet
+04:13.846	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:13.846	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:14.412	ID:3	[INFO: App       ] Not reachable yet
+04:14.430	ID:13	[INFO: App       ] Not reachable yet
+04:14.517	ID:14	[INFO: App       ] Not reachable yet
+04:14.780	ID:8	[INFO: App       ] Not reachable yet
+04:14.946	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:14.946	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:15.253	ID:9	[INFO: App       ] Not reachable yet
+04:15.316	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:15.316	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:15.615	ID:12	[INFO: App       ] Not reachable yet
+04:15.663	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:15.663	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:15.834	ID:7	[INFO: App       ] Not reachable yet
+04:16.389	ID:11	[INFO: App       ] Not reachable yet
+04:16.495	ID:15	[INFO: App       ] Not reachable yet
+04:17.161	ID:4	[INFO: App       ] Not reachable yet
+04:17.803	ID:5	[INFO: App       ] Not reachable yet
+04:18.438	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:18.438	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:19.043	ID:6	[INFO: App       ] Not reachable yet
+04:19.154	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:19.154	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:19.719	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:19.719	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:19.866	ID:2	[INFO: App       ] Not reachable yet
+04:20.150	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:20.150	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:22.195	ID:10	[INFO: App       ] Not reachable yet
+04:24.271	ID:3	[INFO: App       ] Not reachable yet
+04:24.311	ID:13	[INFO: App       ] Not reachable yet
+04:24.386	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:24.386	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:24.862	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:24.862	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:25.312	ID:14	[INFO: App       ] Not reachable yet
+04:25.437	ID:12	[INFO: App       ] Not reachable yet
+04:25.697	ID:11	[INFO: App       ] Not reachable yet
+04:25.708	ID:8	[INFO: App       ] Not reachable yet
+04:25.974	ID:9	[INFO: App       ] Not reachable yet
+04:26.058	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:26.058	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:26.152	ID:7	[INFO: App       ] Not reachable yet
+04:26.391	ID:15	[INFO: App       ] Not reachable yet
+04:26.678	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:26.678	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:27.796	ID:4	[INFO: App       ] Not reachable yet
+04:28.374	ID:6	[INFO: App       ] Not reachable yet
+04:28.421	ID:5	[INFO: App       ] Not reachable yet
+04:29.737	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:29.737	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:30.555	ID:2	[INFO: App       ] Not reachable yet
+04:31.120	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:31.120	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:31.363	ID:10	[INFO: App       ] Not reachable yet
+04:31.858	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:31.858	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:32.837	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:32.837	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:33.572	ID:13	[INFO: App       ] Not reachable yet
+04:33.856	ID:3	[INFO: App       ] Not reachable yet
+04:34.354	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:34.354	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:35.110	ID:9	[INFO: App       ] Not reachable yet
+04:35.635	ID:11	[INFO: App       ] Not reachable yet
+04:35.967	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:35.967	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:36.030	ID:12	[INFO: App       ] Not reachable yet
+04:36.254	ID:14	[INFO: App       ] Not reachable yet
+04:36.302	ID:8	[INFO: App       ] Not reachable yet
+04:36.636	ID:7	[INFO: App       ] Not reachable yet
+04:37.019	ID:15	[INFO: App       ] Not reachable yet
+04:37.554	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:37.554	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:37.609	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:37.609	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:38.483	ID:4	[INFO: App       ] Not reachable yet
+04:38.670	ID:5	[INFO: App       ] Not reachable yet
+04:39.054	ID:6	[INFO: App       ] Not reachable yet
+04:39.821	ID:2	[INFO: App       ] Not reachable yet
+04:41.711	ID:10	[INFO: App       ] Not reachable yet
+04:41.721	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:41.721	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:43.956	ID:13	[INFO: App       ] Not reachable yet
+04:44.168	ID:9	[INFO: App       ] Not reachable yet
+04:44.403	ID:3	[INFO: App       ] Not reachable yet
+04:44.569	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:44.569	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:45.556	ID:11	[INFO: App       ] Not reachable yet
+04:46.159	ID:8	[INFO: App       ] Not reachable yet
+04:46.366	ID:12	[INFO: App       ] Not reachable yet
+04:47.023	ID:14	[INFO: App       ] Not reachable yet
+04:47.123	ID:15	[INFO: App       ] Not reachable yet
+04:47.267	ID:7	[INFO: App       ] Not reachable yet
+04:48.585	ID:6	[INFO: App       ] Not reachable yet
+04:48.723	ID:5	[INFO: App       ] Not reachable yet
+04:49.137	ID:4	[INFO: App       ] Not reachable yet
+04:49.165	ID:2	[INFO: App       ] Not reachable yet
+04:51.131	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:51.131	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:51.416	ID:10	[INFO: App       ] Not reachable yet
+04:53.449	ID:9	[INFO: App       ] Not reachable yet
+04:53.551	ID:13	[INFO: App       ] Not reachable yet
+04:54.973	ID:11	[INFO: App       ] Not reachable yet
+04:55.264	ID:3	[INFO: App       ] Not reachable yet
+04:55.556	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+04:55.556	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+04:56.615	ID:7	[INFO: App       ] Not reachable yet
+04:56.657	ID:14	[INFO: App       ] Not reachable yet
+04:56.703	ID:8	[INFO: App       ] Not reachable yet
+04:56.729	ID:12	[INFO: App       ] Not reachable yet
+04:57.383	ID:15	[INFO: App       ] Not reachable yet
+04:57.652	ID:6	[INFO: App       ] Not reachable yet
+04:59.373	ID:5	[INFO: App       ] Not reachable yet
+04:59.728	ID:4	[INFO: App       ] Not reachable yet
+05:00.095	ID:2	[INFO: App       ] Not reachable yet
+05:01.538	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:01.538	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:02.187	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:02.187	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:02.338	ID:10	[INFO: App       ] Not reachable yet
+05:02.514	ID:9	[INFO: App       ] Not reachable yet
+05:02.615	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:02.615	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:03.083	ID:13	[INFO: App       ] Not reachable yet
+05:04.846	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:04.846	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:05.392	ID:3	[INFO: App       ] Not reachable yet
+05:05.445	ID:11	[INFO: App       ] Not reachable yet
+05:05.941	ID:7	[INFO: App       ] Not reachable yet
+05:06.074	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:06.074	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:06.151	ID:12	[INFO: App       ] Not reachable yet
+05:06.286	ID:14	[INFO: App       ] Not reachable yet
+05:06.777	ID:8	[INFO: App       ] Not reachable yet
+05:06.987	ID:6	[INFO: App       ] Not reachable yet
+05:07.346	ID:15	[INFO: App       ] Not reachable yet
+05:07.515	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:07.515	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:08.283	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:08.283	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:08.814	ID:5	[INFO: App       ] Not reachable yet
+05:10.104	ID:4	[INFO: App       ] Not reachable yet
+05:10.134	ID:2	[INFO: App       ] Not reachable yet
+05:10.379	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:10.379	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:12.673	ID:13	[INFO: App       ] Not reachable yet
+05:13.154	ID:9	[INFO: App       ] Not reachable yet
+05:13.320	ID:10	[INFO: App       ] Not reachable yet
+05:13.515	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:13.515	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:13.625	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:13.625	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:14.058	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:14.058	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:14.458	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:14.458	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:14.761	ID:3	[INFO: App       ] Not reachable yet
+05:15.747	ID:14	[INFO: App       ] Not reachable yet
+05:15.762	ID:7	[INFO: App       ] Not reachable yet
+05:15.763	ID:11	[INFO: App       ] Not reachable yet
+05:16.061	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:16.061	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:16.115	ID:6	[INFO: App       ] Not reachable yet
+05:16.269	ID:8	[INFO: App       ] Not reachable yet
+05:17.030	ID:15	[INFO: App       ] Not reachable yet
+05:17.129	ID:12	[INFO: App       ] Not reachable yet
+05:19.172	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:19.172	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:19.203	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:19.203	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:19.269	ID:5	[INFO: App       ] Not reachable yet
+05:19.708	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:19.708	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:20.252	ID:2	[INFO: App       ] Not reachable yet
+05:20.589	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:20.589	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:20.803	ID:4	[INFO: App       ] Not reachable yet
+05:21.992	ID:13	[INFO: App       ] Not reachable yet
+05:22.378	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:22.378	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:22.740	ID:9	[INFO: App       ] Not reachable yet
+05:24.235	ID:10	[INFO: App       ] Not reachable yet
+05:24.611	ID:3	[INFO: App       ] Not reachable yet
+05:25.248	ID:11	[INFO: App       ] Not reachable yet
+05:25.341	ID:8	[INFO: App       ] Not reachable yet
+05:25.510	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:25.510	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:25.516	ID:6	[INFO: App       ] Not reachable yet
+05:26.049	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:26.049	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:26.247	ID:15	[INFO: App       ] Not reachable yet
+05:26.458	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:26.458	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:26.613	ID:7	[INFO: App       ] Not reachable yet
+05:26.658	ID:14	[INFO: App       ] Not reachable yet
+05:27.441	ID:12	[INFO: App       ] Not reachable yet
+05:29.357	ID:5	[INFO: App       ] Not reachable yet
+05:30.765	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:30.765	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:31.095	ID:4	[INFO: App       ] Not reachable yet
+05:31.238	ID:2	[INFO: App       ] Not reachable yet
+05:32.702	ID:9	[INFO: App       ] Not reachable yet
+05:32.805	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:32.805	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:32.812	ID:13	[INFO: App       ] Not reachable yet
+05:34.278	ID:11	[INFO: App       ] Not reachable yet
+05:34.738	ID:10	[INFO: App       ] Not reachable yet
+05:34.856	ID:6	[INFO: App       ] Not reachable yet
+05:35.267	ID:8	[INFO: App       ] Not reachable yet
+05:35.388	ID:3	[INFO: App       ] Not reachable yet
+05:36.008	ID:14	[INFO: App       ] Not reachable yet
+05:36.570	ID:7	[INFO: App       ] Not reachable yet
+05:36.580	ID:15	[INFO: App       ] Not reachable yet
+05:36.882	ID:12	[INFO: App       ] Not reachable yet
+05:39.126	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:39.126	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:39.433	ID:5	[INFO: App       ] Not reachable yet
+05:40.514	ID:2	[INFO: App       ] Not reachable yet
+05:41.982	ID:4	[INFO: App       ] Not reachable yet
+05:42.614	ID:9	[INFO: App       ] Not reachable yet
+05:43.300	ID:13	[INFO: App       ] Not reachable yet
+05:43.858	ID:10	[INFO: App       ] Not reachable yet
+05:44.629	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:44.629	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:44.651	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:44.651	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:44.781	ID:11	[INFO: App       ] Not reachable yet
+05:44.876	ID:8	[INFO: App       ] Not reachable yet
+05:45.237	ID:6	[INFO: App       ] Not reachable yet
+05:46.179	ID:7	[INFO: App       ] Not reachable yet
+05:46.254	ID:3	[INFO: App       ] Not reachable yet
+05:46.554	ID:14	[INFO: App       ] Not reachable yet
+05:46.577	ID:15	[INFO: App       ] Not reachable yet
+05:47.832	ID:12	[INFO: App       ] Not reachable yet
+05:49.256	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:49.256	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:49.842	ID:2	[INFO: App       ] Not reachable yet
+05:50.144	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:50.144	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:50.312	ID:5	[INFO: App       ] Not reachable yet
+05:50.401	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:50.401	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:51.311	ID:4	[INFO: App       ] Not reachable yet
+05:51.675	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:51.675	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:52.619	ID:13	[INFO: App       ] Not reachable yet
+05:52.706	ID:9	[INFO: App       ] Not reachable yet
+05:53.960	ID:10	[INFO: App       ] Not reachable yet
+05:54.139	ID:11	[INFO: App       ] Not reachable yet
+05:55.096	ID:6	[INFO: App       ] Not reachable yet
+05:55.442	ID:8	[INFO: App       ] Not reachable yet
+05:55.724	ID:7	[INFO: App       ] Not reachable yet
+05:56.112	ID:14	[INFO: App       ] Not reachable yet
+05:56.445	ID:3	[INFO: App       ] Not reachable yet
+05:56.736	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:56.736	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:56.824	ID:15	[INFO: App       ] Not reachable yet
+05:57.057	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:57.057	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:57.695	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:57.695	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+05:57.930	ID:12	[INFO: App       ] Not reachable yet
+05:59.590	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+05:59.590	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:00.071	ID:5	[INFO: App       ] Not reachable yet
+06:00.428	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:00.428	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:00.706	ID:2	[INFO: App       ] Not reachable yet
+06:00.975	ID:4	[INFO: App       ] Not reachable yet
+06:02.007	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:02.007	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:03.059	ID:13	[INFO: App       ] Not reachable yet
+06:03.122	ID:9	[INFO: App       ] Not reachable yet
+06:03.880	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:03.880	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:04.081	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:04.081	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:04.152	ID:10	[INFO: App       ] Not reachable yet
+06:04.789	ID:11	[INFO: App       ] Not reachable yet
+06:05.060	ID:6	[INFO: App       ] Not reachable yet
+06:05.096	ID:8	[INFO: App       ] Not reachable yet
+06:05.795	ID:7	[INFO: App       ] Not reachable yet
+06:06.038	ID:14	[INFO: App       ] Not reachable yet
+06:06.314	ID:15	[INFO: App       ] Not reachable yet
+06:06.443	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:06.443	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:07.262	ID:3	[INFO: App       ] Not reachable yet
+06:07.893	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:07.893	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:08.281	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:08.281	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:08.849	ID:12	[INFO: App       ] Not reachable yet
+06:09.890	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:09.890	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:10.474	ID:2	[INFO: App       ] Not reachable yet
+06:10.706	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:10.706	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:10.814	ID:5	[INFO: App       ] Not reachable yet
+06:11.814	ID:4	[INFO: App       ] Not reachable yet
+06:12.284	ID:13	[INFO: App       ] Not reachable yet
+06:12.446	ID:9	[INFO: App       ] Not reachable yet
+06:13.696	ID:10	[INFO: App       ] Not reachable yet
+06:14.655	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:14.655	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:14.658	ID:11	[INFO: App       ] Not reachable yet
+06:14.737	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:14.737	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:15.410	ID:8	[INFO: App       ] Not reachable yet
+06:15.687	ID:6	[INFO: App       ] Not reachable yet
+06:16.106	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:16.106	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:16.719	ID:7	[INFO: App       ] Not reachable yet
+06:16.721	ID:14	[INFO: App       ] Not reachable yet
+06:16.923	ID:15	[INFO: App       ] Not reachable yet
+06:17.544	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:17.544	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:17.839	ID:3	[INFO: App       ] Not reachable yet
+06:18.991	ID:12	[INFO: App       ] Not reachable yet
+06:20.518	ID:2	[INFO: App       ] Not reachable yet
+06:20.985	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:20.985	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:21.367	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:21.367	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:21.429	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:21.429	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:21.487	ID:5	[INFO: App       ] Not reachable yet
+06:22.296	ID:4	[INFO: App       ] Not reachable yet
+06:22.569	ID:9	[INFO: App       ] Not reachable yet
+06:22.592	ID:13	[INFO: App       ] Not reachable yet
+06:23.203	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:23.203	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:24.038	ID:11	[INFO: App       ] Not reachable yet
+06:24.605	ID:10	[INFO: App       ] Not reachable yet
+06:24.723	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:24.723	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:26.042	ID:8	[INFO: App       ] Not reachable yet
+06:26.139	ID:15	[INFO: App       ] Not reachable yet
+06:26.584	ID:6	[INFO: App       ] Not reachable yet
+06:27.158	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:27.158	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
+06:27.178	ID:3	[INFO: App       ] Not reachable yet
+06:27.304	ID:7	[INFO: App       ] Not reachable yet
+06:27.556	ID:14	[INFO: App       ] Not reachable yet
+06:29.733	ID:2	[INFO: App       ] Not reachable yet
+06:29.778	ID:12	[INFO: App       ] Not reachable yet
+06:30.126	ID:16	[WARN: IPv6      ] BLACKHOLE: forward check hit
+06:30.126	ID:16	[WARN: IPv6      ] BLACKHOLE: dropping forwarded packet
