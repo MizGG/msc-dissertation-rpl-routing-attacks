@@ -1,14 +1,30 @@
 # Development History
 
 Git version control for this dissertation recovery repository was introduced on
-17 August 2026. The files in this repository were not created by a historical
-Git timeline. Files labelled as backups, earlier versions, or `before` variants
-are recovered development artefacts created before Git tracking began.
+17 August 2026. The first preservation commit is `2a655c3`:
+
+`Initial dissertation preservation: recovered development history and experiment evidence`
+
+The files in this repository were not created by a historical Git timeline.
+Files labelled as backups, earlier versions, or `before` variants are recovered
+development artefacts created before Git tracking began.
 
 This repository is therefore intended to preserve the MSc dissertation
-development record honestly: the first Git commit will record the recovered
-state as it exists now, not fabricate earlier commit dates or pretend that Git
-was used during the original experimentation.
+development record honestly: the first Git commit records the recovered state
+as it existed on 17 August 2026, not fabricated earlier commit dates or a
+pretence that Git was used during the original experimentation.
+
+Many files in commit `2a655c3` were created or modified before Git tracking
+began. Their surviving filesystem modification timestamps, experiment
+timestamps, backup filenames, source snapshots, SHA256 manifests, and archive
+contents are preserved as historical development evidence. The Git commit date
+must not be interpreted as the date every contained file was originally
+developed.
+
+Filesystem timestamp evidence recovered after the first preservation commit is
+listed in:
+
+- `HISTORICAL_FILE_TIMESTAMPS.csv`
 
 ## Preservation Policy
 
@@ -24,6 +40,29 @@ development evidence:
 
 These files may include superseded or intermediate work. They should not be
 deleted merely because a later final experiment exists.
+
+## Earliest Surviving Evidence Dates
+
+The following dates come from filesystem modification timestamps that survived
+on disk at recovery time. They are evidence, not a complete authorship timeline.
+
+| Area | Earliest surviving timestamp | Evidence path |
+| --- | --- | --- |
+| Baseline RPL/UDP | 2026-06-25 14:35:24 +0100 | `experiments/blackhole/final_corrected_240s_540s/code/udp-client.c`, `experiments/blackhole/final_corrected_240s_540s/code/udp-server.c` |
+| Baseline RPL/UDP configuration | 2026-07-02 14:14:00 +0100 | `rpl-udp-cooja.csc`, `rpl-udp-sky.csc`, `README.md` |
+| DIS flooding | 2026-07-02 14:20:18 +0100 | `dis-flooder.c` |
+| DIS flooding control | 2026-07-02 16:19:32 +0100 | `silent-mote.c` |
+| Blackhole stack hook evidence | 2026-07-02 16:52:02 +0100 | `contiki-ng-modifications/history/os/net/ipv6/uip6.c.backup-before-blackhole` |
+| Blackhole application evidence | 2026-07-02 16:53:30 +0100 | `blackhole-node.c` |
+| Blackhole Cooja experiment evidence | 2026-07-05 12:54:58 +0100 | `blackhole 16 mote.csc` |
+| Increase-rank development | 2026-07-27 16:16:56 +0100 | `contiki-ng-modifications/history/os/net/routing/rpl-lite/rpl-icmp6.c.before-increase-rank` |
+| Increase-rank snapshot / pre-sinkhole RPL file | 2026-07-27 16:26:55 +0100 | `rpl-icmp6_before_sinkhole_hook.c.backup`, `experiments/blackhole/final_corrected_240s_540s/code/rpl-icmp6_snapshot.c` |
+| Blackhole timing/shared flag fixes | 2026-08-12 12:32:18 +0100 | `blackhole-router_before_shared_flag_fix.c`, `blackhole-router_before_timing_fix.c.backup` |
+| Final blackhole corrected code | 2026-08-17 13:12:04 +0100 | `blackhole-router.c`, `experiments/blackhole/final_corrected_240s_540s/code/blackhole-router.c` |
+| Final blackhole corrected configurations | 2026-08-17 13:20:22 +0100 | `BH_ATTACK_N16_SEED*.csc`, `BH_CONTROL_N16_SEED*.csc` |
+| Final blackhole corrected logs | 2026-08-17 13:21:49 +0100 | `experiments/blackhole/final_corrected_240s_540s/logs/` and `runs/` |
+| Final blackhole manifest/archive | 2026-08-17 13:27:10 +0100 / 2026-08-17 13:27:11 +0100 | `SHA256SUMS.txt`, `BH_FINAL_CORRECTED_N16_5SEEDS.zip` |
+| Sinkhole development | 2026-08-17 14:05:55 +0100 | `contiki-ng-modifications/current/os/net/routing/rpl-lite/rpl-icmp6.c` |
 
 ## Baseline RPL/UDP
 
