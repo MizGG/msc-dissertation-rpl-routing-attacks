@@ -24,6 +24,12 @@ Adaptation data were added by complete sinkhole seed, and testing used only unse
 
 This rejects the simplistic assumption that retraining alone resolves concept drift. The feature representation must expose the changed mechanism. Coarse application and radio-volume summaries show a pronounced blackhole effect but almost no sinkhole attack/control separation. Generic received-DIO rank and RPL-state features capture the persistent non-root rank-128 advertisement; they make limited, seed-separated adaptation effective.
 
+## Online Drift Detection
+
+A one-sided CUSUM monitor was calibrated on blackhole rank-state windows while excluding the matching seed, then applied to each complete sinkhole sequence in time order. It used only the stateful low-rank non-root pair, sender and receiver-exposure counts; labels and attack-marker fields were excluded from the monitor input. It detected 5 of 5 attack runs in the first post-activation window, with median delay 0 seconds and control-run false-alarm rate 0.0000.
+
+This result should be described precisely: the monitor detects the controlled rank-state change in this five-seed Cooja experiment. Since blackhole reference scores are all zero, calibration uses a non-zero minimum decision limit. It demonstrates that the routing representation exposes a timely shift signal, but does not validate universal deployment-level drift detection.
+
 ## External Dataset Check
 
 The supplied Gope collection contains 768,811 rows across eight attack files. Seven files include a supervised `TYPE` label and routing-aware fields; Worst Parent has no `TYPE` label and is excluded from the preliminary supervised baseline. A routing-aware Gaussian model trained on balanced blackhole rows and tested on balanced sinkhole rows achieved accuracy 0.5083, recall 0.0472 and F1 0.0876. The weak transfer is consistent with the Cooja finding, although the result is preliminary because the supplied CSVs do not provide simulation-run identifiers.

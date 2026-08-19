@@ -40,3 +40,17 @@ feature set.
 The ablation compares the same classifier using coarse traffic/radio features
 and coarse plus routing-state features. Gaussian Naive Bayes and a deterministic
 depth-limited CART classifier are both reported.
+
+## Online Drift Monitor
+
+`scripts/run_routing_drift_detector.py` evaluates a one-sided CUSUM monitor
+against complete sinkhole sequences. For each sinkhole seed it calibrates from
+the four blackhole seeds with the matching seed excluded. The monitor aggregates
+three non-leaking stateful low-rank features: non-root receiver/sender pairs,
+non-root senders and receivers exposed to those senders. Labels and attack
+markers are excluded from the monitor input and retained only for evaluating
+detection delay and false alarms.
+
+The blackhole reference score is zero in this controlled dataset, so the CUSUM
+uses an explicit non-zero minimum decision limit of 0.5. This is reported as a
+mechanism-aware controlled drift monitor, not as a universal deployment claim.

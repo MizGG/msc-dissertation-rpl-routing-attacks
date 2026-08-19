@@ -462,7 +462,7 @@ def feature_gap_rows() -> list[dict[str, object]]:
 
 
 def render_interpretation(
-    master: list[dict[str, object]], diagnostics: list[dict[str, str]]
+    master: list[dict[str, object]], diagnostics: list[dict[str, str]], drift_summary: dict[str, str]
 ) -> str:
     by_id = {str(row["result_id"]): row for row in master}
     diagnostic_map = {(row["family"], row["feature"]): row for row in diagnostics}
@@ -489,7 +489,8 @@ The experiments support a bounded claim: an IDS trained on blackhole behaviour d
 2. **Static transfer fails after the attack mechanism changes.** The run-level blackhole model classified all five sinkhole attacks as normal, giving recall and F1 of 0. At window level, recall and F1 also remained 0. The apparent accuracy of {float(window_static['accuracy']):.4f} is only the majority-class baseline: 65 of 90 sinkhole evaluation windows are normal, and the model predicted every window as normal.
 3. **Coarse-feature adaptation is representation-limited.** The earlier Gaussian window model reached recall {float(window_adapted['recall']):.4f} after three adaptation seeds, but its FPR rose to {float(window_adapted['fpr']):.4f}. Routing-experiment CART with three seeds and coarse features remains weak (recall {float(routing_coarse['recall']):.4f}, F1 {float(routing_coarse['f1']):.4f}).
 4. **Routing-aware adaptation succeeds on held-out seeds.** Static routing-aware CART still has zero recall and F1 ({float(routing_static['recall']):.4f} and {float(routing_static['f1']):.4f}), preserving the drift finding. After three whole-seed adaptation runs, CART with routing features reaches accuracy {float(routing_adapted['accuracy']):.4f}, precision {float(routing_adapted['precision']):.4f}, recall {float(routing_adapted['recall']):.4f}, F1 {float(routing_adapted['f1']):.4f} and FPR {float(routing_adapted['fpr']):.4f}.
-5. **The supplied Gope data independently supports the transfer problem.** A preliminary routing-aware Gaussian model trained on Gope blackhole rows achieved only {float(gope_shift['recall']):.4f} recall and {float(gope_shift['f1']):.4f} F1 on Gope sinkhole rows. This is corroborating evidence, not a direct replication, because the supplied files expose no run identifiers and the current split is row-based.
+5. **An online routing-state monitor identifies the change point.** A one-sided CUSUM monitor fitted only on blackhole windows detected {drift_summary['attacks_detected_without_prealarm']} of {drift_summary['attack_runs']} held-out sinkhole attack runs, with a median delay of {drift_summary['median_detection_delay_s']} seconds and control-run false-alarm rate {float(drift_summary['control_false_alarm_rate']):.4f}. The monitor uses only generic low-rank RPL state, not labels or attack markers.
+6. **The supplied Gope data independently supports the transfer problem.** A preliminary routing-aware Gaussian model trained on Gope blackhole rows achieved only {float(gope_shift['recall']):.4f} recall and {float(gope_shift['f1']):.4f} F1 on Gope sinkhole rows. This is corroborating evidence, not a direct replication, because the supplied files expose no run identifiers and the current split is row-based.
 
 ## Mechanistic Interpretation
 
@@ -502,12 +503,13 @@ The routing-aware experiment instruments generic RPL INFO logs for DIO/DAO/DIS t
 - The Cooja dataset has five matched seeds per attack/control condition. This is adequate for a controlled proof of concept but too small for broad deployment claims.
 - Adaptation and evaluation are separated by complete Cooja seed, preventing windows or runs from the same simulation entering both sets.
 - Explicit blackhole and sinkhole log markers are excluded from model inputs; they are retained only to validate attack activation.
+- The CUSUM threshold is calibrated from blackhole rank-state windows and has a minimum non-zero limit because every reference rank-state score is zero. It is a controlled mechanism-aware monitor, not a universal deployment claim.
 - The Gope baseline is preliminary because the source files lack run identifiers. Random row holdout may inflate in-domain performance, so it must not be presented as a final paper reproduction.
 - Mean adaptation scores average overlapping combinations of held-out seeds. They describe sensitivity across the available seeds, not independent repeated trials.
 
 ## Defensible Dissertation Conclusion So Far
 
-The strongest conclusion is that adaptation depends on representation and model choice. A static detector fails under the controlled blackhole-to-sinkhole change even after routing features are added. Retraining with coarse features also remains ineffective. However, limited whole-seed adaptation with routing-state features and CART restores held-out sinkhole detection with high F1 and no observed false positives. This is a defensible Master's-level result because it ties model recovery to the RPL mechanism rather than claiming retraining is universally sufficient.
+The strongest conclusion is that adaptation depends on representation and model choice. A static detector fails under the controlled blackhole-to-sinkhole change even after routing features are added. Retraining with coarse features also remains ineffective. However, limited whole-seed adaptation with routing-state features and CART restores held-out sinkhole detection with high F1 and no observed false positives. The same routing state also provides a timely controlled drift signal. This is a defensible Master's-level result because it ties both model recovery and change monitoring to the RPL mechanism rather than claiming universal deployment performance.
 """
 
 
@@ -516,7 +518,7 @@ def metric_table_row(label: str, row: dict[str, object]) -> str:
     return f"| {label} | {values} |"
 
 
-def render_results_section(master: list[dict[str, object]]) -> str:
+def render_results_section(master: list[dict[str, object]], drift_summary: dict[str, str]) -> str:
     rows = {str(row["result_id"]): row for row in master}
     table = "\n".join([
         metric_table_row("Cooja run, blackhole in-domain", rows["cooja_run_blackhole_in_domain"]),
@@ -547,6 +549,12 @@ Adaptation data were added by complete sinkhole seed, and testing used only unse
 
 This rejects the simplistic assumption that retraining alone resolves concept drift. The feature representation must expose the changed mechanism. Coarse application and radio-volume summaries show a pronounced blackhole effect but almost no sinkhole attack/control separation. Generic received-DIO rank and RPL-state features capture the persistent non-root rank-128 advertisement; they make limited, seed-separated adaptation effective.
 
+## Online Drift Detection
+
+A one-sided CUSUM monitor was calibrated on blackhole rank-state windows while excluding the matching seed, then applied to each complete sinkhole sequence in time order. It used only the stateful low-rank non-root pair, sender and receiver-exposure counts; labels and attack-marker fields were excluded from the monitor input. It detected {drift_summary['attacks_detected_without_prealarm']} of {drift_summary['attack_runs']} attack runs in the first post-activation window, with median delay {drift_summary['median_detection_delay_s']} seconds and control-run false-alarm rate {float(drift_summary['control_false_alarm_rate']):.4f}.
+
+This result should be described precisely: the monitor detects the controlled rank-state change in this five-seed Cooja experiment. Since blackhole reference scores are all zero, calibration uses a non-zero minimum decision limit. It demonstrates that the routing representation exposes a timely shift signal, but does not validate universal deployment-level drift detection.
+
 ## External Dataset Check
 
 The supplied Gope collection contains 768,811 rows across eight attack files. Seven files include a supervised `TYPE` label and routing-aware fields; Worst Parent has no `TYPE` label and is excluded from the preliminary supervised baseline. A routing-aware Gaussian model trained on balanced blackhole rows and tested on balanced sinkhole rows achieved accuracy 0.5083, recall 0.0472 and F1 0.0876. The weak transfer is consistent with the Cooja finding, although the result is preliminary because the supplied CSVs do not provide simulation-run identifiers.
@@ -573,6 +581,7 @@ def main() -> None:
         "gope_audit": read_csv(args.experiments_dir / "gope_dataset/audit_summary.csv"),
         "gope_results": read_csv(args.experiments_dir / "gope_dataset/gope_baseline_results.csv"),
         "feature_diagnostics": read_csv(args.experiments_dir / "ml_baseline/feature_diagnostics.csv"),
+        "drift_summary": read_csv(args.experiments_dir / "routing_features_v1/results/drift_detector_summary.csv"),
     }
 
     master = build_master(inputs)
@@ -584,13 +593,15 @@ def main() -> None:
     write_csv(args.out_dir / "gope_dataset_row_counts.csv", build_gope_counts(inputs["gope_audit"]))
     write_csv(args.out_dir / "feature_gap_summary.csv", feature_gap_rows())
     (args.out_dir / "results_interpretation.md").write_text(
-        render_interpretation(master, inputs["feature_diagnostics"]), encoding="utf-8"
+        render_interpretation(master, inputs["feature_diagnostics"], inputs["drift_summary"][0]), encoding="utf-8"
     )
-    (args.out_dir / "DISSERTATION_RESULTS_SO_FAR.md").write_text(render_results_section(master), encoding="utf-8")
+    (args.out_dir / "DISSERTATION_RESULTS_SO_FAR.md").write_text(
+        render_results_section(master, inputs["drift_summary"][0]), encoding="utf-8"
+    )
     (args.out_dir / "README.md").write_text(
         "# Consolidated Results Package\n\n"
         "Run `python3 scripts/build_results_summary.py` from the repository root to regenerate this directory.\n\n"
-        "The CSV files are figure-ready source tables. The Markdown files contain a concise interpretation and a dissertation-ready results section. All values are derived from the preserved Cooja and supplied-Gope experiment outputs; no attack-marker field is used as a model feature.\n",
+        "The CSV files are figure-ready source tables. The Markdown files contain a concise interpretation and a dissertation-ready results section. All values are derived from the preserved Cooja and supplied-Gope experiment outputs; no attack-marker field is used as an IDS or drift-monitor input.\n",
         encoding="utf-8",
     )
     print(f"Wrote {len(master)} consolidated results to {args.out_dir}")
