@@ -13,6 +13,7 @@ import csv
 import math
 import random
 from collections import Counter
+from itertools import combinations
 from pathlib import Path
 
 
@@ -160,6 +161,79 @@ def evaluate(name: str, train: list[dict[str, str]], test: list[dict[str, str]])
     return {"experiment": name, "train_runs": len(train), **result}
 
 
+def evaluate_adaptation_curve(blackhole: list[dict[str, str]], sinkhole: list[dict[str, str]]) -> list[dict[str, str | float | int]]:
+    sinkhole_seeds = sorted({row["seed"] for row in sinkhole})
+    results: list[dict[str, str | float | int]] = []
+
+    static = evaluate("adapt_0_static_blackhole_only", blackhole, sinkhole)
+    static.update({
+        "adaptation_seed_count": 0,
+        "adaptation_runs": 0,
+        "adaptation_seeds": "",
+        "test_seeds": ",".join(sinkhole_seeds),
+    })
+    results.append(static)
+
+    max_adaptation_seeds = min(3, len(sinkhole_seeds) - 1)
+    for adaptation_count in range(1, max_adaptation_seeds + 1):
+        for adaptation_seeds_tuple in combinations(sinkhole_seeds, adaptation_count):
+            adaptation_seeds = set(adaptation_seeds_tuple)
+            adaptation_rows = [row for row in sinkhole if row["seed"] in adaptation_seeds]
+            test_rows = [row for row in sinkhole if row["seed"] not in adaptation_seeds]
+            result = evaluate(
+                f"adapt_{adaptation_count}_sinkhole_seed_combo",
+                blackhole + adaptation_rows,
+                test_rows,
+            )
+            result.update({
+                "adaptation_seed_count": adaptation_count,
+                "adaptation_runs": len(adaptation_rows),
+                "adaptation_seeds": ",".join(adaptation_seeds_tuple),
+                "test_seeds": ",".join(seed for seed in sinkhole_seeds if seed not in adaptation_seeds),
+            })
+            results.append(result)
+
+    return results
+
+
+def summarise_adaptation(results: list[dict[str, str | float | int]]) -> list[dict[str, str | float | int]]:
+    grouped: dict[int, list[dict[str, str | float | int]]] = {}
+    for row in results:
+        grouped.setdefault(int(row["adaptation_seed_count"]), []).append(row)
+
+    summaries: list[dict[str, str | float | int]] = []
+    for adaptation_seed_count, rows in sorted(grouped.items()):
+        summaries.append({
+            "adaptation_sinkhole_seeds": adaptation_seed_count,
+            "adaptation_runs": int(rows[0]["adaptation_runs"]),
+            "splits": len(rows),
+            "mean_accuracy": round(sum(float(row["accuracy"]) for row in rows) / len(rows), 4),
+            "mean_precision": round(sum(float(row["precision"]) for row in rows) / len(rows), 4),
+            "mean_recall": round(sum(float(row["recall"]) for row in rows) / len(rows), 4),
+            "mean_f1": round(sum(float(row["f1"]) for row in rows) / len(rows), 4),
+        })
+    return summaries
+
+
+def feature_diagnostics(rows: list[dict[str, str]]) -> list[dict[str, str | float | int]]:
+    diagnostics: list[dict[str, str | float | int]] = []
+    for family in sorted({row["family"] for row in rows}):
+        family_rows = [row for row in rows if row["family"] == family]
+        attack_rows = [row for row in family_rows if row["mode"] == "attack"]
+        control_rows = [row for row in family_rows if row["mode"] == "control"]
+        for feature in FEATURES:
+            attack_mean = sum(float(row[feature] or 0) for row in attack_rows) / len(attack_rows)
+            control_mean = sum(float(row[feature] or 0) for row in control_rows) / len(control_rows)
+            diagnostics.append({
+                "family": family,
+                "feature": feature,
+                "attack_mean": round(attack_mean, 4),
+                "control_mean": round(control_mean, 4),
+                "difference": round(attack_mean - control_mean, 4),
+            })
+    return diagnostics
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--features", type=Path, default=Path("experiments/features/run_level_features.csv"))
@@ -186,6 +260,27 @@ def main() -> None:
         writer.writeheader()
         writer.writerows(results)
 
+    adaptation_results = evaluate_adaptation_curve(blackhole, sinkhole)
+    adaptation_csv = args.out_dir / "adaptation_curve.csv"
+    with adaptation_csv.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(adaptation_results[0].keys()))
+        writer.writeheader()
+        writer.writerows(adaptation_results)
+
+    adaptation_summary = summarise_adaptation(adaptation_results)
+    adaptation_summary_csv = args.out_dir / "adaptation_summary.csv"
+    with adaptation_summary_csv.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(adaptation_summary[0].keys()))
+        writer.writeheader()
+        writer.writerows(adaptation_summary)
+
+    diagnostics = feature_diagnostics(rows)
+    diagnostics_csv = args.out_dir / "feature_diagnostics.csv"
+    with diagnostics_csv.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(diagnostics[0].keys()))
+        writer.writeheader()
+        writer.writerows(diagnostics)
+
     notes = args.out_dir / "README.md"
     notes.write_text(
         "# Baseline IDS Results\n\n"
@@ -195,11 +290,20 @@ def main() -> None:
         "log counts are excluded from training to avoid label leakage.\n\n"
         "The main drift row is `concept_drift_train_blackhole_test_sinkhole`: "
         "a model trained on blackhole/control runs is evaluated on sinkhole/control "
-        "runs.\n",
+        "runs.\n\n"
+        "`adaptation_curve.csv` and `adaptation_summary.csv` evaluate recovery after "
+        "adding whole sinkhole seeds to the training set. Evaluation always uses "
+        "sinkhole seeds that were not used for adaptation.\n\n"
+        "`feature_diagnostics.csv` compares attack/control feature means by attack "
+        "family and helps explain whether the run-level feature set captures each "
+        "attack mechanism.\n",
         encoding="utf-8",
     )
 
     print(out_csv)
+    print(adaptation_csv)
+    print(adaptation_summary_csv)
+    print(diagnostics_csv)
 
 
 if __name__ == "__main__":

@@ -96,4 +96,6 @@ The Cooja-generated data should therefore be described as a controlled experimen
 
 ## Next Step
 
-The next experimental step is to compare a static detector with an adapted detector. A simple adaptation experiment would train initially on blackhole data, evaluate on sinkhole data, then update or retrain using sinkhole examples and measure whether detection performance recovers. This would connect the current concept-drift result more directly to adaptive IDS research in evolving 6LoWPAN environments.
+An initial adaptation experiment was then run by adding whole sinkhole seeds to the blackhole training set and evaluating only on held-out sinkhole seeds. The result did not recover sinkhole detection: mean F1 remained 0.00 after adding one, two, or three sinkhole seeds.
+
+This negative adaptation result is useful because it identifies the current bottleneck. The coarse run-level traffic features capture blackhole packet-dropping behaviour, but they do not capture sinkhole rank-manipulation behaviour in a useful non-leaking way. The next experimental step is therefore not simply to change the classifier, but to improve the feature representation using temporal-window, routing-parent, rank, DIO/DAO, or topology-change features that can expose sinkhole behaviour without relying on explicit attack log markers.

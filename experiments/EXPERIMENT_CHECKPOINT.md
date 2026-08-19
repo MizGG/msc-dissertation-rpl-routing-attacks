@@ -66,6 +66,13 @@ Baseline output:
 
 `experiments/ml_baseline/baseline_results.csv`
 
+Adaptation outputs:
+
+- `experiments/ml_baseline/adaptation_curve.csv`
+- `experiments/ml_baseline/adaptation_summary.csv`
+- `experiments/ml_baseline/feature_diagnostics.csv`
+- `experiments/ml_baseline/adaptation_interpretation.md`
+
 Summary:
 
 | Experiment | Accuracy | Precision | Recall | F1 |
@@ -77,12 +84,15 @@ Interpretation:
 
 The detector learns the blackhole attack pattern under same-family evaluation, but fails to identify sinkhole attacks when the attack distribution changes. This is the current concept-drift demonstration.
 
+The first adaptation experiment adds whole sinkhole seeds to training and evaluates on held-out sinkhole seeds. F1 remains 0.00 after adding up to three sinkhole seeds, indicating that the current coarse run-level features do not represent sinkhole rank manipulation well enough for recovery.
+
 ## Immediate Next Work
 
 1. Keep the simulation stage frozen temporarily.
 2. Write the dissertation experiment method and result section from the existing evidence.
-3. Add a small adaptation experiment: train on blackhole first, then retrain or update with sinkhole runs and compare static vs adapted performance.
-4. Add explanation output only after the static-vs-adapted drift result is stable.
+3. Improve feature extraction for sinkhole-specific behaviour using temporal-window, routing-parent, rank, DIO/DAO, or topology-change features.
+4. Re-run static, drift, and adaptation experiments with the improved feature representation.
+5. Add explanation output only after the feature representation and drift/adaptation result are stable.
 
 ## Git Hygiene
 
