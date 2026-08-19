@@ -1,0 +1,9 @@
+attack,rows,columns,has_TYPE_label,normal_rows,attack_rows
+blackhole,43442,71,1,29048,14394
+dio_suppression,117991,71,1,114669,3322
+dis_flooding,65740,71,1,47716,18024
+grayhole,92396,71,1,84981,7415
+increase_rank,222706,71,1,164221,58485
+sinkhole,26003,71,1,12995,13008
+wormhole,189683,71,1,97640,92043
+worst_parent,10850,46,0,,
