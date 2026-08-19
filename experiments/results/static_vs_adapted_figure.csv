@@ -3,4 +3,9 @@ cooja_run_blackhole_to_sinkhole_static,Cooja controlled dataset,complete run,0,0
 cooja_run_blackhole_to_sinkhole_adapt_3,Cooja controlled dataset,complete run,3,0.5,0.0,0.0,0.0,,
 cooja_window_blackhole_to_sinkhole_static,Cooja controlled dataset,60-second window,0,0.7222,0.0,0.0,0.0,0.0,0.0
 cooja_window_blackhole_to_sinkhole_adapt_3,Cooja controlled dataset,60-second window,3,0.4944,0.3547,1.0,0.5237,0.7332,0.7
+cooja_routing_cart_blackhole_to_sinkhole_static,Cooja routing-aware dataset,60-second window,0,0.7222,0.0,0.0,0.0,0.0,0.0
+cooja_routing_cart_coarse_adapt_3,Cooja routing-aware dataset,60-second window,3,0.7222,0.3083,0.06,0.0978,0.0709,0.0231
+cooja_routing_cart_adapt_1,Cooja routing-aware dataset,60-second window,1,0.925,1.0,0.73,0.8129,0.7574,0.0
+cooja_routing_cart_adapt_2,Cooja routing-aware dataset,60-second window,2,0.9648,1.0,0.8733,0.9087,0.8857,0.0
+cooja_routing_cart_adapt_3,Cooja routing-aware dataset,60-second window,3,0.9861,1.0,0.95,0.9731,0.9588,0.0
 gope_blackhole_to_sinkhole_static,Supplied Gope dataset,row,0,0.5083,0.6067,0.0472,0.0876,0.0579,0.0306

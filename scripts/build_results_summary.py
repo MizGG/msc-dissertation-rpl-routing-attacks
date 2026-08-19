@@ -52,6 +52,28 @@ def find_adaptation(rows: list[dict[str, str]], seeds: int) -> dict[str, str]:
     return find_row(rows, "adaptation_sinkhole_seeds", str(seeds))
 
 
+def find_routing_row(
+    rows: list[dict[str, str]],
+    model: str,
+    feature_set: str,
+    seeds: int | None = None,
+    experiment: str | None = None,
+) -> dict[str, str]:
+    matches = [
+        row
+        for row in rows
+        if row.get("model") == model
+        and row.get("feature_set") == feature_set
+        and (seeds is None or row.get("adaptation_sinkhole_seeds") == str(seeds))
+        and (experiment is None or row.get("experiment") == experiment)
+    ]
+    if len(matches) != 1:
+        raise ValueError(
+            f"Expected one routing row for {model=}, {feature_set=}, {seeds=}, {experiment=}; found {len(matches)}"
+        )
+    return matches[0]
+
+
 def write_csv(path: Path, rows: list[dict[str, object]], fields: list[str] | None = None) -> None:
     if not rows:
         raise ValueError(f"No rows to write for {path}")
@@ -143,6 +165,8 @@ def build_master(inputs: dict[str, list[dict[str, str]]]) -> list[dict[str, obje
     run_adaptation = inputs["run_adaptation"]
     window_results = inputs["window_results"]
     window_adaptation = inputs["window_adaptation"]
+    routing_results = inputs["routing_results"]
+    routing_adaptation = inputs["routing_adaptation"]
     gope_results = inputs["gope_results"]
 
     run_in_domain = aggregate([row for row in run_results if row["experiment"].startswith("blackhole_leave_seed_")])
@@ -157,6 +181,21 @@ def build_master(inputs: dict[str, list[dict[str, str]]]) -> list[dict[str, obje
     window_adapted = mean_metrics(find_adaptation(window_adaptation, 3))
     gope_all_row = find_row(gope_results, "experiment", "gope_balanced_routing_features_all_labelled_attacks")
     gope_shift_row = find_row(gope_results, "experiment", "gope_train_blackhole_test_sinkhole")
+    routing_static = direct_metrics(
+        find_routing_row(
+            routing_results,
+            "cart",
+            "coarse_plus_routing",
+            experiment="static_blackhole_to_sinkhole",
+        )
+    )
+    routing_coarse_adapted = mean_metrics(
+        find_routing_row(routing_adaptation, "cart", "coarse", 3)
+    )
+    routing_adapted = {
+        seeds: mean_metrics(find_routing_row(routing_adaptation, "cart", "coarse_plus_routing", seeds))
+        for seeds in (1, 2, 3)
+    }
 
     return [
         result_row(
@@ -246,6 +285,53 @@ def build_master(inputs: dict[str, list[dict[str, str]]]) -> list[dict[str, obje
             interpretation="Recall recovered to 1.0, but FPR rose to 0.70; this is an over-alerting trade-off, not clean recovery.",
         ),
         result_row(
+            result_id="cooja_routing_cart_blackhole_to_sinkhole_static",
+            dataset="Cooja routing-aware dataset",
+            feature_resolution="60-second window",
+            evaluation="static attack-distribution shift",
+            training_attack="blackhole",
+            test_attack="sinkhole",
+            adaptation_sinkhole_seeds=0,
+            split_method="train/test separated by attack family and complete seed",
+            splits=1,
+            train_units="90 windows",
+            **routing_static,
+            interpretation="Routing features alone do not remove static blackhole-to-sinkhole transfer failure.",
+        ),
+        result_row(
+            result_id="cooja_routing_cart_coarse_adapt_3",
+            dataset="Cooja routing-aware dataset",
+            feature_resolution="60-second window",
+            evaluation="three-seed adaptation feature ablation",
+            training_attack="blackhole plus sinkhole adaptation windows",
+            test_attack="held-out sinkhole",
+            adaptation_sinkhole_seeds=3,
+            split_method="mean over all 10 combinations of three adaptation seeds",
+            splits=10,
+            train_units="144 windows per split",
+            test_units="36 held-out windows per split",
+            **routing_coarse_adapted,
+            interpretation="Additional sinkhole examples do not recover detection using only coarse delivery and radio features.",
+        ),
+        *[
+            result_row(
+                result_id=f"cooja_routing_cart_adapt_{seeds}",
+                dataset="Cooja routing-aware dataset",
+                feature_resolution="60-second window",
+                evaluation=f"{seeds}-seed routing-aware adaptation",
+                training_attack="blackhole plus sinkhole adaptation windows",
+                test_attack="held-out sinkhole",
+                adaptation_sinkhole_seeds=seeds,
+                split_method=f"mean over all {5 if seeds == 1 else 10} combinations of {seeds} adaptation seeds",
+                splits=5 if seeds == 1 else 10,
+                train_units="routing windows from blackhole plus adaptation seeds",
+                test_units="held-out sinkhole windows",
+                **routing_adapted[seeds],
+                interpretation="Routing-state features expose persistent low-rank advertisements and enable seed-separated adaptation.",
+            )
+            for seeds in (1, 2, 3)
+        ],
+        result_row(
             result_id="gope_all_labelled_preliminary",
             dataset="Supplied Gope dataset",
             feature_resolution="row",
@@ -282,6 +368,11 @@ def build_static_figure(master: list[dict[str, object]]) -> list[dict[str, objec
         "cooja_run_blackhole_to_sinkhole_adapt_3",
         "cooja_window_blackhole_to_sinkhole_static",
         "cooja_window_blackhole_to_sinkhole_adapt_3",
+        "cooja_routing_cart_blackhole_to_sinkhole_static",
+        "cooja_routing_cart_coarse_adapt_3",
+        "cooja_routing_cart_adapt_1",
+        "cooja_routing_cart_adapt_2",
+        "cooja_routing_cart_adapt_3",
         "gope_blackhole_to_sinkhole_static",
     }
     return [
@@ -323,6 +414,25 @@ def build_adaptation_figure(inputs: dict[str, list[dict[str, str]]]) -> list[dic
     return rows
 
 
+def build_routing_ablation_figure(inputs: dict[str, list[dict[str, str]]]) -> list[dict[str, object]]:
+    return [
+        {
+            "model": row["model"],
+            "feature_set": row["feature_set"],
+            "adaptation_sinkhole_seeds": int(row["adaptation_sinkhole_seeds"]),
+            "splits": int(row["splits"]),
+            "mean_accuracy": float(row["mean_accuracy"]),
+            "mean_precision": float(row["mean_precision"]),
+            "mean_recall": float(row["mean_recall"]),
+            "mean_f1": float(row["mean_f1"]),
+            "mean_f2": float(row["mean_f2"]),
+            "mean_fpr": float(row["mean_fpr"]),
+        }
+        for row in inputs["routing_adaptation"]
+        if row["model"] == "cart"
+    ]
+
+
 def build_gope_counts(audit: list[dict[str, str]]) -> list[dict[str, object]]:
     rows: list[dict[str, object]] = []
     for row in audit:
@@ -344,9 +454,9 @@ def feature_gap_rows() -> list[dict[str, object]]:
     return [
         {"feature_family": "application delivery", "current_cooja_evidence": "UDP request/response and missed-response counts", "gope_routing_feature": "pkt_loss; cpkt_loss", "coverage": "indirect", "sinkhole_relevance": "Low: delivery volume changed little between sinkhole attack and control."},
         {"feature_family": "radio activity", "current_cooja_evidence": "transmission, byte and sender counts", "gope_routing_feature": "RSSI(dbm); TX_RX_Distance", "coverage": "partial", "sinkhole_relevance": "Low alone: sinkhole attack/control radio totals were nearly identical."},
-        {"feature_family": "rank state", "current_cooja_evidence": "explicit attack marker retained only for validation and excluded from training", "gope_routing_feature": "Source_Rank", "coverage": "missing non-leaking feature", "sinkhole_relevance": "Critical: the implemented sinkhole manipulates advertised RPL rank."},
-        {"feature_family": "parent state", "current_cooja_evidence": "parent-found and no-parent event counts", "gope_routing_feature": "Parrent_Node; Parents_Count; same_parent", "coverage": "partial", "sinkhole_relevance": "High: an attractive rank can change preferred-parent selection."},
-        {"feature_family": "RPL control traffic", "current_cooja_evidence": "not separated by DIO, DAO and DIS message type", "gope_routing_feature": "Src_DIO_count; Dst_DIO_count; Src_DAO_count; Dst_DAO_count; Src_DIS_count; Dst_DIS_count", "coverage": "missing", "sinkhole_relevance": "High: exposes routing-control changes without using attack log text."},
+        {"feature_family": "rank state", "current_cooja_evidence": "received-DIO rank statistics and stateful non-root low-rank sender/pair/receiver counts", "gope_routing_feature": "Source_Rank", "coverage": "implemented", "sinkhole_relevance": "Critical: persistent rank 128 advertisements separate sinkhole attack from control without attack-marker input."},
+        {"feature_family": "parent state", "current_cooja_evidence": "parent-switch, internal-rank and neighbour-count summaries", "gope_routing_feature": "Parrent_Node; Parents_Count; same_parent", "coverage": "partial", "sinkhole_relevance": "High: an attractive rank can change preferred-parent selection."},
+        {"feature_family": "RPL control traffic", "current_cooja_evidence": "typed received/sent DIO, DAO and DIS counters", "gope_routing_feature": "Src_DIO_count; Dst_DIO_count; Src_DAO_count; Dst_DAO_count; Src_DIS_count; Dst_DIS_count", "coverage": "implemented", "sinkhole_relevance": "High: exposes routing-control changes without using attack log text."},
         {"feature_family": "route length", "current_cooja_evidence": "not extracted", "gope_routing_feature": "hop_count; Avg_hop_count", "coverage": "missing", "sinkhole_relevance": "High: parent attraction can alter path length and route structure."},
     ]
 
@@ -363,6 +473,9 @@ def render_interpretation(
     window_in_domain = by_id["cooja_window_blackhole_in_domain"]
     window_static = by_id["cooja_window_blackhole_to_sinkhole_static"]
     window_adapted = by_id["cooja_window_blackhole_to_sinkhole_adapt_3"]
+    routing_static = by_id["cooja_routing_cart_blackhole_to_sinkhole_static"]
+    routing_coarse = by_id["cooja_routing_cart_coarse_adapt_3"]
+    routing_adapted = by_id["cooja_routing_cart_adapt_3"]
     gope_shift = by_id["gope_blackhole_to_sinkhole_static"]
     return f"""# Consolidated Concept-Drift Results
 
@@ -374,14 +487,15 @@ The experiments support a bounded claim: an IDS trained on blackhole behaviour d
 
 1. **The baseline works before the attack change.** Whole-seed blackhole validation achieved perfect run-level detection. The 60-second model produced aggregate accuracy {float(window_in_domain['accuracy']):.4f}, recall {float(window_in_domain['recall']):.4f} and F1 {float(window_in_domain['f1']):.4f} across the five held-out blackhole seeds. This establishes that the pipeline can learn a stable in-domain attack signal.
 2. **Static transfer fails after the attack mechanism changes.** The run-level blackhole model classified all five sinkhole attacks as normal, giving recall and F1 of 0. At window level, recall and F1 also remained 0. The apparent accuracy of {float(window_static['accuracy']):.4f} is only the majority-class baseline: 65 of 90 sinkhole evaluation windows are normal, and the model predicted every window as normal.
-3. **Simple adaptation is representation-limited.** Adding one, two or three complete sinkhole seeds did not improve the run-level model. At window level, three adaptation seeds raised mean recall to {float(window_adapted['recall']):.4f} and mean F1 to {float(window_adapted['f1']):.4f}, but mean false-positive rate rose to {float(window_adapted['fpr']):.4f}. The detector recovered sensitivity by over-alerting, so this cannot be described as successful adaptation without qualification.
-4. **The supplied Gope data independently supports the transfer problem.** A preliminary routing-aware Gaussian model trained on Gope blackhole rows achieved only {float(gope_shift['recall']):.4f} recall and {float(gope_shift['f1']):.4f} F1 on Gope sinkhole rows. This is corroborating evidence, not a direct replication, because the supplied files expose no run identifiers and the current split is row-based.
+3. **Coarse-feature adaptation is representation-limited.** The earlier Gaussian window model reached recall {float(window_adapted['recall']):.4f} after three adaptation seeds, but its FPR rose to {float(window_adapted['fpr']):.4f}. Routing-experiment CART with three seeds and coarse features remains weak (recall {float(routing_coarse['recall']):.4f}, F1 {float(routing_coarse['f1']):.4f}).
+4. **Routing-aware adaptation succeeds on held-out seeds.** Static routing-aware CART still has zero recall and F1 ({float(routing_static['recall']):.4f} and {float(routing_static['f1']):.4f}), preserving the drift finding. After three whole-seed adaptation runs, CART with routing features reaches accuracy {float(routing_adapted['accuracy']):.4f}, precision {float(routing_adapted['precision']):.4f}, recall {float(routing_adapted['recall']):.4f}, F1 {float(routing_adapted['f1']):.4f} and FPR {float(routing_adapted['fpr']):.4f}.
+5. **The supplied Gope data independently supports the transfer problem.** A preliminary routing-aware Gaussian model trained on Gope blackhole rows achieved only {float(gope_shift['recall']):.4f} recall and {float(gope_shift['f1']):.4f} F1 on Gope sinkhole rows. This is corroborating evidence, not a direct replication, because the supplied files expose no run identifiers and the current split is row-based.
 
 ## Mechanistic Interpretation
 
 The negative result is explainable. Blackhole runs produce a large throughput and radio-volume change because forwarded traffic is dropped. In the extracted run-level features, mean received responses fall by {blackhole_responses:.1f} and mean radio transmissions by {blackhole_radio:.1f} relative to matched controls. Sinkhole attack and control runs differ by only {sinkhole_responses:.1f} received responses and {sinkhole_radio:.1f} radio transmissions on average. The current Cooja representation therefore captures the blackhole consequence but not the sinkhole mechanism.
 
-The Gope audit shows what is missing: rank, parent identity and count, typed DIO/DAO/DIS counters, hop count and packet loss. These are routing-state features with a defensible causal relationship to sinkhole behaviour. The next model milestone should instrument those signals in Cooja and then repeat exactly the same whole-seed static and adaptation evaluation.
+The routing-aware experiment instruments generic RPL INFO logs for DIO/DAO/DIS traffic, received DIO ranks, parent switches, internal rank and neighbour state. Its stateful low-rank non-root features identify the altered mechanism without using attack-marker text. Corrected sinkhole runs consistently advertise rank 128 after activation, whereas controls retain rank 256. This is why routing-aware CART can adapt while coarse features cannot.
 
 ## Validity Boundaries
 
@@ -393,7 +507,7 @@ The Gope audit shows what is missing: rank, parent identity and count, typed DIO
 
 ## Defensible Dissertation Conclusion So Far
 
-The strongest conclusion is not that retraining automatically solves drift. It is that adaptation depends on representation: when the feature space omits the changed attack mechanism, a static detector fails and naive retraining either remains ineffective or recovers recall at an unacceptable false-positive cost. That is a useful Master's-level finding because it links the observed model failure to RPL attack mechanics and produces a concrete, testable next step.
+The strongest conclusion is that adaptation depends on representation and model choice. A static detector fails under the controlled blackhole-to-sinkhole change even after routing features are added. Retraining with coarse features also remains ineffective. However, limited whole-seed adaptation with routing-state features and CART restores held-out sinkhole detection with high F1 and no observed false positives. This is a defensible Master's-level result because it ties model recovery to the RPL mechanism rather than claiming retraining is universally sufficient.
 """
 
 
@@ -410,6 +524,9 @@ def render_results_section(master: list[dict[str, object]]) -> str:
         metric_table_row("Cooja window, blackhole in-domain", rows["cooja_window_blackhole_in_domain"]),
         metric_table_row("Cooja window, static blackhole to sinkhole", rows["cooja_window_blackhole_to_sinkhole_static"]),
         metric_table_row("Cooja window, three-seed adaptation (mean)", rows["cooja_window_blackhole_to_sinkhole_adapt_3"]),
+        metric_table_row("Cooja routing CART, static blackhole to sinkhole", rows["cooja_routing_cart_blackhole_to_sinkhole_static"]),
+        metric_table_row("Cooja routing CART, coarse three-seed adaptation", rows["cooja_routing_cart_coarse_adapt_3"]),
+        metric_table_row("Cooja routing CART, routing-aware three-seed adaptation", rows["cooja_routing_cart_adapt_3"]),
         metric_table_row("Gope rows, static blackhole to sinkhole", rows["gope_blackhole_to_sinkhole_static"]),
     ])
     return f"""# Dissertation Results So Far
@@ -426,9 +543,9 @@ The strong blackhole results demonstrate that the experimental pipeline can lear
 
 ## Adaptation
 
-Adaptation data were added by complete sinkhole seed, and testing used only unseen seeds. One or two sinkhole seeds produced no window-level detection. With three adaptation seeds, mean recall increased to 1.0000 and mean F1 to 0.5237, but mean FPR increased to 0.7000 and precision remained 0.3547. The adapted model therefore detected attack windows by labelling many normal windows as malicious. Run-level adaptation remained at zero recall for every tested adaptation size.
+Adaptation data were added by complete sinkhole seed, and testing used only unseen seeds. The earlier coarse Gaussian window model obtained recall by over-alerting: with three adaptation seeds it had recall 1.0000 but FPR 0.7000. The routing-aware ablation isolates the reason. With three adaptation seeds, CART using coarse features achieved recall 0.0600 and F1 0.0978. Adding generic RPL routing-state features raised mean recall to 0.9500 and F1 to 0.9731, with precision 1.0000 and FPR 0 across the ten held-out-seed combinations.
 
-This result rejects the simplistic assumption that retraining alone resolves concept drift. The feature representation must expose the changed mechanism. Current application and radio-volume summaries show a pronounced blackhole effect but almost no sinkhole attack/control separation. Sinkhole detection requires routing-aware evidence such as advertised rank, preferred-parent changes, parent count, typed RPL control-message counts and hop-count changes.
+This rejects the simplistic assumption that retraining alone resolves concept drift. The feature representation must expose the changed mechanism. Coarse application and radio-volume summaries show a pronounced blackhole effect but almost no sinkhole attack/control separation. Generic received-DIO rank and RPL-state features capture the persistent non-root rank-128 advertisement; they make limited, seed-separated adaptation effective.
 
 ## External Dataset Check
 
@@ -436,7 +553,7 @@ The supplied Gope collection contains 768,811 rows across eight attack files. Se
 
 ## Result Position
 
-Taken together, the evidence shows a reproducible attack-distribution shift, static-model failure, and a measurable but operationally poor adaptation response. The immediate scientific task is to add non-leaking RPL routing-state features to the Cooja logs and rerun the same seed-separated protocol. Only after that feature milestone should a formal drift detector and LLM explanation layer be evaluated.
+Taken together, the evidence shows a reproducible attack-distribution shift, static-model failure, and a routing-aware adaptation recovery under a seed-separated protocol. The next scientific task is a formal drift detector, evaluated against this now-established static-versus-adapted baseline; an LLM explanation layer should follow only after the detector is fixed.
 """
 
 
@@ -451,6 +568,8 @@ def main() -> None:
         "run_adaptation": read_csv(args.experiments_dir / "ml_baseline/adaptation_summary.csv"),
         "window_results": read_csv(args.experiments_dir / "ml_window/window_results.csv"),
         "window_adaptation": read_csv(args.experiments_dir / "ml_window/window_adaptation_summary.csv"),
+        "routing_results": read_csv(args.experiments_dir / "routing_features_v1/results/static_results.csv"),
+        "routing_adaptation": read_csv(args.experiments_dir / "routing_features_v1/results/adaptation_summary.csv"),
         "gope_audit": read_csv(args.experiments_dir / "gope_dataset/audit_summary.csv"),
         "gope_results": read_csv(args.experiments_dir / "gope_dataset/gope_baseline_results.csv"),
         "feature_diagnostics": read_csv(args.experiments_dir / "ml_baseline/feature_diagnostics.csv"),
@@ -461,6 +580,7 @@ def main() -> None:
     write_csv(args.out_dir / "master_results_summary.csv", master, MASTER_FIELDS)
     write_csv(args.out_dir / "static_vs_adapted_figure.csv", build_static_figure(master))
     write_csv(args.out_dir / "adaptation_curve_figure.csv", build_adaptation_figure(inputs))
+    write_csv(args.out_dir / "routing_feature_ablation_figure.csv", build_routing_ablation_figure(inputs))
     write_csv(args.out_dir / "gope_dataset_row_counts.csv", build_gope_counts(inputs["gope_audit"]))
     write_csv(args.out_dir / "feature_gap_summary.csv", feature_gap_rows())
     (args.out_dir / "results_interpretation.md").write_text(

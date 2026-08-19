@@ -1,7 +1,7 @@
 feature_family,current_cooja_evidence,gope_routing_feature,coverage,sinkhole_relevance
 application delivery,UDP request/response and missed-response counts,pkt_loss; cpkt_loss,indirect,Low: delivery volume changed little between sinkhole attack and control.
 radio activity,"transmission, byte and sender counts",RSSI(dbm); TX_RX_Distance,partial,Low alone: sinkhole attack/control radio totals were nearly identical.
-rank state,explicit attack marker retained only for validation and excluded from training,Source_Rank,missing non-leaking feature,Critical: the implemented sinkhole manipulates advertised RPL rank.
-parent state,parent-found and no-parent event counts,Parrent_Node; Parents_Count; same_parent,partial,High: an attractive rank can change preferred-parent selection.
-RPL control traffic,"not separated by DIO, DAO and DIS message type",Src_DIO_count; Dst_DIO_count; Src_DAO_count; Dst_DAO_count; Src_DIS_count; Dst_DIS_count,missing,High: exposes routing-control changes without using attack log text.
+rank state,received-DIO rank statistics and stateful non-root low-rank sender/pair/receiver counts,Source_Rank,implemented,Critical: persistent rank 128 advertisements separate sinkhole attack from control without attack-marker input.
+parent state,"parent-switch, internal-rank and neighbour-count summaries",Parrent_Node; Parents_Count; same_parent,partial,High: an attractive rank can change preferred-parent selection.
+RPL control traffic,"typed received/sent DIO, DAO and DIS counters",Src_DIO_count; Dst_DIO_count; Src_DAO_count; Dst_DAO_count; Src_DIS_count; Dst_DIS_count,implemented,High: exposes routing-control changes without using attack log text.
 route length,not extracted,hop_count; Avg_hop_count,missing,High: parent attraction can alter path length and route structure.

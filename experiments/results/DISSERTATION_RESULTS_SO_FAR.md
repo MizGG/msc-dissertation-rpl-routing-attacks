@@ -11,15 +11,18 @@ The IDS was first evaluated under stable blackhole conditions and then under a c
 | Cooja window, blackhole in-domain | 0.9889 | 1.0000 | 0.9600 | 0.9796 | 0.9677 | 0.0000 |
 | Cooja window, static blackhole to sinkhole | 0.7222 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
 | Cooja window, three-seed adaptation (mean) | 0.4944 | 0.3547 | 1.0000 | 0.5237 | 0.7332 | 0.7000 |
+| Cooja routing CART, static blackhole to sinkhole | 0.7222 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+| Cooja routing CART, coarse three-seed adaptation | 0.7222 | 0.3083 | 0.0600 | 0.0978 | 0.0709 | 0.0231 |
+| Cooja routing CART, routing-aware three-seed adaptation | 0.9861 | 1.0000 | 0.9500 | 0.9731 | 0.9588 | 0.0000 |
 | Gope rows, static blackhole to sinkhole | 0.5083 | 0.6067 | 0.0472 | 0.0876 | 0.0579 | 0.0306 |
 
 The strong blackhole results demonstrate that the experimental pipeline can learn a stable in-domain signal. When the frozen detector was transferred to sinkhole data, attack recall fell to zero at both run and window resolutions. Window accuracy remained 0.7222 only because 65 of the 90 evaluation windows were labelled normal; the confusion matrix was TN=65, FN=25, TP=0 and FP=0. Accuracy is therefore not evidence of detection in this condition.
 
 ## Adaptation
 
-Adaptation data were added by complete sinkhole seed, and testing used only unseen seeds. One or two sinkhole seeds produced no window-level detection. With three adaptation seeds, mean recall increased to 1.0000 and mean F1 to 0.5237, but mean FPR increased to 0.7000 and precision remained 0.3547. The adapted model therefore detected attack windows by labelling many normal windows as malicious. Run-level adaptation remained at zero recall for every tested adaptation size.
+Adaptation data were added by complete sinkhole seed, and testing used only unseen seeds. The earlier coarse Gaussian window model obtained recall by over-alerting: with three adaptation seeds it had recall 1.0000 but FPR 0.7000. The routing-aware ablation isolates the reason. With three adaptation seeds, CART using coarse features achieved recall 0.0600 and F1 0.0978. Adding generic RPL routing-state features raised mean recall to 0.9500 and F1 to 0.9731, with precision 1.0000 and FPR 0 across the ten held-out-seed combinations.
 
-This result rejects the simplistic assumption that retraining alone resolves concept drift. The feature representation must expose the changed mechanism. Current application and radio-volume summaries show a pronounced blackhole effect but almost no sinkhole attack/control separation. Sinkhole detection requires routing-aware evidence such as advertised rank, preferred-parent changes, parent count, typed RPL control-message counts and hop-count changes.
+This rejects the simplistic assumption that retraining alone resolves concept drift. The feature representation must expose the changed mechanism. Coarse application and radio-volume summaries show a pronounced blackhole effect but almost no sinkhole attack/control separation. Generic received-DIO rank and RPL-state features capture the persistent non-root rank-128 advertisement; they make limited, seed-separated adaptation effective.
 
 ## External Dataset Check
 
@@ -27,4 +30,4 @@ The supplied Gope collection contains 768,811 rows across eight attack files. Se
 
 ## Result Position
 
-Taken together, the evidence shows a reproducible attack-distribution shift, static-model failure, and a measurable but operationally poor adaptation response. The immediate scientific task is to add non-leaking RPL routing-state features to the Cooja logs and rerun the same seed-separated protocol. Only after that feature milestone should a formal drift detector and LLM explanation layer be evaluated.
+Taken together, the evidence shows a reproducible attack-distribution shift, static-model failure, and a routing-aware adaptation recovery under a seed-separated protocol. The next scientific task is a formal drift detector, evaluated against this now-established static-versus-adapted baseline; an LLM explanation layer should follow only after the detector is fixed.

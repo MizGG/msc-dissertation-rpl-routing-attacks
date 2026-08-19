@@ -1,0 +1,13 @@
+experiment,feature_set,train_windows,n,accuracy,precision,recall,f1,f2,fpr,tp,tn,fp,fn
+blackhole_leave_seed_123456,coarse,72,18,1.0,1.0,1.0,1.0,1.0,0.0,5,13,0,0
+blackhole_leave_seed_234567,coarse,72,18,1.0,1.0,1.0,1.0,1.0,0.0,5,13,0,0
+blackhole_leave_seed_345678,coarse,72,18,1.0,1.0,1.0,1.0,1.0,0.0,5,13,0,0
+blackhole_leave_seed_456789,coarse,72,18,1.0,1.0,1.0,1.0,1.0,0.0,5,13,0,0
+blackhole_leave_seed_567890,coarse,72,18,1.0,1.0,1.0,1.0,1.0,0.0,5,13,0,0
+static_blackhole_to_sinkhole,coarse,90,90,0.7222,0,0.0,0,0,0.0,0,65,0,25
+blackhole_leave_seed_123456,coarse_plus_routing,72,18,1.0,1.0,1.0,1.0,1.0,0.0,5,13,0,0
+blackhole_leave_seed_234567,coarse_plus_routing,72,18,1.0,1.0,1.0,1.0,1.0,0.0,5,13,0,0
+blackhole_leave_seed_345678,coarse_plus_routing,72,18,1.0,1.0,1.0,1.0,1.0,0.0,5,13,0,0
+blackhole_leave_seed_456789,coarse_plus_routing,72,18,1.0,1.0,1.0,1.0,1.0,0.0,5,13,0,0
+blackhole_leave_seed_567890,coarse_plus_routing,72,18,1.0,1.0,1.0,1.0,1.0,0.0,5,13,0,0
+static_blackhole_to_sinkhole,coarse_plus_routing,90,90,0.7222,0,0.0,0,0,0.0,0,65,0,25
