@@ -1,3 +1,4 @@
 .DS_Store
 build/cooja/
 SH_*_N16_SEED*.csc
+__pycache__/

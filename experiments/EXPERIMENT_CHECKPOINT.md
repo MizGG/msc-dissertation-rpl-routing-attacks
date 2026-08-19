@@ -72,6 +72,10 @@ Adaptation outputs:
 - `experiments/ml_baseline/adaptation_summary.csv`
 - `experiments/ml_baseline/feature_diagnostics.csv`
 - `experiments/ml_baseline/adaptation_interpretation.md`
+- `experiments/features/window_features.csv`
+- `experiments/ml_window/window_results.csv`
+- `experiments/ml_window/window_adaptation_summary.csv`
+- `experiments/ml_window/window_feature_interpretation.md`
 
 Summary:
 
@@ -85,6 +89,8 @@ Interpretation:
 The detector learns the blackhole attack pattern under same-family evaluation, but fails to identify sinkhole attacks when the attack distribution changes. This is the current concept-drift demonstration.
 
 The first adaptation experiment adds whole sinkhole seeds to training and evaluates on held-out sinkhole seeds. F1 remains 0.00 after adding up to three sinkhole seeds, indicating that the current coarse run-level features do not represent sinkhole rank manipulation well enough for recovery.
+
+The follow-up 60-second window experiment improves the time representation. Blackhole windows remain detectable in-domain, but a frozen blackhole-trained model still has 0.00 sinkhole recall. With three sinkhole adaptation seeds, sinkhole recall reaches 1.00 but precision remains low, showing a recovery/false-positive tradeoff rather than clean adaptation.
 
 ## Immediate Next Work
 

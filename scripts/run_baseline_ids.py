@@ -141,12 +141,16 @@ def metrics(rows: list[dict[str, str]], preds: list[int]) -> dict[str, float | i
     precision = tp / (tp + fp) if tp + fp else 0
     recall = tp / (tp + fn) if tp + fn else 0
     f1 = 2 * precision * recall / (precision + recall) if precision + recall else 0
+    f2 = 5 * precision * recall / ((4 * precision) + recall) if (4 * precision) + recall else 0
+    fpr = fp / (fp + tn) if fp + tn else 0
     return {
         "n": len(rows),
         "accuracy": round(accuracy, 4),
         "precision": round(precision, 4),
         "recall": round(recall, 4),
         "f1": round(f1, 4),
+        "f2": round(f2, 4),
+        "fpr": round(fpr, 4),
         "tp": tp,
         "tn": tn,
         "fp": fp,
