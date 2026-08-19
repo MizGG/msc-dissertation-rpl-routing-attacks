@@ -1,0 +1,6 @@
+alert_id,evidence_fidelity,mechanism_alignment,uncertainty_calibration,actionability,total,unsupported_claim,unsupported_phrases,required_fact_count
+rpl-drift-123456-240,2,2,2,2,8,0,,3
+rpl-drift-234567-240,2,2,2,2,8,0,,3
+rpl-drift-345678-240,2,2,2,2,8,0,,3
+rpl-drift-456789-240,2,2,2,2,8,0,,3
+rpl-drift-567890-240,2,2,2,2,8,0,,3
