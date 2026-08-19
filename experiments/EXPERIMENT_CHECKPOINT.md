@@ -92,13 +92,26 @@ The first adaptation experiment adds whole sinkhole seeds to training and evalua
 
 The follow-up 60-second window experiment improves the time representation. Blackhole windows remain detectable in-domain, but a frozen blackhole-trained model still has 0.00 sinkhole recall. With three sinkhole adaptation seeds, sinkhole recall reaches 1.00 but precision remains low, showing a recovery/false-positive tradeoff rather than clean adaptation.
 
+### Supplied Gope Dataset
+
+Audit outputs:
+
+- `experiments/gope_dataset/audit_summary.csv`
+- `experiments/gope_dataset/column_overlap.csv`
+- `experiments/gope_dataset/missing_values.csv`
+- `experiments/gope_dataset/paper_alignment.md`
+- `experiments/gope_dataset/gope_baseline_results.csv`
+
+The supplied `DR P` folder contains 768,811 rows across eight attack CSVs. Seven files have 71 columns and a `TYPE` label; Worst Parent has 46 columns and no `TYPE` label. The seven labelled files contain routing-aware fields such as rank, parent, DIO/DAO/DIS counts, hop count and packet loss. A preliminary Gaussian baseline over sampled labelled Gope data gives high precision but low recall, and a Gope blackhole-to-sinkhole test also has poor sinkhole recall.
+
 ## Immediate Next Work
 
 1. Keep the simulation stage frozen temporarily.
 2. Write the dissertation experiment method and result section from the existing evidence.
 3. Improve feature extraction for sinkhole-specific behaviour using temporal-window, routing-parent, rank, DIO/DAO, or topology-change features.
-4. Re-run static, drift, and adaptation experiments with the improved feature representation.
-5. Add explanation output only after the feature representation and drift/adaptation result are stable.
+4. Reproduce a stronger Gope baseline with a better model and documented preprocessing.
+5. Re-run static, drift, and adaptation experiments with improved Cooja routing features.
+6. Add explanation output only after the feature representation and drift/adaptation result are stable.
 
 ## Git Hygiene
 

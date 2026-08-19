@@ -1,0 +1,3 @@
+experiment,train_rows,n,accuracy,precision,recall,f1,f2,fpr,tp,tn,fp,fn
+gope_balanced_routing_features_all_labelled_attacks,47825,20497,0.6205,0.867,0.2622,0.4026,0.3047,0.0383,2621,10098,402,7376
+gope_train_blackhole_test_sinkhole,10000,10000,0.5083,0.6067,0.0472,0.0876,0.0579,0.0306,236,4847,153,4764
