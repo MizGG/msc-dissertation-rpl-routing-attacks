@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import math
 import random
 from collections import defaultdict
@@ -47,7 +48,9 @@ def to_float(value: str) -> float:
     try:
         return float(text)
     except ValueError:
-        return float(abs(hash(text)) % 10000)
+        # Python's built-in hash is process-randomised. A fixed digest keeps
+        # categorical fallback values stable across reruns and machines.
+        return float(int.from_bytes(hashlib.blake2b(text.encode("utf-8"), digest_size=8).digest(), "big") % 10000)
 
 
 def load_balanced_rows(dataset_dir: Path, max_per_class_per_attack: int, seed: int) -> list[dict[str, str]]:
@@ -132,7 +135,7 @@ def evaluate(name: str, train: list[dict[str, str]], test: list[dict[str, str]])
 def write_csv(path: Path, rows: list[dict[str, str | int | float]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()))
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -165,7 +168,9 @@ def main() -> None:
         "found no `TYPE` label.\n\n"
         "The model uses a simple Gaussian baseline over routing-aware features "
         "such as rank, parent count, DIO/DAO/DIS counts, hop count and packet "
-        "loss. Rows are class-balanced per attack family before training.\n\n"
+        "loss. Rows are class-balanced per attack family before training. "
+        "Non-numeric categorical fallback values use a deterministic BLAKE2b "
+        "mapping, not Python's process-randomised hash.\n\n"
         "Important limitation: the supplied CSVs do not currently expose run IDs, "
         "so this is not yet a run-separated reproduction. Treat it as the first "
         "baseline audit result, not the final paper reproduction.\n",

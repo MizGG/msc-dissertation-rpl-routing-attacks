@@ -34,6 +34,8 @@ This result should be described precisely: the monitor detects the controlled ra
 
 The supplied Gope collection contains 768,811 rows across eight attack files. Seven files include a supervised `TYPE` label and routing-aware fields; Worst Parent has no `TYPE` label and is excluded from the preliminary supervised baseline. A routing-aware Gaussian model trained on balanced blackhole rows and tested on balanced sinkhole rows achieved accuracy 0.5083, recall 0.0472 and F1 0.0876. The weak transfer is consistent with the Cooja finding, although the result is preliminary because the supplied CSVs do not provide simulation-run identifiers.
 
+An earlier temporal/order-split reproduction over the same supplied files is preserved in `experiments/gope_dataset/temporal_reproduction/`. It uses training-only top-six feature selection and evaluates later source-file rows within each attack family. It is supplementary validation of routing-aware feature relevance, not a run-separated or cross-attack drift result, so it is deliberately not merged into the primary Cooja concept-drift metrics.
+
 ## Result Position
 
 Taken together, the evidence shows a reproducible attack-distribution shift, static-model failure, and a routing-aware adaptation recovery under a seed-separated protocol. The next scientific task is a formal drift detector, evaluated against this now-established static-versus-adapted baseline; an LLM explanation layer should follow only after the detector is fixed.
