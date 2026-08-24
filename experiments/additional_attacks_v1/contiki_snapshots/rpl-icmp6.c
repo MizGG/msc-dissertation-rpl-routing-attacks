@@ -60,6 +60,7 @@
 /* Routing-attack hooks: disabled for normal firmware */
 int increase_rank_attack_enabled __attribute__((weak)) = 0;
 int sinkhole_attack_enabled __attribute__((weak)) = 0;
+int dio_suppression_attack_enabled __attribute__((weak)) = 0;
 
 /*---------------------------------------------------------------------------*/
 #define RPL_DIO_GROUNDED                 0x80
@@ -368,6 +369,11 @@ rpl_icmp6_dio_output(uip_ipaddr_t *uc_addr)
 
   /* Make sure we're up-to-date before sending data out */
   rpl_dag_update_state();
+
+  if(dio_suppression_attack_enabled) {
+    LOG_WARN("DIO SUPPRESSION: suppressing outgoing DIO\n");
+    return;
+  }
 
   if(rpl_get_leaf_only()) {
     /* In leaf mode, we only send DIO messages as unicasts in response to

@@ -15,6 +15,8 @@ ATTACKS = {
     "DIS_FLOOD": ("dis-flooder-router", "dis-flood-control-router"),
     "GRAYHOLE": ("grayhole-router", "grayhole-control-router"),
     "INCREASE_RANK": ("increase-rank-router", "increase-rank-control-router"),
+    "DIO_SUPPRESSION": ("dio-suppression-router", "dio-suppression-control-router"),
+    "WORST_PARENT": ("worst-parent-router", "worst-parent-control-router"),
 }
 
 
