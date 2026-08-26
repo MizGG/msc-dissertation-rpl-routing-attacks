@@ -34,8 +34,8 @@ The scoring rubric checks:
 - actionability;
 - unsupported claims.
 
-The current scored output is a handcrafted fixture used only to validate the
-software pipeline. It is not reported as live LLM performance.
+The current scored outputs are fixtures used to validate the software and demo
+pipeline. They are not reported as external live LLM performance.
 
 ## Presentation Position
 
@@ -43,4 +43,3 @@ The defensible dissertation claim is that the LLM provides an
 evidence-grounded explanation layer for IDS behaviour under concept drift. It
 does not detect attacks directly and should not be presented as replacing the
 IDS.
-

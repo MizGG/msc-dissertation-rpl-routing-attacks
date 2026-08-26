@@ -34,3 +34,8 @@ hallucinating beyond the experimental evidence.
 The LLM is therefore positioned as an analyst-support tool. It does not replace
 the IDS, does not modify routing decisions and does not prove attack identity.
 
+The package includes handcrafted and deterministic local fixtures to test
+schema, scoring and live-demo flow. These fixtures are not external live LLM
+performance and should not be reported as such. A final live LLM run should
+preserve the exact model identifier, prompt settings, raw outputs and scored
+results.

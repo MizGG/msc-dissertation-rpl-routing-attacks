@@ -17,6 +17,10 @@ concept drift, what remains uncertain and what an analyst should check next.
 - `evaluation/handcrafted_schema_fixture.jsonl`: non-LLM fixture for testing
   the scorer and response schema.
 - `evaluation/scored/`: scorer output for the handcrafted fixture.
+- `outputs/deterministic_explanations.jsonl`: deterministic local
+  model-style explanations generated from the evidence for demo/testing.
+- `evaluation/scored_deterministic/`: scorer output for deterministic
+  explanations.
 
 ## Current Scope
 
@@ -44,10 +48,14 @@ From the repository root:
 python3 scripts/build_llm_explanation_package_v2.py
 python3 scripts/score_llm_explanations_v2.py \
   --outputs experiments/llm_explanations_v2/evaluation/handcrafted_schema_fixture.jsonl
+python3 scripts/generate_llm_explanation_fixture_v2.py
+python3 scripts/score_llm_explanations_v2.py \
+  --outputs experiments/llm_explanations_v2/outputs/deterministic_explanations.jsonl \
+  --out-dir experiments/llm_explanations_v2/evaluation/scored_deterministic
 ```
 
-The handcrafted fixture score is a software/schema check only. It must not be
-reported as live LLM performance.
+The handcrafted fixture and deterministic explanation score are software/demo
+checks only. They must not be reported as external live LLM performance.
 
 ## Dissertation Claim
 
@@ -60,3 +68,6 @@ The defensible claim is:
 
 Do not claim that the LLM detects attacks directly.
 
+For a final live LLM experiment, run the prompt file against one fixed model,
+preserve the raw outputs, and score those raw outputs with
+`score_llm_explanations_v2.py`.

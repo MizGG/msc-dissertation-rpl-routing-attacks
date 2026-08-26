@@ -48,6 +48,18 @@ and, if needed, show a short recorded Cooja clip separately.
      --outputs experiments/llm_explanations_v2/evaluation/handcrafted_schema_fixture.jsonl
    ```
 
+9. Show the deterministic explanation demo:
+
+   ```sh
+   python3 scripts/generate_llm_explanation_fixture_v2.py
+   python3 scripts/score_llm_explanations_v2.py \
+     --outputs experiments/llm_explanations_v2/outputs/deterministic_explanations.jsonl \
+     --out-dir experiments/llm_explanations_v2/evaluation/scored_deterministic
+   ```
+
+   Explain clearly that this validates the evidence-to-explanation-to-scoring
+   pipeline. It is not being claimed as external LLM performance.
+
 ## Recorded Cooja Clips
 
 Record short clips in advance if possible:
@@ -59,4 +71,3 @@ Record short clips in advance if possible:
 
 The recording is backup evidence. The live demo should focus on reproducible
 files and scripts, because those are less likely to fail.
-
