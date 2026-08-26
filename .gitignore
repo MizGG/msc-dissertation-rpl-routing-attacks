@@ -1,5 +1,8 @@
 .DS_Store
 build/cooja/
+experiments/routing_features_v1/code/build/
+experiments/sinkhole/runs/
+experiments/sinkhole/validation_summary.csv
 SH_*_N16_SEED*.csc
 __pycache__/
 .env
