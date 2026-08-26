@@ -12,6 +12,10 @@
   `experiments/trust_layer_v1/results/trust_vs_baseline_comparison.csv`
 - LLM case index:
   `experiments/llm_explanations_v2/evidence/case_index.csv`
+- External dataset baseline:
+  `experiments/external_dataset_package_v1/gope_baseline_results.csv`
+- Cooja versus external dataset scope:
+  `experiments/external_dataset_package_v1/cooja_vs_external_scope_table.csv`
 
 ## Core Figures
 
@@ -33,4 +37,3 @@
 - Limitations: simulation size, Cooja-only evaluation, offline trust, LLM risks.
 - Conclusion: static failure, adaptation recovery, Sybil extension and
   explanation layer.
-

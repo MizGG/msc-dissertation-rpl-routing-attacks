@@ -1,0 +1,9 @@
+attack_code,attack,model,rows_used,normal_train,attack_train,normal_test,attack_test,accuracy,precision,recall,f1,fpr
+BH,Blackhole,RandomForest_top6_temporal,43442,20390,10019,8658,4375,98.25,95.05,100.00,97.46,0.0263
+DS,DIO Suppression,RandomForest_top6_temporal,117991,80211,2382,34458,940,99.45,86.79,93.62,90.07,0.0039
+DA,DIS Flooding,RandomForest_top6_temporal,65740,33409,12609,14307,5415,100.00,100.00,100.00,100.00,0.0000
+GH,Grayhole,RandomForest_top6_temporal,92396,59232,5445,25749,1970,99.65,100.00,95.13,97.50,0.0000
+IR,Increase Rank,RandomForest_top6_temporal,120000,65648,18352,22833,13167,99.69,99.31,99.84,99.57,0.0040
+SH,Sinkhole,RandomForest_top6_temporal,26003,9257,8945,3738,4063,100.00,100.00,100.00,100.00,0.0000
+WH,Wormhole,RandomForest_top6_temporal,120000,43306,40694,18534,17466,100.00,100.00,100.00,100.00,0.0000
+WP,Worst Parent,RandomForest_top6_temporal,10834,331,7252,146,3105,100.00,100.00,100.00,100.00,0.0000

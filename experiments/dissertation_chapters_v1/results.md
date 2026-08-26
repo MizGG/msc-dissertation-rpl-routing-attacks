@@ -25,6 +25,17 @@ have zero recall and no pair reaches F1 >= 0.8.
 This supports the claim that static IDS performance is brittle under
 attack-distribution change.
 
+## External Dataset Baseline
+
+The supplied Gope/professor dataset was used to validate the static IDS
+pipeline against existing 6LoWPAN/RPL attack data. Under the temporal/source-
+order split, the Random Forest top-six baseline achieved mean accuracy 99.63%,
+mean recall 98.57%, mean F1 98.08% and mean FPR 0.0043 across eight attack
+families.
+
+This result is used as external baseline credibility. It is not presented as
+proof of the Cooja concept-drift result or the Sybil new attack surface.
+
 ## Adaptation
 
 The adaptation experiment shows that adding limited target-family data improves

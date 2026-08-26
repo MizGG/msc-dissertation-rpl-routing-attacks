@@ -70,6 +70,18 @@ Two simple models are evaluated: a Gaussian classifier and a CART-style decision
 tree. The CART model is the main reported model because it is interpretable and
 performed more strongly in the cross-attack setting.
 
+## External Dataset Baseline
+
+The supplied Gope/professor dataset is used as an external static baseline. It
+is not merged with the Cooja simulations. Instead, it checks that the IDS
+pipeline can reproduce strong supervised classification performance on existing
+6LoWPAN/RPL attack data. The Cooja experiments then provide the controlled
+concept-drift, adaptation and Sybil new-attack evidence.
+
+The external baseline uses random and temporal/source-order splits over the
+supplied CSV files. The temporal/source-order split is the more conservative
+summary because it avoids relying only on random row mixing.
+
 ## Adaptation Evaluation
 
 The adaptation experiment evaluates whether limited examples from the new attack
@@ -102,4 +114,3 @@ Explanations are scored for schema validity, evidence fidelity, mechanism
 alignment, uncertainty calibration, drift awareness, actionability and
 unsupported claims. This evaluates the LLM as a grounded explanation layer, not
 as an intrusion detector.
-

@@ -13,6 +13,14 @@ evaluate concept drift. The experiment does not claim to observe naturally
 occurring drift in a deployed network. Instead, it constructs drift by changing
 the attack mechanism while keeping the simulation framework controlled.
 
+## External Dataset Interpretation
+
+The external dataset strengthens the work by showing that the baseline IDS
+pipeline performs well on supplied 6LoWPAN/RPL attack data. However, it should
+not be used to overclaim the drift contribution. The external dataset mainly
+supports reproducibility and baseline credibility, while the Cooja simulations
+support the controlled drift, adaptation and Sybil contribution.
+
 ## Why Adaptation Helps
 
 Adaptation improves performance because the model receives examples of the new
@@ -65,4 +73,3 @@ as an autonomous detector or as a replacement for the IDS.
 The strongest LLM claim is about explanation quality: whether the model can
 faithfully report supplied evidence, connect it to a plausible mechanism,
 describe uncertainty and avoid hallucinating unsupported network events.
-

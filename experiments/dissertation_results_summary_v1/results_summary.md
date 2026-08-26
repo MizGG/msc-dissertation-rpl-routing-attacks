@@ -87,5 +87,6 @@ adaptation must be considered together.
 - Sybil contribution note: `sybil_contribution_summary.md`
 - Trust-layer note: `trust_layer_summary.md`
 - LLM explanation-layer note: `llm_layer_summary.md`
+- External dataset note: `experiments/external_dataset_package_v1/external_dataset_summary.md`
 - Full Sybil drift matrix: `experiments/cross_attack_drift_with_sybil_v1/results/cross_attack_matrix.csv`
 - Full Sybil adaptation curves: `experiments/cross_attack_adaptation_with_sybil_v1/cross_attack_adaptation_curves.csv`
