@@ -11,7 +11,7 @@ from pathlib import Path
 
 
 TIME_RE = re.compile(r"^(?P<mm>\d+):(?P<ss>\d\d)\.(?P<ms>\d{3})")
-RUN_RE = re.compile(r"(?P<family>BH|SH)_(?P<mode>ATTACK|CONTROL)_N(?P<nodes>\d+)_SEED(?P<seed>\d+)")
+RUN_RE = re.compile(r"(?P<family>BH|SH|DIS_FLOOD|GRAYHOLE|INCREASE_RANK|DIO_SUPPRESSION|WORST_PARENT|WORMHOLE)_(?P<mode>ATTACK|CONTROL)_N(?P<nodes>\d+)_SEED(?P<seed>\d+)")
 APP_RE = re.compile(r"ID:(?P<node>\d+).*Tx/Rx/MissedTx: (?P<tx>\d+)/(?P<rx>\d+)/(?P<missed>\d+)")
 DIO_RX_RE = re.compile(r"received a (?:multicast|unicast)-DIO from (?P<source>[^,]+),.* rank (?P<rank>\d+)$")
 DIO_TX_RE = re.compile(r"sending a (?:multicast|unicast)-DIO with rank (?P<rank>\d+) to (?P<target>\S+)")
@@ -21,6 +21,17 @@ OWN_STATE_RE = re.compile(
     r"nbr: own state,.* rank (?P<rank>\d+) max-rank \d+, dioint \d+, nbr count (?P<count>\d+)"
 )
 TOPOLOGY_LINK_RE = re.compile(r"links: (?P<child>fd00::\S+)\s+to (?P<parent>fd00::\S+)")
+
+FAMILY_NAMES = {
+    "BH": "blackhole",
+    "SH": "sinkhole",
+    "DIS_FLOOD": "dis_flood",
+    "GRAYHOLE": "grayhole",
+    "INCREASE_RANK": "increase_rank",
+    "DIO_SUPPRESSION": "dio_suppression",
+    "WORST_PARENT": "worst_parent",
+    "WORMHOLE": "wormhole",
+}
 
 
 def seconds_from_text(text: str) -> float | None:
@@ -117,6 +128,18 @@ def empty_window(run_id: str, family: str, mode: str, seed: str, nodes: str, sta
         "sinkhole_advertised_rank_events": 0,
         "blackhole_attack_enabled_events": 0,
         "blackhole_drop_events": 0,
+        "grayhole_attack_enabled_events": 0,
+        "grayhole_drop_events": 0,
+        "increase_rank_attack_enabled_events": 0,
+        "increase_rank_advertised_rank_events": 0,
+        "dis_flood_attack_enabled_events": 0,
+        "dis_flood_sent_events": 0,
+        "dio_suppression_attack_enabled_events": 0,
+        "dio_suppression_events": 0,
+        "worst_parent_attack_enabled_events": 0,
+        "worst_parent_selection_events": 0,
+        "wormhole_attack_enabled_events": 0,
+        "wormhole_endpoint_radio_events": 0,
     }
 
 
@@ -133,7 +156,7 @@ def parse_run(run_dir: Path, width: int, duration: int, root_node: int) -> list[
     match = RUN_RE.fullmatch(run_dir.name)
     if match is None:
         raise ValueError(f"Unexpected run directory name: {run_dir.name}")
-    family = "blackhole" if match.group("family") == "BH" else "sinkhole"
+    family = FAMILY_NAMES[match.group("family")]
     mode = match.group("mode")
     windows = [
         empty_window(run_dir.name, family, mode, match.group("seed"), match.group("nodes"), start, width)
@@ -234,6 +257,17 @@ def parse_run(run_dir: Path, width: int, duration: int, root_node: int) -> list[
                 ("SINKHOLE: advertising rank", "sinkhole_advertised_rank_events"),
                 ("BLACKHOLE ATTACK: enabled", "blackhole_attack_enabled_events"),
                 ("BLACKHOLE: dropping forwarded packet", "blackhole_drop_events"),
+                ("GRAYHOLE ATTACK: enabled", "grayhole_attack_enabled_events"),
+                ("GRAYHOLE: dropping forwarded packet", "grayhole_drop_events"),
+                ("INCREASE RANK ATTACK: enabled", "increase_rank_attack_enabled_events"),
+                ("INCREASE_RANK: advertising rank", "increase_rank_advertised_rank_events"),
+                ("DIS FLOOD ATTACK: enabled", "dis_flood_attack_enabled_events"),
+                ("DIS FLOOD ATTACK: sent multicast DIS", "dis_flood_sent_events"),
+                ("DIO SUPPRESSION ATTACK: enabled", "dio_suppression_attack_enabled_events"),
+                ("DIO SUPPRESSION: suppressing outgoing DIO", "dio_suppression_events"),
+                ("WORST PARENT ATTACK: enabled", "worst_parent_attack_enabled_events"),
+                ("WORST PARENT: selecting acceptable parent", "worst_parent_selection_events"),
+                ("WORMHOLE ATTACK: tunnel enabled between 16 and 17", "wormhole_attack_enabled_events"),
             ):
                 if marker in line:
                     row[field] = int(row[field]) + 1
@@ -268,6 +302,12 @@ def parse_run(run_dir: Path, width: int, duration: int, root_node: int) -> list[
                 windows[idx]["attacker_node16_radio_tx"] = int(windows[idx]["attacker_node16_radio_tx"]) + 1
             if sender == str(root_node):
                 windows[idx]["root_node1_radio_tx"] = int(windows[idx]["root_node1_radio_tx"]) + 1
+            destinations = set(parts[3].split(","))
+            if seconds is not None and seconds >= 240:
+                if sender == "16" and "17" in destinations:
+                    windows[idx]["wormhole_endpoint_radio_events"] = int(windows[idx]["wormhole_endpoint_radio_events"]) + 1
+                elif sender == "17" and "16" in destinations:
+                    windows[idx]["wormhole_endpoint_radio_events"] = int(windows[idx]["wormhole_endpoint_radio_events"]) + 1
 
     latest_rank_by_pair: dict[tuple[int, int], int] = {}
     for idx, row in enumerate(windows):
@@ -334,12 +374,13 @@ def main() -> None:
     parser.add_argument("--window", type=int, default=60)
     parser.add_argument("--duration", type=int, default=540)
     parser.add_argument("--root-node", type=int, default=1)
+    parser.add_argument("--expected-runs", type=int, default=20)
     args = parser.parse_args()
 
     run_dirs = sorted(path for path in args.runs_dir.iterdir() if path.is_dir())
     complete = [path for path in run_dirs if (path / "COOJA.testlog").is_file() and (path / "COOJA.radio").is_file()]
-    if len(complete) != 20:
-        raise ValueError(f"Expected 20 complete routing-feature runs; found {len(complete)}")
+    if args.expected_runs and len(complete) != args.expected_runs:
+        raise ValueError(f"Expected {args.expected_runs} complete routing-feature runs; found {len(complete)}")
     rows: list[dict[str, object]] = []
     for run_dir in complete:
         rows.extend(parse_run(run_dir, args.window, args.duration, args.root_node))
