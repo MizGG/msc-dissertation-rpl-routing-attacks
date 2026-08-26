@@ -1,0 +1,10 @@
+alert_id,ground_truth_family,schema,evidence_fidelity,mechanism_alignment,uncertainty_calibration,drift_alignment,actionability,unsupported_claim_penalty,total_out_of_10,missing_keys,unsupported_claims
+rpl-blackhole-123456-420,blackhole,2,2,2,2,2,2,0,10,,
+rpl-dio_suppression-123456-420,dio_suppression,2,2,2,2,2,2,0,10,,
+rpl-dis_flood-123456-420,dis_flood,2,2,2,2,2,2,0,10,,
+rpl-grayhole-123456-420,grayhole,2,2,2,2,2,2,0,10,,
+rpl-increase_rank-123456-480,increase_rank,2,2,2,2,2,2,0,10,,
+rpl-sinkhole-123456-300,sinkhole,2,2,2,2,2,2,0,10,,
+rpl-sybil-123456-300,sybil,2,2,2,2,2,2,0,10,,
+rpl-wormhole-123456-240,wormhole,2,2,2,2,2,2,0,10,,
+rpl-worst_parent-123456-300,worst_parent,2,2,2,2,2,2,0,10,,
