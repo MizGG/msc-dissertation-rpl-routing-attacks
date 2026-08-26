@@ -57,6 +57,7 @@ def numeric_features(rows: list[dict[str, str]], include_attack_markers: bool) -
             and not name.endswith("_sent_events")
             and not name.endswith("_selection_events")
             and not name.endswith("_advertised_rank_events")
+            and not name.endswith("_spoofed_dio_events")
             and name not in {"dio_suppression_events", "wormhole_endpoint_radio_events"}
         ]
     output: list[str] = []

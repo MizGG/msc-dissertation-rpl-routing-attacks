@@ -11,7 +11,7 @@ from pathlib import Path
 
 
 TIME_RE = re.compile(r"^(?P<mm>\d+):(?P<ss>\d\d)\.(?P<ms>\d{3})")
-RUN_RE = re.compile(r"(?P<family>BH|SH|DIS_FLOOD|GRAYHOLE|INCREASE_RANK|DIO_SUPPRESSION|WORST_PARENT|WORMHOLE)_(?P<mode>ATTACK|CONTROL)_N(?P<nodes>\d+)_SEED(?P<seed>\d+)")
+RUN_RE = re.compile(r"(?P<family>BH|SH|DIS_FLOOD|GRAYHOLE|INCREASE_RANK|DIO_SUPPRESSION|WORST_PARENT|WORMHOLE|SYBIL)_(?P<mode>ATTACK|CONTROL)_N(?P<nodes>\d+)_SEED(?P<seed>\d+)")
 APP_RE = re.compile(r"ID:(?P<node>\d+).*Tx/Rx/MissedTx: (?P<tx>\d+)/(?P<rx>\d+)/(?P<missed>\d+)")
 DIO_RX_RE = re.compile(r"received a (?:multicast|unicast)-DIO from (?P<source>[^,]+),.* rank (?P<rank>\d+)$")
 DIO_TX_RE = re.compile(r"sending a (?:multicast|unicast)-DIO with rank (?P<rank>\d+) to (?P<target>\S+)")
@@ -31,6 +31,7 @@ FAMILY_NAMES = {
     "DIO_SUPPRESSION": "dio_suppression",
     "WORST_PARENT": "worst_parent",
     "WORMHOLE": "wormhole",
+    "SYBIL": "sybil",
 }
 
 
@@ -140,6 +141,9 @@ def empty_window(run_id: str, family: str, mode: str, seed: str, nodes: str, sta
         "worst_parent_selection_events": 0,
         "wormhole_attack_enabled_events": 0,
         "wormhole_endpoint_radio_events": 0,
+        "sybil_attack_enabled_events": 0,
+        "sybil_spoofed_dio_events": 0,
+        "sybil_sent_dio_events": 0,
     }
 
 
@@ -268,6 +272,9 @@ def parse_run(run_dir: Path, width: int, duration: int, root_node: int) -> list[
                 ("WORST PARENT ATTACK: enabled", "worst_parent_attack_enabled_events"),
                 ("WORST PARENT: selecting acceptable parent", "worst_parent_selection_events"),
                 ("WORMHOLE ATTACK: tunnel enabled between 16 and 17", "wormhole_attack_enabled_events"),
+                ("SYBIL ATTACK: enabled", "sybil_attack_enabled_events"),
+                ("SYBIL: sending RPL DIO as virtual identity", "sybil_spoofed_dio_events"),
+                ("SYBIL ATTACK: sent spoofed multicast DIO", "sybil_sent_dio_events"),
             ):
                 if marker in line:
                     row[field] = int(row[field]) + 1
