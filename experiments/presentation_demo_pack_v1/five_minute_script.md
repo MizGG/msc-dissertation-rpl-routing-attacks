@@ -4,8 +4,8 @@
 
 This project evaluates IDS robustness in RPL/6LoWPAN networks when attack
 behaviour changes. I use Contiki-NG and Cooja to run controlled RPL attacks,
-then evaluate static IDS transfer, adaptation, trust diagnostics and an
-evidence-grounded LLM explanation layer.
+then evaluate static IDS transfer, adaptation and trust diagnostics. Sybil is
+used as the main new attack-surface contribution.
 
 ## 0:40-1:20: Cooja Evidence
 
@@ -49,16 +49,17 @@ When limited target-family data is added using whole simulation seeds,
 performance recovers. Mean F1 rises from 0.1822 with no target data to 0.8258
 with one target seed and 0.8792 with three target seeds.
 
-## 3:40-4:20: LLM Explanation Layer
+## 3:40-4:20: Sybil and Trust Interpretation
 
-Run or show the LLM package.
+Show `sybil_static_vs_adapted.svg` and, if useful, the trust summary.
 
 Say:
 
-The LLM is not the IDS. It receives structured IDS, drift, adaptation and trust
-evidence and produces a constrained explanation. The evaluation checks
-faithfulness, mechanism alignment, uncertainty, drift awareness, actionability
-and unsupported claims.
+Sybil changes the attack surface by manipulating identity in the RPL control
+plane rather than simply dropping packets or changing rank. Static models often
+miss this changed mechanism, but one whole Sybil adaptation seed restores high
+held-out performance. The trust layer helps interpret attack surfaces, but it
+does not yet act as a complete defence.
 
 ## 4:20-5:00: Closing
 
@@ -67,6 +68,5 @@ Say:
 The main contribution is not just implementing attacks. The work shows that IDS
 performance can collapse under controlled attack-distribution drift, that
 whole-seed adaptation can recover performance, and that Sybil introduces a new
-identity-manipulation surface. The trust and LLM layers support interpretation
-without overclaiming detection.
-
+identity-manipulation surface. The trust layer supports interpretation without
+overclaiming prevention.

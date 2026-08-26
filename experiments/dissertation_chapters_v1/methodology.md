@@ -13,6 +13,12 @@ The LLM is not used as the detector. Detection and drift evidence are produced
 first by the IDS, feature pipeline, adaptation experiment and trust diagnostics.
 The LLM receives structured evidence and produces a human-readable explanation.
 
+The main methodological claim is therefore not that one classifier achieves
+high accuracy on a single fixed dataset. The study instead asks whether an IDS
+trained on one RPL attack mechanism remains reliable when the attack mechanism
+changes, and whether limited whole-run adaptation data can recover detection
+performance without leaking test windows from the same simulation run.
+
 ## Simulation Environment
 
 The network experiments were run in Contiki-NG using Cooja. RPL-lite was used
@@ -46,6 +52,14 @@ attack work. Sybil is treated as the new attack-surface contribution because it
 manipulates identity rather than forwarding behaviour, rank, control-message
 timing, parent choice or topology tunnelling.
 
+The attack set was deliberately kept mechanism-diverse. Blackhole and grayhole
+primarily affect forwarding behaviour; sinkhole and increase-rank alter routing
+rank incentives; DIS flood and DIO suppression alter control-plane dynamics;
+worst-parent changes route selection; wormhole changes topology plausibility;
+and Sybil changes the identity surface visible through RPL DIO messages. This
+diversity is what makes the cross-attack experiment a meaningful controlled
+drift test rather than a same-distribution train/test split.
+
 ## Feature Extraction
 
 Cooja logs are converted into 60-second routing windows. Each window includes
@@ -65,6 +79,13 @@ tests it on another. This treats each attack family as a different operating
 environment. A failure to transfer, especially zero attack recall, is interpreted
 as evidence that the static IDS does not generalise to the changed attack
 mechanism.
+
+This is framed as induced or controlled concept drift. The independent variable
+is the attack family used at test time, while the simulation platform, windowing
+method and feature extraction pipeline are kept fixed. This isolates the effect
+of attack-mechanism change more clearly than a mixed random split, where windows
+from related runs can make the problem appear easier than it would be in a
+changed deployment.
 
 Two simple models are evaluated: a Gaussian classifier and a CART-style decision
 tree. The CART model is the main reported model because it is interpretable and
@@ -93,6 +114,13 @@ adaptation.
 Splitting by whole simulation seed is important. Random row-level splitting
 would leak highly related windows from the same simulation into both training
 and evaluation and would overstate adaptation performance.
+
+The adaptation curve is used instead of a single retraining result because it
+answers a more useful operational question: how much target-environment
+evidence is required before the IDS begins to recover from the distribution
+change? Reporting zero, one, two and three target-seed conditions also exposes
+failure cases where retraining alone is insufficient because the current feature
+representation does not capture the changed attack mechanism.
 
 ## Trust-Aware Diagnostic Layer
 

@@ -52,44 +52,31 @@ Expected point:
   target seed.
 - Sybil target F1 improves from 0.2183 to 0.9683 with one Sybil seed.
 
-## Regenerate LLM Evidence
+## Show Core Argument
+
+```sh
+sed -n '1,120p' experiments/dissertation_results_summary_v1/core_argument.md
+```
+
+Expected point:
+
+- Static IDS models fail under cross-attack drift.
+- Whole-seed adaptation recovers performance.
+- Sybil is the new attack-surface contribution.
+- Feature representation determines whether adaptation can work.
+
+## Optional: Regenerate LLM Evidence Later
 
 ```sh
 python3 scripts/build_llm_explanation_package_v2.py
-```
-
-Expected output:
-
-```text
-Wrote 9 LLM explanation cases to experiments/llm_explanations_v2
-```
-
-## Generate Demo Explanations
-
-```sh
 python3 scripts/generate_llm_explanation_fixture_v2.py
 ```
 
-Expected output:
-
-```text
-Wrote 9 deterministic explanation outputs to experiments/llm_explanations_v2/outputs/deterministic_explanations.jsonl
-```
-
-## Score Demo Explanations
+Important: this is only a deterministic pipeline check unless a live model run
+is completed and raw model outputs are preserved.
 
 ```sh
 python3 scripts/score_llm_explanations_v2.py \
   --outputs experiments/llm_explanations_v2/outputs/deterministic_explanations.jsonl \
   --out-dir experiments/llm_explanations_v2/evaluation/scored_deterministic
 ```
-
-Expected output:
-
-```text
-{"cases": 9, "mean_score_out_of_10": 10.0, "schema_validity_rate": 1.0, "unsupported_claim_rate": 0.0}
-```
-
-Important: explain that this is a deterministic demo/scorer fixture, not live
-external LLM performance.
-

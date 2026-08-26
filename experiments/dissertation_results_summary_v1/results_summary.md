@@ -81,6 +81,7 @@ adaptation must be considered together.
 
 ## Evidence Files
 
+- Core dissertation argument: `core_argument.md`
 - Attack coverage table: `attack_coverage_table.csv`
 - Static drift metrics: `concept_drift_key_metrics.csv`
 - Adaptation metrics: `adaptation_key_metrics.csv`

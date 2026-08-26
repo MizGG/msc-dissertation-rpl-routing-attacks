@@ -23,12 +23,8 @@ echo "== Adaptation key metrics =="
 column -s, -t experiments/dissertation_results_summary_v1/adaptation_key_metrics.csv
 
 echo
-echo "== LLM explanation package =="
-python3 scripts/build_llm_explanation_package_v2.py
-python3 scripts/generate_llm_explanation_fixture_v2.py
-python3 scripts/score_llm_explanations_v2.py \
-  --outputs experiments/llm_explanations_v2/outputs/deterministic_explanations.jsonl \
-  --out-dir experiments/llm_explanations_v2/evaluation/scored_deterministic
+echo "== Core argument =="
+sed -n '1,80p' experiments/dissertation_results_summary_v1/core_argument.md
 
 echo
 echo "== Demo check complete =="

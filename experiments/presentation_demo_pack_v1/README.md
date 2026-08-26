@@ -42,12 +42,19 @@ backup.
 
    `experiments/dissertation_results_summary_v1/figures/sybil_static_vs_adapted.svg`
 
-8. Run the LLM explanation pipeline commands from `terminal_commands.md`.
+8. Show the core argument:
+
+   `experiments/dissertation_results_summary_v1/core_argument.md`
 
 9. Explain the core claim:
 
    Static IDS models often fail when the attack mechanism changes. Limited
    target-family adaptation recovers performance. Sybil provides a new
-   identity-manipulation attack surface. The LLM layer explains IDS/drift/trust
-   evidence; it is not the detector.
+   identity-manipulation attack surface. Trust diagnostics support
+   interpretation but are not claimed as a complete defence.
 
+## Optional Later Addition
+
+The LLM explanation layer can be shown if a live model run is completed and raw
+outputs are saved. Until then, keep it as a packaged method/demo component, not
+as a main live claim.

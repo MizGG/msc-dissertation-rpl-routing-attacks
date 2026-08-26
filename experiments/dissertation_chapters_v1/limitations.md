@@ -6,6 +6,10 @@ The experiments use Cooja simulations rather than a physical 6LoWPAN testbed.
 This gives control and reproducibility but may not capture all radio, hardware,
 mobility and environmental effects present in real deployments.
 
+The results should therefore be interpreted as controlled experimental evidence
+about RPL attack behaviour and IDS transfer, not as a claim of production-level
+deployment performance.
+
 ## Dataset Size
 
 Each attack family has five attack seeds and five matched control seeds. This is
@@ -24,6 +28,11 @@ cryptographic identity compromise are not fully evaluated.
 The IDS depends on extracted routing-window features. If an attack mechanism is
 not visible in those features, model adaptation may fail or appear weaker than
 the true attack impact. This was a key concern for some subtle attacks.
+
+This limitation is central to the dissertation rather than incidental. The
+experiments show that adaptation and feature engineering cannot be separated:
+new target data helps only when the feature representation exposes the changed
+behaviour well enough for the model to learn it.
 
 ## Trust Layer
 
@@ -46,3 +55,7 @@ real-world concept drift. Changes in topology size, traffic workload, radio
 conditions, mobility or deployment environment could create additional drift
 not fully captured here.
 
+Future work should therefore test the same methodology across larger topology
+sizes, different traffic workloads, physical testbeds and mixed-attack
+scenarios. That would show whether the observed static-model brittleness and
+adaptation recovery remain consistent outside the controlled Cooja campaign.

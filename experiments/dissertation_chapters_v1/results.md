@@ -23,7 +23,10 @@ The Gaussian model performs worse in this setting: 66 of 72 cross-attack pairs
 have zero recall and no pair reaches F1 >= 0.8.
 
 This supports the claim that static IDS performance is brittle under
-attack-distribution change.
+attack-distribution change. The most important result is recall collapse, not
+only lower aggregate accuracy: in many train/test combinations the detector
+classifies the changed attack environment as normal and therefore misses all
+attack windows.
 
 ## External Dataset Baseline
 
@@ -48,6 +51,11 @@ The adaptation result supports the claim that static model failure under drift
 can be partially recovered when representative examples from the new
 environment are introduced.
 
+The seed-separated design matters for this result. Adaptation windows are added
+by whole Cooja run, and held-out evaluation is performed on different target
+seeds. The improvement therefore does not depend on randomly mixing highly
+related windows from the same simulation into both training and testing.
+
 ## Sybil Attack Surface
 
 Sybil strengthens the dissertation contribution because it changes the attack
@@ -64,6 +72,11 @@ This is a strong example of concept drift: a new attack mechanism is poorly
 handled by static models trained on older attack surfaces, but limited
 adaptation restores performance.
 
+This result is also the clearest original-extension result in the Cooja work.
+It shows that the project moved beyond reproducing existing routing attacks by
+adding an identity-manipulation attack surface and then testing how that new
+surface affects static transfer and adaptation.
+
 ## Trust Layer
 
 The offline trust layer did not improve CART cross-attack IDS metrics over the
@@ -78,6 +91,11 @@ The trust alerts are still informative. Blackhole and grayhole mainly affect
 forwarding trust. Sinkhole affects rank trust. DIS flood and Sybil affect
 control-message trust. Worst-parent affects control and route trust. Wormhole is
 weakly covered by this simple trust design.
+
+The trust result strengthens the discussion because it shows a real engineering
+constraint: robustness under drift depends on what the representation measures.
+Adding a trust abstraction is not automatically enough if the abstraction is
+computed from the same evidence already available to the baseline IDS.
 
 ## LLM Explanation Layer
 
