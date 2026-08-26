@@ -16,6 +16,8 @@
   `experiments/external_dataset_package_v1/gope_baseline_results.csv`
 - Cooja versus external dataset scope:
   `experiments/external_dataset_package_v1/cooja_vs_external_scope_table.csv`
+- Presentation/demo guide:
+  `experiments/presentation_demo_pack_v1/README.md`
 
 ## Core Figures
 
