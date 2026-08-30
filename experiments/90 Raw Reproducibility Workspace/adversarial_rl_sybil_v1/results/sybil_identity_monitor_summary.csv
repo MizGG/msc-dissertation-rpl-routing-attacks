@@ -1,0 +1,3 @@
+population,windows,alerts,alert_rate
+post_activation_attack_windows,50,50,1.0
+control_windows,45,0,0.0

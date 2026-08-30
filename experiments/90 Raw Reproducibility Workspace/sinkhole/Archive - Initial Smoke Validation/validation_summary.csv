@@ -1,0 +1,3 @@
+run,seed,mode,sim_seconds,attack_start_time,advertised_rank_events,received_responses,radio_count,result
+SH_ATTACK_N16_SEED123456,123456,attack,540,04:00.473,1,695,9015,TEST OK
+SH_CONTROL_N16_SEED123456,123456,control,540,none,0,693,8957,TEST OK

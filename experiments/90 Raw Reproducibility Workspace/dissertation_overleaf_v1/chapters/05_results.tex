@@ -1,0 +1,208 @@
+\chapter{Results}
+\label{chap:results}
+
+\section{Baseline Campaign and Dataset Audit}
+
+All 90 baseline Cooja runs passed their family-specific validation. Every attack family contributes five attack and five control runs. Table~\ref{tab:attack-summary} summarises the mechanism and validated effect evidence. Effect-event counts are implementation validation, not IDS inputs.
+
+\begin{table}[H]
+\centering
+\caption{Validated baseline attack campaign.}
+\label{tab:attack-summary}
+\begin{tabularx}{\textwidth}{p{0.18\textwidth}p{0.34\textwidth}X}
+\toprule
+Family & Attack surface & Validation evidence per attack run \\
+\midrule
+Blackhole & Forwarding loss & Post-activation responses reduced to 0--3 \\
+Sinkhole & Advertised rank & Minimum-rank advertisement observed \\
+DIS flood & Solicitation rate & 149 effect events \\
+Grayhole & Selective forwarding & 208--211 drop events \\
+Increase-rank & Advertised rank & 1--2 rank effect events \\
+DIO suppression & Advertisement availability & 1--2 suppression events \\
+Worst-parent & Parent selection & 2,630--3,593 selection events \\
+Wormhole & Radio topology & 1,706--1,725 endpoint events \\
+Sybil & Source identity & 150--151 spoofed DIO events \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The frozen dataset contains 810 rows and 84 columns, including provenance. It contains 90 complete run groups and nine windows in every group. The audit found no empty fields, non-numeric feature values, duplicate family-mode-seed-window keys, incomplete sequences, or label errors. There are 225 positive post-activation attack windows. Sixteen attack-marker fields and eleven metadata fields are excluded, leaving 57 generic numeric features eligible for the broad cross-attack experiment.
+
+\section{Observed Mechanism Differences}
+
+The baseline validation confirms execution, but the extracted features reveal why transfer is difficult. Blackhole has the largest application-delivery effect. Its post-activation response collapse creates a clear separation from control for coarse traffic features. Grayhole produces a weaker and more variable version of the same mechanism because selective dropping leaves some traffic intact.
+
+Sinkhole is different. The attack advertises minimum rank, but application responses can remain close to control in the tested topology. Its strongest evidence is persistent low-rank non-root state rather than immediate service loss. Increase-rank also changes routing information, but in the opposite direction and with different topology consequences. A static blackhole model has no reason to treat normal-looking application responses plus unusual rank as malicious if it never observed that relationship.
+
+DIS flooding produces high solicitation activity and radio volume. DIO suppression can instead reduce or alter expected control evidence. A rate-based detector that learns high activity from flooding can therefore fail on suppression. Worst-parent creates frequent malicious selection behaviour but may not always generate the same external loss signature. Wormhole endpoint activity reflects topology manipulation and can create an over-sensitive model that calls many unrelated deviations malicious.
+
+Sybil changes sender and identity observations. The explicit spoof markers verify 150 to 151 events, but the model sees only generic effects. This makes Sybil a useful test of whether the feature representation captures identity-related control behaviour without a direct identity-compromise label.
+
+\section{Static Cross-Attack Generalisation}
+
+Static transfer is poor. CART produces zero attack recall in 48 of 72 cross-attack pairs. Its mean recall is 0.2333 and mean F1 is 0.1822. Only six pairs reach F1 of at least 0.8. Gaussian transfer is weaker: 66 pairs have zero recall, mean recall is 0.0739, mean F1 is 0.0362, and no pair reaches F1 of 0.8.
+
+\begin{table}[H]
+\centering
+\caption{Static cross-attack performance across nine families.}
+\label{tab:cross-static}
+\begin{tabular}{lrrrrr}
+\toprule
+Model & Pairs & Zero recall & Strong F1 & Mean recall & Mean F1 \\
+\midrule
+CART & 72 & 48 & 6 & 0.2333 & 0.1822 \\
+Gaussian & 72 & 66 & 0 & 0.0739 & 0.0362 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Figure~\ref{fig:cross-heatmap} shows CART F1 for each ordered source-target combination. The diagonal is marked as in-domain and excluded from the transfer average. The red-dominated off-diagonal structure shows that failure is widespread rather than confined to one target. Some transfer pairs are strong, which indicates shared observable mechanisms, but those isolated successes do not provide a reliable general detector.
+
+\begin{figure}[H]
+\centering
+\includesvg[width=0.98\textwidth]{figures/cross_attack_cart_f1_heatmap}
+\caption{Static CART F1 when trained on the row family and tested on the column family. Explicit attack markers are excluded.}
+\label{fig:cross-heatmap}
+\end{figure}
+
+The important operational failure is not merely lower accuracy. In a zero-recall pair, no target attack window is identified. A detector can therefore appear acceptable because normal and pre-activation windows dominate while failing its main security purpose after the mechanism changes.
+
+The opposite failure also occurs. A model can achieve high attack recall by predicting attack for most target windows, including controls. Wormhole-trained transfer is an example in the earlier eight-family analysis: recall was high across targets but false-positive rate was also high. This behaviour is not robust generalisation. It is an over-sensitive detector. The heatmap must therefore be interpreted with the source tables containing FPR and confusion counts.
+
+\section{Whole-Seed Adaptation}
+
+Adding representative target-family evidence substantially improves average CART performance. Table~\ref{tab:adaptation} reports the full curve. One target seed increases mean recall from 0.2333 to 0.8056 and mean F1 from 0.1822 to 0.8258. Two seeds produce F1 of 0.8664, and three produce 0.8792. False-positive rate initially falls from 0.1122 to 0.0211 and remains below 0.03 at two and three seeds.
+
+\begin{table}[H]
+\centering
+\caption{Mean CART performance by number of complete target adaptation seeds.}
+\label{tab:adaptation}
+\begin{tabular}{rrrrrr}
+\toprule
+Seeds & Accuracy & Precision & Recall & F1 & FPR \\
+\midrule
+0 & 0.7060 & 0.2018 & 0.2333 & 0.1822 & 0.1122 \\
+1 & 0.9307 & 0.8819 & 0.8056 & 0.8258 & 0.0211 \\
+2 & 0.9424 & 0.8916 & 0.8620 & 0.8664 & 0.0267 \\
+3 & 0.9483 & 0.8928 & 0.8917 & 0.8792 & 0.0299 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includesvg[width=0.9\textwidth]{figures/overall_adaptation_curve}
+\caption{Mean cross-attack recall and F1 after adding complete target-family adaptation seeds.}
+\label{fig:adaptation-curve}
+\end{figure}
+
+The largest gain occurs after one complete target seed. Further seeds provide smaller average gains. This finding should not be reduced to the claim that one seed is always sufficient. It means that one seed is highly informative in this controlled campaign. The seed contains five positive post-activation windows and associated normal windows, and the result is averaged across target choices.
+
+Average improvement also hides family-specific behaviour. Some targets are already detected by related source mechanisms. Others require routing features or target examples. Coarse sinkhole adaptation was an early failure case because application and traffic summaries did not expose the rank mechanism. The routing-aware representation resolved that limitation once persistent low-rank state was logged correctly. This sequence supports the dissertation's central interpretation: adaptation cannot learn a signal that the feature pipeline does not measure.
+
+\section{Sybil as a New Attack Surface}
+
+Sybil-related static transfer shows the same generalisation problem in a mechanism not represented by the original forwarding and routing attacks. Eleven of 16 Sybil-related CART pairs have zero recall. Across those pairs, mean recall is 0.2625 and mean F1 is 0.2342. When Sybil is specifically the target, mean F1 is 0.2183 without target evidence.
+
+One complete Sybil adaptation seed changes the result sharply: mean accuracy is 0.9844, precision is 1.0, recall is 0.9437, F1 is 0.9683, and FPR is zero. Two and three seeds retain F1 values of 0.9616 and 0.9688. Figure~\ref{fig:sybil-adaptation} shows this recovery.
+
+\begin{figure}[H]
+\centering
+\includesvg[width=0.9\textwidth]{figures/sybil_static_vs_adapted}
+\caption{Sybil-target performance before and after whole-seed adaptation.}
+\label{fig:sybil-adaptation}
+\end{figure}
+
+This result establishes two points. First, static models trained on other RPL mechanisms frequently miss identity manipulation. Second, generic observations can become highly discriminative once labelled examples of the new identity-related behaviour are introduced. It does not establish protection against every Sybil strategy.
+
+\section{Online Blackhole-to-Sinkhole Drift Detection}
+
+Both online monitors detect all five held-out sinkhole runs and generate no false alert in five matched controls. Rank-state CUSUM alerts in the first post-activation window, recorded as zero seconds of window-level delay. DDM alerts 60 seconds later in every run because it consumes delayed classification errors.
+
+\begin{table}[H]
+\centering
+\caption{Online sinkhole drift monitoring.}
+\label{tab:online-drift}
+\begin{tabular}{lrrrr}
+\toprule
+Detector & Attacks detected & Control alerts & Detection rate & Median delay \\
+\midrule
+Rank-state CUSUM & 5/5 & 0/5 & 1.0 & 0 s \\
+Delayed-error DDM & 5/5 & 0/5 & 1.0 & 60 s \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includesvg[width=0.9\textwidth]{figures/online_drift_detection}
+\caption{Detection timing and matched-control false alerts for CUSUM and DDM.}
+\label{fig:online-drift}
+\end{figure}
+
+The sample size is small, so five successes do not imply a population detection rate of one. The result is nevertheless internally consistent: persistent low-rank state is absent from controls and appears after sinkhole activation, while DDM reacts after the static model begins making target errors.
+
+\section{Robustness to Condition Changes}
+
+The robustness campaign validates 60 additional runs. Static predictions are sensitive to changed conditions. For example, coarse CART reaches F1 of 0.8475 for relocated blackhole and 0.7636 for relocated Sybil, but relocated sinkhole falls to 0.5217. Under lossy radio, coarse CART detects blackhole perfectly but has F1 zero for sinkhole and Sybil. Routing features reverse the lossy sinkhole outcome to F1 of 1.0, demonstrating that feature usefulness depends on the mechanism and condition.
+
+The whole-seed robustness adaptation summary uses a consistent coarse-plus-routing CART comparison. At zero target-condition seeds, F1 is approximately 0.4762 for most affected combinations, with false-positive rate 0.8462. Three target-condition seeds raise F1 to 1.0 for relocated blackhole and sinkhole, 0.9947 for relocated Sybil, 1.0 for lossy blackhole and sinkhole, and 0.9367 for lossy Sybil. Lossy Sybil retains FPR of 0.0462.
+
+\begin{figure}[H]
+\centering
+\includesvg[width=0.95\textwidth]{figures/robustness_static_vs_adapted_f1}
+\caption{Static and three-seed adapted CART F1 under attacker relocation and lossy radio.}
+\label{fig:robustness}
+\end{figure}
+
+These results support condition-aware adaptation while also showing a risk. A feature set that is useful under one condition can create widespread false positives under another. Reporting only attack recall would conceal this failure.
+
+\section{Sinkhole Defence and Operational Cost}
+
+The unmitigated sinkhole is strongly visible in rank telemetry but has little application-level effect in this topology. Controls average 417.4 responses and 5,217.4 radio transmissions after activation. Unmitigated attacks average 416.6 responses, a 0.19 percent reduction, and 5,242.6 radio transmissions, a 0.48 percent increase. They produce a mean of 40 low-rank non-root DIO events, compared with zero in controls.
+
+The defence intervention is operationally harmful. Mean responses fall to 87.4, a 79.06 percent reduction relative to control. Runs average 28.8 missed responses, 681.8 parent switches, 35,020 radio transmissions, and 9,702.2 logged avoidance decisions. Radio events increase by 571.22 percent.
+
+\begin{table}[H]
+\centering
+\caption{Post-activation sinkhole defence campaign means across five seeds.}
+\label{tab:defence}
+\begin{tabular}{lrrrr}
+\toprule
+Condition & Responses & Missed & Parent switches & Radio transmissions \\
+\midrule
+Control & 417.4 & 0.0 & 0.0 & 5,217.4 \\
+Sinkhole attack & 416.6 & 0.0 & 0.0 & 5,242.6 \\
+Attack with defence & 87.4 & 28.8 & 681.8 & 35,020.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includesvg[width=0.95\textwidth]{figures/sinkhole_defence_operational_cost}
+\caption{Operational cost of the rank-parent sinkhole defence prototype.}
+\label{fig:defence-cost}
+\end{figure}
+
+The defence is therefore rejected as a mitigation. The negative result is evidence that a detection feature cannot be converted directly into a routing action without confidence, hysteresis, and recovery logic.
+
+\section{Gope Dataset Baseline}
+
+The supplied Gope collection contains 768,811 rows across eight attack files. Seven files contain a supervised type label and routing-aware fields; the Worst Parent file lacks the same label and is excluded from the preliminary supervised baseline. The reproduced temporal or source-order Random Forest top-six result reports mean accuracy of 99.63 percent, recall of 98.57 percent, F1 of 98.08 percent, and FPR of 0.0043 across the evaluated files.
+
+This strong result is compatible with the dissertation's argument. It shows that a static IDS can perform very well when training and test evidence share the dataset's attack representation. It does not contradict weak cross-attack transfer in the Cooja corpus. A preliminary balanced blackhole-to-sinkhole Gaussian transfer on the supplied data achieved accuracy 0.5083, recall 0.0472, and F1 0.0876, which is consistent with mechanism-specific transfer failure. That comparison remains preliminary because the supplied rows do not expose the complete simulation-run identifiers needed for the same whole-seed protocol.
+
+The contrast between 98.08 percent mean F1 in the temporal static baseline and 0.0876 F1 in preliminary blackhole-to-sinkhole transfer is methodologically important. It shows that dataset competence and mechanism transfer are different claims. The strong baseline confirms that the pipeline can learn within the supplied representation. The transfer result asks whether that learned boundary recognises a changed target. Reporting both avoids presenting poor transfer as a broken implementation or high baseline accuracy as universal robustness.
+
+\section{Trust-Derived Features}
+
+The offline trust layer did not change the principal CART results. Static cross-attack F1 remained 0.1822 and the adaptation curve was unchanged. The scores transform evidence already present in the routing feature set, so they improve mechanism interpretation rather than predictive information. Forwarding trust aligns with blackhole and grayhole, rank trust with sinkhole, and control trust with DIS flooding or Sybil. Wormhole and fresh-identity behaviour remain weak cases for a simple trust design.
+
+\section{Failure Analysis}
+
+Several development failures changed the final methodology. The initial sinkhole coarse-feature adaptation remained weak because rank manipulation was not exposed adequately. Adding generic RPL telemetry and persistent rank state corrected the representation rather than changing the attack label. This is stronger evidence than simply selecting a different classifier after a poor result.
+
+Early robustness campaigns failed for technical reasons and were not counted. Missing INFO logs removed routing features. Command-line compiler flag handling broke Contiki include settings. Shared build paths caused application collisions. A weak sinkhole flag produced transient instead of persistent manipulation. A timeout ended runs before the final evidence. Each issue was corrected in v4, and invalid logs were moved to diagnostic folders.
+
+The defence result represents a scientific failure rather than a technical one. The code builds, runs, and responds to suspicious rank, but the response policy destabilises routing. Distinguishing these failure types is important. Technical failures invalidate evidence; a correctly executed intervention with harmful outcomes is valid negative evidence.

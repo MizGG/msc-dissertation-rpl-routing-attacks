@@ -1,0 +1,4 @@
+mode,runs,mean_test_ok,mean_sinkhole_rank_events,mean_low_rank_nonroot_dio_events,mean_parent_switches,mean_app_rx,mean_app_missed,mean_radio_tx,mean_defence_logged_avoidance_count
+control,5,1.0,0.0,0.0,0.0,417.4,0.0,5217.4,0.0
+attack,5,1.0,12.2,40.0,0.0,416.6,0.0,5242.6,0.0
+defence,5,1.0,21.2,65.4,681.8,87.4,28.8,35020.0,9702.2

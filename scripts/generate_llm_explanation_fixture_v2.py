@@ -13,18 +13,6 @@ import json
 from pathlib import Path
 
 
-MECHANISMS = {
-    "blackhole": "forwarding loss or blackhole-style packet dropping",
-    "grayhole": "selective forwarding or grayhole-style intermittent forwarding degradation",
-    "sinkhole": "rank manipulation or sinkhole-like parent attraction",
-    "increase_rank": "abnormal rank-related routing behaviour",
-    "dis_flood": "RPL DIS control-message flooding",
-    "dio_suppression": "RPL DIO suppression or missing control-plane advertisements",
-    "worst_parent": "route instability or malicious parent-selection behaviour",
-    "wormhole": "topology shortcut or wormhole-like radio adjacency anomaly",
-    "sybil": "identity manipulation or Sybil-like DIO source churn",
-}
-
 
 def read_jsonl(path: Path) -> list[dict[str, object]]:
     rows: list[dict[str, object]] = []
@@ -41,10 +29,6 @@ def write_jsonl(path: Path, rows: list[dict[str, object]]) -> None:
             handle.write(json.dumps(row, sort_keys=True) + "\n")
 
 
-def family_from_alert(alert_id: str) -> str:
-    text = alert_id.removeprefix("rpl-")
-    return text.rsplit("-", maxsplit=2)[0]
-
 
 def format_changes(changes: list[object]) -> str:
     parts: list[str] = []
@@ -59,8 +43,6 @@ def format_changes(changes: list[object]) -> str:
 
 
 def explanation(case: dict[str, object]) -> dict[str, object]:
-    alert_id = str(case["alert_id"])
-    family = family_from_alert(alert_id)
     context = case["model_context"]
     assert isinstance(context, dict)
     static = context["static_cross_attack_context"]
@@ -87,8 +69,8 @@ def explanation(case: dict[str, object]) -> dict[str, object]:
             f"The trust evidence reports {trust_text}."
         ),
         "likely_mechanism": (
-            f"The observed feature pattern is consistent with likely {MECHANISMS[family]}. "
-            "This is an inference from the supplied routing and trust evidence."
+            "The supplied evidence indicates a likely RPL forwarding, routing, or control-plane anomaly. "
+            "It does not by itself identify a specific attack family."
         ),
         "drift_implication": (
             f"The static cross-attack context reports recall {static_recall} and F1 {static_f1}, "
@@ -112,12 +94,12 @@ def main() -> None:
     parser.add_argument(
         "--cases",
         type=Path,
-        default=Path("experiments/llm_explanations_v2/evidence/attack_explanation_cases.jsonl"),
+        default=Path("experiments/90 Raw Reproducibility Workspace/llm_explanations_v2/evidence/attack_explanation_cases.jsonl"),
     )
     parser.add_argument(
         "--out",
         type=Path,
-        default=Path("experiments/llm_explanations_v2/outputs/deterministic_explanations.jsonl"),
+        default=Path("experiments/90 Raw Reproducibility Workspace/llm_explanations_v2/outputs/deterministic_explanations.jsonl"),
     )
     args = parser.parse_args()
 

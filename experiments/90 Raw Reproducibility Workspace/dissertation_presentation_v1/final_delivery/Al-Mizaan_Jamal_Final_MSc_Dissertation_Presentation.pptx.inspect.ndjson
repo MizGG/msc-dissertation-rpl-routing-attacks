@@ -1,0 +1,1077 @@
+{"kind":"deck","id":"pr/djdpup","name":"Deck"}
+{"kind":"layout","layoutId":"e167f9b0-46db-4b8c-a260-8351b56f5d20","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"a6050325-2e21-44d7-b97b-bd81d07d9d1c","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/6m98j5","slide":1,"title":"FINAL MSc DISSERTATION PRESENTATION","textShapes":10}
+{"kind":"shape","id":"sh/p4fqxobe","slide":1,"bbox":[930,95,24,24]}
+{"kind":"shape","id":"sh/21o7m9c3","slide":1,"bbox":[1070,160,16,16]}
+{"kind":"shape","id":"sh/32x8vet8","slide":1,"bbox":[1010,255,19,19]}
+{"kind":"shape","id":"sh/c7qps3u5","slide":1,"bbox":[1150,320,22,22]}
+{"kind":"shape","id":"sh/d8zq1obq","slide":1,"bbox":[900,390,17,17]}
+{"kind":"shape","id":"sh/q587qtcz","slide":1,"bbox":[1050,470,25,25]}
+{"kind":"shape","id":"sh/b6h8zytk","slide":1,"bbox":[942,107,2,2]}
+{"kind":"shape","id":"sh/sbmpgzul","slide":1,"bbox":[1078,168,2,2]}
+{"kind":"shape","id":"sh/tcv6p4b6","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/dkfet4za","slide":1,"bbox":[1078,168,2,2]}
+{"kind":"shape","id":"sh/sjmdkzip","slide":1,"bbox":[1019,264,2,2]}
+{"kind":"shape","id":"sh/ridwruh4","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/qh4vip0j","slide":1,"bbox":[1019,264,2,2]}
+{"kind":"shape","id":"sh/1ofex4z6","slide":1,"bbox":[1161,331,2,2]}
+{"kind":"shape","id":"sh/0n6dozy1","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/fmxwvehg","slide":1,"bbox":[1161,331,2,2]}
+{"kind":"shape","id":"sh/elovm90v","slide":1,"bbox":[908,398,2,2]}
+{"kind":"shape","id":"sh/pcze1ozi","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/ob6xsjyx","slide":1,"bbox":[908,398,2,2]}
+{"kind":"shape","id":"sh/8vehon69","slide":1,"bbox":[1063,482,2,2]}
+{"kind":"shape","id":"sh/9w7yxs7u","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/mtwfmdo3","slide":1,"text":"FINAL MSc DISSERTATION PRESENTATION","textPreview":"FINAL MSc DISSERTATION PRESENTATION","textChars":35,"textLines":1,"bbox":[66,64,690,26]}
+{"kind":"textbox","id":"sh/7u5gvipo","slide":1,"text":"Evaluating Large Language Models for\nExplaining Anomaly Detection under\nConcept Drift in Cybersecurity Systems","textPreview":"Evaluating Large Language Models for | Explaining Anomaly Detection under | Concept Drift in Cybersecurity Systems","textChars":110,"textLines":3,"bbox":[66,112,820,200]}
+{"kind":"textbox","id":"sh/wjyhs765","slide":1,"text":"A Cooja-based study of evolving RPL attacks, whole-seed adaptation, Sybil identity manipulation and local explanation","textPreview":"A Cooja-based study of evolving RPL attacks, whole-seed adaptation, Sybil identity manipulation and local explanation","textChars":117,"textLines":1,"bbox":[70,330,760,78]}
+{"kind":"shape","id":"sh/hk7y1c7q","slide":1,"bbox":[70,444,570,2]}
+{"kind":"textbox","id":"sh/uhgzqxoz","slide":1,"text":"AL-MIZAAN JAMAL","textPreview":"AL-MIZAAN JAMAL","textChars":15,"textLines":1,"bbox":[70,474,420,32]}
+{"kind":"textbox","id":"sh/vipgz2pk","slide":1,"text":"MSc Cybersecurity | University of Sheffield","textPreview":"MSc Cybersecurity | University of Sheffield","textChars":43,"textLines":1,"bbox":[70,516,620,28]}
+{"kind":"textbox","id":"sh/cnuxg361","slide":1,"text":"Supervisors: Dr Swagato Sanyal and Dr Prosanta Gope","textPreview":"Supervisors: Dr Swagato Sanyal and Dr Prosanta Gope","textChars":51,"textLines":1,"bbox":[70,554,720,26]}
+{"kind":"shape","id":"sh/donyp87m","slide":1,"bbox":[70,617,130,28]}
+{"kind":"textbox","id":"sh/fudsbadg","slide":1,"text":"CONTIKI-NG","textPreview":"CONTIKI-NG","textChars":10,"textLines":1,"bbox":[78,617,114,28]}
+{"kind":"shape","id":"sh/et4ri5cv","slide":1,"bbox":[214,617,96,28]}
+{"kind":"textbox","id":"sh/1wvadkv6","slide":1,"text":"COOJA","textPreview":"COOJA","textChars":5,"textLines":1,"bbox":[222,617,80,28]}
+{"kind":"shape","id":"sh/0vmtkful","slide":1,"bbox":[324,617,154,28]}
+{"kind":"textbox","id":"sh/rqts7qd4","slide":1,"text":"CONCEPT DRIFT","textPreview":"CONCEPT DRIFT","textChars":13,"textLines":1,"bbox":[332,617,138,28]}
+{"kind":"shape","id":"sh/qpkrelcj","slide":1,"bbox":[492,617,136,28]}
+{"kind":"textbox","id":"sh/dsva90va","slide":1,"text":"LOCAL QWEN","textPreview":"LOCAL QWEN","textChars":10,"textLines":1,"bbox":[500,617,120,28]}
+{"kind":"notes","id":"nt/6m98j5","slide":1,"text":"Good morning. My name is Al-Mizaan Jamal. This dissertation asks a simple but important question: what happens when an intrusion detector learns one attack pattern and the attacker later behaves differently? I investigate that question using RPL, the routing protocol used by constrained Internet of Things networks. I built and validated attack scenarios in Contiki-NG and Cooja, converted their behaviour into a controlled dataset, tested static transfer and supervised adaptation, added a Sybil identity attack, and finally used a local language model to explain the measured evidence. The title remains focused on explanation under concept drift. The Cooja work is the controlled cybersecurity environment that makes that explanation problem measurable.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_overleaf_v1/chapters/01_introduction.tex\n- /Users/mizzy/Downloads/dissertation_full_handover_2026-08-29.md\n[/Sources]"}
+{"kind":"slide","id":"sl/f6pl15","slide":2,"title":"THE PROBLEM","textShapes":13}
+{"kind":"textbox","id":"sh/knyhgr21","slide":2,"text":" THE PROBLEM","textPreview":"THE PROBLEM","textChars":12,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/jmpg7m1g","slide":2,"text":" What happens when the attack changes?","textPreview":"What happens when the attack changes?","textChars":38,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/ylgfehkb","slide":2,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/xkny5cjq","slide":2,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/wjexc725","slide":2,"text":"Problem and motivation","textPreview":"Problem and motivation","textChars":22,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/bi5g321k","slide":2,"bbox":[70,190,250,250]}
+{"kind":"shape","id":"sh/ahwfaxkz","slide":2,"bbox":[158,218,74,74]}
+{"kind":"textbox","id":"sh/hgryhgju","slide":2,"text":"TRAINING WORLD","textPreview":"TRAINING WORLD","textChars":14,"textLines":1,"bbox":[88,310,214,28]}
+{"kind":"textbox","id":"sh/gfihob29","slide":2,"text":"Blackhole-like behaviour\nPacket delivery collapses","textPreview":"Blackhole-like behaviour | Packet delivery collapses","textChars":50,"textLines":2,"bbox":[90,347,210,68]}
+{"kind":"shape","id":"sh/yh4bm5kr","slide":2,"bbox":[385,190,250,250]}
+{"kind":"shape","id":"sh/jidsva1c","slide":2,"bbox":[473,218,74,74]}
+{"kind":"textbox","id":"sh/kjmtof2x","slide":2,"text":"CHANGED WORLD","textPreview":"CHANGED WORLD","textChars":13,"textLines":1,"bbox":[403,310,214,28]}
+{"kind":"textbox","id":"sh/lkfaxkji","slide":2,"text":"Sinkhole or Sybil\nDifferent mechanism, different evidence","textPreview":"Sinkhole or Sybil | Different mechanism, different evidence","textChars":57,"textLines":2,"bbox":[405,347,210,68]}
+{"kind":"shape","id":"sh/ad4bylkv","slide":2,"bbox":[700,190,220,250]}
+{"kind":"shape","id":"sh/bedsrq10","slide":2,"bbox":[788,218,74,74]}
+{"kind":"textbox","id":"sh/wfmt0v2l","slide":2,"text":"STATIC IDS","textPreview":"STATIC IDS","textChars":10,"textLines":1,"bbox":[718,310,184,28]}
+{"kind":"textbox","id":"sh/xgvat0j6","slide":2,"text":"Old pattern no longer matches\nAttacks may be labelled normal","textPreview":"Old pattern no longer matches | Attacks may be labelled normal","textChars":60,"textLines":2,"bbox":[720,347,180,68]}
+{"kind":"shape","id":"sh/u9obup0z","slide":2,"bbox":[985,190,220,250]}
+{"kind":"shape","id":"sh/vaxc3u1k","slide":2,"bbox":[1073,218,74,74]}
+{"kind":"textbox","id":"sh/ru98vmhw","slide":2,"text":"RESPONSE","textPreview":"RESPONSE","textChars":8,"textLines":1,"bbox":[1003,310,184,28]}
+{"kind":"textbox","id":"sh/qt07mh0b","slide":2,"text":"Adapt using new runs\nExplain the measured change","textPreview":"Adapt using new runs | Explain the measured change","textChars":48,"textLines":2,"bbox":[1005,347,180,68]}
+{"kind":"shape","id":"sh/dwrqxwz2","slide":2,"bbox":[338,294,30,30]}
+{"kind":"shape","id":"sh/sviporih","slide":2,"bbox":[653,294,30,30]}
+{"kind":"shape","id":"sh/fi98zmhs","slide":2,"bbox":[938,294,30,30]}
+{"kind":"shape","id":"sh/ex07q10n","slide":2,"bbox":[154,505,970,84]}
+{"kind":"textbox","id":"sh/1kbq1wzy","slide":2,"text":"Concept drift here means the relationship between the measured features and the attack label has changed.","textPreview":"Concept drift here means the relationship between the measured features and the attack label has changed.","textChars":105,"textLines":1,"bbox":[180,518,920,58]}
+{"kind":"textbox","id":"sh/0ji9srid","slide":2,"text":"Controlled cross-attack distribution shift, not a claim about every form of real-world drift","textPreview":"Controlled cross-attack distribution shift, not a claim about every form of real-world drift","textChars":92,"textLines":1,"bbox":[250,607,780,24]}
+{"kind":"notes","id":"nt/f6pl15","slide":2,"text":"The easiest way to understand concept drift is to think about pattern matching. A detector learns from the past. In the green box, it sees Blackhole behaviour, where packets disappear after an attacker starts dropping forwarded traffic. In the red box, the malicious behaviour changes. A Sinkhole may continue forwarding but advertise an attractive rank, while a Sybil node pretends to be several identities. The old detector can then miss the attack because the evidence no longer looks like the pattern it learned. In this dissertation I create that change deliberately by training on one attack family and testing on another. This is a controlled concept-drift scenario, not proof that all real-world drift behaves the same way. The next slide explains why the LLM-focused project required this controlled experimental environment.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_results_summary_v1/core_argument.md\n[/Sources]"}
+{"kind":"slide","id":"sl/cc4uk8","slide":3,"title":"RESEARCH LOGIC","textShapes":19}
+{"kind":"textbox","id":"sh/87yd0nud","slide":3,"text":" RESEARCH LOGIC","textPreview":"RESEARCH LOGIC","textChars":15,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/n6pc7ids","slide":3,"text":" Cooja creates the evidence needed by the LLM question","textPreview":"Cooja creates the evidence needed by the LLM question","textChars":54,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/m5gvedw7","slide":3,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/lk7u58vm","slide":3,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/0jydc3e1","slide":3,"text":"Problem and motivation","textPreview":"Problem and motivation","textChars":22,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/zipc3ydg","slide":3,"bbox":[162,158,62,62]}
+{"kind":"textbox","id":"sh/yhgvadwb","slide":3,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[162,158,62,62]}
+{"kind":"textbox","id":"sh/dgnu18vq","slide":3,"text":"Original aim","textPreview":"Original aim","textChars":12,"textLines":1,"bbox":[90,242,205,34]}
+{"kind":"textbox","id":"sh/cfed83e5","slide":3,"text":"Explain anomaly alerts under drift","textPreview":"Explain anomaly alerts under drift","textChars":34,"textLines":1,"bbox":[90,286,205,72]}
+{"kind":"shape","id":"sh/epgf2l0j","slide":3,"bbox":[437,158,62,62]}
+{"kind":"textbox","id":"sh/zapwvq14","slide":3,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[437,158,62,62]}
+{"kind":"textbox","id":"sh/0byx4bip","slide":3,"text":"Experimental need","textPreview":"Experimental need","textChars":17,"textLines":1,"bbox":[365,242,205,34]}
+{"kind":"textbox","id":"sh/1c7exgja","slide":3,"text":"Create controlled changing cyber behaviour","textPreview":"Create controlled changing cyber behaviour","textChars":42,"textLines":1,"bbox":[365,286,205,72]}
+{"kind":"shape","id":"sh/qlwfy10n","slide":3,"bbox":[712,158,62,62]}
+{"kind":"textbox","id":"sh/rm5wr618","slide":3,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[712,158,62,62]}
+{"kind":"textbox","id":"sh/cnex0bit","slide":3,"text":"Cooja contribution","textPreview":"Cooja contribution","textChars":18,"textLines":1,"bbox":[640,242,205,34]}
+{"kind":"textbox","id":"sh/donetgjy","slide":3,"text":"Generate protocol-level RPL evidence","textPreview":"Generate protocol-level RPL evidence","textChars":36,"textLines":1,"bbox":[640,286,205,72]}
+{"kind":"shape","id":"sh/2hwvu10b","slide":3,"bbox":[987,158,62,62]}
+{"kind":"textbox","id":"sh/3i5wnm1w","slide":3,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[987,158,62,62]}
+{"kind":"textbox","id":"sh/7m1cv2ho","slide":3,"text":"Explanation layer","textPreview":"Explanation layer","textChars":17,"textLines":1,"bbox":[915,242,205,34]}
+{"kind":"textbox","id":"sh/6lsb2xg3","slide":3,"text":"Turn structured results into readable analysis","textPreview":"Turn structured results into readable analysis","textChars":46,"textLines":1,"bbox":[915,286,205,72]}
+{"kind":"shape","id":"sh/tojuxszu","slide":3,"bbox":[313,174,30,30]}
+{"kind":"shape","id":"sh/8nat4ny9","slide":3,"bbox":[588,174,30,30]}
+{"kind":"shape","id":"sh/vqlcz2h0","slide":3,"bbox":[863,174,30,30]}
+{"kind":"shape","id":"sh/upcb6xgf","slide":3,"bbox":[190,420,900,2]}
+{"kind":"textbox","id":"sh/hs3u1czq","slide":3,"text":"The IDS detects","textPreview":"The IDS detects","textChars":15,"textLines":1,"bbox":[185,450,280,48]}
+{"kind":"shape","id":"sh/grut87yl","slide":3,"bbox":[480,458,36,36]}
+{"kind":"textbox","id":"sh/buhsnihg","slide":3,"text":"The pipeline produces evidence","textPreview":"The pipeline produces evidence","textChars":30,"textLines":1,"bbox":[515,450,345,48]}
+{"kind":"shape","id":"sh/at8bud0b","slide":3,"bbox":[875,458,36,36]}
+{"kind":"textbox","id":"sh/0z69ojet","slide":3,"text":"The LLM explains","textPreview":"The LLM explains","textChars":16,"textLines":1,"bbox":[910,450,260,48]}
+{"kind":"shape","id":"sh/10fqx4fe","slide":3,"bbox":[205,548,870,62]}
+{"kind":"textbox","id":"sh/ex4rm9w3","slide":3,"text":"Cooja is not a side project. It is the controlled testbed for the dissertation's original explanation problem.","textPreview":"Cooja is not a side project. It is the controlled testbed for the dissertation's original explanation problem.","textChars":110,"textLines":1,"bbox":[230,559,820,40]}
+{"kind":"notes","id":"nt/cc4uk8","slide":3,"text":"The project began with the question of whether a language model could explain anomaly detection under concept drift. Before an LLM can explain anything reliably, it needs real structured evidence. That created the need for a controlled cybersecurity experiment. I therefore used Contiki-NG and Cooja to generate repeatable routing attacks, known activation times and matched controls. The IDS then converts those observations into predictions, recall, F1, feature shifts and drift alerts. Only after that does the language model receive the structured evidence and produce a readable explanation. Point to the three statements at the bottom. The detector makes the classification. The experimental pipeline produces the evidence. The LLM explains that evidence. It does not inspect Cooja by itself and it does not replace the IDS. Next I will show the paper that shaped the adaptive-detection idea.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_results_summary_v1/llm_layer_summary.md\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/llm_explanations_v2/README.md\n[/Sources]"}
+{"kind":"slide","id":"sl/7to7mi","slide":4,"title":"RESEARCH FOUNDATION","textShapes":18}
+{"kind":"textbox","id":"sh/j25g3q9o","slide":4,"text":" RESEARCH FOUNDATION","textPreview":"RESEARCH FOUNDATION","textChars":20,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/k3yhcvq9","slide":4,"text":" Gope et al. supplied the adaptive idea, not a template to copy","textPreview":"Gope et al. supplied the adaptive idea, not a template to copy","textChars":63,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/547y5gru","slide":4,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/65gzel8f","slide":4,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/76pg7q90","slide":4,"text":"Literature and positioning","textPreview":"Literature and positioning","textChars":26,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/s7yhgvq5","slide":4,"bbox":[55,145,542,408]}
+{"kind":"textbox","id":"sh/m9cf218v","slide":4,"text":"Pasikhani, Clark and Gope (2022), Figure 4","textPreview":"Pasikhani, Clark and Gope (2022), Figure 4","textChars":42,"textLines":1,"bbox":[80,530,495,24]}
+{"kind":"textbox","id":"sh/nalgv69g","slide":4,"text":"PAPER IDEA","textPreview":"PAPER IDEA","textChars":10,"textLines":1,"bbox":[650,148,180,22]}
+{"kind":"textbox","id":"sh/vexgzylk","slide":4,"text":"MY COOJA ADAPTATION","textPreview":"MY COOJA ADAPTATION","textChars":19,"textLines":1,"bbox":[920,148,240,22]}
+{"kind":"textbox","id":"sh/udof6tkz","slide":4,"text":"Changing attack profiles","textPreview":"Changing attack profiles","textChars":24,"textLines":1,"bbox":[640,190,240,48]}
+{"kind":"shape","id":"sh/hgfy183q","slide":4,"bbox":[886,198,26,26]}
+{"kind":"textbox","id":"sh/wf6x8325","slide":4,"text":"Nine validated RPL attack families","textPreview":"Nine validated RPL attack families","textChars":34,"textLines":1,"bbox":[925,190,270,48]}
+{"kind":"shape","id":"sh/7qdgvelo","slide":4,"bbox":[640,244,555,1]}
+{"kind":"textbox","id":"sh/mp4f2943","slide":4,"text":"Adversarial observations","textPreview":"Adversarial observations","textChars":24,"textLines":1,"bbox":[640,260,240,48]}
+{"kind":"shape","id":"sh/9svyxo3u","slide":4,"bbox":[886,268,26,26]}
+{"kind":"textbox","id":"sh/8rmx4jm9","slide":4,"text":"Logs, radio traces and routing state","textPreview":"Logs, radio traces and routing state","textChars":36,"textLines":1,"bbox":[925,260,270,48]}
+{"kind":"shape","id":"sh/zmdgrelc","slide":4,"bbox":[640,314,555,1]}
+{"kind":"textbox","id":"sh/yl4fy947","slide":4,"text":"Constructed feature data","textPreview":"Constructed feature data","textChars":24,"textLines":1,"bbox":[640,330,240,48]}
+{"kind":"shape","id":"sh/2hkza9oz","slide":4,"bbox":[886,338,26,26]}
+{"kind":"textbox","id":"sh/nitgje5k","slide":4,"text":"810 labelled 60-second windows","textPreview":"810 labelled 60-second windows","textChars":30,"textLines":1,"bbox":[925,330,270,48]}
+{"kind":"shape","id":"sh/oj2hcj65","slide":4,"bbox":[640,384,555,1]}
+{"kind":"textbox","id":"sh/pkby54na","slide":4,"text":"Adaptive detection","textPreview":"Adaptive detection","textChars":18,"textLines":1,"bbox":[640,400,240,48]}
+{"kind":"shape","id":"sh/al4ze9ov","slide":4,"bbox":[886,408,26,26]}
+{"kind":"textbox","id":"sh/bmd07e5g","slide":4,"text":"Static transfer plus whole-seed adaptation","textPreview":"Static transfer plus whole-seed adaptation","textChars":42,"textLines":1,"bbox":[925,400,270,48]}
+{"kind":"shape","id":"sh/cnmhgj61","slide":4,"bbox":[640,454,555,1]}
+{"kind":"textbox","id":"sh/xovi9onm","slide":4,"text":"DDM and RL architecture","textPreview":"DDM and RL architecture","textChars":23,"textLines":1,"bbox":[640,470,240,48]}
+{"kind":"shape","id":"sh/yp4zito7","slide":4,"bbox":[886,478,26,26]}
+{"kind":"textbox","id":"sh/zqd0by5s","slide":4,"text":"CUSUM/DDM plus a limited offline DQN/DDQN extension","textPreview":"CUSUM/DDM plus a limited offline DQN/DDQN extension","textChars":51,"textLines":1,"bbox":[925,470,270,48]}
+{"kind":"shape","id":"sh/tkf2hs7u","slide":4,"bbox":[640,524,555,1]}
+{"kind":"shape","id":"sh/8j618nq9","slide":4,"bbox":[640,555,555,62]}
+{"kind":"textbox","id":"sh/7ixkfipo","slide":4,"text":"Inspired by and adapted from the paper. Not an exact NetSim ARL reproduction.","textPreview":"Inspired by and adapted from the paper. Not an exact NetSim ARL reproduction.","textChars":77,"textLines":1,"bbox":[660,566,515,40]}
+{"kind":"textbox","id":"sh/mhoj6d83","slide":4,"text":"Source: Pasikhani, Clark and Gope, Adversarial RL-Based IDS for Evolving Data Environment in 6LoWPAN, Fig. 4.","textPreview":"Source: Pasikhani, Clark and Gope, Adversarial RL-Based IDS for Evolving Data Environment in 6LoWPAN, Fig. 4.","textChars":109,"textLines":1,"bbox":[58,654,1120,18]}
+{"kind":"image","id":"im/4nadkjql","slide":4,"name":"","alt":"Screenshot 2026-08-29 at 12.31.48.png","bbox":[68,158,516,365]}
+{"kind":"notes","id":"nt/7to7mi","slide":4,"text":"This is the main paper that shaped the dissertation. The figure on the left shows changing malicious activities arranged as attack profiles over time. That is the idea I adapted. I did not reproduce the complete NetSim adversarial reinforcement-learning system or copy its Algorithms 1 and 2. Instead, I mapped the research question into a smaller and more auditable Cooja experiment. Multiple RPL attack families replace the paper's changing profiles. Contiki logs and routing state replace the NetSim observation stream. Whole-seed adaptation tests recovery after the attack mechanism changes. I also implemented standard DDM and DQN or DDQN principles in narrower extensions, with my own Cooja-derived states, actions, reward design and evaluation protocol. SVELTE separately motivated the importance of protocol-aware routing evidence. The honest claim is a Cooja-based extension of the underlying drift and adaptation question. Next I will explain the RPL mechanisms being changed.\n\n[Sources]\n- /Users/mizzy/Documents/Dissertation/diss papers/Adversarial_RL-Based_IDS_for_Evolving_Data_Environment_in_6LoWPAN.pdf\n- /Users/mizzy/Downloads/2013-Elsevier-SVELTE realtime ID in the IoT.pdf\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/gope_dataset/paper_alignment.md\n[/Sources]"}
+{"kind":"slide","id":"sl/7c5j49","slide":5,"title":"RPL IN ONE MINUTE","textShapes":19}
+{"kind":"textbox","id":"sh/03mxwry9","slide":5,"text":" RPL IN ONE MINUTE","textPreview":"RPL IN ONE MINUTE","textChars":18,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/zidgnmho","slide":5,"text":" Different RPL attacks manipulate different evidence","textPreview":"Different RPL attacks manipulate different evidence","textChars":52,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/eh4fuhg3","slide":5,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/98vytgzq","slide":5,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/o7mx0by5","slide":5,"text":"Technical context","textPreview":"Technical context","textChars":17,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/n6dgr6hk","slide":5,"bbox":[570,145,118,70]}
+{"kind":"textbox","id":"sh/m54fy1gz","slide":5,"text":"ROOT","textPreview":"ROOT","textChars":4,"textLines":1,"bbox":[570,145,118,70]}
+{"kind":"shape","id":"sh/xcfyxgzm","slide":5,"bbox":[355,275,100,62]}
+{"kind":"textbox","id":"sh/wb6x4byh","slide":5,"text":"PARENT","textPreview":"PARENT","textChars":6,"textLines":1,"bbox":[355,275,100,62]}
+{"kind":"shape","id":"sh/6hcji50r","slide":5,"bbox":[785,275,100,62]}
+{"kind":"textbox","id":"sh/7i50bahc","slide":5,"text":"PARENT","textPreview":"PARENT","textChars":6,"textLines":1,"bbox":[785,275,100,62]}
+{"kind":"shape","id":"sh/8je1kfih","slide":5,"bbox":[240,435,88,56]}
+{"kind":"textbox","id":"sh/t4nidkz2","slide":5,"text":"NODE","textPreview":"NODE","textChars":4,"textLines":1,"bbox":[240,435,88,56]}
+{"kind":"shape","id":"sh/u5wjmpgn","slide":5,"bbox":[480,420,116,78]}
+{"kind":"textbox","id":"sh/v65kfah8","slide":5,"text":"ATTACKER","textPreview":"ATTACKER","textChars":8,"textLines":1,"bbox":[480,420,116,78]}
+{"kind":"shape","id":"sh/g7e1ofyt","slide":5,"bbox":[760,435,88,56]}
+{"kind":"textbox","id":"sh/h8n2hkze","slide":5,"text":"NODE","textPreview":"NODE","textChars":4,"textLines":1,"bbox":[760,435,88,56]}
+{"kind":"shape","id":"sh/a9sjal0j","slide":5,"bbox":[980,435,88,56]}
+{"kind":"textbox","id":"sh/ba103qh4","slide":5,"text":"NODE","textPreview":"NODE","textChars":4,"textLines":1,"bbox":[980,435,88,56]}
+{"kind":"shape","id":"sh/fixovitk","slide":5,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/eho7mxcz","slide":5,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/14f6xsbq","slide":5,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/g36ponu5","slide":5,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/rexorito","slide":5,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/6d47idc3","slide":5,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/tgf6tsbe","slide":5,"bbox":[55,160,235,92]}
+{"kind":"shape","id":"sh/sf6pknut","slide":5,"bbox":[55,160,5,92]}
+{"kind":"textbox","id":"sh/bah832ts","slide":5,"text":"Forwarding","textPreview":"Forwarding","textChars":10,"textLines":1,"bbox":[77,172,199,28]}
+{"kind":"textbox","id":"sh/q987uhs7","slide":5,"text":"Blackhole, Grayhole\nDelivery and response volume","textPreview":"Blackhole, Grayhole | Delivery and response volume","textChars":48,"textLines":2,"bbox":[77,206,197,34]}
+{"kind":"shape","id":"sh/8f2lozap","slide":5,"bbox":[55,540,275,92]}
+{"kind":"shape","id":"sh/9gbmx4ra","slide":5,"bbox":[55,540,5,92]}
+{"kind":"textbox","id":"sh/md03m9sj","slide":5,"text":"Rank and route","textPreview":"Rank and route","textChars":14,"textLines":1,"bbox":[77,552,239,28]}
+{"kind":"textbox","id":"sh/7e94ve94","slide":5,"text":"Sinkhole, Increase Rank, Worst Parent\nRank, parent choice and churn","textPreview":"Sinkhole, Increase Rank, Worst Parent | Rank, parent choice and churn","textChars":67,"textLines":2,"bbox":[77,586,237,34]}
+{"kind":"shape","id":"sh/wj2lsjal","slide":5,"bbox":[945,160,270,92]}
+{"kind":"shape","id":"sh/hkbm1or6","slide":5,"bbox":[945,160,5,92]}
+{"kind":"textbox","id":"sh/uhk3q9sv","slide":5,"text":"Control plane","textPreview":"Control plane","textChars":13,"textLines":1,"bbox":[967,172,234,28]}
+{"kind":"textbox","id":"sh/vit4ze9g","slide":5,"text":"DIS Flood, DIO Suppression\nControl-message rate and timing","textPreview":"DIS Flood, DIO Suppression | Control-message rate and timing","textChars":58,"textLines":2,"bbox":[967,206,232,34]}
+{"kind":"shape","id":"sh/4nm5wjax","slide":5,"bbox":[930,540,285,92]}
+{"kind":"shape","id":"sh/5ovm5ori","slide":5,"bbox":[930,540,5,92]}
+{"kind":"textbox","id":"sh/pw3m5ovi","slide":5,"text":"Path and identity","textPreview":"Path and identity","textChars":17,"textLines":1,"bbox":[952,552,249,28]}
+{"kind":"textbox","id":"sh/4vu5cjex","slide":5,"text":"Wormhole, Sybil\nRadio path and address consistency","textPreview":"Wormhole, Sybil | Radio path and address consistency","textChars":50,"textLines":2,"bbox":[952,586,247,34]}
+{"kind":"textbox","id":"sh/3ul43edc","slide":5,"text":"DODAG = a routing graph toward the root","textPreview":"DODAG = a routing graph toward the root","textChars":39,"textLines":1,"bbox":[442,550,400,28]}
+{"kind":"notes","id":"nt/7c5j49","slide":5,"text":"RPL is the IPv6 routing protocol used by constrained low-power networks. It organises nodes into a Destination-Oriented Directed Acyclic Graph, or DODAG, leading toward a root. The easiest way to think about rank is that it describes a node's relative position in that graph. Nodes exchange DIO control messages to advertise routing information, and DIS messages to request it. The attack families in this project change different parts of that process. Blackhole and Grayhole affect forwarding. Sinkhole and Increase Rank manipulate route attraction. DIS Flood and DIO Suppression change control traffic. Worst Parent changes parent choice. Wormhole changes the apparent path. Sybil changes identity. Point to the four callouts. This diversity is exactly why one feature representation may work for one attack and fail on another. The next slide shows how all of those mechanisms enter the experimental system.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_results_summary_v1/attack_coverage_table.csv\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_overleaf_v1/chapters/02_literature_review.tex\n[/Sources]"}
+{"kind":"slide","id":"sl/gkyso7","slide":6,"title":"SYSTEM ARCHITECTURE","textShapes":29}
+{"kind":"textbox","id":"sh/el8v2dwb","slide":6,"text":" SYSTEM ARCHITECTURE","textPreview":"SYSTEM ARCHITECTURE","textChars":20,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/1ojedsv2","slide":6,"text":" The complete system links simulation, detection and explanation","textPreview":"The complete system links simulation, detection and explanation","textChars":64,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/0nad4neh","slide":6,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/rihw7yd0","slide":6,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/qh8vydwf","slide":6,"text":"Methodology","textPreview":"Methodology","textChars":11,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/dkze98vq","slide":6,"bbox":[48,208,190,190]}
+{"kind":"shape","id":"sh/sjqd03e5","slide":6,"bbox":[114,235,58,58]}
+{"kind":"textbox","id":"sh/belwj2d4","slide":6,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[114,235,58,58]}
+{"kind":"textbox","id":"sh/adsvaxwj","slide":6,"text":"COOJA / CONTIKI-NG","textPreview":"COOJA / CONTIKI-NG","textChars":18,"textLines":1,"bbox":[60,312,166,28]}
+{"kind":"textbox","id":"sh/cj6x8f61","slide":6,"text":"9 attacks + controls\n5 seeds per family","textPreview":"9 attacks + controls | 5 seeds per family","textChars":39,"textLines":2,"bbox":[62,346,162,44]}
+{"kind":"shape","id":"sh/dkfe1knm","slide":6,"bbox":[250,286,28,28]}
+{"kind":"shape","id":"sh/qhof6pov","slide":6,"bbox":[280,208,190,190]}
+{"kind":"shape","id":"sh/rixwza5g","slide":6,"bbox":[346,235,58,58]}
+{"kind":"textbox","id":"sh/4f6x4f6p","slide":6,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[346,235,58,58]}
+{"kind":"textbox","id":"sh/pgfexkna","slide":6,"text":"EVIDENCE","textPreview":"EVIDENCE","textChars":8,"textLines":1,"bbox":[292,312,166,28]}
+{"kind":"textbox","id":"sh/2t4v25oj","slide":6,"text":"Logs, radio traces\nRPL events","textPreview":"Logs, radio traces | RPL events","textChars":29,"textLines":2,"bbox":[294,346,162,44]}
+{"kind":"shape","id":"sh/3udwva54","slide":6,"bbox":[482,286,28,28]}
+{"kind":"shape","id":"sh/grmd0v6t","slide":6,"bbox":[520,208,190,190]}
+{"kind":"shape","id":"sh/hsvet0ne","slide":6,"bbox":[586,235,58,58]}
+{"kind":"textbox","id":"sh/xw3mhsvq","slide":6,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[586,235,58,58]}
+{"kind":"textbox","id":"sh/wbul8nu5","slide":6,"text":"DATASET","textPreview":"DATASET","textChars":7,"textLines":1,"bbox":[532,312,166,28]}
+{"kind":"textbox","id":"sh/balkf2dk","slide":6,"text":"60-second features\nwhole-run provenance","textPreview":"60-second features | whole-run provenance","textChars":39,"textLines":2,"bbox":[534,346,162,44]}
+{"kind":"shape","id":"sh/a9c36xcf","slide":6,"bbox":[722,286,28,28]}
+{"kind":"shape","id":"sh/9832dsvu","slide":6,"bbox":[760,208,190,190]}
+{"kind":"shape","id":"sh/o7ul4nu9","slide":6,"bbox":[826,235,58,58]}
+{"kind":"textbox","id":"sh/n6lkbido","slide":6,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[826,235,58,58]}
+{"kind":"textbox","id":"sh/m5s32dc3","slide":6,"text":"IDS + DRIFT","textPreview":"IDS + DRIFT","textChars":11,"textLines":1,"bbox":[772,312,166,28]}
+{"kind":"textbox","id":"sh/t4nmpcvy","slide":6,"text":"Static transfer\nadaptation, CUSUM, DDM","textPreview":"Static transfer | adaptation, CUSUM, DDM","textChars":38,"textLines":2,"bbox":[774,346,162,44]}
+{"kind":"shape","id":"sh/s3elgrud","slide":6,"bbox":[962,286,28,28]}
+{"kind":"shape","id":"sh/q98ja9sv","slide":6,"bbox":[1000,208,190,190]}
+{"kind":"shape","id":"sh/rah0jetg","slide":6,"bbox":[1066,235,58,58]}
+{"kind":"textbox","id":"sh/cbq1cja1","slide":6,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1066,235,58,58]}
+{"kind":"textbox","id":"sh/dczilobm","slide":6,"text":"LOCAL LLM","textPreview":"LOCAL LLM","textChars":9,"textLines":1,"bbox":[1012,312,166,28]}
+{"kind":"textbox","id":"sh/2loz69sz","slide":6,"text":"Structured evidence\nanalyst-readable explanation","textPreview":"Structured evidence | analyst-readable explanation","textChars":48,"textLines":2,"bbox":[1014,346,162,44]}
+{"kind":"textbox","id":"sh/3mx0fetk","slide":6,"text":"COMPLETED ATTACK CAMPAIGN","textPreview":"COMPLETED ATTACK CAMPAIGN","textChars":25,"textLines":1,"bbox":[60,450,240,22]}
+{"kind":"shape","id":"sh/47qh8jap","slide":6,"bbox":[60,492,96,28]}
+{"kind":"textbox","id":"sh/p8zih4ba","slide":6,"text":"Blackhole","textPreview":"Blackhole","textChars":9,"textLines":1,"bbox":[68,492,80,28]}
+{"kind":"shape","id":"sh/mhsjits3","slide":6,"bbox":[166,492,92,28]}
+{"kind":"textbox","id":"sh/n210ryto","slide":6,"text":"Sinkhole","textPreview":"Sinkhole","textChars":8,"textLines":1,"bbox":[174,492,76,28]}
+{"kind":"shape","id":"sh/7uhwnax4","slide":6,"bbox":[268,492,96,28]}
+{"kind":"textbox","id":"sh/698fe5wj","slide":6,"text":"DIS Flood","textPreview":"DIS Flood","textChars":9,"textLines":1,"bbox":[276,492,80,28]}
+{"kind":"shape","id":"sh/twzep0fa","slide":6,"bbox":[374,492,92,28]}
+{"kind":"textbox","id":"sh/8vqxgvep","slide":6,"text":"Grayhole","textPreview":"Grayhole","textChars":8,"textLines":1,"bbox":[382,492,76,28]}
+{"kind":"shape","id":"sh/j6xwjqxs","slide":6,"bbox":[476,492,128,28]}
+{"kind":"textbox","id":"sh/y5ofalw7","slide":6,"text":"Increase Rank","textPreview":"Increase Rank","textChars":13,"textLines":1,"bbox":[484,492,112,28]}
+{"kind":"shape","id":"sh/l8fel0fy","slide":6,"bbox":[614,492,144,28]}
+{"kind":"textbox","id":"sh/k76xcved","slide":6,"text":"DIO Suppression","textPreview":"DIO Suppression","textChars":15,"textLines":1,"bbox":[622,492,128,28]}
+{"kind":"shape","id":"sh/321wvudc","slide":6,"bbox":[768,492,120,28]}
+{"kind":"textbox","id":"sh/i1sfmpwr","slide":6,"text":"Worst Parent","textPreview":"Worst Parent","textChars":12,"textLines":1,"bbox":[776,492,104,28]}
+{"kind":"shape","id":"sh/072tgru9","slide":6,"bbox":[898,492,116,28]}
+{"kind":"textbox","id":"sh/18bu9cvu","slide":6,"text":"Wormhole","textPreview":"Wormhole","textChars":8,"textLines":1,"bbox":[906,492,100,28]}
+{"kind":"shape","id":"sh/e5kbehc3","slide":6,"bbox":[1024,492,92,28]}
+{"kind":"textbox","id":"sh/f6tc7mdo","slide":6,"text":"Sybil","textPreview":"Sybil","textChars":5,"textLines":1,"bbox":[1032,492,76,28]}
+{"kind":"shape","id":"sh/obmtkru5","slide":6,"bbox":[230,585,820,52]}
+{"kind":"textbox","id":"sh/9cvudwvq","slide":6,"text":"The IDS detects. The drift pipeline measures change. The LLM explains the supplied evidence.","textPreview":"The IDS detects. The drift pipeline measures change. The LLM explains the supplied evidence.","textChars":92,"textLines":1,"bbox":[250,592,780,38]}
+{"kind":"notes","id":"nt/gkyso7","slide":6,"text":"This is the map of the whole dissertation. On the left, Cooja executes the Contiki-NG applications and modified RPL behaviour. Each completed attack has a matched control and five seeds. The simulator produces logs, radio traces and routing events. Those are converted into sixty-second windows while preserving which complete run and seed each row came from. The middle stage tests static cross-attack transfer, whole-seed adaptation and online change detection. The final stage packages the measured evidence for a local Qwen model running through Ollama. The nine labels at the bottom are the completed campaign, not a proposed list. The key separation is shown in the final sentence. Detection, drift monitoring and explanation are distinct tasks. The next slide explains the timing and leakage control that make the evaluation defensible.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_results_summary_v1/results_summary.md\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/final_simulated_dataset_v1/evaluation_protocol.md\n[/Sources]"}
+{"kind":"slide","id":"sl/mxkku9","slide":7,"title":"EXPERIMENTAL PROTOCOL","textShapes":30}
+{"kind":"textbox","id":"sh/5oja5gn6","slide":7,"text":" EXPERIMENTAL PROTOCOL","textPreview":"EXPERIMENTAL PROTOCOL","textChars":22,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/ilsbu1of","slide":7,"text":" Attack timing and whole-seed separation prevent optimistic results","textPreview":"Attack timing and whole-seed separation prevent optimistic results","textChars":67,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/3m1s3650","slide":7,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/gzatsb69","slide":7,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/hkja1wnu","slide":7,"text":"Methodology","textPreview":"Methodology","textChars":11,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"textbox","id":"sh/uxsrq1oj","slide":7,"text":"0 s","textPreview":"0 s","textChars":3,"textLines":1,"bbox":[80,168,70,26]}
+{"kind":"textbox","id":"sh/vy1sz654","slide":7,"text":"240 s","textPreview":"240 s","textChars":5,"textLines":1,"bbox":[493,168,90,26]}
+{"kind":"textbox","id":"sh/8vq9or6d","slide":7,"text":"540 s","textPreview":"540 s","textChars":5,"textLines":1,"bbox":[1100,168,90,26]}
+{"kind":"shape","id":"sh/twzaxwny","slide":7,"bbox":[110,215,1015,7]}
+{"kind":"shape","id":"sh/tw3qx4fu","slide":7,"bbox":[110,215,420,7]}
+{"kind":"shape","id":"sh/8vu9oze9","slide":7,"bbox":[530,215,595,7]}
+{"kind":"shape","id":"sh/7al8vuxo","slide":7,"bbox":[520,204,28,28]}
+{"kind":"textbox","id":"sh/69srmpw3","slide":7,"text":"Normal warm-up and routing formation","textPreview":"Normal warm-up and routing formation","textChars":36,"textLines":1,"bbox":[135,250,345,34]}
+{"kind":"textbox","id":"sh/l8jqtkfi","slide":7,"text":"Attack active","textPreview":"Attack active","textChars":13,"textLines":1,"bbox":[700,250,240,34]}
+{"kind":"shape","id":"sh/k7a9kfed","slide":7,"bbox":[110,320,106,56]}
+{"kind":"textbox","id":"sh/j618ruxs","slide":7,"text":"0-60","textPreview":"0-60","textChars":4,"textLines":1,"bbox":[110,320,106,56]}
+{"kind":"shape","id":"sh/y5sripg7","slide":7,"bbox":[222.8,320,106,56]}
+{"kind":"textbox","id":"sh/x4jqpkfm","slide":7,"text":"60-120","textPreview":"60-120","textChars":6,"textLines":1,"bbox":[222.8,320,106,56]}
+{"kind":"shape","id":"sh/w3a9gfy1","slide":7,"bbox":[335.6,320,106,56]}
+{"kind":"textbox","id":"sh/onu9cf6x","slide":7,"text":"120-180","textPreview":"120-180","textChars":7,"textLines":1,"bbox":[335.6,320,106,56]}
+{"kind":"shape","id":"sh/ponq5kni","slide":7,"bbox":[448.4,320,106,56]}
+{"kind":"textbox","id":"sh/2lcra5or","slide":7,"text":"180-240","textPreview":"180-240","textChars":7,"textLines":1,"bbox":[448.4,320,106,56]}
+{"kind":"shape","id":"sh/nml83a5c","slide":7,"bbox":[561.2,320,106,56]}
+{"kind":"textbox","id":"sh/0ju98f61","slide":7,"text":"240-300","textPreview":"240-300","textChars":7,"textLines":1,"bbox":[561.2,320,106,56]}
+{"kind":"shape","id":"sh/1k3q1kn6","slide":7,"bbox":[674,320,106,56]}
+{"kind":"textbox","id":"sh/ehcr65ov","slide":7,"text":"300-360","textPreview":"300-360","textChars":7,"textLines":1,"bbox":[674,320,106,56]}
+{"kind":"shape","id":"sh/fil8za5g","slide":7,"bbox":[786.8,320,106,56]}
+{"kind":"textbox","id":"sh/kfe94zm5","slide":7,"text":"360-420","textPreview":"360-420","textChars":7,"textLines":1,"bbox":[786.8,320,106,56]}
+{"kind":"shape","id":"sh/lg7ad4nq","slide":7,"bbox":[899.6,320,106,56]}
+{"kind":"textbox","id":"sh/vmtkj2t4","slide":7,"text":"420-480","textPreview":"420-480","textChars":7,"textLines":1,"bbox":[899.6,320,106,56]}
+{"kind":"shape","id":"sh/ulk3qxcj","slide":7,"bbox":[1012.4,320,106,56]}
+{"kind":"textbox","id":"sh/hob2lcbu","slide":7,"text":"480-540","textPreview":"480-540","textChars":7,"textLines":1,"bbox":[1012.4,320,106,56]}
+{"kind":"textbox","id":"sh/gn2ls7up","slide":7,"text":"60-second feature windows","textPreview":"60-second feature windows","textChars":25,"textLines":1,"bbox":[110,385,1015,28]}
+{"kind":"textbox","id":"sh/3qt4n2t0","slide":7,"text":"WRONG SPLIT","textPreview":"WRONG SPLIT","textChars":11,"textLines":1,"bbox":[86,448,150,22]}
+{"kind":"textbox","id":"sh/ipk3uxcf","slide":7,"text":"CORRECT SPLIT","textPreview":"CORRECT SPLIT","textChars":13,"textLines":1,"bbox":[674,448,160,22]}
+{"kind":"shape","id":"sh/5cvmpcb6","slide":7,"bbox":[80,480,500,114]}
+{"kind":"textbox","id":"sh/4r2lw7al","slide":7,"text":"Seed 123456 windows","textPreview":"Seed 123456 windows","textChars":19,"textLines":1,"bbox":[100,494,205,28]}
+{"kind":"shape","id":"sh/ju9kritw","slide":7,"bbox":[320,494,90,28]}
+{"kind":"textbox","id":"sh/yt03idcb","slide":7,"text":"TRAIN","textPreview":"TRAIN","textChars":5,"textLines":1,"bbox":[328,494,74,28]}
+{"kind":"shape","id":"sh/axk3ydk7","slide":7,"bbox":[420,494,90,28]}
+{"kind":"textbox","id":"sh/bydk7i1s","slide":7,"text":"TEST","textPreview":"TEST","textChars":4,"textLines":1,"bbox":[428,494,74,28]}
+{"kind":"textbox","id":"sh/czml0n2d","slide":7,"text":"Parts of the same run appear on both sides","textPreview":"Parts of the same run appear on both sides","textChars":42,"textLines":1,"bbox":[100,538,420,34]}
+{"kind":"shape","id":"sh/x0vm9sji","slide":7,"bbox":[670,480,500,114]}
+{"kind":"textbox","id":"sh/y1432xk3","slide":7,"text":"Seed 123456","textPreview":"Seed 123456","textChars":11,"textLines":1,"bbox":[690,494,170,28]}
+{"kind":"shape","id":"sh/z2d4bi1o","slide":7,"bbox":[875,494,90,28]}
+{"kind":"textbox","id":"sh/k3ml4n29","slide":7,"text":"TRAIN","textPreview":"TRAIN","textChars":5,"textLines":1,"bbox":[883,494,74,28]}
+{"kind":"textbox","id":"sh/l4vmdsju","slide":7,"text":"Seed 345678","textPreview":"Seed 345678","textChars":11,"textLines":1,"bbox":[690,538,170,28]}
+{"kind":"shape","id":"sh/m5436xkf","slide":7,"bbox":[875,538,90,28]}
+{"kind":"textbox","id":"sh/76x4f210","slide":7,"text":"TEST","textPreview":"TEST","textChars":4,"textLines":1,"bbox":[883,538,74,28]}
+{"kind":"textbox","id":"sh/h0z65w32","slide":7,"text":"Complete simulations stay together","textPreview":"Complete simulations stay together","textChars":34,"textLines":1,"bbox":[985,510,165,48]}
+{"kind":"textbox","id":"sh/wzq5wrmh","slide":7,"text":"16 nodes | 5 attack seeds + 5 controls per family | 540 seconds | attack begins at 240 seconds","textPreview":"16 nodes | 5 attack seeds + 5 controls per family | 540 seconds | attack begins at 240 seconds","textChars":94,"textLines":1,"bbox":[165,625,950,24]}
+{"kind":"notes","id":"nt/mxkku9","slide":7,"text":"Every baseline scenario runs for five hundred and forty simulated seconds. The attack begins at two hundred and forty seconds, after the network has had time to form routes. I then extract sixty-second feature windows. The important methodological point is the split shown at the bottom. Each simulation produces several related rows. A random row split could place some windows from seed 123456 in training and other windows from the same run in testing. That would let the model benefit from run-specific behaviour and make the score optimistic. I therefore keep each complete seed on one side of the split. During adaptation, the model receives one or more complete target-attack seeds and is evaluated on different unseen seeds. Point to the green correct split. That whole-seed rule is central to the credibility of the results shown later. Before training any model, however, I first verified that the attacks themselves were executing.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/final_simulated_dataset_v1/evaluation_protocol.md\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_results_summary_v1/attack_coverage_table.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/5u5w1o","slide":8,"title":"ATTACK VALIDATION","textShapes":12}
+{"kind":"textbox","id":"sh/k329cza5","slide":8,"text":" ATTACK VALIDATION","textPreview":"ATTACK VALIDATION","textChars":18,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/j2ts3ut0","slide":8,"text":" The dataset labels are grounded in real Cooja behaviour","textPreview":"The dataset labels are grounded in real Cooja behaviour","textChars":56,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/y1kra9sf","slide":8,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/x0ba14bu","slide":8,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/wz298za9","slide":8,"text":"Implementation evidence","textPreview":"Implementation evidence","textChars":23,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/bytszuto","slide":8,"bbox":[52,145,600,400]}
+{"kind":"textbox","id":"sh/hwvadory","slide":8,"text":"16-mote Cooja topology and live log view","textPreview":"16-mote Cooja topology and live log view","textChars":40,"textLines":1,"bbox":[72,555,560,24]}
+{"kind":"shape","id":"sh/gvmtkjad","slide":8,"bbox":[690,152,530,118]}
+{"kind":"shape","id":"sh/ydk7uhwn","slide":8,"bbox":[690,152,5,118]}
+{"kind":"textbox","id":"sh/zet8nmd8","slide":8,"text":"BLACKHOLE","textPreview":"BLACKHOLE","textChars":9,"textLines":1,"bbox":[712,162,150,24]}
+{"kind":"textbox","id":"sh/kf2pwrut","slide":8,"text":"04:00.473  BLACKHOLE ATTACK: enabled\n04:01.055  dropping forwarded packet","textPreview":"04:00.473  BLACKHOLE ATTACK: enabled | 04:01.055  dropping forwarded packet","textChars":73,"textLines":2,"bbox":[712,194,480,60]}
+{"kind":"shape","id":"sh/lgbqpwve","slide":8,"bbox":[690,288,530,118]}
+{"kind":"shape","id":"sh/a907qxwr","slide":8,"bbox":[690,288,5,118]}
+{"kind":"textbox","id":"sh/batoj2dc","slide":8,"text":"SINKHOLE","textPreview":"SINKHOLE","textChars":8,"textLines":1,"bbox":[712,298,150,24]}
+{"kind":"textbox","id":"sh/cb2ps7eh","slide":8,"text":"04:00.473  SINKHOLE ATTACK: enabled\n04:00.473  advertising rank 128 instead of 256","textPreview":"04:00.473  SINKHOLE ATTACK: enabled | 04:00.473  advertising rank 128 instead of 256","textChars":82,"textLines":2,"bbox":[712,330,480,60]}
+{"kind":"shape","id":"sh/xcbqlcv2","slide":8,"bbox":[690,424,530,118]}
+{"kind":"shape","id":"sh/u54721cv","slide":8,"bbox":[690,424,5,118]}
+{"kind":"textbox","id":"sh/v6d8v6dg","slide":8,"text":"SYBIL","textPreview":"SYBIL","textChars":5,"textLines":1,"bbox":[712,434,150,24]}
+{"kind":"textbox","id":"sh/rqp4nyts","slide":8,"text":"04:00.703  SYBIL ATTACK: enabled\n04:02.703  sending DIO as identity fd00::f001","textPreview":"04:00.703  SYBIL ATTACK: enabled | 04:02.703  sending DIO as identity fd00::f001","textChars":78,"textLines":2,"bbox":[712,466,480,60]}
+{"kind":"textbox","id":"sh/qpwnutc7","slide":8,"text":"90 validated baseline runs: 45 attack + 45 matched control","textPreview":"90 validated baseline runs: 45 attack + 45 matched control","textChars":58,"textLines":1,"bbox":[690,582,530,36]}
+{"kind":"textbox","id":"sh/dc7mp8by","slide":8,"text":"Evidence shown from preserved COOJA.testlog files; attack markers were excluded from model predictors.","textPreview":"Evidence shown from preserved COOJA.testlog files; attack markers were excluded from model predictors.","textChars":102,"textLines":1,"bbox":[58,654,1120,18]}
+{"kind":"image","id":"im/rexoj6x0","slide":8,"name":"","alt":"blackhole started.png","bbox":[62,155,580,380]}
+{"kind":"notes","id":"nt/5u5w1o","slide":8,"text":"Before making any machine-learning claim, I checked that each attack activated and produced the intended protocol-level effect. The left side shows the real Cooja environment with sixteen motes and the log listener. On the right are preserved lines from completed runs. The Blackhole hook begins dropping forwarded packets after four minutes. The Sinkhole advertises rank 128 while preserving its internal rank of 256. The Sybil node rotates the source identity used for outgoing DIO messages, here showing fd00::f001. These markers validate the implementation and establish ground truth, but they are not included as predictive features. Across nine families there are forty-five attack and forty-five matched control runs. This step matters because a labelled dataset is only meaningful if the label corresponds to behaviour that actually occurred. The next slide shows how these raw events become the IDS dataset.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/blackhole/final_corrected_240s_540s/runs/BH_ATTACK_N16_SEED123456/COOJA.testlog\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/sinkhole/final_corrected_240s_540s/runs/SH_ATTACK_N16_SEED123456/COOJA.testlog\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/sybil_attack_v1/runs/SYBIL_ATTACK_N16_SEED567890/COOJA.testlog\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_results_summary_v1/attack_coverage_table.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/py4m1f","slide":9,"title":"FEATURE CONSTRUCTION","textShapes":24}
+{"kind":"textbox","id":"sh/n61gfytk","slide":9,"text":" FEATURE CONSTRUCTION","textPreview":"FEATURE CONSTRUCTION","textChars":21,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/o7uh83a5","slide":9,"text":" Raw protocol events become an auditable IDS dataset","textPreview":"Raw protocol events become an auditable IDS dataset","textChars":52,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/p83yh8bq","slide":9,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/a9czadsb","slide":9,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/balgjitg","slide":9,"text":"Methodology","textPreview":"Methodology","textChars":11,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/cbuhc3a1","slide":9,"bbox":[58,170,185,230]}
+{"kind":"textbox","id":"sh/xc3yl8bm","slide":9,"text":"RAW EVENTS","textPreview":"RAW EVENTS","textChars":10,"textLines":1,"bbox":[70,196,161,30]}
+{"kind":"textbox","id":"sh/qd8fy9sr","slide":9,"text":"packet receptions\nDIO / DIS / DAO\nrank and parent state","textPreview":"packet receptions | DIO / DIS / DAO | rank and parent state","textChars":55,"textLines":3,"bbox":[70,248,161,100]}
+{"kind":"shape","id":"sh/rehg7etc","slide":9,"bbox":[253,270,28,28]}
+{"kind":"shape","id":"sh/vydgj2dw","slide":9,"bbox":[310,170,185,230]}
+{"kind":"textbox","id":"sh/ax4zqxcb","slide":9,"text":"60-SECOND WINDOW","textPreview":"60-SECOND WINDOW","textChars":16,"textLines":1,"bbox":[322,196,161,30]}
+{"kind":"textbox","id":"sh/xkvilsv2","slide":9,"text":"counts, minima, deltas\nunique senders\nparent switches","textPreview":"counts, minima, deltas | unique senders | parent switches","textChars":53,"textLines":3,"bbox":[322,248,161,100]}
+{"kind":"shape","id":"sh/wzmhsnuh","slide":9,"bbox":[505,270,28,28]}
+{"kind":"shape","id":"sh/nutgfid0","slide":9,"bbox":[562,170,185,230]}
+{"kind":"textbox","id":"sh/mtkzmdwf","slide":9,"text":"FEATURE VECTOR","textPreview":"FEATURE VECTOR","textChars":14,"textLines":1,"bbox":[574,196,161,30]}
+{"kind":"textbox","id":"sh/9wvyhsvq","slide":9,"text":"traffic | routing | rank\ncontrol | identity","textPreview":"traffic | routing | rank | control | identity","textChars":43,"textLines":2,"bbox":[574,248,161,100]}
+{"kind":"shape","id":"sh/8v2hone5","slide":9,"bbox":[757,270,28,28]}
+{"kind":"shape","id":"sh/zqtgbydo","slide":9,"bbox":[814,170,185,230]}
+{"kind":"textbox","id":"sh/epkzidw3","slide":9,"text":"LABEL","textPreview":"LABEL","textChars":5,"textLines":1,"bbox":[826,196,161,30]}
+{"kind":"textbox","id":"sh/210zutgb","slide":9,"text":"normal before 240 s\nattack after activation","textPreview":"normal before 240 s | attack after activation","textChars":43,"textLines":2,"bbox":[826,248,161,100]}
+{"kind":"shape","id":"sh/3m903yxg","slide":9,"bbox":[1009,270,28,28]}
+{"kind":"shape","id":"sh/4nihw3y1","slide":9,"bbox":[1066,170,185,230]}
+{"kind":"textbox","id":"sh/pori58fm","slide":9,"text":"GROUP","textPreview":"GROUP","textChars":5,"textLines":1,"bbox":[1078,196,161,30]}
+{"kind":"textbox","id":"sh/qpkzydg7","slide":9,"text":"family + seed + mode\nkept outside predictors","textPreview":"family + seed + mode | kept outside predictors","textChars":44,"textLines":2,"bbox":[1078,248,161,100]}
+{"kind":"shape","id":"sh/rqt07ixs","slide":9,"bbox":[86,455,1108,112]}
+{"kind":"textbox","id":"sh/cr210nyd","slide":9,"text":"810","textPreview":"810","textChars":3,"textLines":1,"bbox":[120,468,170,50]}
+{"kind":"textbox","id":"sh/dsbi9sfy","slide":9,"text":"windows","textPreview":"windows","textChars":7,"textLines":1,"bbox":[126,518,158,42]}
+{"kind":"textbox","id":"sh/etkj2dg3","slide":9,"text":"90","textPreview":"90","textChars":2,"textLines":1,"bbox":[350,468,170,50]}
+{"kind":"textbox","id":"sh/zut0bixo","slide":9,"text":"run groups","textPreview":"run groups","textChars":10,"textLines":1,"bbox":[356,518,158,42]}
+{"kind":"textbox","id":"sh/90fuhg32","slide":9,"text":"84","textPreview":"84","textChars":2,"textLines":1,"bbox":[580,468,170,50]}
+{"kind":"textbox","id":"sh/8z6tobmh","slide":9,"text":"columns","textPreview":"columns","textChars":7,"textLines":1,"bbox":[586,518,158,42]}
+{"kind":"textbox","id":"sh/7yxcf6lc","slide":9,"text":"57","textPreview":"57","textChars":2,"textLines":1,"bbox":[810,468,190,50]}
+{"kind":"textbox","id":"sh/mxobm14r","slide":9,"text":"generic predictors","textPreview":"generic predictors","textChars":18,"textLines":1,"bbox":[816,518,178,42]}
+{"kind":"textbox","id":"sh/hozul03e","slide":9,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1020,468,150,50]}
+{"kind":"textbox","id":"sh/wnqtsvmt","slide":9,"text":"excluded markers / provenance","textPreview":"excluded markers / provenance","textChars":29,"textLines":1,"bbox":[1026,518,138,42]}
+{"kind":"textbox","id":"sh/v2hcjql8","slide":9,"text":"Simulator attack markers, labels and run identifiers are retained for audit but excluded from prediction.","textPreview":"Simulator attack markers, labels and run identifiers are retained for audit but excluded from prediction.","textChars":105,"textLines":1,"bbox":[190,602,900,28]}
+{"kind":"notes","id":"nt/py4m1f","slide":9,"text":"This slide follows one sixty-second observation from raw evidence to model input. Cooja produces packet and routing events. The extractor groups those events into fixed windows and computes traffic, control-message, rank, parent and identity measurements. A label describes whether that window belongs to normal operation or the post-activation attack period. The family, seed, mode and attack markers remain in the dataset for provenance and validation, but they are not predictors. The frozen dataset contains eight hundred and ten windows from ninety complete run groups. It has eighty-four columns, of which fifty-seven are generic predictive features. Sixteen attack-marker or provenance fields are explicitly excluded from the model. This design makes it possible to audit exactly where a row came from without allowing the classifier to read the answer. With that foundation in place, the next slide presents the central static-transfer result.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/final_simulated_dataset_v1/data_dictionary.md\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/final_simulated_dataset_v1/evaluation_protocol.md\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/final_simulated_dataset_v1/audit/dataset_quality_audit.md\n[/Sources]"}
+{"kind":"slide","id":"sl/hbs2x1","slide":10,"title":"MAIN RESULT","textShapes":10}
+{"kind":"textbox","id":"sh/2x87mh4v","slide":10,"text":" MAIN RESULT","textPreview":"MAIN RESULT","textChars":12,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/p0jqxw36","slide":10,"text":" Static cross-attack detection fails often","textPreview":"Static cross-attack detection fails often","textChars":42,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/4zaporml","slide":10,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/fahorm54","slide":10,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/u987ih4j","slide":10,"text":"Concept drift result","textPreview":"Concept drift result","textChars":20,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/hczqtcna","slide":10,"bbox":[45,140,880,495]}
+{"kind":"textbox","id":"sh/76xon258","slide":10,"text":"48 / 72","textPreview":"48 / 72","textChars":7,"textLines":1,"bbox":[950,166,255,50]}
+{"kind":"textbox","id":"sh/65o7ex4n","slide":10,"text":"cross-attack pairs with zero attack recall","textPreview":"cross-attack pairs with zero attack recall","textChars":42,"textLines":1,"bbox":[956,216,243,42]}
+{"kind":"shape","id":"sh/ozidkzy5","slide":10,"bbox":[970,290,215,1]}
+{"kind":"textbox","id":"sh/p0rud4zq","slide":10,"text":"6 / 72","textPreview":"6 / 72","textChars":6,"textLines":1,"bbox":[950,310,255,50]}
+{"kind":"textbox","id":"sh/2x0bipgz","slide":10,"text":"pairs with F1 at least 0.80","textPreview":"pairs with F1 at least 0.80","textChars":27,"textLines":1,"bbox":[956,360,243,42]}
+{"kind":"shape","id":"sh/3y9cbuhk","slide":10,"bbox":[970,434,215,1]}
+{"kind":"textbox","id":"sh/gvytgfy9","slide":10,"text":"0.182","textPreview":"0.182","textChars":5,"textLines":1,"bbox":[950,454,255,50]}
+{"kind":"textbox","id":"sh/1wru9kze","slide":10,"text":"mean cross-attack F1","textPreview":"mean cross-attack F1","textChars":20,"textLines":1,"bbox":[956,504,243,42]}
+{"kind":"textbox","id":"sh/e9gbe5g3","slide":10,"text":"Rows = training family | columns = different test family","textPreview":"Rows = training family | columns = different test family","textChars":56,"textLines":1,"bbox":[194,632,590,20]}
+{"kind":"image","id":"im/hg3yhwvq","slide":10,"name":"","alt":"cross_attack_cart_f1_heatmap.png","bbox":[58,153,854,468]}
+{"kind":"notes","id":"nt/hbs2x1","slide":10,"text":"This heatmap is the central concept-drift result. Each row is the attack family used for training, and each column is a different family used for testing. The colour represents held-out F1, which balances precision and recall. Recall tells us how many attack windows were actually detected. Forty-eight of the seventy-two off-diagonal CART combinations have zero attack recall, meaning the detector missed every attack window in those changed environments. Only six pairs reach F1 of at least zero point eight. The mean cross-attack F1 is zero point one eight two. Accuracy alone would hide part of this failure because control and pre-attack windows are labelled normal. The correct conclusion is that static cross-attack transfer is brittle under this controlled distribution shift. It is not a claim that CART can never work, and it is not proof about every form of field drift. The next slide explains why feature representation changed one of the most important conclusions.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_final_figures_v2/tables/cross_attack_cart_f1.csv\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_results_summary_v1/concept_drift_key_metrics.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/l6iqpm","slide":11,"title":"FAILURE ANALYSIS","textShapes":22}
+{"kind":"textbox","id":"sh/vyd4bmh0","slide":11,"text":" FAILURE ANALYSIS","textPreview":"FAILURE ANALYSIS","textChars":17,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/wz6l4ril","slide":11,"text":" Retraining cannot learn a mechanism the features do not expose","textPreview":"Retraining cannot learn a mechanism the features do not expose","textChars":63,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/x0fmdwz6","slide":11,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/mt43yx0j","slide":11,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/nud472ho","slide":11,"text":"Feature representation","textPreview":"Feature representation","textChars":22,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"textbox","id":"sh/ovml07i9","slide":11,"text":"EARLY REPRESENTATION","textPreview":"EARLY REPRESENTATION","textChars":20,"textLines":1,"bbox":[72,154,250,22]}
+{"kind":"shape","id":"sh/9wvm9czu","slide":11,"bbox":[68,185,515,240]}
+{"kind":"textbox","id":"sh/6pona1gn","slide":11,"text":"Coarse traffic evidence","textPreview":"Coarse traffic evidence","textChars":23,"textLines":1,"bbox":[92,205,250,30]}
+{"kind":"textbox","id":"sh/7qx4j6h8","slide":11,"text":"delivery, radio volume, responses","textPreview":"delivery, radio volume, responses","textChars":33,"textLines":1,"bbox":[92,244,320,26]}
+{"kind":"textbox","id":"sh/zy9sz21c","slide":11,"text":"Static F1","textPreview":"Static F1","textChars":9,"textLines":1,"bbox":[92,296,190,24]}
+{"kind":"shape","id":"sh/yx0r6xkr","slide":11,"bbox":[287,299,160,18]}
+{"kind":"shape","id":"sh/l0ra1sji","slide":11,"bbox":[287,299,3,18]}
+{"kind":"textbox","id":"sh/0zi9872x","slide":11,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[454,295,68,24]}
+{"kind":"textbox","id":"sh/n29s3218","slide":11,"text":"3-seed F1","textPreview":"3-seed F1","textChars":9,"textLines":1,"bbox":[92,337,190,24]}
+{"kind":"shape","id":"sh/m10raxk3","slide":11,"bbox":[287,340,160,18]}
+{"kind":"shape","id":"sh/94ba5cje","slide":11,"bbox":[287,340,15.65,18]}
+{"kind":"textbox","id":"sh/83i9w7it","slide":11,"text":"0.098","textPreview":"0.098","textChars":5,"textLines":1,"bbox":[454,336,68,24]}
+{"kind":"textbox","id":"sh/v6ts7m1k","slide":11,"text":"Adding Sinkhole examples still leaves the rank mechanism mostly invisible.","textPreview":"Adding Sinkhole examples still leaves the rank mechanism mostly invisible.","textChars":74,"textLines":1,"bbox":[92,370,430,48]}
+{"kind":"shape","id":"sh/a5kryh0z","slide":11,"bbox":[610,274,55,55]}
+{"kind":"textbox","id":"sh/614v6lk7","slide":11,"text":"MECHANISM-AWARE REPRESENTATION","textPreview":"MECHANISM-AWARE REPRESENTATION","textChars":30,"textLines":1,"bbox":[705,154,340,22]}
+{"kind":"shape","id":"sh/72dczqls","slide":11,"bbox":[700,185,510,240]}
+{"kind":"textbox","id":"sh/sn6d8b2d","slide":11,"text":"Rank + parent + routing state","textPreview":"Rank + parent + routing state","textChars":29,"textLines":1,"bbox":[725,205,360,30]}
+{"kind":"textbox","id":"sh/tofu1g3y","slide":11,"text":"persistent low-rank advertisements become visible","textPreview":"persistent low-rank advertisements become visible","textChars":49,"textLines":1,"bbox":[725,244,430,26]}
+{"kind":"textbox","id":"sh/ix4b214b","slide":11,"text":"1-seed F1","textPreview":"1-seed F1","textChars":9,"textLines":1,"bbox":[725,296,190,24]}
+{"kind":"shape","id":"sh/jydcv6lg","slide":11,"bbox":[920,299,160,18]}
+{"kind":"shape","id":"sh/kzmt4bm1","slide":11,"bbox":[920,299,130.06,18]}
+{"kind":"textbox","id":"sh/50vuxg3m","slide":11,"text":"0.813","textPreview":"0.813","textChars":5,"textLines":1,"bbox":[1087,295,68,24]}
+{"kind":"textbox","id":"sh/2tove5kf","slide":11,"text":"3-seed F1","textPreview":"3-seed F1","textChars":9,"textLines":1,"bbox":[725,337,190,24]}
+{"kind":"shape","id":"sh/3uxc7al0","slide":11,"bbox":[920,340,160,18]}
+{"kind":"shape","id":"sh/dojyx4n2","slide":11,"bbox":[920,340,155.7,18]}
+{"kind":"textbox","id":"sh/cnax4zmh","slide":11,"text":"0.973","textPreview":"0.973","textChars":5,"textLines":1,"bbox":[1087,336,68,24]}
+{"kind":"textbox","id":"sh/bmhwvu5w","slide":11,"text":"Held-out recall reaches 0.95 with false-positive rate 0.","textPreview":"Held-out recall reaches 0.95 with false-positive rate 0.","textChars":56,"textLines":1,"bbox":[725,370,430,48]}
+{"kind":"shape","id":"sh/ql8f2p4b","slide":11,"bbox":[152,475,980,94]}
+{"kind":"textbox","id":"sh/pkzetkn6","slide":11,"text":"Research correction","textPreview":"Research correction","textChars":19,"textLines":1,"bbox":[180,487,220,24]}
+{"kind":"textbox","id":"sh/ojqx0fml","slide":11,"text":"The early failure was not hidden. The feature space was revised before making a broader adaptation claim.","textPreview":"The early failure was not hidden. The feature space was revised before making a broader adaptation claim.","textChars":105,"textLines":1,"bbox":[180,516,900,38]}
+{"kind":"textbox","id":"sh/3ihwra50","slide":11,"text":"Blackhole -> Sinkhole, 60-second windows, whole-seed evaluation","textPreview":"Blackhole -> Sinkhole, 60-second windows, whole-seed evaluation","textChars":63,"textLines":1,"bbox":[330,604,620,20]}
+{"kind":"notes","id":"nt/l6iqpm","slide":11,"text":"This slide shows the most important methodological correction in the project. The early Blackhole-to-Sinkhole experiment used coarse traffic and radio features. Static F1 was zero, and even after three Sinkhole seeds the F1 was only zero point zero nine eight. The reason is mechanical: Blackhole changes forwarding, while Sinkhole changes advertised rank and route attraction. Retraining cannot recover information that the feature set never records. I therefore added persistent low-rank, parent and routing-state evidence. With those features, one complete Sinkhole seed raises held-out F1 to zero point eight one three, and three seeds raise it to zero point nine seven three with recall zero point nine five and no false positives in this campaign. Point from the red side to the green side. The lesson is not that retraining always works. Adaptation works when the representation exposes the new mechanism. The next slide asks how much target data is needed across all nine families.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/results/master_results_summary.csv\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/routing_features_v1/results/RESULTS_INTERPRETATION.md\n[/Sources]"}
+{"kind":"slide","id":"sl/dq877m","slide":12,"title":"WHOLE-SEED ADAPTATION","textShapes":17}
+{"kind":"textbox","id":"sh/0nadcr29","slide":12,"text":" WHOLE-SEED ADAPTATION","textPreview":"WHOLE-SEED ADAPTATION","textChars":22,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/z21cjmlo","slide":12,"text":" One complete target seed gives the largest average recovery","textPreview":"One complete target seed gives the largest average recovery","textChars":60,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/e1svahk3","slide":12,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/d0juhc3i","slide":12,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/czat872x","slide":12,"text":"Adaptation result","textPreview":"Adaptation result","textChars":17,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/ry1cfmls","slide":12,"bbox":[55,145,790,480]}
+{"kind":"textbox","id":"sh/pwzudc3m","slide":12,"text":"Target seeds added","textPreview":"Target seeds added","textChars":18,"textLines":1,"bbox":[900,155,280,28]}
+{"kind":"shape","id":"sh/4vqt47m1","slide":12,"bbox":[890,200,300,72]}
+{"kind":"textbox","id":"sh/apkrilkv","slide":12,"text":"0","textPreview":"0","textChars":1,"textLines":1,"bbox":[906,208,45,56]}
+{"kind":"textbox","id":"sh/bqt8r6lg","slide":12,"text":"mean F1","textPreview":"mean F1","textChars":7,"textLines":1,"bbox":[964,208,95,56]}
+{"kind":"textbox","id":"sh/wr29kb21","slide":12,"text":"0.1822","textPreview":"0.1822","textChars":6,"textLines":1,"bbox":[1070,208,100,56]}
+{"kind":"shape","id":"sh/xsbqtg3m","slide":12,"bbox":[890,288,300,72]}
+{"kind":"textbox","id":"sh/m10re1kz","slide":12,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[906,296,45,56]}
+{"kind":"textbox","id":"sh/n2t8n6lk","slide":12,"text":"mean F1","textPreview":"mean F1","textChars":7,"textLines":1,"bbox":[964,296,95,56]}
+{"kind":"textbox","id":"sh/o329gb2p","slide":12,"text":"0.8258","textPreview":"0.8258","textChars":6,"textLines":1,"bbox":[1070,296,100,56]}
+{"kind":"shape","id":"sh/9obqpg3a","slide":12,"bbox":[890,376,300,72]}
+{"kind":"textbox","id":"sh/ex0ra1kn","slide":12,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[906,384,45,56]}
+{"kind":"textbox","id":"sh/zy98jml8","slide":12,"text":"mean F1","textPreview":"mean F1","textChars":7,"textLines":1,"bbox":[964,384,95,56]}
+{"kind":"textbox","id":"sh/32pori10","slide":12,"text":"0.8664","textPreview":"0.8664","textChars":6,"textLines":1,"bbox":[1070,384,100,56]}
+{"kind":"shape","id":"sh/i1wnix0f","slide":12,"bbox":[890,464,300,72]}
+{"kind":"textbox","id":"sh/5476tsj6","slide":12,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[906,472,45,56]}
+{"kind":"textbox","id":"sh/43y5knil","slide":12,"text":"mean F1","textPreview":"mean F1","textChars":7,"textLines":1,"bbox":[964,472,95,56]}
+{"kind":"textbox","id":"sh/r6pov21c","slide":12,"text":"0.8792","textPreview":"0.8792","textChars":6,"textLines":1,"bbox":[1070,472,100,56]}
+{"kind":"shape","id":"sh/q5gnmx0r","slide":12,"bbox":[885,560,310,58]}
+{"kind":"textbox","id":"sh/d876xcj2","slide":12,"text":"All test seeds remain unseen complete simulations","textPreview":"All test seeds remain unseen complete simulations","textChars":49,"textLines":1,"bbox":[902,569,276,40]}
+{"kind":"image","id":"im/72xcve5o","slide":12,"name":"","alt":"overall_adaptation_curve.png","bbox":[70,160,760,450]}
+{"kind":"notes","id":"nt/dq877m","slide":12,"text":"Whole-seed adaptation asks how much labelled evidence from the changed environment is required. At zero target seeds, the model only knows the source attack and mean F1 is zero point one eight two two. Adding one complete target seed produces the largest recovery, increasing mean F1 to zero point eight two five eight. Two seeds reach zero point eight six six four, and three reach zero point eight seven nine two. The evaluation always uses different complete target seeds, so this is not training and testing on windows from the same simulation. The curve supports rapid average recovery, but it does not mean every source-target pair improves monotonically. Some pairs remain unstable or fail completely, especially when the features still do not distinguish the changed mechanism. I would therefore describe this as strong average supervised recovery with important pair-specific limitations. The next slide focuses on Sybil, the identity-based extension that creates a deliberately different attack surface.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_results_summary_v1/adaptation_key_metrics.csv\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/cross_attack_adaptation_with_sybil_v1/cross_attack_adaptation_summary.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/jtr1ww","slide":13,"title":"ORIGINAL EXTENSION","textShapes":22}
+{"kind":"textbox","id":"sh/187i543a","slide":13,"text":" ORIGINAL EXTENSION","textPreview":"ORIGINAL EXTENSION","textChars":19,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/elwju9kj","slide":13,"text":" Sybil changes the attack surface from behaviour to identity","textPreview":"Sybil changes the attack surface from behaviour to identity","textChars":60,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/f6p03ul4","slide":13,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/oby10j2l","slide":13,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/pc7i9o36","slide":13,"text":"Sybil contribution","textPreview":"Sybil contribution","textChars":18,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"textbox","id":"sh/29gjy9kv","slide":13,"text":"BEFORE ACTIVATION","textPreview":"BEFORE ACTIVATION","textChars":17,"textLines":1,"bbox":[70,148,200,22]}
+{"kind":"textbox","id":"sh/3ap07el0","slide":13,"text":"AFTER 240 SECONDS","textPreview":"AFTER 240 SECONDS","textChars":17,"textLines":1,"bbox":[705,148,220,22]}
+{"kind":"shape","id":"sh/cfi14j2x","slide":13,"bbox":[220,250,120,80]}
+{"kind":"textbox","id":"sh/dgrido3i","slide":13,"text":"NODE 16","textPreview":"NODE 16","textChars":7,"textLines":1,"bbox":[220,250,120,80]}
+{"kind":"shape","id":"sh/9wz650v6","slide":13,"bbox":[405,265,150,50]}
+{"kind":"textbox","id":"sh/8vqpwvel","slide":13,"text":"one identity","textPreview":"one identity","textChars":12,"textLines":1,"bbox":[405,265,150,50]}
+{"kind":"shape","id":"sh/7uho3ad0","slide":13,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/mto7u5wf","slide":13,"bbox":[740,250,120,80]}
+{"kind":"textbox","id":"sh/hkz69kv2","slide":13,"text":"NODE 16","textPreview":"NODE 16","textChars":7,"textLines":1,"bbox":[740,250,120,80]}
+{"kind":"shape","id":"sh/wjqp0feh","slide":13,"bbox":[990,190,170,43]}
+{"kind":"textbox","id":"sh/viho7adw","slide":13,"text":"fd00::f001","textPreview":"fd00::f001","textChars":10,"textLines":1,"bbox":[990,190,170,43]}
+{"kind":"shape","id":"sh/ux87y5wr","slide":13,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/xof6xgvy","slide":13,"bbox":[990,248,170,43]}
+{"kind":"textbox","id":"sh/cn65obed","slide":13,"text":"fd00::f002","textPreview":"fd00::f002","textChars":10,"textLines":1,"bbox":[990,248,170,43]}
+{"kind":"shape","id":"sh/o7qpkvm9","slide":13,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/p8j6d03u","slide":13,"bbox":[990,306,170,43]}
+{"kind":"textbox","id":"sh/2587il43","slide":13,"text":"fd00::f003","textPreview":"fd00::f003","textChars":10,"textLines":1,"bbox":[990,306,170,43]}
+{"kind":"shape","id":"sh/36hobqlo","slide":13,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/cbapovm5","slide":13,"bbox":[990,364,170,43]}
+{"kind":"textbox","id":"sh/dcj6h03q","slide":13,"text":"fd00::f004","textPreview":"fd00::f004","textChars":10,"textLines":1,"bbox":[990,364,170,43]}
+{"kind":"shape","id":"sh/q9s7ml4f","slide":13,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/ba1ofqlk","slide":13,"bbox":[75,420,520,145]}
+{"kind":"textbox","id":"sh/0zupcfmh","slide":13,"text":"Why it is different","textPreview":"Why it is different","textChars":19,"textLines":1,"bbox":[100,436,220,28]}
+{"kind":"textbox","id":"sh/l036lk32","slide":13,"text":"- forwarding may remain normal\n- rank alone may remain plausible\n- identity consistency becomes the key evidence","textPreview":"- forwarding may remain normal | - rank alone may remain plausible | - identity consistency becomes the key evidence","textChars":112,"textLines":3,"bbox":[100,475,445,76]}
+{"kind":"shape","id":"sh/vu5sbe54","slide":13,"bbox":[685,420,510,145]}
+{"kind":"textbox","id":"sh/atwri9oj","slide":13,"text":"0.218","textPreview":"0.218","textChars":5,"textLines":1,"bbox":[710,438,135,50]}
+{"kind":"textbox","id":"sh/xwnad4na","slide":13,"text":"static target F1","textPreview":"static target F1","textChars":16,"textLines":1,"bbox":[716,488,123,42]}
+{"kind":"textbox","id":"sh/wve9kj6p","slide":13,"text":"0.968","textPreview":"0.968","textChars":5,"textLines":1,"bbox":[865,438,145,50]}
+{"kind":"textbox","id":"sh/n6ls7u5s","slide":13,"text":"F1 after 1 seed","textPreview":"F1 after 1 seed","textChars":15,"textLines":1,"bbox":[871,488,133,42]}
+{"kind":"textbox","id":"sh/m5crepon","slide":13,"text":"50 / 50","textPreview":"50 / 50","textChars":7,"textLines":1,"bbox":[1030,438,145,50]}
+{"kind":"textbox","id":"sh/9sna94ny","slide":13,"text":"attack windows alerted","textPreview":"attack windows alerted","textChars":22,"textLines":1,"bbox":[1036,488,133,42]}
+{"kind":"textbox","id":"sh/87e9gz6d","slide":13,"text":"Identity monitor controls: 0 / 45 alerts","textPreview":"Identity monitor controls: 0 / 45 alerts","textChars":40,"textLines":1,"bbox":[786,574,310,22]}
+{"kind":"shape","id":"sh/r2psjy5c","slide":13,"bbox":[205,612,870,38]}
+{"kind":"textbox","id":"sh/61grqtor","slide":13,"text":"Contribution: controlled Cooja implementation and drift evaluation, not invention of the Sybil attack.","textPreview":"Contribution: controlled Cooja implementation and drift evaluation, not invention of the Sybil attack.","textChars":102,"textLines":1,"bbox":[225,615,830,32]}
+{"kind":"notes","id":"nt/jtr1ww","slide":13,"text":"A Sybil attack means one real node pretends to be several different identities. Before activation, node sixteen uses one normal source identity. After activation, it rotates virtual IPv6 identities in outgoing RPL DIO messages. This attack was selected because it changes the evidence surface. A forwarding or rank detector can appear healthy while identity consistency has changed. Static models trained on other families transfer poorly to Sybil, with mean target F1 zero point two one eight. After one complete Sybil adaptation seed, held-out F1 rises to zero point nine six eight. I also implemented a transparent identity monitor. It alerts on all fifty post-activation attack windows and on none of the forty-five control windows in this controlled address plan. That monitor is not a universal deployed Sybil defence. It is a mechanism-specific observable that demonstrates why identity evidence matters. The contribution is the implementation and evaluation within this Cooja drift framework, not the invention of Sybil attacks. The next slide separates online change detection from adaptation.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_results_summary_v1/sybil_contribution_summary.md\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/adversarial_rl_sybil_v1/results/sybil_identity_monitor_summary.csv\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_results_summary_v1/adaptation_key_metrics.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/8z8ss3","slide":14,"title":"ONLINE RESPONSE","textShapes":8}
+{"kind":"textbox","id":"sh/xwz65sza","slide":14,"text":" ONLINE RESPONSE","textPreview":"ONLINE RESPONSE","textChars":16,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/at8nax0j","slide":14,"text":" Detecting change is separate from retraining the classifier","textPreview":"Detecting change is separate from retraining the classifier","textChars":60,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/buho3ih4","slide":14,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/orq58nid","slide":14,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/psz61szy","slide":14,"text":"Drift monitoring","textPreview":"Drift monitoring","textChars":16,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/25on6d0n","slide":14,"bbox":[54,145,790,480]}
+{"kind":"shape","id":"sh/8napk7ix","slide":14,"bbox":[885,154,310,200]}
+{"kind":"textbox","id":"sh/9oj6dczi","slide":14,"text":"CUSUM","textPreview":"CUSUM","textChars":5,"textLines":1,"bbox":[905,170,270,34]}
+{"kind":"textbox","id":"sh/1c7y5836","slide":14,"text":"Watches the routing evidence stream\n\n5 / 5 attacks\n0 / 5 controls\n0-second window delay","textPreview":"Watches the routing evidence stream |  | 5 / 5 attacks | 0 / 5 controls | 0-second window delay","textChars":87,"textLines":5,"bbox":[910,218,260,120]}
+{"kind":"shape","id":"sh/gbyhc3ml","slide":14,"bbox":[885,384,310,200]}
+{"kind":"textbox","id":"sh/fapg3yl0","slide":14,"text":"DDM","textPreview":"DDM","textChars":3,"textLines":1,"bbox":[905,400,270,34]}
+{"kind":"textbox","id":"sh/epgzat4f","slide":14,"text":"Watches delayed classifier mistakes\n\n5 / 5 attacks\n0 / 5 controls\n60-second delay","textPreview":"Watches delayed classifier mistakes |  | 5 / 5 attacks | 0 / 5 controls | 60-second delay","textChars":81,"textLines":5,"bbox":[910,448,260,120]}
+{"kind":"textbox","id":"sh/to7y1o3u","slide":14,"text":"CUSUM reacts earlier because the monitored rank-state feature changes before delayed labels arrive.","textPreview":"CUSUM reacts earlier because the monitored rank-state feature changes before delayed labels arrive.","textChars":99,"textLines":1,"bbox":[870,610,340,44]}
+{"kind":"image","id":"im/e5kr6lsj","slide":14,"name":"","alt":"online_drift_detection.png","bbox":[70,160,760,450]}
+{"kind":"notes","id":"nt/8z8ss3","slide":14,"text":"CUSUM and DDM answer a different question from adaptation: when should the system suspect that something has changed? CUSUM, or cumulative sum control, watches a measurement over time and alerts when the change becomes consistently too large to look normal. Here it watches the low-rank routing-state signal. DDM, or Drift Detection Method, watches the classifier's mistakes, so it depends on delayed labels and reacts later. Across five Sinkhole attacks and five controls, both detectors alert on all attacks and no controls. CUSUM alerts in the first post-activation window, while DDM alerts one sixty-second window later. The sample is small and controlled, so the zero control-alert rate is not a field false-alarm estimate. The result shows that mechanism-aware telemetry can provide an earlier trigger than waiting for the classifier's labelled error rate to deteriorate. Next I test whether the main adaptation result survives changed radio conditions and compare its direction with the supplied external data.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_final_figures_v2/tables/online_drift_detection_summary.csv\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/routing_features_v1/results/drift_detector_summary.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/m8uwzy","slide":15,"title":"ROBUSTNESS AND EXTERNAL EVIDENCE","textShapes":20}
+{"kind":"textbox","id":"sh/ud4je58v","slide":15,"text":" ROBUSTNESS AND EXTERNAL EVIDENCE","textPreview":"ROBUSTNESS AND EXTERNAL EVIDENCE","textChars":33,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/hgv2pk7m","slide":15,"text":" The recovery pattern survives simulator changes, with clear limits","textPreview":"The recovery pattern survives simulator changes, with clear limits","textChars":67,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/gfm1gfq1","slide":15,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/7qtkjqp4","slide":15,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/6pkjal8z","slide":15,"text":"Robustness","textPreview":"Robustness","textChars":10,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/tcv2l07a","slide":15,"bbox":[48,145,720,450]}
+{"kind":"textbox","id":"sh/jmt0fqp8","slide":15,"text":"ROBUSTNESS CAMPAIGN","textPreview":"ROBUSTNESS CAMPAIGN","textChars":19,"textLines":1,"bbox":[800,150,220,22]}
+{"kind":"textbox","id":"sh/ylkj6l8n","slide":15,"text":"60 additional runs","textPreview":"60 additional runs","textChars":18,"textLines":1,"bbox":[800,180,360,44]}
+{"kind":"textbox","id":"sh/w7idwnah","slide":15,"text":"Relocated BH","textPreview":"Relocated BH","textChars":12,"textLines":1,"bbox":[800,250,190,24]}
+{"kind":"shape","id":"sh/x8re5sb2","slide":15,"bbox":[995,253,110,18]}
+{"kind":"shape","id":"sh/a5gvudsr","slide":15,"bbox":[995,253,110,18]}
+{"kind":"textbox","id":"sh/v69w3itw","slide":15,"text":"1.000","textPreview":"1.000","textChars":5,"textLines":1,"bbox":[1112,249,68,24]}
+{"kind":"textbox","id":"sh/83yds3al","slide":15,"text":"Relocated SH","textPreview":"Relocated SH","textChars":12,"textLines":1,"bbox":[800,288,190,24]}
+{"kind":"shape","id":"sh/947e18b6","slide":15,"bbox":[995,291,110,18]}
+{"kind":"shape","id":"sh/m1gvqtsf","slide":15,"bbox":[995,291,110,18]}
+{"kind":"textbox","id":"sh/n2pczyt0","slide":15,"text":"1.000","textPreview":"1.000","textChars":5,"textLines":1,"bbox":[1112,287,68,24]}
+{"kind":"textbox","id":"sh/sz2d47ap","slide":15,"text":"Relocated Sybil","textPreview":"Relocated Sybil","textChars":15,"textLines":1,"bbox":[800,326,190,24]}
+{"kind":"shape","id":"sh/t0bexcba","slide":15,"bbox":[995,329,110,18]}
+{"kind":"shape","id":"sh/1g7ehsje","slide":15,"bbox":[995,329,109.42,18]}
+{"kind":"textbox","id":"sh/gfydo72t","slide":15,"text":"0.995","textPreview":"0.995","textChars":5,"textLines":1,"bbox":[1112,325,68,24]}
+{"kind":"textbox","id":"sh/fupwf2l8","slide":15,"text":"Lossy BH","textPreview":"Lossy BH","textChars":8,"textLines":1,"bbox":[800,364,190,24]}
+{"kind":"shape","id":"sh/etgvmxk3","slide":15,"bbox":[995,367,110,18]}
+{"kind":"shape","id":"sh/tsnuds3i","slide":15,"bbox":[995,367,110,18]}
+{"kind":"textbox","id":"sh/sredkn2x","slide":15,"text":"1.000","textPreview":"1.000","textChars":5,"textLines":1,"bbox":[1112,363,68,24]}
+{"kind":"textbox","id":"sh/rq5cbilc","slide":15,"text":"Lossy SH","textPreview":"Lossy SH","textChars":8,"textLines":1,"bbox":[800,402,190,24]}
+{"kind":"shape","id":"sh/6pwvidkr","slide":15,"bbox":[995,405,110,18]}
+{"kind":"shape","id":"sh/5onu9836","slide":15,"bbox":[995,405,110,18]}
+{"kind":"textbox","id":"sh/4nedgn2l","slide":15,"text":"1.000","textPreview":"1.000","textChars":5,"textLines":1,"bbox":[1112,401,68,24]}
+{"kind":"textbox","id":"sh/utcbq90j","slide":15,"text":"Lossy Sybil","textPreview":"Lossy Sybil","textChars":11,"textLines":1,"bbox":[800,440,190,24]}
+{"kind":"shape","id":"sh/vulsje14","slide":15,"bbox":[995,443,110,18]}
+{"kind":"shape","id":"sh/wvutsjip","slide":15,"bbox":[995,443,103.04,18]}
+{"kind":"textbox","id":"sh/hw3aloja","slide":15,"text":"0.937","textPreview":"0.937","textChars":5,"textLines":1,"bbox":[1112,439,68,24]}
+{"kind":"shape","id":"sh/m5srm90n","slide":15,"bbox":[800,500,380,74]}
+{"kind":"textbox","id":"sh/7q1sfe1s","slide":15,"text":"External Gope data","textPreview":"External Gope data","textChars":18,"textLines":1,"bbox":[818,508,170,24]}
+{"kind":"textbox","id":"sh/8ratojid","slide":15,"text":"Blackhole -> Sinkhole: recall 0.047, F1 0.088","textPreview":"Blackhole -> Sinkhole: recall 0.047, F1 0.088","textChars":45,"textLines":1,"bbox":[818,535,340,24]}
+{"kind":"textbox","id":"sh/9sjah4jy","slide":15,"text":"Same direction of transfer failure, not directly comparable magnitude","textPreview":"Same direction of transfer failure, not directly comparable magnitude","textChars":69,"textLines":1,"bbox":[770,602,450,22]}
+{"kind":"image","id":"im/p8vmxsf2","slide":15,"name":"","alt":"robustness_static_vs_adapted_f1.png","bbox":[62,160,692,420]}
+{"kind":"notes","id":"nt/m8uwzy","slide":15,"text":"The robustness campaign adds sixty simulations with attacker relocation and a lossy radio model. After three target seeds, adapted F1 remains near one across Blackhole, Sinkhole and Sybil. The weakest condition is lossy-radio Sybil at F1 zero point nine three seven, with false-positive rate zero point zero four six. This supports robustness within the evaluated simulator conditions, not physical deployment generalisation. I also analysed the supplied Gope dataset separately. A Gaussian model trained on Blackhole and tested on Sinkhole achieves recall zero point zero four seven and F1 zero point zero eight eight, showing the same direction of weak cross-attack transfer. Those values must not be ranked directly against Cooja because the simulator, schema, labels and split units differ. Together, the results support the transfer problem while keeping the validity boundary explicit. The next slide reports three more complex extensions, including negative results.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_final_figures_v2/tables/robustness_static_vs_adapted.csv\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/results/master_results_summary.csv\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/gope_dataset/paper_alignment.md\n[/Sources]"}
+{"kind":"slide","id":"sl/ws6bbw","slide":16,"title":"OPERATIONAL EXTENSIONS","textShapes":10}
+{"kind":"textbox","id":"sh/1gzqtw3q","slide":16,"text":" OPERATIONAL EXTENSIONS","textPreview":"OPERATIONAL EXTENSIONS","textChars":23,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/et87ih4z","slide":16,"text":" More sophistication did not automatically improve the system","textPreview":"More sophistication did not automatically improve the system","textChars":61,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/feh8rmlk","slide":16,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/ojaporm1","slide":16,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/pkjqxw3m","slide":16,"text":"Trust, defence and RL","textPreview":"Trust, defence and RL","textChars":21,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/2hs7mh4b","slide":16,"bbox":[55,160,350,380]}
+{"kind":"shape","id":"sh/3i18vmlg","slide":16,"bbox":[55,160,5,380]}
+{"kind":"textbox","id":"sh/cnapsb2d","slide":16,"text":"TRUST FEATURES","textPreview":"TRUST FEATURES","textChars":14,"textLines":1,"bbox":[77,172,314,28]}
+{"kind":"textbox","id":"sh/dojq1g3y","slide":16,"text":"Purpose\nExpose forwarding, rank, control and route concerns\n\nResult\nStatic F1: 0.182 -> 0.182\n3-seed F1: 0.879 -> 0.879\n\nInterpretation\nImproved diagnostic structure, but duplicated evidence already available to CART.","textPreview":"Purpose | Expose forwarding, rank, control and route concerns |  | Result | Static F1: 0.182 -> 0.182 | 3-seed F1: 0.879 -> 0.879 |  | In...","textChars":217,"textLines":9,"bbox":[77,206,312,322]}
+{"kind":"shape","id":"sh/x0fu1s72","slide":16,"bbox":[465,160,350,380]}
+{"kind":"shape","id":"sh/wz6d876h","slide":16,"bbox":[465,160,5,380]}
+{"kind":"textbox","id":"sh/byxcz2pw","slide":16,"text":"ACTIVE SINKHOLE DEFENCE","textPreview":"ACTIVE SINKHOLE DEFENCE","textChars":23,"textLines":1,"bbox":[487,172,314,28]}
+{"kind":"textbox","id":"sh/adov6xob","slide":16,"text":"Purpose\nReject suspicious rank-parent routes\n\nResult\nResponses: 417 -> 87\nRadio TX: 5,217 -> 35,020\nParent switches: 0 -> 682\n\nInterpretation\nThe intervention detected a concern but destabilised routing.","textPreview":"Purpose | Reject suspicious rank-parent routes |  | Result | Responses: 417 -> 87 | Radio TX: 5,217 -> 35,020 | Parent switches: 0 -> 682...","textChars":203,"textLines":10,"bbox":[487,206,312,322]}
+{"kind":"shape","id":"sh/l4zu5c7y","slide":16,"bbox":[875,160,350,380]}
+{"kind":"shape","id":"sh/k3qdc76d","slide":16,"bbox":[875,160,5,380]}
+{"kind":"textbox","id":"sh/j2hc32ps","slide":16,"text":"DQN / DDQN CONTROLLER","textPreview":"DQN / DDQN CONTROLLER","textChars":21,"textLines":1,"bbox":[897,172,314,28]}
+{"kind":"textbox","id":"sh/y18vaxon","slide":16,"text":"Purpose\nLearn when to update the IDS\n\nResult\nAlways incremental F1: 0.667\nDQN controller F1: 0.333\nDDQN controller F1: 0.571\n\nInterpretation\nFeasible offline extension, but no RL superiority.","textPreview":"Purpose | Learn when to update the IDS |  | Result | Always incremental F1: 0.667 | DQN controller F1: 0.333 | DDQN controller F1: 0.571 ...","textChars":191,"textLines":10,"bbox":[897,206,312,322]}
+{"kind":"shape","id":"sh/18vut87u","slide":16,"bbox":[155,585,970,62]}
+{"kind":"textbox","id":"sh/07md0n69","slide":16,"text":"Extra complexity is useful only when it improves the correct objective without unacceptable network cost.","textPreview":"Extra complexity is useful only when it improves the correct objective without unacceptable network cost.","textChars":105,"textLines":1,"bbox":[180,596,920,40]}
+{"kind":"notes","id":"nt/ws6bbw","slide":16,"text":"These extensions produced important negative results. First, the trust layer turned routing observations into interpretable forwarding, rank, control and route signals, but it did not change CART F1. It is therefore presented as diagnostic evidence, not a performance improvement. Second, the active Sinkhole defence rejected suspicious routes too aggressively. Application responses fell by about seventy-nine percent, radio transmissions increased by over five hundred percent, and the network switched parent hundreds of times. Detection confidence alone is not enough for safe routing intervention. Third, the isolated DQN and DDQN controllers selected update actions on recorded Cooja-derived streams. DDQN improved over DQN, but neither beat the simple always-incremental baseline. This is not the full live adversarial system from Gope et al. These results strengthen the dissertation because they show where intuitive extensions fail and why operational cost matters. The next slide returns to the local language-model explanation layer.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/trust_layer_v1/results/trust_vs_baseline_comparison.csv\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_final_figures_v2/tables/sinkhole_defence_operational_cost.csv\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/adversarial_rl_sybil_v1/results/adversarial_rl/held_out_summary.csv\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/adversarial_rl_sybil_v1/docs/model_scope.md\n[/Sources]"}
+{"kind":"slide","id":"sl/x61ux9","slide":17,"title":"EXPLANATION LAYER","textShapes":12}
+{"kind":"textbox","id":"sh/325grips","slide":17,"text":" EXPLANATION LAYER","textPreview":"EXPLANATION LAYER","textChars":18,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/43ehknqx","slide":17,"text":" The local LLM explains evidence produced by the IDS pipeline","textPreview":"The local LLM explains evidence produced by the IDS pipeline","textChars":61,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/54nyts7i","slide":17,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/qpwzmx83","slide":17,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/rq5gv2po","slide":17,"text":"Local LLM","textPreview":"Local LLM","textChars":9,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/srehonq9","slide":17,"bbox":[55,155,330,390]}
+{"kind":"textbox","id":"sh/ds7yxs7u","slide":17,"text":"STRUCTURED EVIDENCE","textPreview":"STRUCTURED EVIDENCE","textChars":19,"textLines":1,"bbox":[75,174,290,28]}
+{"kind":"textbox","id":"sh/etgzqx8f","slide":17,"text":"Window: 300-360 s\n\nLow-rank DIO count: +14\nMinimum non-root rank: -128\nRank trust alert: 1\n\nStatic transfer: weak\nAdaptation: improved\nDrift alert: present","textPreview":"Window: 300-360 s |  | Low-rank DIO count: +14 | Minimum non-root rank: -128 | Rank trust alert: 1 |  | Static transfer: weak | Adaptatio...","textChars":155,"textLines":9,"bbox":[82,222,276,270]}
+{"kind":"shape","id":"sh/fupgz2pk","slide":17,"bbox":[405,320,42,42]}
+{"kind":"shape","id":"sh/bup4natc","slide":17,"bbox":[468,225,270,250]}
+{"kind":"shape","id":"sh/qtg3u5cr","slide":17,"bbox":[552,252,100,100]}
+{"kind":"textbox","id":"sh/dw7mpkbi","slide":17,"text":"QWEN\n2.5:3B","textPreview":"QWEN | 2.5:3B","textChars":11,"textLines":2,"bbox":[552,252,100,100]}
+{"kind":"textbox","id":"sh/cvylwfux","slide":17,"text":"Local Ollama runtime\nNo cloud key required","textPreview":"Local Ollama runtime | No cloud key required","textChars":42,"textLines":2,"bbox":[500,378,206,52]}
+{"kind":"shape","id":"sh/36p4zqtg","slide":17,"bbox":[758,320,42,42]}
+{"kind":"shape","id":"sh/25w3q5cv","slide":17,"bbox":[820,155,405,390]}
+{"kind":"textbox","id":"sh/ps7ml0b6","slide":17,"text":"ACTUAL ABRIDGED OUTPUT","textPreview":"ACTUAL ABRIDGED OUTPUT","textChars":22,"textLines":1,"bbox":[840,174,365,28]}
+{"kind":"textbox","id":"sh/o7ylsvu1","slide":17,"text":"\"There has been a significant increase in low-rank DIO observations and a decrease in the minimum non-root rank.\n\nThese changes suggest a possible drift and should be investigated further.\"","textPreview":"\"There has been a significant increase in low-rank DIO observations and a decrease in the minimum non-root rank. |  | These changes sugge...","textChars":189,"textLines":3,"bbox":[850,230,345,190]}
+{"kind":"textbox","id":"sh/n294vutk","slide":17,"text":"Confidence: medium | limitation stated","textPreview":"Confidence: medium | limitation stated","textChars":38,"textLines":1,"bbox":[850,448,345,28]}
+{"kind":"shape","id":"sh/m10n2pcz","slide":17,"bbox":[105,575,1070,58]}
+{"kind":"textbox","id":"sh/ix47utw7","slide":17,"text":"The IDS detects; the LLM explains.","textPreview":"The IDS detects; the LLM explains.","textChars":34,"textLines":1,"bbox":[130,584,1020,40]}
+{"kind":"textbox","id":"sh/jido3yds","slide":17,"text":"9 local cases | mean automatic screening score 7.78 / 10 | schema validity 100% | unsupported-claim flags 0%","textPreview":"9 local cases | mean automatic screening score 7.78 / 10 | schema validity 100% | unsupported-claim flags 0%","textChars":108,"textLines":1,"bbox":[210,642,860,20]}
+{"kind":"notes","id":"nt/x61ux9","slide":17,"text":"The local explanation layer runs Qwen two point five, three billion parameters, through Ollama on the same computer. It does not receive thousands of raw Cooja lines. It receives a structured evidence package containing feature changes, IDS results, drift alerts, adaptation outcomes and limitations. The example here is based on the real Sinkhole case. The model identifies the increase in low-rank observations and the lower non-root rank, describes possible drift, assigns medium confidence and asks for further investigation. I ran all nine attack cases locally. The outputs were schema-valid, produced no unsupported-claim flags under the project's rule-based screening, and achieved a mean score of seven point seven eight out of ten. That score is an automatic evidence-alignment screen, not a human analyst study and not proof of factual correctness. Some outputs use imprecise terminology, which remains a limitation. Point to the bottom sentence: the IDS detects; the LLM explains. The next slide shows the concise live demonstration plan.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/llm_explanations_v2/outputs/ollama_explanations.jsonl\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/llm_explanations_v2/evaluation/scored_ollama_full/summary.json\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/llm_explanations_v2/evaluation/scored_ollama_full/case_scores.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/qq8xpy","slide":18,"title":"DEMONSTRATION","textShapes":11}
+{"kind":"textbox","id":"sh/98filgbe","slide":18,"text":" DEMONSTRATION","textPreview":"DEMONSTRATION","textChars":14,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/mloja1cn","slide":18,"text":" Live demonstration: show evidence, do not wait for a full run","textPreview":"Live demonstration: show evidence, do not wait for a full run","textChars":62,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/7mx0j6t8","slide":18,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/kjm18buh","slide":18,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/lkvihwb2","slide":18,"text":"Live demo","textPreview":"Live demo","textChars":9,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/yh4j61cr","slide":18,"bbox":[70,180,340,305]}
+{"kind":"shape","id":"sh/zid0f6tc","slide":18,"bbox":[70,180,5,305]}
+{"kind":"textbox","id":"sh/4fq1kva1","slide":18,"text":"1. COOJA BLACKHOLE","textPreview":"1. COOJA BLACKHOLE","textChars":18,"textLines":1,"bbox":[92,192,304,28]}
+{"kind":"textbox","id":"sh/5gz2t0bm","slide":18,"text":"Open the validated 16-mote configuration.\n\nShow the topology and the preserved post-240-second log:\n\nBLACKHOLE ATTACK: enabled\ndropping forwarded packet\n\nTarget: 75 seconds","textPreview":"Open the validated 16-mote configuration. |  | Show the topology and the preserved post-240-second log: |  | BLACKHOLE ATTACK: enabled | ...","textChars":172,"textLines":8,"bbox":[92,226,302,247]}
+{"kind":"shape","id":"sh/l47qtkbu","slide":18,"bbox":[470,180,340,305]}
+{"kind":"shape","id":"sh/k3yp0fa9","slide":18,"bbox":[470,180,5,305]}
+{"kind":"textbox","id":"sh/z2p8rato","slide":18,"text":"2. COOJA SYBIL","textPreview":"2. COOJA SYBIL","textChars":14,"textLines":1,"bbox":[492,192,304,28]}
+{"kind":"textbox","id":"sh/y1g7y5sj","slide":18,"text":"Open the validated Sybil configuration.\n\nShow rotating DIO source identities:\n\nfd00::f001\nfd00::f002\n\nTarget: 75 seconds","textPreview":"Open the validated Sybil configuration. |  | Show rotating DIO source identities: |  | fd00::f001 | fd00::f002 |  | Target: 75 seconds","textChars":120,"textLines":8,"bbox":[492,226,302,247]}
+{"kind":"shape","id":"sh/x07qp0by","slide":18,"bbox":[870,180,340,305]}
+{"kind":"shape","id":"sh/czypwvud","slide":18,"bbox":[870,180,5,305]}
+{"kind":"textbox","id":"sh/by58nqts","slide":18,"text":"3. LOCAL LLM","textPreview":"3. LOCAL LLM","textChars":12,"textLines":1,"bbox":[892,192,304,28]}
+{"kind":"textbox","id":"sh/axw7ulc7","slide":18,"text":"Use the completed evidence package.\n\nRun one Qwen explanation or open the preserved nine-case output.\n\nShow JSON response and score.\n\nTarget: 90 seconds","textPreview":"Use the completed evidence package. |  | Run one Qwen explanation or open the preserved nine-case output. |  | Show JSON response and sco...","textChars":152,"textLines":7,"bbox":[892,226,302,247]}
+{"kind":"shape","id":"sh/hwrq14b2","slide":18,"bbox":[160,535,960,70]}
+{"kind":"textbox","id":"sh/wvi98zah","slide":18,"text":"Fallback: play 45-90 second recorded clips and show the matching preserved validation output.","textPreview":"Fallback: play 45-90 second recorded clips and show the matching preserved validation output.","textChars":93,"textLines":1,"bbox":[190,546,900,48]}
+{"kind":"textbox","id":"sh/gzq943it","slide":18,"text":"Demo budget: 4 to 5 minutes maximum","textPreview":"Demo budget: 4 to 5 minutes maximum","textChars":35,"textLines":1,"bbox":[440,625,400,24]}
+{"kind":"notes","id":"nt/qq8xpy","slide":18,"text":"For the live demonstration, I will not start a five-hundred-and-forty-second experiment from zero. First, I will open the validated Blackhole configuration that is already prepared in Cooja. I will point to node sixteen and show the preserved post-activation output where the attack is enabled and forwarded packets are dropped. Second, I will switch to the Sybil configuration and show the sequence of virtual DIO source identities. Third, I will return to Visual Studio Code or the terminal, run one local Qwen explanation from the completed evidence package, and show the structured JSON output and its automatic score. The total live section must stay under five minutes. If Cooja is slow, I will say: Rather than wait for the simulation, this is a recording from the validated run. At two hundred and forty seconds the attack activates, and the highlighted line shows the expected effect. I will then show the matching validation CSV. If Ollama is slow, I will open the preserved nine-case output instead of waiting. After the demo I return directly to the reflection slide.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/presentation_demo_pack_v1/recording_checklist.md\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/presentation_demo_pack_v1/terminal_commands.md\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/llm_explanations_v2/outputs/ollama_explanations.jsonl\n[/Sources]"}
+{"kind":"slide","id":"sl/4uycn9","slide":19,"title":"CRITICAL REFLECTION","textShapes":22}
+{"kind":"textbox","id":"sh/gz2d8bid","slide":19,"text":" CRITICAL REFLECTION","textPreview":"CRITICAL REFLECTION","textChars":20,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/fytwz61s","slide":19,"text":" The failures changed the method and narrowed the claims","textPreview":"The failures changed the method and narrowed the claims","textChars":56,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/exkv6107","slide":19,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/p4be5gju","slide":19,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/o32dcbi9","slide":19,"text":"Discussion","textPreview":"Discussion","textChars":10,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"textbox","id":"sh/32tw361o","slide":19,"text":"PROBLEM OBSERVED","textPreview":"PROBLEM OBSERVED","textChars":16,"textLines":1,"bbox":[68,147,240,22]}
+{"kind":"textbox","id":"sh/21kval03","slide":19,"text":"CORRECTION MADE","textPreview":"CORRECTION MADE","textChars":15,"textLines":1,"bbox":[475,147,220,22]}
+{"kind":"textbox","id":"sh/58rutwjq","slide":19,"text":"RESEARCH LESSON","textPreview":"RESEARCH LESSON","textChars":15,"textLines":1,"bbox":[885,147,220,22]}
+{"kind":"shape","id":"sh/k7id0ri5","slide":19,"bbox":[60,190,1160,76]}
+{"kind":"shape","id":"sh/ap4bmpsn","slide":19,"bbox":[60,190,5,76]}
+{"kind":"textbox","id":"sh/bqxcfut8","slide":19,"text":"Coarse features missed Sinkhole","textPreview":"Coarse features missed Sinkhole","textChars":31,"textLines":1,"bbox":[82,200,340,56]}
+{"kind":"shape","id":"sh/wr6tozat","slide":19,"bbox":[430,213,28,28]}
+{"kind":"textbox","id":"sh/xsfuhkby","slide":19,"text":"Added rank, parent and routing-state evidence","textPreview":"Added rank, parent and routing-state evidence","textChars":45,"textLines":1,"bbox":[480,200,330,56]}
+{"kind":"shape","id":"sh/itobqpsj","slide":19,"bbox":[820,213,28,28]}
+{"kind":"textbox","id":"sh/juxcjut4","slide":19,"text":"Features must expose the mechanism","textPreview":"Features must expose the mechanism","textChars":34,"textLines":1,"bbox":[875,200,320,56]}
+{"kind":"shape","id":"sh/kv6tszap","slide":19,"bbox":[60,278,1160,76]}
+{"kind":"shape","id":"sh/5gful4ba","slide":19,"bbox":[60,278,5,76]}
+{"kind":"textbox","id":"sh/6hobu9sv","slide":19,"text":"Random-row leakage risk","textPreview":"Random-row leakage risk","textChars":23,"textLines":1,"bbox":[82,288,340,56]}
+{"kind":"shape","id":"sh/7ihcne9g","slide":19,"bbox":[430,301,28,28]}
+{"kind":"textbox","id":"sh/3mhsbep8","slide":19,"text":"Separated complete seeds and runs","textPreview":"Separated complete seeds and runs","textChars":33,"textLines":1,"bbox":[480,288,330,56]}
+{"kind":"shape","id":"sh/2l8bi983","slide":19,"bbox":[820,301,28,28]}
+{"kind":"textbox","id":"sh/pozado7e","slide":19,"text":"The split unit matters as much as the model","textPreview":"The split unit matters as much as the model","textChars":43,"textLines":1,"bbox":[875,288,320,56]}
+{"kind":"shape","id":"sh/4nqtkjqt","slide":19,"bbox":[60,366,1160,76]}
+{"kind":"shape","id":"sh/fihs7upc","slide":19,"bbox":[60,366,5,76]}
+{"kind":"textbox","id":"sh/ux8bep8r","slide":19,"text":"Trust added no F1 gain","textPreview":"Trust added no F1 gain","textChars":22,"textLines":1,"bbox":[82,376,340,56]}
+{"kind":"shape","id":"sh/hkza947i","slide":19,"bbox":[430,389,28,28]}
+{"kind":"textbox","id":"sh/gjqtgzqx","slide":19,"text":"Reframed it as diagnostic evidence","textPreview":"Reframed it as diagnostic evidence","textChars":34,"textLines":1,"bbox":[480,376,330,56]}
+{"kind":"shape","id":"sh/7uxs3upg","slide":19,"bbox":[820,389,28,28]}
+{"kind":"textbox","id":"sh/6torap8v","slide":19,"text":"Interpretability is not the same as accuracy","textPreview":"Interpretability is not the same as accuracy","textChars":44,"textLines":1,"bbox":[875,376,320,56]}
+{"kind":"shape","id":"sh/cn2hor2h","slide":19,"bbox":[60,454,1160,76]}
+{"kind":"shape","id":"sh/xobyxwjm","slide":19,"bbox":[60,454,5,76]}
+{"kind":"textbox","id":"sh/alkzmhkb","slide":19,"text":"Active defence destabilised routing","textPreview":"Active defence destabilised routing","textChars":35,"textLines":1,"bbox":[82,464,340,56]}
+{"kind":"shape","id":"sh/bmtgvm1w","slide":19,"bbox":[430,477,28,28]}
+{"kind":"textbox","id":"sh/kr2hsb2d","slide":19,"text":"Reported response, radio and churn cost","textPreview":"Reported response, radio and churn cost","textChars":39,"textLines":1,"bbox":[480,464,330,56]}
+{"kind":"shape","id":"sh/lcvi1gjy","slide":19,"bbox":[820,477,28,28]}
+{"kind":"textbox","id":"sh/ypkzq1k7","slide":19,"text":"Detection does not guarantee safe mitigation","textPreview":"Detection does not guarantee safe mitigation","textChars":44,"textLines":1,"bbox":[875,464,320,56]}
+{"kind":"shape","id":"sh/zqtgz61s","slide":19,"bbox":[60,542,1160,76]}
+{"kind":"shape","id":"sh/0vihg729","slide":19,"bbox":[60,542,5,76]}
+{"kind":"textbox","id":"sh/1wrypcju","slide":19,"text":"RL underperformed incremental updating","textPreview":"RL underperformed incremental updating","textChars":38,"textLines":1,"bbox":[82,552,340,56]}
+{"kind":"shape","id":"sh/toni5gna","slide":19,"bbox":[430,565,28,28]}
+{"kind":"textbox","id":"sh/snehcb6p","slide":19,"text":"Kept a simple baseline and scope boundary","textPreview":"Kept a simple baseline and scope boundary","textChars":41,"textLines":1,"bbox":[480,552,330,56]}
+{"kind":"shape","id":"sh/7m503654","slide":19,"bbox":[820,565,28,28]}
+{"kind":"textbox","id":"sh/6lcza1oj","slide":19,"text":"Complexity must earn its cost","textPreview":"Complexity must earn its cost","textChars":29,"textLines":1,"bbox":[875,552,320,56]}
+{"kind":"textbox","id":"sh/5k3i1wny","slide":19,"text":"MSc-level contribution includes explaining why a result failed, not only reporting the best score.","textPreview":"MSc-level contribution includes explaining why a result failed, not only reporting the best score.","textChars":98,"textLines":1,"bbox":[205,638,870,24]}
+{"kind":"notes","id":"nt/4uycn9","slide":19,"text":"This slide summarises how the research improved through failure analysis. The first Sinkhole adaptation attempt failed because the representation was too coarse, so I added routing-state evidence. I identified that random window splitting could leak related rows, so all evaluations preserve complete seeds. Trust features did not improve predictive F1, so I narrowed the claim to diagnostic interpretation. The active defence caused major network disruption, so I report it as a failed prototype and derive requirements for hysteresis, confidence and route stability. The DQN and DDQN controllers did not beat always-incremental updating, so I keep the simpler baseline as the stronger result. These are not side notes. They show that the project changed its method and its claims in response to evidence. That critical correction process is part of the dissertation contribution. The final slide now states only what the completed evidence supports.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_overleaf_v1/chapters/06_discussion.tex\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_overleaf_v1/chapters/07_limitations.tex\n[/Sources]"}
+{"kind":"slide","id":"sl/2dy6f4","slide":20,"title":"CONCLUSIONS","textShapes":20}
+{"kind":"textbox","id":"sh/f6pcv6xk","slide":20,"text":"CONCLUSIONS","textPreview":"CONCLUSIONS","textChars":11,"textLines":1,"bbox":[62,38,300,24]}
+{"kind":"textbox","id":"sh/07yt4be5","slide":20,"text":"What the evidence supports","textPreview":"What the evidence supports","textChars":26,"textLines":1,"bbox":[62,78,1000,54]}
+{"kind":"shape","id":"sh/187uxgfq","slide":20,"bbox":[70,172,48,48]}
+{"kind":"textbox","id":"sh/qhwby1w3","slide":20,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[70,172,48,48]}
+{"kind":"textbox","id":"sh/ri5crmx8","slide":20,"text":"Static transfer is brittle","textPreview":"Static transfer is brittle","textChars":26,"textLines":1,"bbox":[145,166,410,30]}
+{"kind":"textbox","id":"sh/sjet0ret","slide":20,"text":"48 of 72 cross-attack CART pairs miss every attack window.","textPreview":"48 of 72 cross-attack CART pairs miss every attack window.","textChars":58,"textLines":1,"bbox":[560,166,630,58]}
+{"kind":"shape","id":"sh/dknutwfe","slide":20,"bbox":[70,258,48,48]}
+{"kind":"textbox","id":"sh/idcbuhwr","slide":20,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[70,258,48,48]}
+{"kind":"textbox","id":"sh/3e5snmxc","slide":20,"text":"Features determine adaptability","textPreview":"Features determine adaptability","textChars":31,"textLines":1,"bbox":[145,252,410,30]}
+{"kind":"textbox","id":"sh/butc7elg","slide":20,"text":"Routing-state evidence changes the Blackhole-to-Sinkhole result.","textPreview":"Routing-state evidence changes the Blackhole-to-Sinkhole result.","textChars":64,"textLines":1,"bbox":[560,252,630,58]}
+{"kind":"shape","id":"sh/atkbe94v","slide":20,"bbox":[70,344,48,48]}
+{"kind":"textbox","id":"sh/xwvu9o36","slide":20,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[70,344,48,48]}
+{"kind":"textbox","id":"sh/wv2tgjm1","slide":20,"text":"Limited adaptation often recovers performance","textPreview":"Limited adaptation often recovers performance","textChars":45,"textLines":1,"bbox":[145,338,410,30]}
+{"kind":"textbox","id":"sh/jydcbelc","slide":20,"text":"Mean F1 rises from 0.182 to 0.826 after one complete target seed.","textPreview":"Mean F1 rises from 0.182 to 0.826 after one complete target seed.","textChars":65,"textLines":1,"bbox":[560,338,630,58]}
+{"kind":"shape","id":"sh/yx4bit4r","slide":20,"bbox":[70,430,48,48]}
+{"kind":"textbox","id":"sh/l0vudo3i","slide":20,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[70,430,48,48]}
+{"kind":"textbox","id":"sh/kzmtkjmx","slide":20,"text":"Sybil adds an identity-based surface","textPreview":"Sybil adds an identity-based surface","textChars":36,"textLines":1,"bbox":[145,424,410,30]}
+{"kind":"textbox","id":"sh/z29szul8","slide":20,"text":"Static transfer is weak; one held-out adaptation seed reaches F1 0.968.","textPreview":"Static transfer is weak; one held-out adaptation seed reaches F1 0.968.","textChars":71,"textLines":1,"bbox":[560,424,630,58]}
+{"kind":"shape","id":"sh/e10b6p4n","slide":20,"bbox":[70,516,48,48]}
+{"kind":"textbox","id":"sh/ih8fexob","slide":20,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[70,516,48,48]}
+{"kind":"textbox","id":"sh/3ihw725w","slide":20,"text":"Explanation must remain evidence-grounded","textPreview":"Explanation must remain evidence-grounded","textChars":41,"textLines":1,"bbox":[145,510,410,30]}
+{"kind":"textbox","id":"sh/4jqxg761","slide":20,"text":"The local LLM describes measured results but does not replace detection.","textPreview":"The local LLM describes measured results but does not replace detection.","textChars":72,"textLines":1,"bbox":[560,510,630,58]}
+{"kind":"shape","id":"sh/5kze9cnm","slide":20,"bbox":[120,608,1040,58]}
+{"kind":"textbox","id":"sh/utofadoz","slide":20,"text":"Changing attacks require adaptive detection and understandable evidence.","textPreview":"Changing attacks require adaptive detection and understandable evidence.","textChars":72,"textLines":1,"bbox":[150,617,980,40]}
+{"kind":"textbox","id":"sh/vuxw3i5k","slide":20,"text":"Questions","textPreview":"Questions","textChars":9,"textLines":1,"bbox":[62,680,200,22]}
+{"kind":"textbox","id":"sh/gf6xcn65","slide":20,"text":"AL-MIZAAN JAMAL","textPreview":"AL-MIZAAN JAMAL","textChars":15,"textLines":1,"bbox":[1000,680,220,22]}
+{"kind":"notes","id":"nt/2dy6f4","slide":20,"text":"The evidence supports five conclusions. First, static cross-attack transfer is brittle: forty-eight of seventy-two CART pairs miss every attack window. Second, feature representation determines whether adaptation is even possible. Third, adding one complete target seed gives the largest average recovery, although some pairs remain unstable. Fourth, Sybil provides a distinct identity-based surface and becomes strongly detectable after limited supervised adaptation or through a transparent identity-specific monitor. Fifth, the local language model can turn structured evidence into a readable explanation, but it is not the detector and its automatic score is not a human usefulness study. The project is simulation-based and does not claim physical deployment performance or a full reproduction of Gope et al.'s adversarial RL architecture. The central conclusion is shown at the bottom: changing attacks require both adaptive detection and understandable evidence. Thank you. I welcome your questions.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_results_summary_v1/results_summary.md\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_results_summary_v1/core_argument.md\n[/Sources]"}
+{"kind":"slide","id":"sl/n9dx1m","slide":21,"title":"EXAMINER BACKUP","textShapes":45}
+{"kind":"textbox","id":"sh/fi5cr250","slide":21,"text":" EXAMINER BACKUP","textPreview":"EXAMINER BACKUP","textChars":16,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/0jed07ml","slide":21,"text":" A1. Full attack-family campaign","textPreview":"A1. Full attack-family campaign","textChars":32,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/1knutcn6","slide":21,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/qtcvud4j","slide":21,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/rulcni54","slide":21,"text":"Appendix","textPreview":"Appendix","textChars":8,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/svedwnmp","slide":21,"bbox":[1080,25,110,28]}
+{"kind":"textbox","id":"sh/dgnupsna","slide":21,"text":"BACKUP","textPreview":"BACKUP","textChars":6,"textLines":1,"bbox":[1088,25,94,28]}
+{"kind":"textbox","id":"sh/ipcbqdon","slide":21,"text":"FAMILY","textPreview":"FAMILY","textChars":6,"textLines":1,"bbox":[65,150,170,22]}
+{"kind":"textbox","id":"sh/3qlcji5s","slide":21,"text":"SURFACE","textPreview":"SURFACE","textChars":7,"textLines":1,"bbox":[310,150,130,22]}
+{"kind":"textbox","id":"sh/b61s3ups","slide":21,"text":"VALIDATED MECHANISM","textPreview":"VALIDATED MECHANISM","textChars":19,"textLines":1,"bbox":[500,150,300,22]}
+{"kind":"textbox","id":"sh/a5srapo7","slide":21,"text":"ATTACK + CONTROL","textPreview":"ATTACK + CONTROL","textChars":16,"textLines":1,"bbox":[1040,150,170,22]}
+{"kind":"shape","id":"sh/xsja547y","slide":21,"bbox":[55,184,1170,47]}
+{"kind":"textbox","id":"sh/c7a9cz6d","slide":21,"text":"Blackhole","textPreview":"Blackhole","textChars":9,"textLines":1,"bbox":[72,184,210,47]}
+{"kind":"textbox","id":"sh/juls7epo","slide":21,"text":"Forwarding","textPreview":"Forwarding","textChars":10,"textLines":1,"bbox":[310,184,150,47]}
+{"kind":"textbox","id":"sh/ytcre9oj","slide":21,"text":"Drop forwarded packets","textPreview":"Drop forwarded packets","textChars":22,"textLines":1,"bbox":[500,184,490,47]}
+{"kind":"textbox","id":"sh/lw3a947u","slide":21,"text":"5 + 5","textPreview":"5 + 5","textChars":5,"textLines":1,"bbox":[1060,184,120,47]}
+{"kind":"shape","id":"sh/kvu9gz69","slide":21,"bbox":[55,237,1170,47]}
+{"kind":"textbox","id":"sh/fyh8vapk","slide":21,"text":"Sinkhole","textPreview":"Sinkhole","textChars":8,"textLines":1,"bbox":[72,237,210,47]}
+{"kind":"textbox","id":"sh/ex8r25oz","slide":21,"text":"Rank","textPreview":"Rank","textChars":4,"textLines":1,"bbox":[310,237,150,47]}
+{"kind":"textbox","id":"sh/itgvad8n","slide":21,"text":"Advertise rank 128 instead of 256","textPreview":"Advertise rank 128 instead of 256","textChars":33,"textLines":1,"bbox":[500,237,490,47]}
+{"kind":"textbox","id":"sh/3upcji98","slide":21,"text":"5 + 5","textPreview":"5 + 5","textChars":5,"textLines":1,"bbox":[1060,237,120,47]}
+{"kind":"shape","id":"sh/4vydcnqt","slide":21,"bbox":[55,290,1170,47]}
+{"kind":"textbox","id":"sh/5w7ulsre","slide":21,"text":"DIS Flood","textPreview":"DIS Flood","textChars":9,"textLines":1,"bbox":[72,290,210,47]}
+{"kind":"textbox","id":"sh/upwv6d8r","slide":21,"text":"Control","textPreview":"Control","textChars":7,"textLines":1,"bbox":[310,290,150,47]}
+{"kind":"textbox","id":"sh/vq5cfy9w","slide":21,"text":"Repeated DIS transmission","textPreview":"Repeated DIS transmission","textChars":25,"textLines":1,"bbox":[500,290,490,47]}
+{"kind":"textbox","id":"sh/gred83qh","slide":21,"text":"5 + 5","textPreview":"5 + 5","textChars":5,"textLines":1,"bbox":[1060,290,120,47]}
+{"kind":"shape","id":"sh/hs7uh8r2","slide":21,"bbox":[55,343,1170,47]}
+{"kind":"textbox","id":"sh/61wb2t8f","slide":21,"text":"Grayhole","textPreview":"Grayhole","textChars":8,"textLines":1,"bbox":[72,343,210,47]}
+{"kind":"textbox","id":"sh/7m5cby90","slide":21,"text":"Forwarding","textPreview":"Forwarding","textChars":10,"textLines":1,"bbox":[310,343,150,47]}
+{"kind":"textbox","id":"sh/pgbyhwbi","slide":21,"text":"Selective packet drop","textPreview":"Selective packet drop","textChars":21,"textLines":1,"bbox":[500,343,490,47]}
+{"kind":"textbox","id":"sh/of2x8rax","slide":21,"text":"5 + 5","textPreview":"5 + 5","textChars":5,"textLines":1,"bbox":[1060,343,120,47]}
+{"kind":"shape","id":"sh/netgfmtc","slide":21,"bbox":[55,396,1170,47]}
+{"kind":"textbox","id":"sh/2dkf61s7","slide":21,"text":"Increase Rank","textPreview":"Increase Rank","textChars":13,"textLines":1,"bbox":[72,396,210,47]}
+{"kind":"textbox","id":"sh/1cbydwbm","slide":21,"text":"Rank","textPreview":"Rank","textChars":4,"textLines":1,"bbox":[310,396,150,47]}
+{"kind":"textbox","id":"sh/0r2x4ra1","slide":21,"text":"Advertise degraded rank","textPreview":"Advertise degraded rank","textChars":23,"textLines":1,"bbox":[500,396,490,47]}
+{"kind":"textbox","id":"sh/fq9wbmtg","slide":21,"text":"5 + 5","textPreview":"5 + 5","textChars":5,"textLines":1,"bbox":[1060,396,120,47]}
+{"kind":"shape","id":"sh/ep0f2hsv","slide":21,"bbox":[55,449,1170,47]}
+{"kind":"textbox","id":"sh/dore9cba","slide":21,"text":"DIO Suppression","textPreview":"DIO Suppression","textChars":15,"textLines":1,"bbox":[72,449,210,47]}
+{"kind":"textbox","id":"sh/snix07ap","slide":21,"text":"Control","textPreview":"Control","textChars":7,"textLines":1,"bbox":[310,449,150,47]}
+{"kind":"textbox","id":"sh/sra5gba1","slide":21,"text":"Suppress DIO transmission","textPreview":"Suppress DIO transmission","textChars":25,"textLines":1,"bbox":[500,449,490,47]}
+{"kind":"textbox","id":"sh/tsj69grm","slide":21,"text":"5 + 5","textPreview":"5 + 5","textChars":5,"textLines":1,"bbox":[1060,449,120,47]}
+{"kind":"shape","id":"sh/6psnelsv","slide":21,"bbox":[55,502,1170,47]}
+{"kind":"textbox","id":"sh/rq1o7qtg","slide":21,"text":"Worst Parent","textPreview":"Worst Parent","textChars":12,"textLines":1,"bbox":[72,502,210,47]}
+{"kind":"textbox","id":"sh/gvu5kvax","slide":21,"text":"Route","textPreview":"Route","textChars":5,"textLines":1,"bbox":[310,502,150,47]}
+{"kind":"textbox","id":"sh/1g36d0ri","slide":21,"text":"Choose poor parent","textPreview":"Choose poor parent","textChars":18,"textLines":1,"bbox":[500,502,490,47]}
+{"kind":"textbox","id":"sh/etsnilsr","slide":21,"text":"5 + 5","textPreview":"5 + 5","textChars":5,"textLines":1,"bbox":[1060,502,120,47]}
+{"kind":"shape","id":"sh/fulobq9c","slide":21,"bbox":[55,555,1170,47]}
+{"kind":"textbox","id":"sh/wzq58rat","slide":21,"text":"Wormhole","textPreview":"Wormhole","textChars":8,"textLines":1,"bbox":[72,555,210,47]}
+{"kind":"textbox","id":"sh/hkz61wbe","slide":21,"text":"Path","textPreview":"Path","textChars":4,"textLines":1,"bbox":[310,555,150,47]}
+{"kind":"textbox","id":"sh/zep87utw","slide":21,"text":"Directed radio tunnel","textPreview":"Directed radio tunnel","textChars":21,"textLines":1,"bbox":[500,555,490,47]}
+{"kind":"textbox","id":"sh/ydwre9cb","slide":21,"text":"5 + 5","textPreview":"5 + 5","textChars":5,"textLines":1,"bbox":[1060,555,120,47]}
+{"kind":"shape","id":"sh/lg7q94bm","slide":21,"bbox":[55,608,1170,47]}
+{"kind":"textbox","id":"sh/kfy9gzuh","slide":21,"text":"Sybil","textPreview":"Sybil","textChars":5,"textLines":1,"bbox":[72,608,210,47]}
+{"kind":"textbox","id":"sh/ba583utk","slide":21,"text":"Identity","textPreview":"Identity","textChars":8,"textLines":1,"bbox":[310,608,150,47]}
+{"kind":"textbox","id":"sh/qpwrapcz","slide":21,"text":"Rotate DIO source identity","textPreview":"Rotate DIO source identity","textChars":26,"textLines":1,"bbox":[500,608,490,47]}
+{"kind":"textbox","id":"sh/dcnq54bq","slide":21,"text":"5 + 5","textPreview":"5 + 5","textChars":5,"textLines":1,"bbox":[1060,608,120,47]}
+{"kind":"textbox","id":"sh/cbe9czu5","slide":21,"text":"Baseline campaign total: 90 validated simulations","textPreview":"Baseline campaign total: 90 validated simulations","textChars":49,"textLines":1,"bbox":[360,650,560,26]}
+{"kind":"notes","id":"nt/n9dx1m","slide":21,"text":"Use this slide only if an examiner asks for the full implementation list or run counts.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_results_summary_v1/attack_coverage_table.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/mqu1hp","slide":22,"title":"EXAMINER BACKUP","textShapes":19}
+{"kind":"textbox","id":"sh/e9krahgn","slide":22,"text":" EXAMINER BACKUP","textPreview":"EXAMINER BACKUP","textChars":16,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/1cbalwzy","slide":22,"text":" A2. Static model comparison","textPreview":"A2. Static model comparison","textChars":28,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/0b29cryd","slide":22,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/r698fmhw","slide":22,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/ql0r6hgb","slide":22,"text":"Appendix","textPreview":"Appendix","textChars":8,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/d8bqhwz2","slide":22,"bbox":[1080,25,110,28]}
+{"kind":"textbox","id":"sh/c7298ryh","slide":22,"text":"BACKUP","textPreview":"BACKUP","textChars":6,"textLines":1,"bbox":[1088,25,94,28]}
+{"kind":"shape","id":"sh/b2dsr6h0","slide":22,"bbox":[70,160,520,400]}
+{"kind":"textbox","id":"sh/ah4ri1gv","slide":22,"text":"CART","textPreview":"CART","textChars":4,"textLines":1,"bbox":[90,180,480,36]}
+{"kind":"textbox","id":"sh/cbudgfax","slide":22,"text":"48 / 72","textPreview":"48 / 72","textChars":7,"textLines":1,"bbox":[120,248,180,50]}
+{"kind":"textbox","id":"sh/xc3e90bi","slide":22,"text":"zero-recall pairs","textPreview":"zero-recall pairs","textChars":17,"textLines":1,"bbox":[126,298,168,42]}
+{"kind":"textbox","id":"sh/a9cve5s7","slide":22,"text":"6 / 72","textPreview":"6 / 72","textChars":6,"textLines":1,"bbox":[350,248,180,50]}
+{"kind":"textbox","id":"sh/balw7atc","slide":22,"text":"F1 at least 0.8","textPreview":"F1 at least 0.8","textChars":15,"textLines":1,"bbox":[356,298,168,42]}
+{"kind":"textbox","id":"sh/o7udcvu1","slide":22,"text":"0.1822","textPreview":"0.1822","textChars":6,"textLines":1,"bbox":[235,390,190,50]}
+{"kind":"textbox","id":"sh/p83e50bm","slide":22,"text":"mean F1","textPreview":"mean F1","textChars":7,"textLines":1,"bbox":[241,440,178,42]}
+{"kind":"shape","id":"sh/25cvalcv","slide":22,"bbox":[690,160,520,400]}
+{"kind":"textbox","id":"sh/36lw3qtg","slide":22,"text":"GAUSSIAN","textPreview":"GAUSSIAN","textChars":8,"textLines":1,"bbox":[710,180,480,36]}
+{"kind":"textbox","id":"sh/g3ad8vup","slide":22,"text":"66 / 72","textPreview":"66 / 72","textChars":7,"textLines":1,"bbox":[740,248,180,50]}
+{"kind":"textbox","id":"sh/14ju1gba","slide":22,"text":"zero-recall pairs","textPreview":"zero-recall pairs","textChars":17,"textLines":1,"bbox":[746,298,168,42]}
+{"kind":"textbox","id":"sh/h0bu5c3e","slide":22,"text":"0 / 72","textPreview":"0 / 72","textChars":6,"textLines":1,"bbox":[970,248,180,50]}
+{"kind":"textbox","id":"sh/gz2tc7mt","slide":22,"text":"F1 at least 0.8","textPreview":"F1 at least 0.8","textChars":15,"textLines":1,"bbox":[976,298,168,42]}
+{"kind":"textbox","id":"sh/vyts32l8","slide":22,"text":"0.0362","textPreview":"0.0362","textChars":6,"textLines":1,"bbox":[855,390,190,50]}
+{"kind":"textbox","id":"sh/uxkbax4n","slide":22,"text":"mean F1","textPreview":"mean F1","textChars":7,"textLines":1,"bbox":[861,440,178,42]}
+{"kind":"textbox","id":"sh/twba1c32","slide":22,"text":"Both models support the same direction of failure; CART is stronger but still brittle.","textPreview":"Both models support the same direction of failure; CART is stronger but still brittle.","textChars":86,"textLines":1,"bbox":[240,605,800,34]}
+{"kind":"notes","id":"nt/mqu1hp","slide":22,"text":"Use this slide if asked whether the result depends only on CART.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_results_summary_v1/concept_drift_key_metrics.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/y20by0","slide":23,"title":"EXAMINER BACKUP","textShapes":46}
+{"kind":"textbox","id":"sh/mdwzqd4z","slide":23,"text":" EXAMINER BACKUP","textPreview":"EXAMINER BACKUP","textChars":16,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/9g7y1sna","slide":23,"text":" A3. Pair-specific adaptation is heterogeneous","textPreview":"A3. Pair-specific adaptation is heterogeneous","textChars":46,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/8fyhsnm5","slide":23,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/v2pg3i5g","slide":23,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/uhgzud4v","slide":23,"text":"Appendix","textPreview":"Appendix","textChars":8,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/h47y5s3m","slide":23,"bbox":[1080,25,110,28]}
+{"kind":"textbox","id":"sh/w3yhwnm1","slide":23,"text":"BACKUP","textPreview":"BACKUP","textChars":6,"textLines":1,"bbox":[1088,25,94,28]}
+{"kind":"textbox","id":"sh/b6lgry5c","slide":23,"text":"Source -> target","textPreview":"Source -> target","textChars":16,"textLines":1,"bbox":[55,150,335,32]}
+{"kind":"textbox","id":"sh/alcfit4r","slide":23,"text":"Static","textPreview":"Static","textChars":6,"textLines":1,"bbox":[405,150,115,32]}
+{"kind":"textbox","id":"sh/snuhgfe5","slide":23,"text":"1 seed","textPreview":"1 seed","textChars":6,"textLines":1,"bbox":[535,150,115,32]}
+{"kind":"textbox","id":"sh/to3i9kvq","slide":23,"text":"2 seeds","textPreview":"2 seeds","textChars":7,"textLines":1,"bbox":[665,150,115,32]}
+{"kind":"textbox","id":"sh/6lcze5wz","slide":23,"text":"3 seeds","textPreview":"3 seeds","textChars":7,"textLines":1,"bbox":[795,150,115,32]}
+{"kind":"textbox","id":"sh/7ml07adk","slide":23,"text":"Pattern","textPreview":"Pattern","textChars":7,"textLines":1,"bbox":[925,150,295,32]}
+{"kind":"shape","id":"sh/gbe1kze1","slide":23,"bbox":[45,190,1180,64]}
+{"kind":"textbox","id":"sh/1cnidkvm","slide":23,"text":"Blackhole -> DIS Flood","textPreview":"Blackhole -> DIS Flood","textChars":22,"textLines":1,"bbox":[55,190,335,64]}
+{"kind":"textbox","id":"sh/u9cjipwb","slide":23,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[405,190,115,64]}
+{"kind":"textbox","id":"sh/fa50budw","slide":23,"text":"1.000","textPreview":"1.000","textChars":5,"textLines":1,"bbox":[535,190,115,64]}
+{"kind":"textbox","id":"sh/wfah8vex","slide":23,"text":"1.000","textPreview":"1.000","textChars":5,"textLines":1,"bbox":[665,190,115,64]}
+{"kind":"textbox","id":"sh/xgji10fi","slide":23,"text":"1.000","textPreview":"1.000","textChars":5,"textLines":1,"bbox":[795,190,115,64]}
+{"kind":"textbox","id":"sh/d0r6ps3a","slide":23,"text":"Immediate recovery","textPreview":"Immediate recovery","textChars":18,"textLines":1,"bbox":[925,190,295,64]}
+{"kind":"shape","id":"sh/czipgn2p","slide":23,"bbox":[45,266,1180,64]}
+{"kind":"textbox","id":"sh/by9onil4","slide":23,"text":"Blackhole -> Sinkhole","textPreview":"Blackhole -> Sinkhole","textChars":21,"textLines":1,"bbox":[55,266,335,64]}
+{"kind":"textbox","id":"sh/qx07edkj","slide":23,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[405,266,115,64]}
+{"kind":"textbox","id":"sh/l4b6tc36","slide":23,"text":"0.571","textPreview":"0.571","textChars":5,"textLines":1,"bbox":[535,266,115,64]}
+{"kind":"textbox","id":"sh/032pk72l","slide":23,"text":"0.966","textPreview":"0.966","textChars":5,"textLines":1,"bbox":[665,266,115,64]}
+{"kind":"textbox","id":"sh/z2tor2l0","slide":23,"text":"0.947","textPreview":"0.947","textChars":5,"textLines":1,"bbox":[795,266,115,64]}
+{"kind":"textbox","id":"sh/y107ixkf","slide":23,"text":"Two seeds best","textPreview":"Two seeds best","textChars":14,"textLines":1,"bbox":[925,266,295,64]}
+{"kind":"shape","id":"sh/9sbqxc32","slide":23,"bbox":[45,342,1180,64]}
+{"kind":"textbox","id":"sh/8r2po72x","slide":23,"text":"Blackhole -> Wormhole","textPreview":"Blackhole -> Wormhole","textChars":21,"textLines":1,"bbox":[55,342,335,64]}
+{"kind":"textbox","id":"sh/6dw3i90f","slide":23,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[405,342,115,64]}
+{"kind":"textbox","id":"sh/7e54re1k","slide":23,"text":"0.778","textPreview":"0.778","textChars":5,"textLines":1,"bbox":[535,342,115,64]}
+{"kind":"textbox","id":"sh/sfelkji5","slide":23,"text":"0.692","textPreview":"0.692","textChars":5,"textLines":1,"bbox":[665,342,115,64]}
+{"kind":"textbox","id":"sh/tgnmtojq","slide":23,"text":"0.727","textPreview":"0.727","textChars":5,"textLines":1,"bbox":[795,342,115,64]}
+{"kind":"textbox","id":"sh/e1w3mt0b","slide":23,"text":"Non-monotonic","textPreview":"Non-monotonic","textChars":13,"textLines":1,"bbox":[925,342,295,64]}
+{"kind":"shape","id":"sh/f2p4ve1w","slide":23,"bbox":[45,418,1180,64]}
+{"kind":"textbox","id":"sh/g3y5ojih","slide":23,"text":"DIO Suppression -> Sybil","textPreview":"DIO Suppression -> Sybil","textChars":24,"textLines":1,"bbox":[55,418,335,64]}
+{"kind":"textbox","id":"sh/147mxoj2","slide":23,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[405,418,115,64]}
+{"kind":"textbox","id":"sh/25gnqt07","slide":23,"text":"0.889","textPreview":"0.889","textChars":5,"textLines":1,"bbox":[535,418,115,64]}
+{"kind":"textbox","id":"sh/36p4zy1s","slide":23,"text":"0.846","textPreview":"0.846","textChars":5,"textLines":1,"bbox":[665,418,115,64]}
+{"kind":"textbox","id":"sh/bml4jytw","slide":23,"text":"0.750","textPreview":"0.750","textChars":5,"textLines":1,"bbox":[795,418,115,64]}
+{"kind":"textbox","id":"sh/alc3atsr","slide":23,"text":"Degrades with more data","textPreview":"Degrades with more data","textChars":23,"textLines":1,"bbox":[925,418,295,64]}
+{"kind":"shape","id":"sh/xo3ml8b2","slide":23,"bbox":[45,494,1180,64]}
+{"kind":"textbox","id":"sh/cnulc3ah","slide":23,"text":"DIS Flood -> DIO Suppression","textPreview":"DIS Flood -> DIO Suppression","textChars":28,"textLines":1,"bbox":[55,494,335,64]}
+{"kind":"textbox","id":"sh/zq54nyt8","slide":23,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[405,494,115,64]}
+{"kind":"textbox","id":"sh/ypw3etsn","slide":23,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[535,494,115,64]}
+{"kind":"textbox","id":"sh/lsnmp8re","slide":23,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[665,494,115,64]}
+{"kind":"textbox","id":"sh/krelg3at","slide":23,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[795,494,115,64]}
+{"kind":"textbox","id":"sh/fu14bet4","slide":23,"text":"Persistent failure","textPreview":"Persistent failure","textChars":18,"textLines":1,"bbox":[925,494,295,64]}
+{"kind":"shape","id":"sh/ets329sj","slide":23,"bbox":[45,570,1180,64]}
+{"kind":"textbox","id":"sh/kn69wbm5","slide":23,"text":"Grayhole -> Blackhole","textPreview":"Grayhole -> Blackhole","textChars":21,"textLines":1,"bbox":[55,570,335,64]}
+{"kind":"textbox","id":"sh/5ofapgna","slide":23,"text":"1.000","textPreview":"1.000","textChars":5,"textLines":1,"bbox":[405,570,115,64]}
+{"kind":"textbox","id":"sh/iloru14z","slide":23,"text":"1.000","textPreview":"1.000","textChars":5,"textLines":1,"bbox":[535,570,115,64]}
+{"kind":"textbox","id":"sh/jmxsn65k","slide":23,"text":"1.000","textPreview":"1.000","textChars":5,"textLines":1,"bbox":[665,570,115,64]}
+{"kind":"textbox","id":"sh/wzm9sbmt","slide":23,"text":"1.000","textPreview":"1.000","textChars":5,"textLines":1,"bbox":[795,570,115,64]}
+{"kind":"textbox","id":"sh/xkvalgne","slide":23,"text":"Mechanism transfer","textPreview":"Mechanism transfer","textChars":18,"textLines":1,"bbox":[925,570,295,64]}
+{"kind":"notes","id":"nt/y20by0","slide":23,"text":"Use this slide to qualify the aggregate adaptation curve and show persistent or non-monotonic cases.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/cross_attack_adaptation_with_sybil_v1/cross_attack_adaptation_summary.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/ehs9le","slide":24,"title":"EXAMINER BACKUP","textShapes":23}
+{"kind":"textbox","id":"sh/03ets3ed","slide":24,"text":" EXAMINER BACKUP","textPreview":"EXAMINER BACKUP","textChars":16,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/f25czyxs","slide":24,"text":" A4. Sybil rate and identity-monitor detail","textPreview":"A4. Sybil rate and identity-monitor detail","textChars":43,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/e1wbqtw7","slide":24,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/p87u58fu","slide":24,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/o7ydwnep","slide":24,"text":"Appendix","textPreview":"Appendix","textChars":8,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/n6pc3ix4","slide":24,"bbox":[1080,25,110,28]}
+{"kind":"textbox","id":"sh/25gbudwj","slide":24,"text":"BACKUP","textPreview":"BACKUP","textChars":6,"textLines":1,"bbox":[1088,25,94,28]}
+{"kind":"textbox","id":"sh/xwru9sf6","slide":24,"text":"RATE CAMPAIGN","textPreview":"RATE CAMPAIGN","textChars":13,"textLines":1,"bbox":[70,150,200,22]}
+{"kind":"textbox","id":"sh/cbyd0nel","slide":24,"text":"Control spoof markers","textPreview":"Control spoof markers","textChars":21,"textLines":1,"bbox":[80,210,190,24]}
+{"kind":"shape","id":"sh/e5sb6pg3","slide":24,"bbox":[275,213,270,18]}
+{"kind":"shape","id":"sh/f61czuho","slide":24,"bbox":[275,213,3,18]}
+{"kind":"textbox","id":"sh/g7ad8fy9","slide":24,"text":"0","textPreview":"0","textChars":1,"textLines":1,"bbox":[552,209,68,24]}
+{"kind":"textbox","id":"sh/18ju1kzu","slide":24,"text":"Low-rate spoof markers","textPreview":"Low-rate spoof markers","textChars":22,"textLines":1,"bbox":[80,260,190,24]}
+{"kind":"shape","id":"sh/2tsvapgf","slide":24,"bbox":[275,263,270,18]}
+{"kind":"shape","id":"sh/3ulc3uh0","slide":24,"bbox":[275,263,24.47,18]}
+{"kind":"textbox","id":"sh/ovudczyl","slide":24,"text":"29","textPreview":"29","textChars":2,"textLines":1,"bbox":[552,259,68,24]}
+{"kind":"textbox","id":"sh/pw3u54zq","slide":24,"text":"High-rate spoof markers","textPreview":"High-rate spoof markers","textChars":23,"textLines":1,"bbox":[80,310,190,24]}
+{"kind":"shape","id":"sh/ix8by5gv","slide":24,"bbox":[275,313,270,18]}
+{"kind":"shape","id":"sh/jyhcrahg","slide":24,"bbox":[275,313,252.28,18]}
+{"kind":"textbox","id":"sh/n6d0j2tc","slide":24,"text":"299","textPreview":"299","textChars":3,"textLines":1,"bbox":[552,309,68,24]}
+{"kind":"textbox","id":"sh/m5kzaxsr","slide":24,"text":"Control mean radio TX","textPreview":"Control mean radio TX","textChars":21,"textLines":1,"bbox":[80,390,190,24]}
+{"kind":"shape","id":"sh/9svilcb2","slide":24,"bbox":[275,393,270,18]}
+{"kind":"shape","id":"sh/o7m1c7ah","slide":24,"bbox":[275,393,255.33,18]}
+{"kind":"textbox","id":"sh/z2t0f2t0","slide":24,"text":"8,984","textPreview":"8,984","textChars":5,"textLines":1,"bbox":[552,389,68,24]}
+{"kind":"textbox","id":"sh/e1kz6xsf","slide":24,"text":"Low-rate mean radio TX","textPreview":"Low-rate mean radio TX","textChars":22,"textLines":1,"bbox":[80,440,190,24]}
+{"kind":"shape","id":"sh/14bihsb6","slide":24,"bbox":[275,443,270,18]}
+{"kind":"shape","id":"sh/032h8nal","slide":24,"bbox":[275,443,256.36,18]}
+{"kind":"textbox","id":"sh/jyx0rmt4","slide":24,"text":"9,020","textPreview":"9,020","textChars":5,"textLines":1,"bbox":[552,439,68,24]}
+{"kind":"textbox","id":"sh/yxojihsz","slide":24,"text":"High-rate mean radio TX","textPreview":"High-rate mean radio TX","textChars":23,"textLines":1,"bbox":[80,490,190,24]}
+{"kind":"shape","id":"sh/g3yxcjqh","slide":24,"bbox":[275,493,270,18]}
+{"kind":"shape","id":"sh/h47ylorm","slide":24,"bbox":[275,493,264.34,18]}
+{"kind":"textbox","id":"sh/uhgfa98b","slide":24,"text":"9,301","textPreview":"9,301","textChars":5,"textLines":1,"bbox":[552,489,68,24]}
+{"kind":"shape","id":"sh/f2pwje9w","slide":24,"bbox":[700,180,460,330]}
+{"kind":"textbox","id":"sh/47ixg3qd","slide":24,"text":"Identity monitor","textPreview":"Identity monitor","textChars":16,"textLines":1,"bbox":[725,200,410,34]}
+{"kind":"textbox","id":"sh/p8rypory","slide":24,"text":"50 / 50","textPreview":"50 / 50","textChars":7,"textLines":1,"bbox":[735,268,185,50]}
+{"kind":"textbox","id":"sh/25gfet87","slide":24,"text":"post-activation attack windows alerted","textPreview":"post-activation attack windows alerted","textChars":38,"textLines":1,"bbox":[741,318,173,42]}
+{"kind":"textbox","id":"sh/36pgny9s","slide":24,"text":"0 / 45","textPreview":"0 / 45","textChars":6,"textLines":1,"bbox":[945,268,175,50]}
+{"kind":"textbox","id":"sh/cbixk3q9","slide":24,"text":"control windows alerted","textPreview":"control windows alerted","textChars":23,"textLines":1,"bbox":[951,318,163,42]}
+{"kind":"textbox","id":"sh/dcryt8ru","slide":24,"text":"Controlled address-plan result\nNot a universal deployed defence","textPreview":"Controlled address-plan result | Not a universal deployed defence","textChars":63,"textLines":2,"bbox":[770,420,330,52]}
+{"kind":"notes","id":"nt/ehs9le","slide":24,"text":"Use this slide for questions about attack intensity, radio overhead or identity-monitor false positives.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/adversarial_rl_sybil_v1/results/sybil_rate_campaign_metrics.csv\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/adversarial_rl_sybil_v1/results/sybil_identity_monitor_summary.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/os712j","slide":25,"title":"EXAMINER BACKUP","textShapes":9}
+{"kind":"textbox","id":"sh/wvahkfyl","slide":25,"text":" EXAMINER BACKUP","textPreview":"EXAMINER BACKUP","textChars":16,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/vu10bahg","slide":25,"text":" A5. CUSUM and DDM scope","textPreview":"A5. CUSUM and DDM scope","textChars":24,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/ut8zi5gv","slide":25,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/5kjihkzi","slide":25,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/4jahofyx","slide":25,"text":"Appendix","textPreview":"Appendix","textChars":8,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/3i10fahc","slide":25,"bbox":[1080,25,110,28]}
+{"kind":"textbox","id":"sh/ihszmpgr","slide":25,"text":"BACKUP","textPreview":"BACKUP","textChars":6,"textLines":1,"bbox":[1088,25,94,28]}
+{"kind":"shape","id":"sh/do3il4fe","slide":25,"bbox":[80,175,500,330]}
+{"kind":"shape","id":"sh/snu1szyt","slide":25,"bbox":[80,175,5,330]}
+{"kind":"textbox","id":"sh/etw3algz","slide":25,"text":"CUSUM","textPreview":"CUSUM","textChars":5,"textLines":1,"bbox":[102,187,464,28]}
+{"kind":"textbox","id":"sh/zu54j6xk","slide":25,"text":"Input: low-rank routing-state stream\nCalibration: controlled baseline\nAttack detections: 5 / 5\nControl alerts: 0 / 5\nMedian delay: 0 seconds\n\nStrength: early mechanism-aware signal\nLimit: small controlled sample","textPreview":"Input: low-rank routing-state stream | Calibration: controlled baseline | Attack detections: 5 / 5 | Control alerts: 0 / 5 | Median delay...","textChars":211,"textLines":8,"bbox":[102,221,462,272]}
+{"kind":"shape","id":"sh/0vylcby5","slide":25,"bbox":[700,175,500,330]}
+{"kind":"shape","id":"sh/1w7mlgfq","slide":25,"bbox":[700,175,5,330]}
+{"kind":"textbox","id":"sh/mxg3elgv","slide":25,"text":"DDM","textPreview":"DDM","textChars":3,"textLines":1,"bbox":[722,187,464,28]}
+{"kind":"textbox","id":"sh/nyp4nqxg","slide":25,"text":"Input: delayed CART error sequence\nRequires labels or feedback\nAttack detections: 5 / 5\nControl alerts: 0 / 5\nMedian delay: 60 seconds\n\nStrength: model-error monitoring\nLimit: necessarily reacts later here","textPreview":"Input: delayed CART error sequence | Requires labels or feedback | Attack detections: 5 / 5 | Control alerts: 0 / 5 | Median delay: 60 se...","textChars":205,"textLines":8,"bbox":[722,221,462,272]}
+{"kind":"textbox","id":"sh/ozy5gvy1","slide":25,"text":"Detection is the trigger; adaptation is the response.","textPreview":"Detection is the trigger; adaptation is the response.","textChars":53,"textLines":1,"bbox":[330,580,620,40]}
+{"kind":"notes","id":"nt/os712j","slide":25,"text":"Use this slide for detector definitions, inputs and limitations.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_final_figures_v2/tables/online_drift_detection_summary.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/9ux0qc","slide":26,"title":"EXAMINER BACKUP","textShapes":40}
+{"kind":"textbox","id":"sh/o3qxkzm1","slide":26,"text":" EXAMINER BACKUP","textPreview":"EXAMINER BACKUP","textChars":16,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/32xwbulg","slide":26,"text":" A6. Robustness campaign details","textPreview":"A6. Robustness campaign details","textChars":32,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/21ofip4v","slide":26,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/dszyh43i","slide":26,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/crqxoz2d","slide":26,"text":"Appendix","textPreview":"Appendix","textChars":8,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/bqhgfels","slide":26,"bbox":[1080,25,110,28]}
+{"kind":"textbox","id":"sh/qp8fm9k7","slide":26,"text":"BACKUP","textPreview":"BACKUP","textChars":6,"textLines":1,"bbox":[1088,25,94,28]}
+{"kind":"textbox","id":"sh/twfe5k3e","slide":26,"text":"Condition","textPreview":"Condition","textChars":9,"textLines":1,"bbox":[90,160,210,32]}
+{"kind":"textbox","id":"sh/svmxcfmt","slide":26,"text":"Family","textPreview":"Family","textChars":6,"textLines":1,"bbox":[325,160,210,32]}
+{"kind":"textbox","id":"sh/2xgny58v","slide":26,"text":"Static F1","textPreview":"Static F1","textChars":9,"textLines":1,"bbox":[565,160,170,32]}
+{"kind":"textbox","id":"sh/3y94ra90","slide":26,"text":"3-seed F1","textPreview":"3-seed F1","textChars":9,"textLines":1,"bbox":[780,160,170,32]}
+{"kind":"textbox","id":"sh/4zi50fql","slide":26,"text":"3-seed FPR","textPreview":"3-seed FPR","textChars":10,"textLines":1,"bbox":[1000,160,170,32]}
+{"kind":"shape","id":"sh/pkrmt0r6","slide":26,"bbox":[75,205,1130,62]}
+{"kind":"textbox","id":"sh/ql0n258r","slide":26,"text":"Relocated","textPreview":"Relocated","textChars":9,"textLines":1,"bbox":[90,205,210,62]}
+{"kind":"textbox","id":"sh/rm9ovapc","slide":26,"text":"Blackhole","textPreview":"Blackhole","textChars":9,"textLines":1,"bbox":[325,205,210,62]}
+{"kind":"textbox","id":"sh/cni5ofqx","slide":26,"text":"0.476","textPreview":"0.476","textChars":5,"textLines":1,"bbox":[565,205,170,62]}
+{"kind":"textbox","id":"sh/dor6xk7i","slide":26,"text":"1.000","textPreview":"1.000","textChars":5,"textLines":1,"bbox":[780,205,170,62]}
+{"kind":"textbox","id":"sh/yp0nqp8n","slide":26,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[1000,205,170,62]}
+{"kind":"shape","id":"sh/zqtozup8","slide":26,"bbox":[75,279,1130,62]}
+{"kind":"textbox","id":"sh/vut4nu5g","slide":26,"text":"Relocated","textPreview":"Relocated","textChars":9,"textLines":1,"bbox":[90,279,210,62]}
+{"kind":"textbox","id":"sh/atk3epov","slide":26,"text":"Sinkhole","textPreview":"Sinkhole","textChars":8,"textLines":1,"bbox":[325,279,210,62]}
+{"kind":"textbox","id":"sh/xwbmp4nm","slide":26,"text":"0.495","textPreview":"0.495","textChars":5,"textLines":1,"bbox":[565,279,170,62]}
+{"kind":"textbox","id":"sh/wv25gz61","slide":26,"text":"1.000","textPreview":"1.000","textChars":5,"textLines":1,"bbox":[780,279,170,62]}
+{"kind":"textbox","id":"sh/nqt4ja5k","slide":26,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[1000,279,170,62]}
+{"kind":"shape","id":"sh/mpk3apoz","slide":26,"bbox":[75,353,1130,62]}
+{"kind":"textbox","id":"sh/9sbmlkna","slide":26,"text":"Relocated","textPreview":"Relocated","textChars":9,"textLines":1,"bbox":[90,353,210,62]}
+{"kind":"textbox","id":"sh/8r2lcf65","slide":26,"text":"Sybil","textPreview":"Sybil","textChars":5,"textLines":1,"bbox":[325,353,210,62]}
+{"kind":"textbox","id":"sh/zm94fa58","slide":26,"text":"0.476","textPreview":"0.476","textChars":5,"textLines":1,"bbox":[565,353,170,62]}
+{"kind":"textbox","id":"sh/el0365on","slide":26,"text":"0.995","textPreview":"0.995","textChars":5,"textLines":1,"bbox":[780,353,170,62]}
+{"kind":"textbox","id":"sh/4ry1gbml","slide":26,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[1000,353,170,62]}
+{"kind":"shape","id":"sh/ps72pg36","slide":26,"bbox":[75,427,1130,62]}
+{"kind":"textbox","id":"sh/25wje14f","slide":26,"text":"Lossy radio","textPreview":"Lossy radio","textChars":11,"textLines":1,"bbox":[90,427,210,62]}
+{"kind":"textbox","id":"sh/36p0n6l0","slide":26,"text":"Blackhole","textPreview":"Blackhole","textChars":9,"textLines":1,"bbox":[325,427,210,62]}
+{"kind":"textbox","id":"sh/cvy1kbmx","slide":26,"text":"0.476","textPreview":"0.476","textChars":5,"textLines":1,"bbox":[565,427,170,62]}
+{"kind":"textbox","id":"sh/dw72tg32","slide":26,"text":"1.000","textPreview":"1.000","textChars":5,"textLines":1,"bbox":[780,427,170,62]}
+{"kind":"textbox","id":"sh/qtgjil4r","slide":26,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[1000,427,170,62]}
+{"kind":"shape","id":"sh/rupkr6lc","slide":26,"bbox":[75,501,1130,62]}
+{"kind":"textbox","id":"sh/sze18rmd","slide":26,"text":"Lossy radio","textPreview":"Lossy radio","textChars":11,"textLines":1,"bbox":[90,501,210,62]}
+{"kind":"textbox","id":"sh/t0nihw3y","slide":26,"text":"Sinkhole","textPreview":"Sinkhole","textChars":8,"textLines":1,"bbox":[325,501,210,62]}
+{"kind":"textbox","id":"sh/lwzahw32","slide":26,"text":"1.000","textPreview":"1.000","textChars":5,"textLines":1,"bbox":[565,501,170,62]}
+{"kind":"textbox","id":"sh/0vqtormx","slide":26,"text":"1.000","textPreview":"1.000","textChars":5,"textLines":1,"bbox":[780,501,170,62]}
+{"kind":"textbox","id":"sh/zuxsfmlc","slide":26,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[1000,501,170,62]}
+{"kind":"shape","id":"sh/ytobmh4r","slide":26,"bbox":[75,575,1130,62]}
+{"kind":"textbox","id":"sh/dsfadc36","slide":26,"text":"Lossy radio","textPreview":"Lossy radio","textChars":11,"textLines":1,"bbox":[90,575,210,62]}
+{"kind":"textbox","id":"sh/cr6tk7ml","slide":26,"text":"Sybil","textPreview":"Sybil","textChars":5,"textLines":1,"bbox":[325,575,210,62]}
+{"kind":"textbox","id":"sh/bqxsb2l0","slide":26,"text":"0.476","textPreview":"0.476","textChars":5,"textLines":1,"bbox":[565,575,170,62]}
+{"kind":"textbox","id":"sh/qpobix4f","slide":26,"text":"0.937","textPreview":"0.937","textChars":5,"textLines":1,"bbox":[780,575,170,62]}
+{"kind":"textbox","id":"sh/pofa9c3a","slide":26,"text":"0.046","textPreview":"0.046","textChars":5,"textLines":1,"bbox":[1000,575,170,62]}
+{"kind":"textbox","id":"sh/o369g7mp","slide":26,"text":"Simulator robustness only: no physical radio, mobility or hardware deployment.","textPreview":"Simulator robustness only: no physical radio, mobility or hardware deployment.","textChars":78,"textLines":1,"bbox":[245,650,790,24]}
+{"kind":"notes","id":"nt/9ux0qc","slide":26,"text":"Use this slide for exact robustness metrics and validity limits.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_final_figures_v2/tables/robustness_static_vs_adapted.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/wn5s01","slide":27,"title":"EXAMINER BACKUP","textShapes":27}
+{"kind":"textbox","id":"sh/oj25ob6h","slide":27,"text":" EXAMINER BACKUP","textPreview":"EXAMINER BACKUP","textChars":16,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/3it4v65w","slide":27,"text":" A7. Trust and active-defence metrics","textPreview":"A7. Trust and active-defence metrics","textChars":37,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/2xknm1ob","slide":27,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/1wbmtwnq","slide":27,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/gv25kb65","slide":27,"text":"Appendix","textPreview":"Appendix","textChars":8,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/fut4r6pk","slide":27,"bbox":[1080,25,110,28]}
+{"kind":"textbox","id":"sh/et0ni1oz","slide":27,"text":"BACKUP","textPreview":"BACKUP","textChars":6,"textLines":1,"bbox":[1088,25,94,28]}
+{"kind":"textbox","id":"sh/lsv650nu","slide":27,"text":"TRUST FEATURE COMPARISON","textPreview":"TRUST FEATURE COMPARISON","textChars":24,"textLines":1,"bbox":[70,150,300,22]}
+{"kind":"textbox","id":"sh/krm5wv69","slide":27,"text":"SINKHOLE DEFENCE OPERATIONAL COST","textPreview":"SINKHOLE DEFENCE OPERATIONAL COST","textChars":33,"textLines":1,"bbox":[685,150,390,22]}
+{"kind":"shape","id":"sh/6xkfihwz","slide":27,"bbox":[65,190,520,330]}
+{"kind":"textbox","id":"sh/7ytgbmxk","slide":27,"text":"Static baseline","textPreview":"Static baseline","textChars":15,"textLines":1,"bbox":[90,230,190,24]}
+{"kind":"shape","id":"sh/8z2xk7e5","slide":27,"bbox":[285,233,180,18]}
+{"kind":"shape","id":"sh/t0bydcfq","slide":27,"bbox":[285,233,32.8,18]}
+{"kind":"textbox","id":"sh/ytkfexw3","slide":27,"text":"0.1822","textPreview":"0.1822","textChars":6,"textLines":1,"bbox":[472,229,68,24]}
+{"kind":"textbox","id":"sh/jutw72xo","slide":27,"text":"Static + trust","textPreview":"Static + trust","textChars":14,"textLines":1,"bbox":[90,275,190,24]}
+{"kind":"shape","id":"sh/kv2xg7e9","slide":27,"bbox":[285,278,180,18]}
+{"kind":"shape","id":"sh/lwbe9cfu","slide":27,"bbox":[285,278,32.8,18]}
+{"kind":"textbox","id":"sh/ip4fq1w7","slide":27,"text":"0.1822","textPreview":"0.1822","textChars":6,"textLines":1,"bbox":[472,274,68,24]}
+{"kind":"textbox","id":"sh/3qdgj6xs","slide":27,"text":"3-seed baseline","textPreview":"3-seed baseline","textChars":15,"textLines":1,"bbox":[90,340,190,24]}
+{"kind":"shape","id":"sh/fapcbyd4","slide":27,"bbox":[285,343,180,18]}
+{"kind":"shape","id":"sh/e9wbitwz","slide":27,"bbox":[285,343,158.26,18]}
+{"kind":"textbox","id":"sh/1c7udova","slide":27,"text":"0.8792","textPreview":"0.8792","textChars":6,"textLines":1,"bbox":[472,339,68,24]}
+{"kind":"textbox","id":"sh/0bydk3up","slide":27,"text":"3-seed + trust","textPreview":"3-seed + trust","textChars":14,"textLines":1,"bbox":[90,385,190,24]}
+{"kind":"shape","id":"sh/nypcfydg","slide":27,"bbox":[285,388,180,18]}
+{"kind":"shape","id":"sh/2dgvmtcv","slide":27,"bbox":[285,388,158.26,18]}
+{"kind":"textbox","id":"sh/p07uh8vm","slide":27,"text":"0.8792","textPreview":"0.8792","textChars":6,"textLines":1,"bbox":[472,384,68,24]}
+{"kind":"textbox","id":"sh/ozydo3u1","slide":27,"text":"No measured CART improvement","textPreview":"No measured CART improvement","textChars":28,"textLines":1,"bbox":[135,470,380,28]}
+{"kind":"shape","id":"sh/b29cjidc","slide":27,"bbox":[680,190,530,330]}
+{"kind":"textbox","id":"sh/a1gvqdcr","slide":27,"text":"Control","textPreview":"Control","textChars":7,"textLines":1,"bbox":[705,220,130,26]}
+{"kind":"textbox","id":"sh/87it0na5","slide":27,"text":"Attack","textPreview":"Attack","textChars":6,"textLines":1,"bbox":[875,220,130,26]}
+{"kind":"textbox","id":"sh/t8ru9sbq","slide":27,"text":"Defence","textPreview":"Defence","textChars":7,"textLines":1,"bbox":[1045,220,130,26]}
+{"kind":"textbox","id":"sh/650bydsz","slide":27,"text":"App responses","textPreview":"App responses","textChars":13,"textLines":1,"bbox":[705,275,150,24]}
+{"kind":"textbox","id":"sh/769c7itk","slide":27,"text":"417.4","textPreview":"417.4","textChars":5,"textLines":1,"bbox":[705,310,130,34]}
+{"kind":"textbox","id":"sh/k3itw3at","slide":27,"text":"416.6","textPreview":"416.6","textChars":5,"textLines":1,"bbox":[875,310,130,34]}
+{"kind":"textbox","id":"sh/l4ru58be","slide":27,"text":"87.4","textPreview":"87.4","textChars":4,"textLines":1,"bbox":[1045,310,130,34]}
+{"kind":"textbox","id":"sh/y10buts3","slide":27,"text":"Radio TX","textPreview":"Radio TX","textChars":8,"textLines":1,"bbox":[705,365,150,24]}
+{"kind":"textbox","id":"sh/z29s3yto","slide":27,"text":"5,217","textPreview":"5,217","textChars":5,"textLines":1,"bbox":[705,400,130,34]}
+{"kind":"textbox","id":"sh/cfyts3ax","slide":27,"text":"5,243","textPreview":"5,243","textChars":5,"textLines":1,"bbox":[875,400,130,34]}
+{"kind":"textbox","id":"sh/x07a18bi","slide":27,"text":"35,020","textPreview":"35,020","textChars":6,"textLines":1,"bbox":[1045,400,130,34]}
+{"kind":"textbox","id":"sh/1knq94ra","slide":27,"text":"Defence parent switches: 681.8 mean","textPreview":"Defence parent switches: 681.8 mean","textChars":35,"textLines":1,"bbox":[780,470,330,28]}
+{"kind":"notes","id":"nt/wn5s01","slide":27,"text":"Use this slide to support the negative trust and intervention results.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/trust_layer_v1/results/trust_vs_baseline_comparison.csv\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_final_figures_v2/tables/sinkhole_defence_operational_cost.csv\n[/Sources]"}
+{"kind":"slide","id":"sl/pj4mwz","slide":28,"title":"EXAMINER BACKUP","textShapes":40}
+{"kind":"textbox","id":"sh/ep8r2dkn","slide":28,"text":" EXAMINER BACKUP","textPreview":"EXAMINER BACKUP","textChars":16,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/1czaxsje","slide":28,"text":" A8. DQN and DDQN held-out results","textPreview":"A8. DQN and DDQN held-out results","textChars":34,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/gbqt4n2t","slide":28,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/3e1sz214","slide":28,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/2dsb6xkj","slide":28,"text":"Appendix","textPreview":"Appendix","textChars":8,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/pgja1sja","slide":28,"bbox":[1080,25,110,28]}
+{"kind":"textbox","id":"sh/ofat8n2p","slide":28,"text":"BACKUP","textPreview":"BACKUP","textChars":6,"textLines":1,"bbox":[1088,25,94,28]}
+{"kind":"textbox","id":"sh/bi1s321g","slide":28,"text":"Algorithm","textPreview":"Algorithm","textChars":9,"textLines":1,"bbox":[80,160,140,32]}
+{"kind":"textbox","id":"sh/qhsbaxkv","slide":28,"text":"Policy","textPreview":"Policy","textChars":6,"textLines":1,"bbox":[255,160,300,32]}
+{"kind":"textbox","id":"sh/kj2pcfu9","slide":28,"text":"Recall","textPreview":"Recall","textChars":6,"textLines":1,"bbox":[610,160,120,32]}
+{"kind":"textbox","id":"sh/5kb65kbe","slide":28,"text":"F1","textPreview":"F1","textChars":2,"textLines":1,"bbox":[760,160,120,32]}
+{"kind":"textbox","id":"sh/ihk7a5c3","slide":28,"text":"Finding","textPreview":"Finding","textChars":7,"textLines":1,"bbox":[910,160,280,32]}
+{"kind":"shape","id":"sh/jito3ato","slide":28,"bbox":[65,205,1150,62]}
+{"kind":"textbox","id":"sh/snmpgfu5","slide":28,"text":"DQN","textPreview":"DQN","textChars":3,"textLines":1,"bbox":[80,205,140,62]}
+{"kind":"textbox","id":"sh/tov69kbq","slide":28,"text":"Static source","textPreview":"Static source","textChars":13,"textLines":1,"bbox":[255,205,300,62]}
+{"kind":"textbox","id":"sh/6lk7e5cz","slide":28,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[610,205,120,62]}
+{"kind":"textbox","id":"sh/7mto7atk","slide":28,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[760,205,120,62]}
+{"kind":"textbox","id":"sh/gbmpkzu1","slide":28,"text":"all 20 attacks missed","textPreview":"all 20 attacks missed","textChars":21,"textLines":1,"bbox":[910,205,280,62]}
+{"kind":"shape","id":"sh/hcvqd4bm","slide":28,"bbox":[65,279,1150,62]}
+{"kind":"textbox","id":"sh/p8r6xk3q","slide":28,"text":"DQN","textPreview":"DQN","textChars":3,"textLines":1,"bbox":[80,279,140,62]}
+{"kind":"textbox","id":"sh/o7ip4zml","slide":28,"text":"Always incremental","textPreview":"Always incremental","textChars":18,"textLines":1,"bbox":[255,279,300,62]}
+{"kind":"textbox","id":"sh/369ovul0","slide":28,"text":"0.500","textPreview":"0.500","textChars":5,"textLines":1,"bbox":[610,279,120,62]}
+{"kind":"textbox","id":"sh/25072p4f","slide":28,"text":"0.667","textPreview":"0.667","textChars":5,"textLines":1,"bbox":[760,279,120,62]}
+{"kind":"textbox","id":"sh/dwb61432","slide":28,"text":"best DQN policy","textPreview":"best DQN policy","textChars":15,"textLines":1,"bbox":[910,279,280,62]}
+{"kind":"shape","id":"sh/cv2p8zmh","slide":28,"bbox":[65,353,1150,62]}
+{"kind":"textbox","id":"sh/butozulw","slide":28,"text":"DQN","textPreview":"DQN","textChars":3,"textLines":1,"bbox":[80,353,140,62]}
+{"kind":"textbox","id":"sh/q9076p4b","slide":28,"text":"RL controller","textPreview":"RL controller","textChars":13,"textLines":1,"bbox":[255,353,300,62]}
+{"kind":"textbox","id":"sh/t076p03y","slide":28,"text":"0.200","textPreview":"0.200","textChars":5,"textLines":1,"bbox":[610,353,120,62]}
+{"kind":"textbox","id":"sh/szy5wvmd","slide":28,"text":"0.333","textPreview":"0.333","textChars":5,"textLines":1,"bbox":[760,353,120,62]}
+{"kind":"textbox","id":"sh/i5w3q1kv","slide":28,"text":"under-updates","textPreview":"under-updates","textChars":13,"textLines":1,"bbox":[910,353,280,62]}
+{"kind":"shape","id":"sh/j654z61g","slide":28,"bbox":[65,427,1150,62]}
+{"kind":"textbox","id":"sh/47elsb21","slide":28,"text":"DDQN","textPreview":"DDQN","textChars":4,"textLines":1,"bbox":[80,427,140,62]}
+{"kind":"textbox","id":"sh/58nm1gjm","slide":28,"text":"Static source","textPreview":"Static source","textChars":13,"textLines":1,"bbox":[255,427,300,62]}
+{"kind":"textbox","id":"sh/69w3ulk7","slide":28,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[610,427,120,62]}
+{"kind":"textbox","id":"sh/rap43q1s","slide":28,"text":"0.000","textPreview":"0.000","textChars":5,"textLines":1,"bbox":[760,427,120,62]}
+{"kind":"textbox","id":"sh/sbylwv2d","slide":28,"text":"all 20 attacks missed","textPreview":"all 20 attacks missed","textChars":21,"textLines":1,"bbox":[910,427,280,62]}
+{"kind":"shape","id":"sh/tc7m5gji","slide":28,"bbox":[65,501,1150,62]}
+{"kind":"textbox","id":"sh/mdc3ihk3","slide":28,"text":"DDQN","textPreview":"DDQN","textChars":4,"textLines":1,"bbox":[80,501,140,62]}
+{"kind":"textbox","id":"sh/nelkrm18","slide":28,"text":"Always incremental","textPreview":"Always incremental","textChars":18,"textLines":1,"bbox":[255,501,300,62]}
+{"kind":"textbox","id":"sh/3ytsze90","slide":28,"text":"0.500","textPreview":"0.500","textChars":5,"textLines":1,"bbox":[610,501,120,62]}
+{"kind":"textbox","id":"sh/2xkb6t8f","slide":28,"text":"0.667","textPreview":"0.667","textChars":5,"textLines":1,"bbox":[760,501,120,62]}
+{"kind":"textbox","id":"sh/p0ba1or6","slide":28,"text":"best DDQN policy","textPreview":"best DDQN policy","textChars":16,"textLines":1,"bbox":[910,501,280,62]}
+{"kind":"shape","id":"sh/oz2t8jql","slide":28,"bbox":[65,575,1150,62]}
+{"kind":"textbox","id":"sh/bmds3ypw","slide":28,"text":"DDQN","textPreview":"DDQN","textChars":4,"textLines":1,"bbox":[80,575,140,62]}
+{"kind":"textbox","id":"sh/q1kbat8r","slide":28,"text":"RL controller","textPreview":"RL controller","textChars":13,"textLines":1,"bbox":[255,575,300,62]}
+{"kind":"textbox","id":"sh/dova5872","slide":28,"text":"0.400","textPreview":"0.400","textChars":5,"textLines":1,"bbox":[610,575,120,62]}
+{"kind":"textbox","id":"sh/cnmtc3qh","slide":28,"text":"0.571","textPreview":"0.571","textChars":5,"textLines":1,"bbox":[760,575,120,62]}
+{"kind":"textbox","id":"sh/zqds7yp8","slide":28,"text":"better than DQN controller","textPreview":"better than DQN controller","textChars":26,"textLines":1,"bbox":[910,575,280,62]}
+{"kind":"textbox","id":"sh/yp4bed8n","slide":28,"text":"Offline profile-selection extension on a 72-window held-out Sybil stream. Not a live Cooja adversarial agent.","textPreview":"Offline profile-selection extension on a 72-window held-out Sybil stream. Not a live Cooja adversarial agent.","textChars":109,"textLines":1,"bbox":[190,650,900,24]}
+{"kind":"notes","id":"nt/pj4mwz","slide":28,"text":"Use this slide for exact RL metrics and the scope boundary.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/adversarial_rl_sybil_v1/results/adversarial_rl/held_out_summary.csv\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/adversarial_rl_sybil_v1/docs/model_scope.md\n[/Sources]"}
+{"kind":"slide","id":"sl/jkmd9t","slide":29,"title":"EXAMINER BACKUP","textShapes":11}
+{"kind":"textbox","id":"sh/vqhorip0","slide":29,"text":" EXAMINER BACKUP","textPreview":"EXAMINER BACKUP","textChars":16,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/wrq5knq5","slide":29,"text":" A9. Local LLM evidence and evaluation structure","textPreview":"A9. Local LLM evidence and evaluation structure","textChars":48,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/xsz6ts7q","slide":29,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/m1oned83","slide":29,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/nmx4nipo","slide":29,"text":"Appendix","textPreview":"Appendix","textChars":8,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/8nq5g3q9","slide":29,"bbox":[1080,25,110,28]}
+{"kind":"textbox","id":"sh/9ozmp87u","slide":29,"text":"BACKUP","textPreview":"BACKUP","textChars":6,"textLines":1,"bbox":[1088,25,94,28]}
+{"kind":"shape","id":"sh/yxonat87","slide":29,"bbox":[55,160,350,390]}
+{"kind":"shape","id":"sh/zyx4jyps","slide":29,"bbox":[55,160,5,390]}
+{"kind":"textbox","id":"sh/zy1kje50","slide":29,"text":"INPUT SCHEMA","textPreview":"INPUT SCHEMA","textChars":12,"textLines":1,"bbox":[77,172,314,28]}
+{"kind":"textbox","id":"sh/yxsja9of","slide":29,"text":"alert_id\nwindow boundaries\nfeature deltas\nIDS outcome\ndrift signal\nadaptation result\ntrust indicators\nlimitations\n\nAttack-family label is hidden from the model prompt.","textPreview":"alert_id | window boundaries | feature deltas | IDS outcome | drift signal | adaptation result | trust indicators | limitations |  | Atta...","textChars":167,"textLines":10,"bbox":[77,206,312,332]}
+{"kind":"shape","id":"sh/l032l4n6","slide":29,"bbox":[465,160,350,390]}
+{"kind":"shape","id":"sh/kza1cj6l","slide":29,"bbox":[465,160,5,390]}
+{"kind":"textbox","id":"sh/7mlkne5w","slide":29,"text":"OUTPUT SCHEMA","textPreview":"OUTPUT SCHEMA","textChars":13,"textLines":1,"bbox":[487,172,314,28]}
+{"kind":"textbox","id":"sh/m1cje94b","slide":29,"text":"summary\nobserved_change\nlikely_mechanism\ndrift_implication\nconfidence\nlimitations\nrecommended_action\n\nGenerated locally by qwen2.5:3b through Ollama.","textPreview":"summary | observed_change | likely_mechanism | drift_implication | confidence | limitations | recommended_action |  | Generated locally b...","textChars":149,"textLines":9,"bbox":[487,206,312,332]}
+{"kind":"shape","id":"sh/9o32pon2","slide":29,"bbox":[875,160,350,390]}
+{"kind":"shape","id":"sh/8nu1gjmh","slide":29,"bbox":[875,160,5,390]}
+{"kind":"textbox","id":"sh/nqh0bu5s","slide":29,"text":"AUTOMATIC SCREEN","textPreview":"AUTOMATIC SCREEN","textChars":16,"textLines":1,"bbox":[897,172,314,28]}
+{"kind":"textbox","id":"sh/258j2po7","slide":29,"text":"9 cases\nmean score 7.7778 / 10\nschema validity 1.0\nunsupported-claim rate 0.0\n\nThis is rule-based screening, not analyst usefulness or factuality validation.","textPreview":"9 cases | mean score 7.7778 / 10 | schema validity 1.0 | unsupported-claim rate 0.0 |  | This is rule-based screening, not analyst useful...","textChars":157,"textLines":6,"bbox":[897,206,312,332]}
+{"kind":"textbox","id":"sh/qx0v6hs7","slide":29,"text":"Known issue: schema validity does not prevent imprecise protocol terminology.","textPreview":"Known issue: schema validity does not prevent imprecise protocol terminology.","textChars":77,"textLines":1,"bbox":[270,610,740,26]}
+{"kind":"notes","id":"nt/jkmd9t","slide":29,"text":"Use this slide for questions about what the model sees, what it produces and how the nine outputs were screened.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/llm_explanations_v2/evidence/case_index.csv\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/llm_explanations_v2/outputs/ollama_explanations.jsonl\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/llm_explanations_v2/evaluation/scored_ollama_full/summary.json\n[/Sources]"}
+{"kind":"slide","id":"sl/su66sp","slide":30,"title":"EXAMINER BACKUP","textShapes":23}
+{"kind":"textbox","id":"sh/bylkzatc","slide":30,"text":" EXAMINER BACKUP","textPreview":"EXAMINER BACKUP","textChars":16,"textLines":1,"bbox":[56,25,760,22]}
+{"kind":"textbox","id":"sh/czul8vax","slide":30,"text":" A10. Threats to validity and future work","textPreview":"A10. Threats to validity and future work","textChars":41,"textLines":1,"bbox":[56,50,1145,52]}
+{"kind":"shape","id":"sh/d03210bi","slide":30,"bbox":[56,116,1168,1]}
+{"kind":"shape","id":"sh/29sj2lcv","slide":30,"bbox":[56,115,78,3]}
+{"kind":"textbox","id":"sh/3a1kvqtg","slide":30,"text":"Appendix","textPreview":"Appendix","textChars":8,"textLines":1,"bbox":[56,682,320,18]}
+{"kind":"shape","id":"sh/oba14vu1","slide":30,"bbox":[1080,25,110,28]}
+{"kind":"textbox","id":"sh/pcj2x0bm","slide":30,"text":"BACKUP","textPreview":"BACKUP","textChars":6,"textLines":1,"bbox":[1088,25,94,28]}
+{"kind":"shape","id":"sh/e58jylcz","slide":30,"bbox":[70,165,44,44]}
+{"kind":"textbox","id":"sh/f61krqtk","slide":30,"text":"!","textPreview":"!","textChars":1,"textLines":1,"bbox":[70,165,44,44]}
+{"kind":"textbox","id":"sh/bi5cjm5k","slide":30,"text":"Simulation only","textPreview":"Simulation only","textChars":15,"textLines":1,"bbox":[140,155,250,28]}
+{"kind":"textbox","id":"sh/ahwbqh4z","slide":30,"text":"No physical motes, calibrated energy use, ROM/RAM analysis or network-lifetime claim.","textPreview":"No physical motes, calibrated energy use, ROM/RAM analysis or network-lifetime claim.","textChars":85,"textLines":1,"bbox":[400,155,790,58]}
+{"kind":"shape","id":"sh/xknulwna","slide":30,"bbox":[70,245,44,44]}
+{"kind":"textbox","id":"sh/wjetsrm5","slide":30,"text":"!","textPreview":"!","textChars":1,"textLines":1,"bbox":[70,245,44,44]}
+{"kind":"textbox","id":"sh/jmpcnm5g","slide":30,"text":"Scale and diversity","textPreview":"Scale and diversity","textChars":19,"textLines":1,"bbox":[140,235,250,28]}
+{"kind":"textbox","id":"sh/ylwvuh4v","slide":30,"text":"Sixteen-node baseline, five seeds, one main activation time and limited traffic patterns.","textPreview":"Sixteen-node baseline, five seeds, one main activation time and limited traffic patterns.","textChars":89,"textLines":1,"bbox":[400,235,790,58]}
+{"kind":"shape","id":"sh/lo7upwnm","slide":30,"bbox":[70,325,44,44]}
+{"kind":"textbox","id":"sh/knydwrm1","slide":30,"text":"!","textPreview":"!","textChars":1,"textLines":1,"bbox":[70,325,44,44]}
+{"kind":"textbox","id":"sh/zqlcb25c","slide":30,"text":"Drift construction","textPreview":"Drift construction","textChars":18,"textLines":1,"bbox":[140,315,250,28]}
+{"kind":"textbox","id":"sh/epcbix4r","slide":30,"text":"Cross-attack shift is controlled and repeatable, but not naturally observed operational drift.","textPreview":"Cross-attack shift is controlled and repeatable, but not naturally observed operational drift.","textChars":94,"textLines":1,"bbox":[400,315,790,58]}
+{"kind":"shape","id":"sh/2hkn6psr","slide":30,"bbox":[70,405,44,44]}
+{"kind":"textbox","id":"sh/3idofutw","slide":30,"text":"!","textPreview":"!","textChars":1,"textLines":1,"bbox":[70,405,44,44]}
+{"kind":"textbox","id":"sh/ojm58zah","slide":30,"text":"Feature dependence","textPreview":"Feature dependence","textChars":18,"textLines":1,"bbox":[140,395,250,28]}
+{"kind":"textbox","id":"sh/pkv6h4b2","slide":30,"text":"Strong adaptation can depend on mechanism-aware fields engineered from the current implementation.","textPreview":"Strong adaptation can depend on mechanism-aware fields engineered from the current implementation.","textChars":98,"textLines":1,"bbox":[400,395,790,58]}
+{"kind":"shape","id":"sh/etkn2psf","slide":30,"bbox":[70,485,44,44]}
+{"kind":"textbox","id":"sh/futobut0","slide":30,"text":"!","textPreview":"!","textChars":1,"textLines":1,"bbox":[70,485,44,44]}
+{"kind":"textbox","id":"sh/gf254zal","slide":30,"text":"External comparison","textPreview":"External comparison","textChars":19,"textLines":1,"bbox":[140,475,250,28]}
+{"kind":"textbox","id":"sh/1gb6d4b6","slide":30,"text":"Gope data lacks equivalent run provenance, so direction is compared, not raw magnitude.","textPreview":"Gope data lacks equivalent run provenance, so direction is compared, not raw magnitude.","textChars":87,"textLines":1,"bbox":[400,475,790,58]}
+{"kind":"shape","id":"sh/6p0ny5sj","slide":30,"bbox":[70,565,44,44]}
+{"kind":"textbox","id":"sh/rq9o7at4","slide":30,"text":"!","textPreview":"!","textChars":1,"textLines":1,"bbox":[70,565,44,44]}
+{"kind":"textbox","id":"sh/94zqd8vm","slide":30,"text":"LLM evaluation","textPreview":"LLM evaluation","textChars":14,"textLines":1,"bbox":[140,555,250,28]}
+{"kind":"textbox","id":"sh/8jq9knu1","slide":30,"text":"Nine automatic screens, no blinded human analyst study, and terminology errors remain possible.","textPreview":"Nine automatic screens, no blinded human analyst study, and terminology errors remain possible.","textChars":95,"textLines":1,"bbox":[400,555,790,58]}
+{"kind":"shape","id":"sh/nih8bidg","slide":30,"bbox":[140,628,1000,42]}
+{"kind":"textbox","id":"sh/mh8ridcv","slide":30,"text":"Next steps: larger mixed-attack campaigns, mobility, stable defence policies and human evaluation of explanations.","textPreview":"Next steps: larger mixed-attack campaigns, mobility, stable defence policies and human evaluation of explanations.","textChars":114,"textLines":1,"bbox":[160,631,960,36]}
+{"kind":"notes","id":"nt/su66sp","slide":30,"text":"Use this slide for limitations and future-work questions.\n\n[Sources]\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_overleaf_v1/chapters/07_limitations.tex\n- /Users/mizzy/Dissertation Cooja Work/rpl-dis-flood/experiments/90 Raw Reproducibility Workspace/dissertation_overleaf_v1/chapters/07_conclusion.tex\n[/Sources]"}

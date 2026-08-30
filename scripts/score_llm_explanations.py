@@ -76,10 +76,10 @@ def main() -> None:
     parser.add_argument(
         "--rubric",
         type=Path,
-        default=Path("experiments/llm_explanations/evaluation/evaluation_cases.jsonl"),
+        default=Path("experiments/90 Raw Reproducibility Workspace/llm_explanations/evaluation/evaluation_cases.jsonl"),
     )
     parser.add_argument(
-        "--out-dir", type=Path, default=Path("experiments/llm_explanations/evaluation/scored")
+        "--out-dir", type=Path, default=Path("experiments/90 Raw Reproducibility Workspace/llm_explanations/evaluation/scored")
     )
     args = parser.parse_args()
 

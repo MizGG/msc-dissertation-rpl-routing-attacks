@@ -1,0 +1,4 @@
+condition,runs,mean_application_responses,application_response_change_vs_control_percent,mean_missed_application_responses,mean_parent_switches,mean_radio_transmissions,radio_transmission_change_vs_control_percent,mean_defence_avoidance_log_count,measurement_scope
+Control,5,417.4,0.0,0.0,0.0,5217.4,0.0,0.0,Post-activation mean across five matched Cooja seeds
+Sinkhole attack,5,416.6,-0.19,0.0,0.0,5242.6,0.48,0.0,Post-activation mean across five matched Cooja seeds
+Sinkhole attack with rank-parent defence,5,87.4,-79.06,28.8,681.8,35020.0,571.22,9702.2,Post-activation mean across five matched Cooja seeds

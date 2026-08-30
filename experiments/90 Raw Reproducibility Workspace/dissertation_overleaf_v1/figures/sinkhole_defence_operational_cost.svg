@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="455" viewBox="0 0 820 455">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>
+text { font-family: Arial, Helvetica, sans-serif; fill: #1f2933; }
+.title { font-size: 21px; font-weight: 700; }
+.subtitle { font-size: 12px; fill: #52616b; }
+.label { font-size: 12px; }
+.small { font-size: 10px; fill: #52616b; }
+.axis { stroke: #9aa5b1; stroke-width: 1; }
+.grid { stroke: #e4e7eb; stroke-width: 1; }
+</style>
+<text class="title" x="32" y="36">Sinkhole Defence Prototype: Operational Cost</text>
+<text class="subtitle" x="32" y="59">Five matched seeds; values are post-activation means. This is a negative mitigation result.</text>
+<text class="label" x="32" y="124">App responses</text>
+<rect x="225" y="136" width="450.0" height="15" fill="#7b8794"/>
+<text class="small" x="682.0" y="148">control: 417.4</text>
+<rect x="225" y="158" width="449.13751796837573" height="15" fill="#2f80ed"/>
+<text class="small" x="681.1375179683757" y="170">attack: 416.6</text>
+<rect x="225" y="180" width="94.22616195495928" height="15" fill="#d64545"/>
+<text class="small" x="326.22616195495925" y="192">defence: 87.4</text>
+<text class="label" x="32" y="232">Radio transmissions</text>
+<rect x="225" y="244" width="67.04254711593376" height="15" fill="#7b8794"/>
+<text class="small" x="299.04254711593376" y="256">control: 5217.4</text>
+<rect x="225" y="266" width="67.36636207881212" height="15" fill="#2f80ed"/>
+<text class="small" x="299.36636207881213" y="278">attack: 5242.6</text>
+<rect x="225" y="288" width="450.0" height="15" fill="#d64545"/>
+<text class="small" x="682.0" y="300">defence: 35020.0</text>
+<text class="label" x="32" y="340">Parent switches</text>
+<rect x="225" y="352" width="0.0" height="15" fill="#7b8794"/>
+<text class="small" x="232.0" y="364">control: 0.0</text>
+<rect x="225" y="374" width="0.0" height="15" fill="#2f80ed"/>
+<text class="small" x="232.0" y="386">attack: 0.0</text>
+<rect x="225" y="396" width="450.0" height="15" fill="#d64545"/>
+<text class="small" x="682.0" y="408">defence: 681.8</text>
+<text class="small" x="32" y="425">The rank-parent intervention increased routing churn and radio activity while reducing application responses; it is not claimed as a successful defence.</text>
+</svg>

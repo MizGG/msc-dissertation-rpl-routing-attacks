@@ -1,0 +1,10 @@
+alert_id,ground_truth_family,schema,limitations,evidence_fidelity,mechanism_alignment,uncertainty_calibration,drift_alignment,actionability,unsupported_claim_penalty,total_out_of_10,missing_keys,unsupported_claims
+rpl-case-01,blackhole,1,1,2,1,1,2,1,0,9,,
+rpl-case-02,dio_suppression,1,1,2,1,1,2,1,0,9,,
+rpl-case-03,dis_flood,1,1,2,1,1,2,1,0,9,,
+rpl-case-04,grayhole,1,1,2,1,1,2,1,0,9,,
+rpl-case-05,increase_rank,1,1,2,0,1,2,1,0,8,,
+rpl-case-06,sinkhole,1,1,2,1,1,2,1,0,9,,
+rpl-case-07,sybil,1,1,2,1,1,2,1,0,9,,
+rpl-case-08,wormhole,1,1,2,0,1,2,1,0,8,,
+rpl-case-09,worst_parent,1,1,2,2,1,2,1,0,10,,

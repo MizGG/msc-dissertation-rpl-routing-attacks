@@ -1,0 +1,92 @@
+\chapter{Literature Review}
+\label{chap:literature}
+
+\section{RPL Security and Attack Diversity}
+
+RPL builds a destination-oriented directed acyclic graph for communication in low-power and lossy networks \cite{rpl6550}. Rank represents relative routing position, while RPL control traffic includes DODAG Information Objects and DODAG Information Solicitation messages. Forwarding attacks are visible through loss, sinkhole and rank attacks alter routing incentives, control-plane attacks alter message dynamics, and wormhole and Sybil attacks challenge topology and identity assumptions. A model trained on one mechanism may therefore not learn a transferable definition of malicious RPL behaviour.
+
+RPL operates under constraints that distinguish it from conventional enterprise routing. Nodes have limited memory, processing capacity, and energy. Links are lossy, topology may change, and control traffic must be limited. A security mechanism that requires extensive neighbour history or frequent reporting may protect routing while exhausting the network. Evaluation must therefore consider availability and overhead, not classification metrics alone.
+
+Rank is both a routing abstraction and an attack surface. A node normally advertises a rank consistent with progress towards the root. A sinkhole can claim an attractive low rank to draw routes through itself. An increase-rank attacker can make routes appear worse and disrupt parent choice. Worst-parent behaviour directly selects an undesirable route. These attacks may not immediately reduce application delivery, especially in a small or redundant topology, but they alter the routing state from which future delivery depends.
+
+Control messages create a second surface. DIO messages advertise DODAG information, while DIS messages solicit advertisements. Flooding solicitations consumes channel and processing resources. Suppressing DIO activity can delay or distort topology maintenance. Because legitimate RPL uses adaptive timing, simple rate thresholds risk confusing attack behaviour with network repair or lossy conditions.
+
+Forwarding attacks create a third surface. Blackhole drops all selected forwarded traffic, while grayhole drops selectively. These behaviours often produce strong delivery features, but ordinary wireless loss can create similar symptoms. Wormhole and Sybil attacks are harder for forwarding-only trust. A wormhole may forward reliably and therefore appear trustworthy, while a Sybil attacker distributes activity across identities that each appear new.
+
+\section{Intrusion Detection Strategies}
+
+Signature-based IDS compares observations with known malicious patterns. It can provide precise alerts for known attacks but struggles when an adversary changes behaviour. Anomaly detection models normality and identifies deviations, which can expose unknown attacks but also raises false alarms when legitimate conditions change. Specification-based detection checks protocol rules, such as rank consistency, and hybrid systems combine evidence sources.
+
+The distinction matters for concept drift. A static anomaly detector can become stale when normal radio or workload conditions change. A signature can become stale when an attack variant avoids the known pattern. A specification rule may remain meaningful across distributions, but an incomplete or overly strict rule can damage legitimate routing. The defence experiment in this dissertation is an example of that risk.
+
+IDS placement also affects feasibility. Fully distributed monitoring keeps decisions close to events but burdens constrained motes and limits global context. Centralised monitoring at a border router provides a wider view and more resources but depends on reports arriving through the network. Hybrid placement allows lightweight observations at nodes and more complex analysis at the border. SVELTE adopts this hybrid idea.
+
+\section{Protocol-Aware Intrusion Detection}
+
+SVELTE is a key RPL IDS architecture because it uses protocol-aware evidence rather than only generic traffic features \cite{svelte2013}. Its 6Mapper reconstructs routing state at the border router, while constrained nodes contribute lightweight information. The system combines routing consistency checks, detection modules, and a mini-firewall. Its Contiki/Cooja evaluation of sinkhole and selective-forwarding behaviour motivates the use of rank, parent, and topology features in this dissertation. It also establishes that false alarms and operational overhead matter alongside detection rate.
+
+SVELTE's 6Mapper collects enough information to reconstruct the DODAG at the border router. Detection techniques then identify network-graph inconsistencies, suspicious rank information, and selective forwarding. Processing-intensive work is placed at the more capable border router, while constrained devices provide lightweight support. This architecture responds to a key IoT property: unlike a traditional wireless sensor network with no central management point, an IP-connected 6LoWPAN normally has an accessible border router.
+
+The paper reports successful detection of its implemented sinkhole and selective-forwarding attacks in simulated scenarios, while noting false positives and the need to tune detection intervals and thresholds. Its contribution is architectural and operational. It demonstrates that routing-aware intrusion detection can be integrated with Contiki while keeping overhead small enough for constrained devices in the tested setup.
+
+This dissertation borrows the principle, not the complete implementation. The feature pipeline records rank, parent, topology, radio, and application evidence that a border-router IDS could use. The current classifier and drift monitors run offline on extracted windows. Consequently, the work cannot claim real-time deployment of a SVELTE-equivalent architecture. Its contribution is the controlled evaluation of transfer and adaptation using protocol-aware evidence.
+
+\section{Concept Drift and Adaptive IDS}
+
+Pasikhani, Clark, and Gope describe 6LoWPAN as an evolving data environment where mobility, application changes, attacks, and adversarial actions can change observation distributions \cite{pasikhani2022arl}. Their work combines adversarial reinforcement learning, incremental IDS models, and DDM drift detection. The present project is narrower and more directly auditable. It does not implement DQN, DDQN, or an adversarial reward model. Instead, it trains on one explicitly implemented attack family, tests on another, and then adapts with complete target-family seeds while reserving other seeds for evaluation.
+
+Concept drift can be expressed as a change in the joint distribution of features $X$ and label $Y$ over time. A change in $P(X)$ without changing the decision relationship is often called virtual drift. A change in $P(Y|X)$ alters the classification concept. Drift may be sudden, gradual, incremental, or recurring. An attack-family replacement is a controlled change in how malicious labels relate to observed mechanisms, while radio loss can also change the feature distribution of normal and attack traffic.
+
+Drift detection approaches monitor data, model confidence, or prediction errors. Data-distribution monitoring can react without labels but may alert on harmless covariate changes. Error-based monitoring directly observes performance degradation but requires labels, often with delay. DDM tracks the minimum error probability and standard deviation and signals when current error exceeds warning or drift thresholds. CUSUM accumulates deviations from a reference mean and is effective when a specific directional signal is known.
+
+The Gope framework integrates these concerns into an adversarial RL environment. The adversary can choose attack actions and profiles, while defender agents include incremental and deep reinforcement-learning models. A concept-drift component detects changes and supports model selection or rebuilding. The study addresses class imbalance and resource efficiency alongside detection performance. It is a system-level adaptive architecture rather than a simple retraining experiment.
+
+The current project retains three ideas from that work: attack behaviour evolves, static detectors can degrade, and adaptation must be measured. It changes the experimental level. Instead of NetSim observations controlled by a learned adversary, it executes attack implementations in Contiki-NG/Cooja. Instead of claiming full online policy learning, it measures transparent whole-seed retraining and two drift signals. This narrower design makes code activation, labels, and seed leakage easier to audit.
+
+\section{Datasets, Simulation, and Evaluation Leakage}
+
+An IDS dataset is a record of observations, labels, and context. It is not the attack itself. In this project Cooja is the laboratory, attack applications are interventions, logs are raw observations, and window CSV files are the derived dataset. Public datasets are observations from another laboratory. They can support external validation only when attack semantics and features are compatible.
+
+Simulation provides reproducibility and precise ground truth. Cooja can execute Contiki software, model radio communication, and expose protocol logs. NetSim supports larger network experiments and was used in the motivating Gope work. Neither simulator is a physical deployment. Cooja offers close integration with the implemented Contiki stack, while NetSim can support different scale and modelling choices. Comparisons must therefore distinguish method from raw metric values.
+
+Dataset splitting is a major validity issue. Random row splitting can place windows or packets from one simulation in both training and testing. A model may then recognise seed-specific topology or temporal patterns rather than a general attack. Grouped splitting by run or seed is more conservative. Time-ordered splits are also preferable when evaluating future performance. The whole-seed protocol in this dissertation follows this principle.
+
+The supplied Gope dataset is useful for reproducing a static baseline, but its rows do not expose exactly the same complete-run provenance as the Cooja corpus. It is therefore analysed separately. Future use of UOS\_IOTSH\_2024, RPL-IIoT, or RPL-NIDDS17 would require a compatibility audit covering labels, fields, simulator, topology, and run grouping.
+
+\section{Recent Adaptive and Resource-Constrained IDS Research}
+
+Recent work continues to emphasise the tension between adaptive anomaly detection and resource constraints. The Green Lightweight Hybrid CNN-Transformer paper targets adaptation to non-stationary IoT data and reports latency and energy-oriented evaluation \cite{greenadaptive2026}. TR-ARW similarly examines lightweight anomaly detection and response for heterogeneous water-distribution systems \cite{trarw2026}. These papers are not RPL studies and should not be used as direct performance baselines, but they support the broader requirement to assess adaptation and operating cost together.
+
+The hybrid CNN-Transformer combines local feature extraction with longer-range temporal modelling and uses adaptive thresholding. Its relevance is the attempt to balance non-stationary detection with latency and energy constraints. TR-ARW addresses a related deployment split between performance-oriented and edge modes. Both works use richer neural architectures than this dissertation. Their metrics cannot be compared directly because domains, labels, devices, and workloads differ.
+
+The combined host-and-network anomaly-detection study argues that correlated evidence from different data sources can improve detection \cite{combinedids2026}. This supports the methodological direction of combining application, radio, routing, rank, and topology features rather than relying on a single traffic-volume signal. LLMalMorph demonstrates a different form of attack evolution: language models can assist generation of malware variants that evade detectors \cite{llmalmorph2025}. It is not an IoT routing paper, but it reinforces the wider security motivation for testing whether fixed detection signatures survive changing adversarial behaviour.
+
+The host and network study is especially relevant to feature representation. Evidence that is weak in one source can become meaningful when correlated with another. In RPL, application response changes, radio activity, control-message rate, rank state, and topology each reveal only part of the mechanism. Combining them can improve coverage, but it also increases sensitivity to environmental change and creates more opportunities for spurious splits.
+
+LLMalMorph is included as broader adversarial context, not as an IDS baseline. It demonstrates that changing malicious artefacts can reduce antivirus and machine-learning detection. RPL attackers do not use the same code-transformation process, but the underlying lesson is comparable: evaluation against a static known variant does not establish resilience to an adaptive adversary.
+
+\section{Trust and Response}
+
+Trust-based routing assigns scores to neighbours using observations such as forwarding, rank consistency, control behaviour, or route quality. It is attractive because it maps low-level events to an interpretable security state. Forwarding trust is naturally suited to blackhole and grayhole. Rank trust can expose sinkhole or rank attacks. Control-rate trust can expose floods.
+
+Trust also has structural weaknesses. Wireless loss can reduce forwarding trust for honest nodes. A wormhole can forward reliably. A Sybil attacker can obtain fresh identity scores. Colluding nodes can support each other's claims. A response that excludes low-trust parents can create churn when scores fluctuate. This literature theme motivates the project's separation between offline trust interpretation and the online rank-parent prototype.
+
+\section{Research Gap and Position}
+
+Prior work establishes protocol-aware RPL monitoring \cite{svelte2013} and the need for adaptation in evolving 6LoWPAN environments \cite{pasikhani2022arl}. High performance within a fixed attack profile does not establish transfer between distinct RPL attack mechanisms or quantify how much new evidence is required for recovery. This project addresses that gap through a controlled Cooja campaign with fixed timing, feature extraction, and seed-safe splits. It adds a Sybil-style identity-manipulation surface, tests online drift monitoring and condition shifts, and evaluates the difference between useful detection telemetry and a safe routing intervention.
+
+The gap has three parts. First, attack diversity is often represented by a mixed multiclass dataset, which can hide whether a detector trained on one mechanism transfers to another. Second, adaptation studies can overstate recovery when rows from the same run cross partitions. Third, detection evidence is often discussed as though it directly implies a safe defence. The methodology in Chapter~\ref{chap:methodology} addresses these issues with ordered source-target pairs, whole-seed adaptation, and a separate intervention campaign.
+
+\section{Literature Synthesis}
+
+The reviewed work can be organised along four axes: evidence, adaptation, deployment, and response. SVELTE is strongest on protocol-aware evidence and lightweight architectural placement. The Gope framework is strongest on adaptation and adversarially changing profiles. Recent neural anomaly-detection papers focus on temporal representation and resource-aware deployment. Trust-routing work focuses on response but must manage unreliable observations and constrained nodes.
+
+No single axis is sufficient. A model cannot adapt to a mechanism that is absent from its evidence. A detector with rich evidence may still become stale. An adaptive detector may be too expensive for the target platform. A correct alert may still lead to an unsafe routing response. This dissertation connects the axes through a sequence of experiments rather than proposing one monolithic system.
+
+The sequence begins with evidence quality. Generic traffic features are compared with routing-aware features, and explicit implementation markers are removed. It then measures static transfer, which reveals whether one learned concept survives an attack change. Whole-seed adaptation measures recovery once target evidence is available. CUSUM and DDM address when a change might be recognised. Robustness conditions test whether the result survives changes unrelated to attack family. Finally, the rank-parent experiment tests whether detection evidence can support action.
+
+This positioning also clarifies originality. Reimplementing known attacks alone is reproduction. Training a classifier on a mixed dataset alone is conventional supervised evaluation. The original contribution lies in combining executable Cooja attacks with ordered cross-family transfer, seed-safe adaptation, an identity-related Sybil target, online drift evidence, and a failed mitigation analysed as evidence.
+
+The literature also supports restraint. SVELTE reports findings in its own architecture and scenarios. The Gope paper evaluates a more complex NetSim and RL framework. The recent EuroS\&P submissions address different anomaly domains. Their headline metrics should not be placed in a single ranking table because datasets, labels, and costs differ. They instead provide design principles and comparison points.
+
+The resulting research gap is specific: there is a need for a reproducible protocol-level study that asks whether an RPL IDS trained on one implemented attack mechanism detects a different mechanism, avoids run leakage during adaptation, and reports both recovery and failure. The remaining chapters address that gap.

@@ -1,0 +1,17 @@
+family,feature,attack_mean,control_mean,difference
+blackhole,app_received_requests,276.6,695.2,-418.6
+blackhole,app_received_responses,276.0,694.4,-418.4
+blackhole,app_not_reachable,60.2,60.2,0.0
+blackhole,app_tx_stat_lines,74.4,74.2,0.2
+blackhole,radio_count_reported,5594.8,8984.4,-3389.6
+blackhole,radio_transmissions,5594.8,8984.4,-3389.6
+blackhole,testlog_lines,2648.6,3063.6,-415.0
+blackhole,radio_lines,5595.8,8985.4,-3389.6
+sinkhole,app_received_requests,696.0,695.2,0.8
+sinkhole,app_received_responses,695.0,694.4,0.6
+sinkhole,app_not_reachable,60.2,60.2,0.0
+sinkhole,app_tx_stat_lines,74.2,74.2,0.0
+sinkhole,radio_count_reported,9000.2,8984.4,15.8
+sinkhole,radio_transmissions,9000.2,8984.4,15.8
+sinkhole,testlog_lines,3167.8,3162.8,5.0
+sinkhole,radio_lines,9001.2,8985.4,15.8

@@ -7,3 +7,5 @@ SH_*_N16_SEED*.csc
 __pycache__/
 .env
 .env.local
+.venv/
+.tmp/

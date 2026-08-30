@@ -1,0 +1,3 @@
+detector,attack_detection_rate,control_false_alarm_rate,median_detection_delay_s
+rank_state_cusum,1.0,0.0,0
+ddm_on_delayed_cart_errors,1.0,0.0,60

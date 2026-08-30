@@ -1,0 +1,8 @@
+experiment,train_runs,n,accuracy,precision,recall,f1,f2,fpr,tp,tn,fp,fn
+blackhole_leave_seed_123456,8,2,1.0,1.0,1.0,1.0,1.0,0.0,1,1,0,0
+blackhole_leave_seed_234567,8,2,1.0,1.0,1.0,1.0,1.0,0.0,1,1,0,0
+blackhole_leave_seed_345678,8,2,1.0,1.0,1.0,1.0,1.0,0.0,1,1,0,0
+blackhole_leave_seed_456789,8,2,1.0,1.0,1.0,1.0,1.0,0.0,1,1,0,0
+blackhole_leave_seed_567890,8,2,1.0,1.0,1.0,1.0,1.0,0.0,1,1,0,0
+same_distribution_blackhole_all_seen_shape,10,10,1.0,1.0,1.0,1.0,1.0,0.0,5,5,0,0
+concept_drift_train_blackhole_test_sinkhole,10,10,0.5,0,0.0,0,0,0.0,0,5,0,5

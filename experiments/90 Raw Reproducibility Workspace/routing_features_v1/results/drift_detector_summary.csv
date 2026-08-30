@@ -1,0 +1,2 @@
+detector,reference_distribution,monitored_distribution,attack_runs,attacks_detected_without_prealarm,attack_detection_rate,control_runs,control_runs_with_false_alarm,control_false_alarm_rate,median_detection_delay_s,maximum_detection_delay_s,input_features,labels_or_attack_markers_used_as_inputs
+rank_state_one_sided_cusum,blackhole windows from four seeds; matching seed excluded,sinkhole attack and control windows in time order,5,5,1.0,5,0,0.0,0,0,state_low_rank_nonroot_pairs; state_low_rank_nonroot_senders; state_receivers_exposed_low_rank_nonroot,no

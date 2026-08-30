@@ -46,8 +46,8 @@ def find_one(rows: list[dict[str, str]], **criteria: str) -> dict[str, str]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--experiment-dir", type=Path, default=Path("experiments/routing_features_v1"))
-    parser.add_argument("--out-dir", type=Path, default=Path("experiments/llm_explanations"))
+    parser.add_argument("--experiment-dir", type=Path, default=Path("experiments/90 Raw Reproducibility Workspace/routing_features_v1"))
+    parser.add_argument("--out-dir", type=Path, default=Path("experiments/90 Raw Reproducibility Workspace/llm_explanations"))
     args = parser.parse_args()
 
     features = read_csv(args.experiment_dir / "features/routing_window_features.csv")

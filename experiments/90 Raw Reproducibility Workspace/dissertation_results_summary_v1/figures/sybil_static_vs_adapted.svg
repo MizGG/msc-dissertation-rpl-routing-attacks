@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="460" viewBox="0 0 820 460">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>
+text { font-family: Arial, Helvetica, sans-serif; fill: #1f2933; }
+.title { font-size: 21px; font-weight: 700; }
+.subtitle { font-size: 12px; fill: #52616b; }
+.label { font-size: 12px; }
+.small { font-size: 11px; fill: #52616b; }
+.axis { stroke: #9aa5b1; stroke-width: 1; }
+.grid { stroke: #e4e7eb; stroke-width: 1; }
+</style>
+<text class="title" x="32" y="38">Sybil Static vs Adapted IDS Performance</text>
+<text class="subtitle" x="32" y="60">Whole target-family simulation seeds are added for adaptation.</text>
+<line class="grid" x1="90" y1="360.0" x2="730" y2="360.0"/>
+<text class="small" x="48" y="364.0">0.00</text>
+<line class="grid" x1="90" y1="295.0" x2="730" y2="295.0"/>
+<text class="small" x="48" y="299.0">0.25</text>
+<line class="grid" x1="90" y1="230.0" x2="730" y2="230.0"/>
+<text class="small" x="48" y="234.0">0.50</text>
+<line class="grid" x1="90" y1="165.0" x2="730" y2="165.0"/>
+<text class="small" x="48" y="169.0">0.75</text>
+<line class="grid" x1="90" y1="100.0" x2="730" y2="100.0"/>
+<text class="small" x="48" y="104.0">1.00</text>
+<line class="axis" x1="90" y1="360" x2="730" y2="360"/>
+<line class="axis" x1="90" y1="100" x2="90" y2="360"/>
+<text class="label" x="86.0" y="385">0</text>
+<text class="label" x="299.3" y="385">1</text>
+<text class="label" x="512.7" y="385">2</text>
+<text class="label" x="726.0" y="385">3</text>
+<text class="small" x="300" y="415">target adaptation seeds</text>
+<polyline points="90.0,288.5 303.3,114.6 516.7,117.3 730.0,113.0" fill="none" stroke="#2f80ed" stroke-width="3"/>
+<circle cx="90.0" cy="288.5" r="5" fill="#2f80ed"/>
+<circle cx="303.3" cy="114.6" r="5" fill="#2f80ed"/>
+<circle cx="516.7" cy="117.3" r="5" fill="#2f80ed"/>
+<circle cx="730.0" cy="113.0" r="5" fill="#2f80ed"/>
+<text class="label" x="744.0" y="117.0">Recall</text>
+<polyline points="90.0,303.2 303.3,108.2 516.7,110.0 730.0,108.1" fill="none" stroke="#007d79" stroke-width="3"/>
+<circle cx="90.0" cy="303.2" r="5" fill="#007d79"/>
+<circle cx="303.3" cy="108.2" r="5" fill="#007d79"/>
+<circle cx="516.7" cy="110.0" r="5" fill="#007d79"/>
+<circle cx="730.0" cy="108.1" r="5" fill="#007d79"/>
+<text class="label" x="744.0" y="112.1">F1</text>
+</svg>

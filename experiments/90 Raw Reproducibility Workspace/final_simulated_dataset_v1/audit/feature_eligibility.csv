@@ -1,0 +1,85 @@
+field,classification,reason
+source_feature_file,excluded_metadata,"provenance, label, or time context"
+run_id,excluded_metadata,"provenance, label, or time context"
+family,excluded_metadata,"provenance, label, or time context"
+mode,excluded_metadata,"provenance, label, or time context"
+binary_run_label,excluded_metadata,"provenance, label, or time context"
+window_label,excluded_metadata,"provenance, label, or time context"
+nodes,excluded_metadata,"provenance, label, or time context"
+seed,excluded_metadata,"provenance, label, or time context"
+window_start_s,excluded_metadata,"provenance, label, or time context"
+window_end_s,excluded_metadata,"provenance, label, or time context"
+post_activation,excluded_metadata,"provenance, label, or time context"
+app_tx_delta,eligible_numeric,"generic observed routing, topology, application, or radio value"
+app_rx_delta,eligible_numeric,"generic observed routing, topology, application, or radio value"
+app_missed_delta,eligible_numeric,"generic observed routing, topology, application, or radio value"
+app_reporting_nodes,eligible_numeric,"generic observed routing, topology, application, or radio value"
+radio_tx_count,eligible_numeric,"generic observed routing, topology, application, or radio value"
+radio_bytes,eligible_numeric,"generic observed routing, topology, application, or radio value"
+radio_interfered_count,eligible_numeric,"generic observed routing, topology, application, or radio value"
+unique_radio_senders,eligible_numeric,"generic observed routing, topology, application, or radio value"
+attacker_node16_radio_tx,eligible_numeric,"generic observed routing, topology, application, or radio value"
+root_node1_radio_tx,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dio_rx_count,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dio_tx_count,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dis_rx_count,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dis_tx_count,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dao_rx_count,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dao_tx_count,eligible_numeric,"generic observed routing, topology, application, or radio value"
+parent_switch_count,eligible_numeric,"generic observed routing, topology, application, or radio value"
+parent_switch_to_root_count,eligible_numeric,"generic observed routing, topology, application, or radio value"
+parent_switch_to_nonroot_count,eligible_numeric,"generic observed routing, topology, application, or radio value"
+unique_parent_targets,eligible_numeric,"generic observed routing, topology, application, or radio value"
+parent_found_events,eligible_numeric,"generic observed routing, topology, application, or radio value"
+no_parent_events,eligible_numeric,"generic observed routing, topology, application, or radio value"
+significant_rank_update_count,eligible_numeric,"generic observed routing, topology, application, or radio value"
+unique_dio_senders,eligible_numeric,"generic observed routing, topology, application, or radio value"
+unique_dio_receivers,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dio_rx_rank_min,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dio_rx_rank_mean,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dio_rx_rank_max,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dio_rx_rank_range,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dio_rx_nonroot_count,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dio_rx_nonroot_rank_min,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dio_rx_nonroot_rank_mean,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dio_rx_nonroot_rank_max,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dio_rx_nonroot_rank_range,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dio_rx_low_rank_nonroot_count,eligible_numeric,"generic observed routing, topology, application, or radio value"
+unique_low_rank_nonroot_senders,eligible_numeric,"generic observed routing, topology, application, or radio value"
+dio_tx_rank_mean,eligible_numeric,"generic observed routing, topology, application, or radio value"
+state_nonroot_rank_min,eligible_numeric,"generic observed routing, topology, application, or radio value"
+state_nonroot_rank_mean,eligible_numeric,"generic observed routing, topology, application, or radio value"
+state_nonroot_rank_max,eligible_numeric,"generic observed routing, topology, application, or radio value"
+state_nonroot_rank_range,eligible_numeric,"generic observed routing, topology, application, or radio value"
+state_low_rank_nonroot_pairs,eligible_numeric,"generic observed routing, topology, application, or radio value"
+state_low_rank_nonroot_senders,eligible_numeric,"generic observed routing, topology, application, or radio value"
+state_receivers_exposed_low_rank_nonroot,eligible_numeric,"generic observed routing, topology, application, or radio value"
+own_state_sample_count,eligible_numeric,"generic observed routing, topology, application, or radio value"
+own_rank_min,eligible_numeric,"generic observed routing, topology, application, or radio value"
+own_rank_mean,eligible_numeric,"generic observed routing, topology, application, or radio value"
+own_rank_max,eligible_numeric,"generic observed routing, topology, application, or radio value"
+own_rank_range,eligible_numeric,"generic observed routing, topology, application, or radio value"
+own_neighbor_count_mean,eligible_numeric,"generic observed routing, topology, application, or radio value"
+own_neighbor_count_max,eligible_numeric,"generic observed routing, topology, application, or radio value"
+topology_edge_count,eligible_numeric,"generic observed routing, topology, application, or radio value"
+topology_unique_parents,eligible_numeric,"generic observed routing, topology, application, or radio value"
+topology_max_parent_fanout,eligible_numeric,"generic observed routing, topology, application, or radio value"
+topology_root_direct_children,eligible_numeric,"generic observed routing, topology, application, or radio value"
+topology_mean_depth,eligible_numeric,"generic observed routing, topology, application, or radio value"
+topology_max_depth,eligible_numeric,"generic observed routing, topology, application, or radio value"
+sinkhole_attack_enabled_events,excluded_marker,simulator attack instrumentation; label leakage risk
+sinkhole_advertised_rank_events,excluded_marker,simulator attack instrumentation; label leakage risk
+blackhole_attack_enabled_events,excluded_marker,simulator attack instrumentation; label leakage risk
+blackhole_drop_events,excluded_marker,simulator attack instrumentation; label leakage risk
+grayhole_attack_enabled_events,excluded_marker,simulator attack instrumentation; label leakage risk
+grayhole_drop_events,excluded_marker,simulator attack instrumentation; label leakage risk
+increase_rank_attack_enabled_events,excluded_marker,simulator attack instrumentation; label leakage risk
+increase_rank_advertised_rank_events,excluded_marker,simulator attack instrumentation; label leakage risk
+dis_flood_attack_enabled_events,excluded_marker,simulator attack instrumentation; label leakage risk
+dis_flood_sent_events,excluded_marker,simulator attack instrumentation; label leakage risk
+dio_suppression_attack_enabled_events,excluded_marker,simulator attack instrumentation; label leakage risk
+dio_suppression_events,excluded_marker,simulator attack instrumentation; label leakage risk
+worst_parent_attack_enabled_events,excluded_marker,simulator attack instrumentation; label leakage risk
+worst_parent_selection_events,excluded_marker,simulator attack instrumentation; label leakage risk
+wormhole_attack_enabled_events,excluded_marker,simulator attack instrumentation; label leakage risk
+wormhole_endpoint_radio_events,excluded_marker,simulator attack instrumentation; label leakage risk
