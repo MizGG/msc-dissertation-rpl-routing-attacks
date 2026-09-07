@@ -1,0 +1,3 @@
+dataset,directions,adaptation_target_evidence_fraction,static_mean_recall,static_mean_f1,adapted_mean_recall,adapted_mean_f1,f1_change
+HUNSR,3,0.20,0.0871,0.0329,0.4454,0.1428,0.1099
+RADAR,2,0.20,0.0000,0.0000,0.5006,0.3175,0.3175
