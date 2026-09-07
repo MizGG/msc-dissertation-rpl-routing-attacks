@@ -19,7 +19,7 @@
       org.contikios.cooja.contikimote.ContikiMoteType
       <description>Cooja Mote Type #1</description>
       <source>[CONFIG_DIR]/../code/udp-server.c</source>
-      <commands>/usr/local/bin/gmake -j$(CPUS) udp-server.cooja TARGET=cooja</commands>
+      <commands>gmake CONTIKI=[CONTIKI_DIR] -j$(CPUS) udp-server.cooja TARGET=cooja</commands>
       <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.Battery</moteinterface>
       <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiVib</moteinterface>
@@ -51,7 +51,7 @@
       org.contikios.cooja.contikimote.ContikiMoteType
       <description>Cooja Mote Type #2</description>
       <source>[CONFIG_DIR]/../code/udp-client.c</source>
-      <commands>/usr/local/bin/gmake -j$(CPUS) udp-client.cooja TARGET=cooja</commands>
+      <commands>gmake CONTIKI=[CONTIKI_DIR] -j$(CPUS) udp-client.cooja TARGET=cooja</commands>
       <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.Battery</moteinterface>
       <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiVib</moteinterface>
@@ -213,7 +213,7 @@
       org.contikios.cooja.contikimote.ContikiMoteType
       <description>sinkhole control router</description>
       <source>[CONFIG_DIR]/../code/sinkhole-control-router.c</source>
-      <commands>/usr/local/bin/gmake -j$(CPUS) sinkhole-control-router.cooja TARGET=cooja</commands>
+      <commands>gmake CONTIKI=[CONTIKI_DIR] -j$(CPUS) sinkhole-control-router.cooja TARGET=cooja</commands>
       <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.Battery</moteinterface>
       <moteinterface>org.contikios.cooja.contikimote.interfaces.ContikiVib</moteinterface>

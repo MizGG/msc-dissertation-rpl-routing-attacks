@@ -212,7 +212,7 @@
     <motetype>
       org.contikios.cooja.contikimote.ContikiMoteType
       <description>control forwarding router</description>
-      <source>[CONFIG_DIR]/control-router.c</source>
+      <source>[CONFIG_DIR]/../code/control-router.c</source>
       <commands>$(MAKE) -j$(CPUS) control-router.cooja TARGET=cooja</commands>
       <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.Battery</moteinterface>

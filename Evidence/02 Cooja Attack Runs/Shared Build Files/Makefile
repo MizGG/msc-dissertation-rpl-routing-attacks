@@ -1,4 +1,5 @@
-CONTIKI=/Users/mizzy/contiki-ng
+# Set CONTIKI to the local Contiki-NG checkout when building manually.
+CONTIKI ?= $(CONTIKI_NG)
 
 MAKE_ROUTING = MAKE_ROUTING_RPL_LITE
 

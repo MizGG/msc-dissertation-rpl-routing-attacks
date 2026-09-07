@@ -1,7 +1,0 @@
-CONTIKI=/Users/mizzy/contiki-ng
-
-MAKE_ROUTING = MAKE_ROUTING_RPL_LITE
-
-CFLAGS += -DLOG_CONF_LEVEL_RPL=LOG_LEVEL_WARN
-
-include $(CONTIKI)/Makefile.include

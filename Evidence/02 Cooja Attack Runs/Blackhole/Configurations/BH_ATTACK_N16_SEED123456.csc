@@ -212,7 +212,7 @@
     <motetype>
       org.contikios.cooja.contikimote.ContikiMoteType
       <description>blackhole forwading router</description>
-      <source>[CONFIG_DIR]/blackhole-router.c</source>
+      <source>[CONFIG_DIR]/../code/blackhole-router.c</source>
       <commands>$(MAKE) -j$(CPUS) blackhole-router.cooja TARGET=cooja</commands>
       <moteinterface>org.contikios.cooja.interfaces.Position</moteinterface>
       <moteinterface>org.contikios.cooja.interfaces.Battery</moteinterface>

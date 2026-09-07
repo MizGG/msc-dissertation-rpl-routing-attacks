@@ -19,6 +19,6 @@ The main folders are:
 
 ## Reproduction
 
-The Cooja configurations are grouped by attack in `Evidence/02 Cooja Attack Runs`. Each scenario uses fixed seeds and a 540-second simulation. Analysis scripts and Contiki-NG modifications are in `Evidence/07 Source Code and Contiki Changes`.
+The Cooja configurations are grouped by attack in `Evidence/02 Cooja Attack Runs`. Each scenario uses fixed seeds and a 540-second simulation. Start with [the Cooja reproduction guide](Evidence/02%20Cooja%20Attack%20Runs/COOJA_REPRODUCTION.md), which records the required Contiki-NG revision and patch. Analysis scripts and Contiki-NG modifications are in `Evidence/07 Source Code and Contiki Changes`.
 
 External datasets, presentation files, recordings, dissertation drafts, generated binaries, and earlier exploratory work are deliberately excluded from the tracked submission. The repository contains only the material needed to review the implementation and reported results.
