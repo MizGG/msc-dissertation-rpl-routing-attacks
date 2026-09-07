@@ -1,1 +1,0 @@
-../../configs/GRAYHOLE_CONTROL_N16_SEED567890.csc

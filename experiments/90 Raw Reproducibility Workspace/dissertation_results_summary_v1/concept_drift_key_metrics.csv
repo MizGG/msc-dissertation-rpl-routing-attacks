@@ -1,4 +1,0 @@
-experiment,model,families,cross_attack_pairs,zero_recall_pairs,strong_f1_ge_0_8_pairs,mean_recall,mean_f1,interpretation,evidence_location
-cross_attack_with_sybil,cart,9,72,48,6,0.2333,0.1822,Static CART IDS often fails when trained on one attack family and tested on a different family,experiments/cross_attack_drift_with_sybil_v1/results/cross_attack_matrix.csv
-cross_attack_with_sybil,gaussian,9,72,66,0,0.0739,0.0362,Static Gaussian IDS transfers even worse across attack-family drift,experiments/cross_attack_drift_with_sybil_v1/results/cross_attack_matrix.csv
-sybil_related_cross_attack,cart,9,16,11,3,0.2625,0.2342,Sybil is frequently missed by static models trained on other RPL attack surfaces,experiments/cross_attack_drift_with_sybil_v1/results/cross_attack_matrix.csv

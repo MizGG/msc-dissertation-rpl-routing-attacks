@@ -1,1 +1,0 @@
-../../configs/WORMHOLE_ATTACK_N17_SEED345678.csc

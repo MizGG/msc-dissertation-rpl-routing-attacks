@@ -1,1 +1,0 @@
-../../configs/WORST_PARENT_ATTACK_N16_SEED234567.csc

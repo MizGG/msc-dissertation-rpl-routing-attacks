@@ -1,9 +1,0 @@
-attack,source_folder,csv_file,rows,columns,has_TYPE_label,label_counts,missing_cells,columns_with_missing
-blackhole,Blackhole (BH),out210418231318.csv,43442,71,1,Attack:14394;Normal:29048,997126,40
-dio_suppression,DIO Suppression (DS),out210419213908.csv,117991,71,1,Attack:3322;Normal:114669,2698677,38
-dis_flooding,DIS Flooding (DA),out210413171508.csv,65740,71,1,Attack:18024;Normal:47716,1670362,40
-grayhole,Grayhole (GH),out210419030215.csv,92396,71,1,Attack:7415;Normal:84981,2043798,40
-increase_rank,Increase Rank (IR),out210419073540.csv,222706,71,1,Attack:58485;Normal:164221,4993860,40
-sinkhole,Sinkhole (SH),out210418151414.csv,26003,71,1,Attack:13008;Normal:12995,584831,40
-wormhole,Wormhole (WH),out210419160036.csv,189683,71,1,Attack:92043;Normal:97640,4306411,40
-worst_parent,Worst Parent (WP),out220111132759.csv,10850,46,0,,0,0

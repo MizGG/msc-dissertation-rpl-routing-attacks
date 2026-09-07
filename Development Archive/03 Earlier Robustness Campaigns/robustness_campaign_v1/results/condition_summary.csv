@@ -1,7 +1,0 @@
-condition,family,total_runs,valid_runs,attack_runs,control_runs,attack_marker_count,control_marker_count
-ATTACKER_RELOCATED,BH,10,10,5,5,2096,0
-ATTACKER_RELOCATED,SH,10,10,5,5,5,0
-ATTACKER_RELOCATED,SYBIL,10,10,5,5,745,0
-LOSSY_RADIO,BH,10,10,5,5,2101,0
-LOSSY_RADIO,SH,10,10,5,5,5,0
-LOSSY_RADIO,SYBIL,10,10,5,5,745,0

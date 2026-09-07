@@ -1,0 +1,20 @@
+FINAL EXTERNAL VALIDATION EVIDENCE
+
+01 Code
+- run_external_rpl_validation.py: packet/window extraction and initial external tests.
+- run_balanced_incremental_adaptation.py: balanced feature-selected incremental-adaptation curve.
+
+02 Figures
+- external_static_vs_adapted_f1.png: initial static versus 20% adaptation comparison.
+- balanced_incremental_adaptation_curve.png: held-out F1 across 0% to 100% target evidence.
+
+03 Results and Comparison
+- comparison_with_own_cooja_work.md: interpretation against the existing Cooja Blackhole-to-Sinkhole result.
+- external_validation_results.csv: first external test metrics.
+- balanced_incremental_adaptation_results.csv: full improved-experiment curve.
+- best_held_out_f1_by_direction.csv: best F1 observed for each tested transfer direction.
+- run_audit.json: scope and run metadata.
+- uos_data_adequacy.csv: documented reason no UOS IDS score was reported.
+
+Raw datasets are deliberately retained outside this folder under External RPL Dataset Validation.
+They were not merged into the dissertation's original Cooja dataset.

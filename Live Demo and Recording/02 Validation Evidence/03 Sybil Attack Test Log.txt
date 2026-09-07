@@ -1,1 +1,0 @@
-../../experiments/90 Raw Reproducibility Workspace/sybil_attack_v1/runs/SYBIL_ATTACK_N16_SEED123456/COOJA.testlog

@@ -1,3 +1,0 @@
-detector,attack_detection_rate,attack_runs,detection_wilson_95_lower,detection_wilson_95_upper,control_false_alarm_rate,control_runs,false_alarm_wilson_95_lower,false_alarm_wilson_95_upper,interpretation
-rank_state_cusum,1.0,5,0.5655,1.0,0.0,5,0.0,0.4345,run-level Wilson interval over five attack and five control seeds; wide intervals reflect the small Cooja campaign
-ddm_on_delayed_cart_errors,1.0,5,0.5655,1.0,0.0,5,0.0,0.4345,run-level Wilson interval over five attack and five control seeds; wide intervals reflect the small Cooja campaign

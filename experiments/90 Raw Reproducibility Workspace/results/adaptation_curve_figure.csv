@@ -1,9 +1,0 @@
-feature_resolution,adaptation_sinkhole_seeds,splits,mean_accuracy,mean_precision,mean_recall,mean_f1,mean_f2,mean_fpr
-complete run,0,1,0.5,0.0,0.0,0.0,,
-complete run,1,5,0.5,0.0,0.0,0.0,,
-complete run,2,10,0.5,0.0,0.0,0.0,,
-complete run,3,10,0.5,0.0,0.0,0.0,,
-60-second window,0,1,0.7222,0.0,0.0,0.0,0.0,0.0
-60-second window,1,5,0.7222,0.0,0.0,0.0,0.0,0.0
-60-second window,2,10,0.7074,0.0,0.0,0.0,0.0,0.0205
-60-second window,3,10,0.4944,0.3547,1.0,0.5237,0.7332,0.7

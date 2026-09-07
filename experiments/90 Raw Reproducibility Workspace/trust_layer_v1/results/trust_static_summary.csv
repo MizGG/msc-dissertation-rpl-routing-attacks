@@ -1,3 +1,0 @@
-experiment,model,cross_attack_pairs,zero_recall_pairs,strong_f1_ge_0_8_pairs,mean_recall,mean_f1
-trust_static_cross_attack,cart,72,48,6,0.2333,0.1822
-trust_static_cross_attack,gaussian,72,65,0,0.0778,0.0423

@@ -1,4 +1,0 @@
-# Local-only optional dependencies for the adaptive IDS extension.
-# Both dependencies run locally and require no credentials or network service at runtime.
-river==0.21.2
-torch==2.2.2

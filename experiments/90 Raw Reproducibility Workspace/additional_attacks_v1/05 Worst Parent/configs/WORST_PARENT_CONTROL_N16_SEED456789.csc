@@ -1,1 +1,0 @@
-../../configs/WORST_PARENT_CONTROL_N16_SEED456789.csc

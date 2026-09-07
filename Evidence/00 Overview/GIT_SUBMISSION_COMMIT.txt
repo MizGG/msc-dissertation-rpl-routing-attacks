@@ -1,0 +1,12 @@
+Repository: https://github.com/MizGG/msc-dissertation-rpl-routing-attacks.git
+Branch: main
+Local HEAD: 6e99a0836bf3cdb846093c8db5f048f03cde7111
+GitHub origin/main: 6e99a0836bf3cdb846093c8db5f048f03cde7111
+Verification: MATCH
+Commit date: 2026-08-30 22:30:35 +0100
+Commit subject: Organize dissertation evidence and finalize presentation
+
+The evidence directory was clean relative to this commit before final package
+validation metadata was generated. The wider working tree contained unrelated
+local presentation, recording and Cooja build changes, which were not included
+in the evidence ZIP.

@@ -1,11 +1,37 @@
 .DS_Store
-build/cooja/
-experiments/routing_features_v1/code/build/
-experiments/sinkhole/runs/
-experiments/sinkhole/validation_summary.csv
-SH_*_N16_SEED*.csc
 __pycache__/
+*.pyc
+*.pyo
+*.swp
+~$*
+
+# Local material not included in the reviewer repository
+Development Archive/
+Cooja Configurations/
+experiments/
+build/
+scripts/
+contiki-ng-modifications/
+Live Demo and Recording/
+Dissertation Draft and Overleaf/
+External RPL Dataset Validation/
+Project Records/
+.tmp/
+
+# Raw external data retained locally only
+/Evidence/06 Online External Dataset Validation/Professor Gope Source Data/
+
+# Local submission and presentation files
+*.pptx
+*.mov
+*.zip
+
+# Local build environments and outputs
+.venv/
 .env
 .env.local
-.venv/
-.tmp/
+**/build/
+
+# Legacy root firmware copies retained locally only
+/Makefile
+/*.c

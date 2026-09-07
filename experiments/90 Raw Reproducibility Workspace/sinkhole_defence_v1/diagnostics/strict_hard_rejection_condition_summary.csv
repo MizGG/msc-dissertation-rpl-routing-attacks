@@ -1,4 +1,0 @@
-mode,runs,mean_test_ok,mean_sinkhole_rank_events,mean_low_rank_nonroot_dio_events,mean_parent_switches,mean_app_rx,mean_app_missed,mean_radio_tx,mean_defence_logged_rejections
-control,5,1.0,0.0,0.0,0.0,417.4,0.0,5217.4,0.0
-attack,5,1.0,12.2,40.0,0.0,416.6,0.0,5242.6,0.0
-defence,5,1.0,11.2,45.2,1935.2,53.0,0.0,49609.8,15085.0

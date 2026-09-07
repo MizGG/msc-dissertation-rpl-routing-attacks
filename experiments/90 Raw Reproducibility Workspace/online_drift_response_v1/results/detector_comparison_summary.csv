@@ -1,3 +1,0 @@
-detector,attack_runs,detected_without_prealarm,attack_detection_rate,control_runs,control_false_alarms,control_false_alarm_rate,median_detection_delay_s,minimum_detection_delay_s,maximum_detection_delay_s
-rank_state_cusum,5,5,1.0,5,0,0.0,0,0,0
-ddm_on_delayed_cart_errors,5,5,1.0,5,0,0.0,60,60,60

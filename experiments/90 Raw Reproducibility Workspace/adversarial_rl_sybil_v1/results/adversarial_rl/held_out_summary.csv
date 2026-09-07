@@ -1,9 +1,0 @@
-split,policy,algorithm,windows,accuracy,precision,recall,f1,fpr,tp,tn,fp,fn
-held_out_test,static_source,dqn,72,0.7222,0.0,0.0,0.0,0.0,0,52,0,20
-held_out_test,always_incremental,dqn,72,0.8611,1.0,0.5,0.6667,0.0,10,52,0,10
-held_out_test,rl_controller,dqn,72,0.7778,1.0,0.2,0.3333,0.0,4,52,0,16
-training,adversarial_profile_selector,dqn,240,,,,,,108,132,,
-held_out_test,static_source,ddqn,72,0.7222,0.0,0.0,0.0,0.0,0,52,0,20
-held_out_test,always_incremental,ddqn,72,0.8611,1.0,0.5,0.6667,0.0,10,52,0,10
-held_out_test,rl_controller,ddqn,72,0.8333,1.0,0.4,0.5714,0.0,8,52,0,12
-training,adversarial_profile_selector,ddqn,240,,,,,,107,133,,

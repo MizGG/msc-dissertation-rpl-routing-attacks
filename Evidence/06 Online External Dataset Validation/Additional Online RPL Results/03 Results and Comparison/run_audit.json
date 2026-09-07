@@ -1,0 +1,9 @@
+{
+  "window_seconds": 60,
+  "radar_windows": 404,
+  "uos_windows": 374,
+  "models": [
+    "random_forest"
+  ],
+  "method": "Separate external replication. No external raw rows were merged into the dissertation Cooja dataset."
+}

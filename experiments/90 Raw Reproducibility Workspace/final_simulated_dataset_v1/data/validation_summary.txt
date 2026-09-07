@@ -1,8 +1,0 @@
-Frozen Cooja RPL baseline dataset v1
-rows=810
-run_groups=90
-families=blackhole,dio_suppression,dis_flood,grayhole,increase_rank,sinkhole,sybil,wormhole,worst_parent
-windows_per_group=9
-window_width_seconds=60
-attack_activation_seconds=240
-validation=PASS

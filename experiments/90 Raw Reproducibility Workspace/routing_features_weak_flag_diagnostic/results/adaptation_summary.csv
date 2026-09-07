@@ -1,9 +1,0 @@
-feature_set,adaptation_sinkhole_seeds,splits,mean_accuracy,mean_precision,mean_recall,mean_f1,mean_f2,mean_fpr
-coarse,0,1,0.7222,0.0,0.0,0.0,0.0,0.0
-coarse,1,5,0.7222,0.0,0.0,0.0,0.0,0.0
-coarse,2,10,0.5537,0.3684,0.82,0.506,0.6553,0.5487
-coarse,3,10,0.3889,0.3125,1.0,0.4762,0.6944,0.8462
-coarse_plus_routing,0,1,0.7222,0.0,0.0,0.0,0.0,0.0
-coarse_plus_routing,1,5,0.5056,0.3598,1.0,0.5291,0.7375,0.6846
-coarse_plus_routing,2,10,0.5037,0.3589,1.0,0.5282,0.7368,0.6872
-coarse_plus_routing,3,10,0.5,0.3571,1.0,0.5263,0.7353,0.6923

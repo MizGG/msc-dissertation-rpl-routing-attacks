@@ -1,6 +1,0 @@
-scope,baseline_mean_recall,baseline_mean_f1,trust_mean_recall,trust_mean_f1,interpretation
-static_cart_cross_attack,0.2333,0.1822,0.2333,0.1822,Trust features do not improve static cross-attack CART transfer over existing routing features.
-adaptation_0_target_seeds,0.2333,0.1822,0.2333,0.1822,No change before adaptation.
-adaptation_1_target_seed,0.8056,0.8258,0.8056,0.8258,No change after one whole target seed.
-adaptation_2_target_seeds,0.8620,0.8664,0.8620,0.8664,No change after two whole target seeds.
-adaptation_3_target_seeds,0.8917,0.8792,0.8917,0.8792,No change after three whole target seeds.

@@ -1,0 +1,2 @@
+normal_groups,normal_windows,single_attack_groups,single_attack_windows,dual_attack_groups,dual_attack_windows,decision
+2,6,60,263,15,105,No IDS score reported: insufficient independent normal traces for a valid held-out binary evaluation.

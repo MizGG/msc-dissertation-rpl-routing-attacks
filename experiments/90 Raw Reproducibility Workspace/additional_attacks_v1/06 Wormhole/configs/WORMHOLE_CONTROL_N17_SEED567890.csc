@@ -1,1 +1,0 @@
-../../configs/WORMHOLE_CONTROL_N17_SEED567890.csc
